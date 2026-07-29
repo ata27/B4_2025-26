@@ -1,12 +1,13 @@
 ---
 course: "B4 — Chemistry in the Atmosphere (Part II)"
-module: 1
+module: 6
 title: "Atmospheric Composition: Sources, Sinks and Lifetimes"
 term: "Lent"
-notebook: "../notebooks/01-sources-sinks-lifetimes.ipynb"
+lecture: 7
+notebook: "../notebooks/06-sources-sinks-lifetimes.ipynb"
 ---
 
-# Module 1 · Atmospheric Composition: Sources, Sinks and Lifetimes
+# Module 6 · Atmospheric Composition: Sources, Sinks and Lifetimes
 
 > **Learning objectives**
 > By the end of this module you should be able to:
@@ -205,13 +206,13 @@ $$\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots$$
 3. At steady state, production = total loss: $P = (k_{\text{OH}} + k_{\text{dep}})[\text{X}]_{ss}$.
 4. Solve for $[\text{X}]_{ss}$, and use $\tau = 1/(k_{\text{OH}}+k_{\text{dep}})$ to sanity-check against the emission rate.
 
-This is exactly the kind of steady-state / pseudo-first-order problem you'll meet repeatedly through the course — it's worth being fluent doing it both by hand and by setting up the balance numerically. **The companion notebook (`01-sources-sinks-lifetimes.ipynb`) walks through this example step by step, and lets you explore how $[\text{X}]_{ss}$ and $\tau$ respond to changing $k$, $[\text{OH}]$, $v_g$ and $h$.**
+This is exactly the kind of steady-state / pseudo-first-order problem you'll meet repeatedly through the course — it's worth being fluent doing it both by hand and by setting up the balance numerically. **The companion notebook (`06-sources-sinks-lifetimes.ipynb`) walks through this example step by step, and lets you explore how $[\text{X}]_{ss}$ and $\tau$ respond to changing $k$, $[\text{OH}]$, $v_g$ and $h$.**
 
 ---
 
 ## Try it yourself
 
-Open **[`notebooks/01-sources-sinks-lifetimes.ipynb`](../notebooks/01-sources-sinks-lifetimes.ipynb)** to:
+Open **[`notebooks/06-sources-sinks-lifetimes.ipynb`](../notebooks/06-sources-sinks-lifetimes.ipynb)** to:
 
 - Solve Worked Example 1 numerically and check it against the by-hand answer.
 - Build a simple one-box steady-state / time-dependent model with combined chemical + deposition loss.
@@ -220,4 +221,4 @@ Open **[`notebooks/01-sources-sinks-lifetimes.ipynb`](../notebooks/01-sources-si
 
 ---
 
-*Next: [Module 2 — Tropospheric Photochemistry and the Hydroxyl Radical](02-tropospheric-photochemistry-oh.md)*
+*Next: [Module 7 — Tropospheric Photochemistry and the Hydroxyl Radical](07-tropospheric-photochemistry-oh.md)*
