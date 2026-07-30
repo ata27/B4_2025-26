@@ -31,7 +31,7 @@ where in this case $n = 1$ and this reaction is said to be **first order** with 
 
 We can define a new expression by integrating our rate equation for $A$ and noting that our initial conditions are $A = A_0$ at $t = 0$:
 
-$$\int_0^t k\, dt = -\int_0^A [A]^{-n}\, dA$$
+$$\int_0^t k  dt = -\int_0^A [A]^{-n}  dA$$
 
 As Fig 2.1 highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
 
@@ -107,7 +107,7 @@ the system approaches equilibrium with a time constant of $(k_1 + k_{-1})^{-1}$ 
 >
 > By the chain rule, $\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt}$. From Eq 2, $dx/dt = y$; from Eq 4, $dy/dx = -(k_f+k_b)$. So:
 >
-> $$\frac{dy}{dt} = -(k_f+k_b)\, y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b)\,dt \tag{Eq 7}$$
+> $$\frac{dy}{dt} = -(k_f+k_b)  y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b) dt \tag{Eq 7}$$
 >
 > Integrating:
 >
@@ -196,7 +196,7 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 > Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_2^*$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
 >
 > **At low pressure** ($[M]$ small, so $k_{col}[M] < k_d$):
-> $$\frac{d[I_2]}{dt} \cong [M][I]^2\,\frac{k_1 k_{col}}{k_d} \tag{Eq 7}$$
+> $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d} \tag{Eq 7}$$
 >
 > **At high pressure** ($[M]$ large, so $k_{col}[M] > k_d$):
 > $$\frac{d[I_2]}{dt} \cong k_1[I]^2 \tag{Eq 8}$$

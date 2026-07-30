@@ -79,7 +79,7 @@ From the steady state between O and O₃, [O] decreases very rapidly with decrea
 >
 > Rearranging Eq 3 for [O] and substituting into Eq 2:
 >
-> $$[O_3]^2 = \frac{2J_2[O_2]\, k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2]\,k_3[O_2][M]}{k_4 J_3}} \tag{Eq 5}$$
+> $$[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2] k_3[O_2][M]}{k_4 J_3}} \tag{Eq 5}$$
 >
 > Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).
 
@@ -114,7 +114,7 @@ $$N_2O + h\nu \to N_2 + O(^1D)$$
 About 1% is instead converted to NO via reaction with electronically excited oxygen atoms:
 
 $$O_3 + h\nu \to O_2(^1\Delta) + O(^1D) \qquad \lambda < 310\ \text{nm}$$
-$$N_2O + O(^1D) \to NO + NO \qquad k \sim 10^{-10}\ \text{cm}^3\,\text{s}^{-1}$$
+$$N_2O + O(^1D) \to NO + NO \qquad k \sim 10^{-10}\ \text{cm}^3 \text{s}^{-1}$$
 $$\to N_2 + O_2$$
 
 N₂O mixing ratios are increasing at ~0.8 ppb per year. Nitrogen oxides are also emitted *directly* into the stratosphere by high-flying aircraft.
@@ -198,7 +198,7 @@ Because air enters the stratosphere at the cold equatorial tropopause, the strat
 
 $$O(^1D) + CH_4 \to OH + CH_3 \qquad OH + CH_4 \to H_2O + CH_3$$
 
-— followed by oxidation of CH₃ to H₂O and hydrogen radicals. In the upper stratosphere CH₄ mixing ratios are low and hydrogen is present mainly as H₂O, with the relationship $\Delta H_2O \sim 2\,\Delta CH_4$ holding. CH₄ is thus an additional source of H₂O and hence HOx, as well as playing other roles.
+— followed by oxidation of CH₃ to H₂O and hydrogen radicals. In the upper stratosphere CH₄ mixing ratios are low and hydrogen is present mainly as H₂O, with the relationship $\Delta H_2O \sim 2 \Delta CH_4$ holding. CH₄ is thus an additional source of H₂O and hence HOx, as well as playing other roles.
 
 Major CH₄ sources are anaerobic fermentation in wetlands and paddy fields, ruminants, termites and biomass burning. Atmospheric CH₄ has been increasing (~1% yr⁻¹, followed by a period of little change during the 2000s, then a significant increase in recent years — poorly understood), leading to the expectation that stratospheric HOx concentrations will increase.
 
@@ -206,7 +206,7 @@ Major CH₄ sources are anaerobic fermentation in wetlands and paddy fields, rum
 
 H, OH and HO₂ (collectively HOx) are closely coupled on a timescale of seconds by interconversion reactions. The three-body reaction
 
-$$H + O_2 + M \to HO_2 + M \qquad (k = 6\times10^{-32}(300/T)^2\ \text{cm}^6\,\text{s}^{-1})$$
+$$H + O_2 + M \to HO_2 + M \qquad (k = 6\times10^{-32}(300/T)^2\ \text{cm}^6 \text{s}^{-1})$$
 
 is 100 times faster than O + O₂ + M (4.2), keeping the HO₂:H ratio very high in the stratosphere. At lower pressures in the upper stratosphere/mesosphere, H atom concentrations can rise, enabling:
 
