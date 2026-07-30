@@ -10,6 +10,8 @@ Part II course B4, *Chemistry in the Atmosphere*. Built from the Michaelmas
 lectures/     Modular markdown lecture notes, one file per topic
 notebooks/    Companion Jupyter notebooks (paired 1:1 with lectures where noted)
 assets/       Figures used in the lecture notes
+data/         Reference datasets used by the notebooks (see data/README.md)
+scripts/      Scripts used to generate reference data, for reproducibility
 ```
 
 ## Modules
