@@ -9,6 +9,13 @@ notebook: "../notebooks/09-nox-reservoirs.ipynb"
 
 # Module 9 · The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs
 
+> **Learning aims**
+> By the end of this module you should be able to:
+> 1. Describe the main terms in the global tropospheric ozone budget (stratospheric input, chemical production/loss, surface deposition) and explain why the net budget is so sensitive to the large gross chemical terms.
+> 2. Describe how formaldehyde and other carbonyls are formed during NOx-driven VOC oxidation, and their role in recycling HOx.
+> 3. Describe the formation, stability and atmospheric role of the main NOx reservoir species: HONO, PAN, organic nitrates, and N₂O₅/NO₃.
+> 4. Explain why NO₃ chemistry is particularly important at night.
+
 ## 3.6 The budget of tropospheric ozone
 
 The main processes controlling tropospheric O₃ are shown schematically in Fig 3.7. There are four main terms: **transport from the stratosphere** (where the ozone mixing ratio is much higher than in the troposphere — a genuinely important source); **in-situ photochemical production and destruction**; and **deposition at the surface**. These terms approach balance in the annual mean, but are not independent — increased stratospheric flux, or increased photochemical production, might for example lead to additional O₃ deposition. Precursors of photochemical ozone production originate from both anthropogenic and biogenic processes.

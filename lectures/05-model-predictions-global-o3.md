@@ -9,6 +9,12 @@ notebook: "../notebooks/05-ozone-loss-antarctic.ipynb"
 
 # Module 5 · Model Predictions of Changes in Global O₃
 
+> **Learning aims**
+> By the end of this module you should be able to:
+> 1. Write down the multi-family odd-oxygen budget equation combining Ox, NOx, HOx, ClOx and BrOx loss terms.
+> 2. Explain why gas-phase catalytic cycles predict ozone loss concentrated in the upper stratosphere.
+> 3. Explain why a large *local* percentage change in ozone does not necessarily translate into a large *column* change, and why this means gas-phase chemistry alone cannot explain the Antarctic ozone hole.
+
 On the basis of the previous discussion, the rate of change of ozone (odd oxygen) can be written as:
 
 $$\frac{d([O]+[O_3])}{dt} = 2J_a[O_2] - 2k_a[O][O_3] - 2k_b[O][NO_2] - 2k_c[O][HO_2] - 2k_d[O][ClO] - 2k_e[O][BrO] - \text{etc.}$$
