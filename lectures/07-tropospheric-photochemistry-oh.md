@@ -61,6 +61,7 @@ For photolysis to occur there must be spectral overlap with the solar spectrum, 
 Above 240 nm, O₂ photolysis is irrelevant, and in the 240–320 nm range O₃ is the dominant absorber. Absorption by ozone occurs in two spectral regions in the troposphere: the visible (450–600 nm) and the UV (290–330 nm). Photolysis of O₃ occurs by two pathways:
 
 $$O_3 + h\nu \to O(^3P) + O_2 \qquad \lambda < 1150\ \text{nm}$$ &nbsp;&nbsp;(R2.2)
+
 $$O_3 + h\nu \to O(^1D) + O_2 \qquad \lambda < 310\ \text{nm}$$ &nbsp;&nbsp;(R2.3)
 
 Photolysis at the longer wavelengths (R2.2) occurs in the visible, yielding ground-state O(³P), followed by recombination with O₂ to reform O₃:
@@ -85,6 +86,7 @@ A small amount of highly reactive excited atomic oxygen O(¹D) is produced in th
 O(¹D) is quenched to the ground state by reaction with N₂ or O₂:
 
 $$O_3 + h\nu \to O(^1D) + O_2 \qquad J_{2.3} = 2.5\times10^{-6}\ \text{s}^{-1}$$
+
 $$O(^1D) + M \to O(^3P) + M \qquad k_{2.5} = 3\times10^{-11}\ \text{cm}^3 \text{s}^{-1}$$
 
 where $M = [N_2]+[O_2] = 2.4\times10^{19}$ cm⁻³ at the Earth's surface.
@@ -96,7 +98,9 @@ Assuming steady state, $[O(^1D)] = \dfrac{J_{2.3}[O_3]}{k_{2.5}[M]}$.
 Water vapour is abundant throughout most of the troposphere, its mixing ratio falling from ~1–4% at the surface to ~20 ppmv near the tropopause. H₂O competes effectively with quenching by M for reaction with O(¹D), giving a branching ratio, $f$, between quenching and OH formation of about 10%:
 
 $$O_3 + h\nu \to O(^1D) + O_2$$ &nbsp;&nbsp;(R2.3)
+
 $$O(^1D) + M \to O(^3P) + M$$ &nbsp;&nbsp;(R2.5)
+
 $$O(^1D) + H_2O \to OH + OH$$ &nbsp;&nbsp;(R2.6)
 
 Reaction R2.6 is exothermic ($\Delta H^0 = -119$ kJ/mol), while the corresponding reaction of H₂O with O(³P) does not proceed (it's endothermic). The difference in enthalpy is largely because the electronically excited state of atomic oxygen lies ~190 kJ/mol above the ground state.
@@ -123,6 +127,7 @@ OH does not react with the major atmospheric components (N₂, O₂, CO₂) but 
 Following its formation from O(¹D), OH is rapidly converted into HO₂ — primarily (~70% of the time) by reaction with CO, followed by fast reaction of H with O₂:
 
 $$OH + CO \to CO_2 + H$$ &nbsp;&nbsp;(R2.7)
+
 $$H + O_2 + M \to HO_2 + M$$ &nbsp;&nbsp;(R2.8)
 
 About 30% of OH is converted to HO₂ via a more complex chain of reactions initiated by:

@@ -43,9 +43,13 @@ Ozone concentrations in Europe and other industrialised regions increased strong
 The reaction of NO with methyl peroxy radicals produces both NO₂ and formaldehyde (R3.15). The fate of this formaldehyde matters both for HOx concentrations and for the rate of VOC oxidation, since formaldehyde is photolysed in the troposphere to liberate HOx:
 
 $$CH_3O_2 + NO \to CH_3O + NO_2$$ &nbsp;&nbsp;(R3.14)
+
 $$CH_3O + O_2 \to HCHO + HO_2$$ &nbsp;&nbsp;(R3.5)
+
 $$HCHO + h\nu \to HCO + H$$ &nbsp;&nbsp;(R3.6)
+
 $$HCO + O_2 \to CO + HO_2$$ &nbsp;&nbsp;(R3.7)
+
 $$H + O_2 \to HO_2$$ &nbsp;&nbsp;(R3.8)
 
 Radicals from R3.5 and R3.7 re-enter the HOx family, which can react further (e.g. R3.1) leading to more O₃ formation. Thus, the presence of NO fundamentally shifts the oxidation process in favour of producing **both** ozone and HOx.
@@ -67,6 +71,7 @@ This generates a pulse of OH into the early-morning atmosphere, partly responsib
 Peroxyacetyl nitrate (PAN: CH₃C(O)O₂NO₂) forms readily in the troposphere as a degradation product of C₂+ hydrocarbons in the presence of NO₂. For example, OH + acetaldehyde (a typical VOC degradation product) forms acetylperoxy radicals:
 
 $$CH_3CHO + OH \to CH_3CO + H_2O$$ &nbsp;&nbsp;(R3.18)
+
 $$CH_3CO + O_2 + M \to CH_3C(O)O_2 + M$$
 
 which react with NO₂ to form PAN. At ambient temperature, PAN has a relatively high rate of reverse decomposition, maintaining equilibrium with its precursors:
@@ -97,11 +102,13 @@ PAN should not be confused with the **organic nitrates**, RONO₂, formed in sma
 NO₂ + ozone forms nitrogen pentoxide via the intermediate NO₃ radical:
 
 $$O_3 + NO_2 \to NO_3 + O_2$$ &nbsp;&nbsp;(R3.22)
+
 $$NO_3 + NO_2 + M \rightleftharpoons N_2O_5 + M$$ &nbsp;&nbsp;(R3.23)
 
 N₂O₅ is thermally unstable and decomposes back to NO₃, making R3.23 reversible. NO₃ undergoes very rapid photolysis in visible light:
 
 $$NO_3 + h\nu\ (\lambda<580\ \text{nm}) \to NO_2 + O$$ &nbsp;&nbsp;(R3.24)
+
 $$NO_3 + h\nu\ (\lambda<630\ \text{nm}) \to NO + O_2$$ &nbsp;&nbsp;(R3.25)
 
 so N₂O₅ is not formed in daytime. Night-time steady-state [NO₃] (independent of [NO₂], since production and loss are both proportional to it) is of order 1 pptv — some 30 times [OH]. Under these conditions, oxidation by NO₃ at night may rival OH oxidation for some VOCs (e.g. DMS, isoprene, terpenes).

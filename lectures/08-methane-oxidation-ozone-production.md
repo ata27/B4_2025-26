@@ -44,6 +44,7 @@ $$CH_3O + O_2 \to HCHO + HO_2$$ &nbsp;&nbsp;(R3.5)
 and formaldehyde is itself photolysed to produce more HO₂:
 
 $$HCHO + h\nu \to HCO + H$$ &nbsp;&nbsp;(R3.6)
+
 $$HCO + O_2 \to CO + HO_2$$ &nbsp;&nbsp;(R3.7)
 
 This recycles, and in certain circumstances (such as the dry upper troposphere) may even amplify [HOx].
@@ -72,7 +73,9 @@ NOx is removed from the atmosphere through dry and wet deposition, with wet depo
 Consider first the reactions of NO, NO₂ and O₃ in isolation. NO₂ is photolysed to O(³P), which reacts almost exclusively with O₂ to form O₃ (O-atom reactions with other pollutants don't compete under normal tropospheric conditions). O₃ then reacts with NO, reforming NO₂:
 
 $$NO_2 + h\nu \to NO + O$$ &nbsp;&nbsp;(R3.10)
+
 $$O + O_2 + M \to O_3 + M$$ &nbsp;&nbsp;(R3.11, very fast)
+
 $$NO + O_3 \to NO_2 + O_2$$ &nbsp;&nbsp;(R3.12)
 
 This coupled cycle establishes a **photostationary state**, with [O₃] set by the NO₂/NO ratio via the **Leighton relationship**:
@@ -100,6 +103,7 @@ $$k_{3.13} = 8\times10^{-12}\ \text{cm}^3 \text{molec}^{-1} \text{s}^{-1}$$
 NO also reacts with CH₃O₂, leading to HO₂ formation:
 
 $$CH_3O_2 + NO \to CH_3O + NO_2$$ &nbsp;&nbsp;(R3.14)
+
 $$CH_3O + O_2 \to HCHO + HO_2$$ &nbsp;&nbsp;(R3.15)
 
 Although R3.13/R3.14 are much slower than NO + O₃ ([HO₂] and [CH₃O₂] ≪ [O₃] in the troposphere), they significantly perturb the photostationary state. This is because reaction of NO with peroxy radicals RO₂ (e.g. HO₂, CH₃O₂) **oxidises NO to NO₂ without consuming O₃**. Ozone production follows when the resulting NO₂ is photolysed and the O product combines with O₂.
@@ -150,12 +154,15 @@ Fig 3.3 shows this lifetime increasing to about **15 days** in the tropical uppe
 Consider CO oxidation once more. In the absence of NOx, overall O₃ **destruction** results:
 
 $$OH+CO\to H+CO_2\ (R2.7) \qquad H+O_2+M\to HO_2+M\ (R2.8) \qquad HO_2+O_3\to 2O_2+OH\ (R2.10)$$
+
 $$\textbf{Overall: } O_3 + CO \to CO_2 + O_2$$
 
 Compare with ozone formation in the presence of NOx:
 
 $$OH+CO\to H+CO_2\ (R2.7) \qquad H+O_2+M\to HO_2+M\ (R2.8) \qquad HO_2+NO\to OH+NO_2\ (R3.13)$$
+
 $$NO_2+h\nu\to NO+O\ (R3.10) \qquad O+O_2+M\to O_3+M\ (R3.11)$$
+
 $$\textbf{Overall: } CO + 2O_2 + h\nu \to CO_2 + O_3$$
 
 Clearly, increasing [NOx] increases the rate of the ozone-production cycle. There's a critical NOx concentration at which production outweighs destruction.
