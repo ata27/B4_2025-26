@@ -176,7 +176,9 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 > Consider two iodine atoms colliding:
 >
 > $$I + I \xrightarrow{k_1} I_2^*$$ &nbsp;&nbsp;(Eq 1)
+>
 > $$I_2^* \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
+>
 > $$I_2^* + M \xrightarrow{k_{col}} I_2 + M^*$$ &nbsp;&nbsp;(Eq 3)
 >
 > The only reaction producing our product ($I_2$) is Eq 3, so:

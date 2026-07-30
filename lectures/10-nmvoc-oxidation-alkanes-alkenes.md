@@ -59,6 +59,7 @@ $k_{4.1}$ is fairly similar across measured R groups, spanning $5\times10^{-12}$
 RO₂ can react with several tropospheric species. Reaction with NO gives two products:
 
 $$RO_2 + NO \to RO + NO_2$$ &nbsp;&nbsp;(R4.2)
+
 $$RO_2 + NO + M \to RONO_2 + M$$ &nbsp;&nbsp;(R4.3)
 
 For most peroxy radicals, R4.2 dominates. For larger radicals, R4.3 becomes increasingly important, with yields up to 30%.
@@ -70,7 +71,9 @@ $$RO_2 + HO_2 \to ROOH + O_2$$ &nbsp;&nbsp;(R4.4)
 Reactions between different alkyl peroxy radicals are rather complex, with several observed overall pathways:
 
 $$RO_2 + RO_2 \to 2RO + O_2$$ &nbsp;&nbsp;(R4.5)
+
 $$RO_2 + RO_2 \to ROH + RCHO + O_2$$ &nbsp;&nbsp;(R4.6)
+
 $$RO_2 + RO_2 \to ROOR + O_2$$ &nbsp;&nbsp;(R4.7)
 
 Reaction with NO₃,

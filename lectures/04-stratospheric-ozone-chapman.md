@@ -55,7 +55,9 @@ $$\frac{d[O_x]}{dt} = 2J_2[O_2] - 2k_4[O][O_3]$$
 Without invoking the O↔O₃ steady state we'd instead have the more complex system:
 
 $$\frac{d[O]}{dt} = 2J_2[O_2] - k_3[O][O_2][M] + J_3[O_3] - k_4[O][O_3]$$
+
 $$\frac{d[O_3]}{dt} = k_3[O][O_2][M] - J_3[O_3] - k_4[O][O_3]$$
+
 $$\frac{d([O]+[O_3])}{dt} = 2J_2[O_2] - 2k_4[O][O_3]$$
 
 The use of odd oxygen thus leads, as we'll see again later, to both conceptual and mathematical simplification.
@@ -98,7 +100,9 @@ Observations of the total ozone column helped meteorologists and atmospheric phy
 Reaction 4.4 has an unexpectedly high activation energy ($E_a \sim 17.5$ kJ mol⁻¹) for such an exothermic reaction ($\Delta H \sim -390$ kJ mol⁻¹). It was realised that, at stratospheric temperatures (200–290 K), odd oxygen could be removed efficiently by **catalytic cycles** which achieve the same net result as reaction 4.4, without net loss of the catalytic species X or XO:
 
 $$X + O_3 \to XO + O_2$$
+
 $$XO + O \to X + O_2$$
+
 $$\textbf{net: } O + O_3 \to O_2 + O_2 \quad \text{(i.e. reaction 4.4)}$$
 
 The rate-determining step is usually the reaction involving O. For efficiency we assume each step must be exothermic, which constrains the X–O bond energy to lie in the range $107 < D(X\text{–}O) < 498$ kJ mol⁻¹. Suitable candidates for X present in the stratosphere include **H, OH, NO, Cl and Br**.
@@ -114,7 +118,9 @@ $$N_2O + h\nu \to N_2 + O(^1D)$$
 About 1% is instead converted to NO via reaction with electronically excited oxygen atoms:
 
 $$O_3 + h\nu \to O_2(^1\Delta) + O(^1D) \qquad \lambda < 310\ \text{nm}$$
+
 $$N_2O + O(^1D) \to NO + NO \qquad k \sim 10^{-10}\ \text{cm}^3 \text{s}^{-1}$$
+
 $$\to N_2 + O_2$$
 
 N₂O mixing ratios are increasing at ~0.8 ppb per year. Nitrogen oxides are also emitted *directly* into the stratosphere by high-flying aircraft.
