@@ -9,6 +9,13 @@ notebook: "../notebooks/02-chemical-kinetics.ipynb"
 
 # Module 2 · Chemical Kinetics in the Atmosphere
 
+> **Learning aims**
+> By the end of this module you should be able to:
+> 1. Apply first-order and pseudo-first-order kinetics to atmospheric decay problems, and define the associated time constant.
+> 2. Apply the steady-state approximation to a simple reaction chain, and judge when it is (and isn't) valid.
+> 3. Use Arrhenius parameters to describe the temperature dependence of a bi-molecular rate coefficient.
+> 4. Explain why most apparently bi-molecular association reactions are actually ter-molecular, and describe the low-/high-pressure limiting behaviour.
+
 ## 2.1 Time scales and lifetimes
 
 As atmospheric chemists we are fundamentally interested in understanding how the constituents of the atmosphere (the gases and particles that make it up) change with time. For example, the questions of how the concentration of O₃ will change in the future and how it has changed in the past are crucial to the science of the Antarctic ozone hole. In order to understand these types of questions we rely on a solid knowledge of (i) what the constituents (chemical and **aerosol** species) are in the atmosphere and (ii) how the constituents in the atmosphere react over time. Hence, it's fair to say that chemical kinetics is at the heart of atmospheric chemistry.

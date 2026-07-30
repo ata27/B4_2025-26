@@ -9,6 +9,13 @@ notebook: "../notebooks/04-chapman-mechanism.ipynb"
 
 # Module 4 · Stratospheric Ozone Chemistry
 
+> **Learning aims**
+> By the end of this module you should be able to:
+> 1. Write down the Chapman reactions and derive the steady-state Chapman ozone concentration.
+> 2. Explain why the Chapman mechanism alone overestimates stratospheric ozone, and what this implies about additional loss processes.
+> 3. Describe the general form of a catalytic ozone-destruction cycle and derive the odd-oxygen loss rate for the NOx, HOx, ClOx and BrOx families.
+> 4. Explain the role of reservoir species in moderating the efficiency of each catalytic family.
+
 ## 4.1 The Chapman Reactions
 
 The discovery of O₃ in the atmosphere is usually attributed to Christian Friedrich Schönbein (1799–1868). Schönbein noticed a strange odour associated with electrical discharges — for those of you who have ever operated an "old" photocopier, you may recognize this odour.
