@@ -124,7 +124,7 @@ N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note:
 
 CFCs (chlorofluorocarbons) contain carbon, fluorine and chlorine and are entirely man-made. PFCs (perfluorinated carbons) are largely man-made, but the simplest PFC (CF₄) has a natural source from the oxidation of certain volcanic rocks. PFCs are very stable — in fact the absorption cross-section of CF₄ is so small that under most stratospheric conditions its lifetime is millions of years, so we won't worry about PFCs for now (although they are strong greenhouse gases, so don't think they aren't important!).
 
-The naming convention for CFCs: the rightmost digit in the name gives the number of fluorine atoms; the next digit to the left gives the number of hydrogen atoms **plus 1**; and the next gives the number of carbon atoms **minus 1** (zero values omitted). For example, CFC-11 has #F=1, #H=0+1, #C=1−1=0, so CFC-11 = CCl₃F.
+The naming convention for CFCs: the rightmost digit in the name gives the number of fluorine atoms ($n_F$); the next digit to the left gives the number of hydrogen atoms **plus 1** ($n_H+1$); and the next gives the number of carbon atoms **minus 1** ($n_C-1$), with zero values omitted. For example, CFC-11 has $n_F=1$, $n_H=0$ (so digit = 1), $n_C=1$ (so digit = 0), giving CFC-11 = CCl₃F.
 
 CFC absorption cross-sections are fairly large at very short $\lambda$ and almost completely featureless (compare O₃ and NO₂). There is a huge range in CFC lifetimes as a function of altitude — tropospheric lifetimes are many thousands of years, but upper-stratospheric lifetimes are only a few days.
 
