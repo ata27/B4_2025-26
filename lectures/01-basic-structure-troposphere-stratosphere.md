@@ -20,8 +20,8 @@ notebook: "../notebooks/01-atmospheric-structure.ipynb"
 
 Most planetary atmospheres are heated by outgoing long wave radiation from the planetary surface, and so in general planetary atmospheres get cooler as one ascends through them. However, the atmosphere of our planet is different. Atmospheric temperature decreases with height initially, before undergoing a transition leading to increasing temperature with height. These changes in temperature gradient mean that the atmosphere can conveniently be divided into a number of layers (or **spheres**), depending on the temperature profile (Figure 1.1). The turning points in Figure 1.1 are known as "*pauses*" and are located at ~10–18 km (*tropopause*) and ~45–50 km (*stratopause*).
 
-![Atmospheric temperature profile](../assets/figures/m1-fig1-1-temp-profile.png)
-*Figure 1.1 — Atmospheric temperature profile.*
+![Atmospheric temperature profile](../assets/figures/m1-fig1-1-temp-profile-from-data.png)
+*Figure 1.1 — Atmospheric temperature profile, generated from the 1976 US Standard Atmosphere reference data (see `data/us_standard_atmosphere_1976.csv` and `notebooks/01-atmospheric-structure.ipynb`).*
 
 In this course we will be primarily concerned with the lowermost layers, the stratosphere and troposphere, which make up approximately 99.9% of the atmospheric mass.
 
