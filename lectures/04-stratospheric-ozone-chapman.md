@@ -113,13 +113,13 @@ The rate-determining step is usually the reaction involving O. For efficiency we
 
 NO and NO₂ (NO+NO₂ = NOx) are present in the stratosphere at ~10 ppb (compare ~10 ppm of O₃). The main source of NOx in the stratosphere is nitrous oxide (N₂O), produced at the Earth's surface by denitrifying bacteria. N₂O is well mixed in the troposphere (~335 ppb), has a very long tropospheric lifetime, and is transported to the stratosphere where its main fate is photolysis (λ < ~220 nm):
 
-$$N_2O + h\nu \to N_2 + O(^1D)$$
+$$N_2O + h\nu \to N_2 + O(^{1}D)$$
 
 About 1% is instead converted to NO via reaction with electronically excited oxygen atoms:
 
-$$O_3 + h\nu \to O_2(^1\Delta) + O(^1D) \qquad \lambda < 310\ \text{nm}$$
+$$O_3 + h\nu \to O_2(^1\Delta) + O(^{1}D) \qquad \lambda < 310\ \text{nm}$$
 
-$$N_2O + O(^1D) \to NO + NO \qquad k \sim 10^{-10}\ \text{cm}^3 \text{s}^{-1}$$
+$$N_2O + O(^{1}D) \to NO + NO \qquad k \sim 10^{-10}\ \text{cm}^3 \text{s}^{-1}$$
 
 $$\to N_2 + O_2$$
 
@@ -198,11 +198,11 @@ Fig 4.5 shows [NO₂] falling at dawn with the onset of photolysis; the daytime 
 
 The hydroxyl radical is one of the most important atmospheric species, in both the troposphere and the middle atmosphere. As in the troposphere, the main middle-atmosphere source of OH is:
 
-$$O(^1D) + H_2O \to OH + OH$$
+$$O(^{1}D) + H_2O \to OH + OH$$
 
 Because air enters the stratosphere at the cold equatorial tropopause, the stratosphere is extremely dry (H₂O mixing ratios 2–6 ppm). CH₄ is also transported to the stratosphere, where it is destroyed by reaction with OH and O(¹D):
 
-$$O(^1D) + CH_4 \to OH + CH_3 \qquad OH + CH_4 \to H_2O + CH_3$$
+$$O(^{1}D) + CH_4 \to OH + CH_3 \qquad OH + CH_4 \to H_2O + CH_3$$
 
 — followed by oxidation of CH₃ to H₂O and hydrogen radicals. In the upper stratosphere CH₄ mixing ratios are low and hydrogen is present mainly as H₂O, with the relationship $\Delta H_2O \sim 2 \Delta CH_4$ holding. CH₄ is thus an additional source of H₂O and hence HOx, as well as playing other roles.
 

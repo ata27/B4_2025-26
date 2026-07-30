@@ -60,13 +60,13 @@ For photolysis to occur there must be spectral overlap with the solar spectrum, 
 
 Above 240 nm, O₂ photolysis is irrelevant, and in the 240–320 nm range O₃ is the dominant absorber. Absorption by ozone occurs in two spectral regions in the troposphere: the visible (450–600 nm) and the UV (290–330 nm). Photolysis of O₃ occurs by two pathways:
 
-$$O_3 + h\nu \to O(^3P) + O_2 \qquad \lambda < 1150\ \text{nm}$$ &nbsp;&nbsp;(R2.2)
+$$O_3 + h\nu \to O(^{3}P) + O_2 \qquad \lambda < 1150\ \text{nm}$$ &nbsp;&nbsp;(R2.2)
 
-$$O_3 + h\nu \to O(^1D) + O_2 \qquad \lambda < 310\ \text{nm}$$ &nbsp;&nbsp;(R2.3)
+$$O_3 + h\nu \to O(^{1}D) + O_2 \qquad \lambda < 310\ \text{nm}$$ &nbsp;&nbsp;(R2.3)
 
 Photolysis at the longer wavelengths (R2.2) occurs in the visible, yielding ground-state O(³P), followed by recombination with O₂ to reform O₃:
 
-$$O(^3P) + O_2 + M \to O_3 + M$$ &nbsp;&nbsp;(R2.4)
+$$O(^{3}P) + O_2 + M \to O_3 + M$$ &nbsp;&nbsp;(R2.4)
 
 — this process has **no net effect** on ozone concentration.
 
@@ -81,33 +81,33 @@ At the high pressures found in the troposphere, O(¹D) is rapidly quenched to gr
 
 ### 2.3.1 Fate of O(¹D) in a dry atmosphere
 
-A small amount of highly reactive excited atomic oxygen O(¹D) is produced in the troposphere by photolysis of O₃ at $\lambda \lesssim 310$ nm. The rate of photolysis of ozone to produce O(¹D) is typically written $J_{O(^1D)}$, incorporating the summation over all wavelengths and the wavelength dependence of quantum yield.
+A small amount of highly reactive excited atomic oxygen O(¹D) is produced in the troposphere by photolysis of O₃ at $\lambda \lesssim 310$ nm. The rate of photolysis of ozone to produce O(¹D) is typically written $J_{O(^{1}D)}$, incorporating the summation over all wavelengths and the wavelength dependence of quantum yield.
 
 O(¹D) is quenched to the ground state by reaction with N₂ or O₂:
 
-$$O_3 + h\nu \to O(^1D) + O_2 \qquad J_{2.3} = 2.5\times10^{-6}\ \text{s}^{-1}$$
+$$O_3 + h\nu \to O(^{1}D) + O_2 \qquad J_{2.3} = 2.5\times10^{-6}\ \text{s}^{-1}$$
 
-$$O(^1D) + M \to O(^3P) + M \qquad k_{2.5} = 3\times10^{-11}\ \text{cm}^3 \text{s}^{-1}$$
+$$O(^{1}D) + M \to O(^{3}P) + M \qquad k_{2.5} = 3\times10^{-11}\ \text{cm}^3 \text{s}^{-1}$$
 
 where $M = [N_2]+[O_2] = 2.4\times10^{19}$ cm⁻³ at the Earth's surface.
 
-Assuming steady state, $[O(^1D)] = \dfrac{J_{2.3}[O_3]}{k_{2.5}[M]}$.
+Assuming steady state, $[O(^{1}D)] = \dfrac{J_{2.3}[O_3]}{k_{2.5}[M]}$.
 
 ## 2.4 Generation of OH radicals
 
 Water vapour is abundant throughout most of the troposphere, its mixing ratio falling from ~1–4% at the surface to ~20 ppmv near the tropopause. H₂O competes effectively with quenching by M for reaction with O(¹D), giving a branching ratio, $f$, between quenching and OH formation of about 10%:
 
-$$O_3 + h\nu \to O(^1D) + O_2$$ &nbsp;&nbsp;(R2.3)
+$$O_3 + h\nu \to O(^{1}D) + O_2$$ &nbsp;&nbsp;(R2.3)
 
-$$O(^1D) + M \to O(^3P) + M$$ &nbsp;&nbsp;(R2.5)
+$$O(^{1}D) + M \to O(^{3}P) + M$$ &nbsp;&nbsp;(R2.5)
 
-$$O(^1D) + H_2O \to OH + OH$$ &nbsp;&nbsp;(R2.6)
+$$O(^{1}D) + H_2O \to OH + OH$$ &nbsp;&nbsp;(R2.6)
 
 Reaction R2.6 is exothermic ($\Delta H^0 = -119$ kJ/mol), while the corresponding reaction of H₂O with O(³P) does not proceed (it's endothermic). The difference in enthalpy is largely because the electronically excited state of atomic oxygen lies ~190 kJ/mol above the ground state.
 
 R2.6 represents the principal (though not sole) mechanism for generating hydroxyl radicals in the troposphere, initiating further reaction and degradation of VOCs.
 
-The diurnal behaviour of [OH] closely tracks $J_{O(^1D)}$ over the course of a day, measured in the unpolluted conditions typical of the Southern Hemisphere marine environment — demonstrating the fast conversion of O(¹D) into OH and the dominance of R2.3/R2.5–R2.6 in OH production. Under sunny conditions, $J_{O(^1D)}$ reaches a maximum of about $3\times10^{-5}$ s⁻¹.
+The diurnal behaviour of [OH] closely tracks $J_{O(^{1}D)}$ over the course of a day, measured in the unpolluted conditions typical of the Southern Hemisphere marine environment — demonstrating the fast conversion of O(¹D) into OH and the dominance of R2.3/R2.5–R2.6 in OH production. Under sunny conditions, $J_{O(^{1}D)}$ reaches a maximum of about $3\times10^{-5}$ s⁻¹.
 
 ![OH and J(O1D) diurnal profile](../assets/figures/m7-fig2-2b-oh-jo1d-diurnal.jpeg)
 *Figure 2.2b — Typical diurnal variation of [OH] and J(O¹D) in the clean marine atmosphere.*
@@ -154,9 +154,9 @@ In summary, reactions R2.3–R2.11 (representing the unpolluted atmosphere) lead
 
 ### 2.5.1 Steady-state concentration of OH and HO₂
 
-Approximate values for [OH], [HO₂] and total [HOx] can be derived from R2.3–R2.11 together with $J_{O(^1D)}$.
+Approximate values for [OH], [HO₂] and total [HOx] can be derived from R2.3–R2.11 together with $J_{O(^{1}D)}$.
 
-Globally, $J_{O(^1D)}$ has a rough average (over solar zenith angle etc.) of $2.5\times10^{-6}$ s⁻¹. With ozone at 40 ppbv, this gives an O(¹D) production rate from ozone photolysis such that O(¹D) is being formed at about $2.5\times10^6$ molecule cm⁻³ s⁻¹. As above, in the lower troposphere ~10% reacts with H₂O to form two OH (R2.6) — **please do not commit this figure to memory!** — giving an OH production rate of around $5\times10^5$ cm⁻³ s⁻¹.
+Globally, $J_{O(^{1}D)}$ has a rough average (over solar zenith angle etc.) of $2.5\times10^{-6}$ s⁻¹. With ozone at 40 ppbv, this gives an O(¹D) production rate from ozone photolysis such that O(¹D) is being formed at about $2.5\times10^6$ molecule cm⁻³ s⁻¹. As above, in the lower troposphere ~10% reacts with H₂O to form two OH (R2.6) — **please do not commit this figure to memory!** — giving an OH production rate of around $5\times10^5$ cm⁻³ s⁻¹.
 
 OH is produced primarily from ozone photolysis, since the O₃ + HO₂ reaction (R2.10) is generally too slow to contribute significantly. OH is lost primarily by reaction with CO (R2.7). At steady state, production and destruction balance. Since $[CO] \sim 75$ ppbv on average and $k_{2.7} = 2.0\times10^{-13}$ at 1 atm, this leads to a steady-state OH concentration in the sunlit atmosphere of:
 
@@ -178,7 +178,7 @@ In general, the precise ratio depends on the composition of the air parcel — [
 
 > **Example 2 — steady-state [OH] in the tropical atmospheric boundary layer**
 >
-> In the tropics, [H₂O] is much higher than at mid-latitudes. The reduced overhead ozone column (see Michaelmas Module 1) also leads to increased rates of ozone photolysis. Work through the same steady-state derivation as above, but substituting tropical values for [H₂O], the overhead O₃ column (and hence $J_{O(^1D)}$), and [CO]/[O₃] — see the companion notebook.
+> In the tropics, [H₂O] is much higher than at mid-latitudes. The reduced overhead ozone column (see Michaelmas Module 1) also leads to increased rates of ozone photolysis. Work through the same steady-state derivation as above, but substituting tropical values for [H₂O], the overhead O₃ column (and hence $J_{O(^{1}D)}$), and [CO]/[O₃] — see the companion notebook.
 
 ## 2.6 Trace gas oxidation
 
@@ -226,8 +226,8 @@ Direct atmospheric measurements have convincingly confirmed the presence of OH i
 Open **[`notebooks/07-oh-steady-state.ipynb`](../notebooks/07-oh-steady-state.ipynb)** to:
 
 - Reproduce the [OH] = 1.4 × 10⁶ cm⁻³ and [HO₂] = 2 × 10⁸ cm⁻³ steady-state results from §2.5.1 numerically.
-- Solve Example 2 (tropical boundary layer OH) by adjusting [H₂O], the O₃ column/$J_{O(^1D)}$, and [CO] to tropical values, and compare the resulting [OH] to the mid-latitude case.
-- Explore the predicted square-root dependence of [HOx] on $J_{O(^1D)}$ (Fig 2.5) from the steady-state equations, and check it against the observational correlation.
+- Solve Example 2 (tropical boundary layer OH) by adjusting [H₂O], the O₃ column/$J_{O(^{1}D)}$, and [CO] to tropical values, and compare the resulting [OH] to the mid-latitude case.
+- Explore the predicted square-root dependence of [HOx] on $J_{O(^{1}D)}$ (Fig 2.5) from the steady-state equations, and check it against the observational correlation.
 - Rank trace gases by OH-reaction lifetime using Table 2.2, and see how lifetime scales with rate coefficient for fixed [OH].
 
 ---
