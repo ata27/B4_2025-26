@@ -36,7 +36,7 @@ In order to calculate how temperature varies with altitude a radiative transfer 
 
 Figure 1.2 shows that as we go up in the atmosphere pressure decreases. The hydrostatic relation is used to relate ambient pressure to altitude. If $\rho$ is the ambient air density at altitude $z$ with pressure $p$, we can write, for an incremental change in $z$:
 
-$$dp = -\rho g\, dz$$
+$$dp = -\rho g  dz$$
 
 (assumes $g$ is constant — not a bad assumption)
 
@@ -46,7 +46,7 @@ $$\rho = \frac{Mp}{RT} = \frac{mp}{kT}$$
 
 where $M$ and $m$ are the relative molar mass and molecular mass respectively. Thus,
 
-$$dp = -\frac{Mpg}{RT}\, dz$$
+$$dp = -\frac{Mpg}{RT}  dz$$
 
 Defining $H = \dfrac{RT}{Mg}$ as the **scale height** (approximately constant with altitude) we can re-write the above expression to give:
 
@@ -54,7 +54,7 @@ $$\frac{dp}{p} = -\frac{dz}{H}$$
 
 and integrate, setting the surface pressure as $p = p_0$, to yield:
 
-$$p = p_0\, e^{-z/H}$$
+$$p = p_0  e^{-z/H}$$
 
 This equation describes the fall-off of pressure with altitude.
 
@@ -147,7 +147,7 @@ Throughout the bulk of the stratosphere gas phase reactions dominate. However, o
 ![Variation of ozone concentration with altitude](../assets/figures/m1-fig1-6-ozone-profile.png)
 *Figure 1.6 — Variation of ozone concentration with altitude, expressed as an absolute number density ($n_{O_3}$, with peak just above 10¹² cm⁻³) and as a mixing ratio (mole fraction, $n_{O_3}/n_{air}$).*
 
-We will see later that it is also possible to measure the amount of a species integrated between the earth's surface and the top of the atmosphere. This integral, e.g. $\int [O_3]\, dz$, is loosely called the **column amount**, the **column density** or the **total column**. It commonly has units of molecules cm⁻². For the special case of ozone, the unit is named after Dobson, an early measurement pioneer.
+We will see later that it is also possible to measure the amount of a species integrated between the earth's surface and the top of the atmosphere. This integral, e.g. $\int [O_3]  dz$, is loosely called the **column amount**, the **column density** or the **total column**. It commonly has units of molecules cm⁻². For the special case of ozone, the unit is named after Dobson, an early measurement pioneer.
 
 1 Dobson Unit (DU) = 2.69×10¹⁶ molec cm⁻². A typical column density for ozone is about 300 DU — i.e. an ozone column that would be 3 mm thick when shrunk down to the surface.
 
@@ -155,7 +155,7 @@ We will see later that it is also possible to measure the amount of a species in
 >
 > Definition of the column:
 >
-> $$\text{Column} = \int [x]\, dz \tag{Eq 1}$$
+> $$\text{Column} = \int [x]  dz \tag{Eq 1}$$
 >
 > For a well-mixed gas the concentration decreases exponentially with altitude following the barometric equation:
 >
@@ -163,7 +163,7 @@ We will see later that it is also possible to measure the amount of a species in
 >
 > Thus, we can re-write Eq 1 as:
 >
-> $$\text{Column} = [x]_0 \int e^{-z/H}\, dz \tag{Eq 2}$$
+> $$\text{Column} = [x]_0 \int e^{-z/H}  dz \tag{Eq 2}$$
 >
 > where $[x]_0$ is the concentration at a fixed point in the atmosphere. We then integrate Eq 2 between $z$ and infinity (the top of the atmosphere) to get:
 >

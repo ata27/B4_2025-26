@@ -19,7 +19,7 @@ In this module we introduce the basic photochemistry of the troposphere and show
 
 As discussed in the first part of the lecture course, the rate of photolysis is given by:
 
-$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}\, F_{(\lambda)}\, \sigma_{(i,\lambda)}\, d\lambda \tag{2.1}$$
+$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}  F_{(\lambda)}  \sigma_{(i,\lambda)}  d\lambda \tag{2.1}$$
 
 where $J$ is the photolysis frequency (s⁻¹), obtained by integrating the product of the solar flux $F$, the absorption cross-section $\sigma$, and the quantum yield for dissociation $\phi$, over all wavelengths $\lambda$ where the molecule absorbs. Determination of the solar flux in the atmosphere requires either direct measurement, or a calculation including absorption, scattering and reflection of solar radiation entering the atmosphere.
 
@@ -85,7 +85,7 @@ A small amount of highly reactive excited atomic oxygen O(¹D) is produced in th
 O(¹D) is quenched to the ground state by reaction with N₂ or O₂:
 
 $$O_3 + h\nu \to O(^1D) + O_2 \qquad J_{2.3} = 2.5\times10^{-6}\ \text{s}^{-1}$$
-$$O(^1D) + M \to O(^3P) + M \qquad k_{2.5} = 3\times10^{-11}\ \text{cm}^3\,\text{s}^{-1}$$
+$$O(^1D) + M \to O(^3P) + M \qquad k_{2.5} = 3\times10^{-11}\ \text{cm}^3 \text{s}^{-1}$$
 
 where $M = [N_2]+[O_2] = 2.4\times10^{19}$ cm⁻³ at the Earth's surface.
 

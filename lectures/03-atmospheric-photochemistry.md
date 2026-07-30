@@ -11,7 +11,7 @@ notebook: "../notebooks/03-photolysis-rates.ipynb"
 
 > **Learning aims**
 > By the end of this module you should be able to:
-> 1. Write down and explain each term in the photolysis rate coefficient integral, $J = \int \phi\, F\, \sigma\, d\lambda$.
+> 1. Write down and explain each term in the photolysis rate coefficient integral, $J = \int \phi  F  \sigma  d\lambda$.
 > 2. Use the Beer–Lambert law and optical depth to describe how photon flux and photolysis rates vary with altitude and solar zenith angle.
 > 3. Describe the absorption and photolysis behaviour of O₂, O₃, NO₂ and N₂O/CFCs, and explain why the troposphere and stratosphere have such different photochemical environments.
 
@@ -24,7 +24,7 @@ The sun's energy drives atmospheric chemistry. Assuming that the Sun can be repr
 
 Atmospheric chemists commonly use the symbol $k$ for a reaction rate coefficient involving molecular "collisions," and the symbol $J$ for a reaction rate coefficient for a reaction involving the absorption of photons resulting in molecular dissociation. We call this process **photolysis** (or **photodecomposition**). The rate coefficient of photolysis of a constituent $i$ ($J_i$, units s⁻¹) can be written:
 
-$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}\, F_{(\lambda)}\, \sigma_{(i,\lambda)}\, d\lambda$$
+$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}  F_{(\lambda)}  \sigma_{(i,\lambda)}  d\lambda$$
 
 where $\phi_{(i,\lambda)}$ is the **quantum yield** (molecule photon⁻¹) for photolysis (the number of reactant molecules decomposed per quantum of radiation absorbed; sometimes defined per reaction pathway), $\sigma_{(i,\lambda)}$ is the wavelength-dependent **absorption cross-section** (usually cm² molecule⁻¹) of species $i$, and $F_{(\lambda)}$ is the incident **photon intensity** at a given wavelength (photons cm⁻² s⁻¹ nm⁻¹).
 
@@ -36,7 +36,7 @@ where $I_0$ and $I$ are the incident and transmitted light intensities, $l$ is t
 
 Given that the source of radiation of interest to us is the sun, we can use the Beer–Lambert law to determine the flux of photons at a specific wavelength as a function of altitude ($z$):
 
-$$F_\lambda(z) = F_\lambda(\text{TOA})\, \exp(-\text{O.D.})$$
+$$F_\lambda(z) = F_\lambda(\text{TOA})  \exp(-\text{O.D.})$$
 
 where $F_\lambda(\text{TOA})$ is the intensity of radiation (flux of photons) at the top of the atmosphere. The **optical depth** (O.D.) can be calculated as:
 
@@ -90,8 +90,8 @@ We will see later that O(¹D), while present in very low concentrations, is extr
 
 The very low concentrations of O(¹D) (order 1–100 molecules cm⁻³) occur because it is collisionally quenched back to the ground electronic state very rapidly:
 
-$$O(^1D) + O_2 \to O_2 + O(^3P) \qquad k_1 = 4.2\times10^{-11}\ \text{molecules}^{-1}\,\text{cm}^3\,\text{s}^{-1}$$
-$$O(^1D) + N_2 \to N_2 + O(^3P) \qquad k_2 = 2.8\times10^{-11}\ \text{molecules}^{-1}\,\text{cm}^3\,\text{s}^{-1}$$
+$$O(^1D) + O_2 \to O_2 + O(^3P) \qquad k_1 = 4.2\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
+$$O(^1D) + N_2 \to N_2 + O(^3P) \qquad k_2 = 2.8\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
 
 ## 3.5 Photolysis of NO₂
 
@@ -137,7 +137,7 @@ Important breakdown products from the photolysis of Cl- and Br-containing compou
 Open **[`notebooks/03-photolysis-rates.ipynb`](../notebooks/03-photolysis-rates.ipynb)** to:
 
 - Implement the Beer–Lambert / optical-depth calculation and reproduce the qualitative shape of Fig 3.2 (attenuation depth vs. wavelength) for a simplified O₂/O₃ atmosphere.
-- Compute a toy photolysis coefficient $J_i = \int \phi\, F\, \sigma\, d\lambda$ numerically given synthetic $\sigma(\lambda)$, $\phi(\lambda)$ and $F(\lambda)$ data, and convert to a photolysis lifetime.
+- Compute a toy photolysis coefficient $J_i = \int \phi  F  \sigma  d\lambda$ numerically given synthetic $\sigma(\lambda)$, $\phi(\lambda)$ and $F(\lambda)$ data, and convert to a photolysis lifetime.
 - Explore how $J$ scales with solar zenith angle via the $\sec(\theta)$ airmass factor, and reproduce the qualitative NO₂ vs. O₂ altitude-dependence contrast described in §3.2.
 - Plot the O(¹D) quantum-yield step function (Fig 3.8) and see how a sharp cutoff wavelength propagates into a photolysis rate integral.
 

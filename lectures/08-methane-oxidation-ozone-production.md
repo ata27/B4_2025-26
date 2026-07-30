@@ -95,7 +95,7 @@ In the daytime, NO reacts with HO₂, regenerating OH (R3.13) and producing NO�
 
 $$HO_2 + NO \to OH + NO_2 \tag{R3.13}$$
 
-$$k_{3.13} = 8\times10^{-12}\ \text{cm}^3\,\text{molec}^{-1}\,\text{s}^{-1}$$
+$$k_{3.13} = 8\times10^{-12}\ \text{cm}^3 \text{molec}^{-1} \text{s}^{-1}$$
 
 NO also reacts with CH₃O₂, leading to HO₂ formation:
 
