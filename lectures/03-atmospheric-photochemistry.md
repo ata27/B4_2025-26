@@ -63,7 +63,7 @@ $J$ for O₂ ($\lambda < 250$ nm) varies strongly with altitude, as the relevant
 
 ## 3.3 Photolysis of O₂
 
-The presence of O₂ has a profound effect on the photochemistry of the atmosphere. O₂ has likely been present in our atmosphere for the last 2 billion years, with its current mixing ratio roughly constant over the last 500 million years. O₂ is produced through photosynthesis and is involved in a number of biogeochemical cycles giving rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O₂ can absorb short-$\lambda$ radiation and photo-dissociate. The absorption cross-section for O₂ consists of characteristic features, many named after the scientists who discovered them. The cross-section at $\lambda < 150$ nm is large but not important to O₂ photolysis in the stratosphere owing to a lack of photons at these wavelengths. The major absorption in the stratosphere is in the **Herzberg continuum** (220–260 nm), $A^3\Sigma_u^+ \leftarrow X^3\Sigma_g^-$.
+The presence of O₂ has a profound effect on the photochemistry of the atmosphere. O₂ has likely been present in our atmosphere for the last 2 billion years, with its current mixing ratio roughly constant over the last 500 million years. O₂ is produced through photosynthesis and is involved in a number of biogeochemical cycles giving rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O₂ can absorb short-$\lambda$ radiation and photo-dissociate. The absorption cross-section for O₂ consists of characteristic features, many named after the scientists who discovered them. The cross-section at $\lambda < 150$ nm is large but not important to O₂ photolysis in the stratosphere owing to a lack of photons at these wavelengths. The major absorption in the stratosphere is in the **Herzberg continuum** (220–260 nm), $A^3\Sigma_{u}^{+} \leftarrow X^3\Sigma_{g}^{-}$.
 
 ![O2 absorption cross sections](../assets/figures/m3-fig3-4-o2-cross-section.png)
 *Figure 3.4 — Molecular oxygen absorption cross-sections.*
@@ -74,15 +74,15 @@ Assuming unit quantum yield for photolysis of O₂ (O₂ + hν → O(³P) + O(³
 
 Ozone is central to the chemistry of the atmosphere! The presence of ozone in a layer in the stratosphere (the ozone layer) has helped provide an environment suitable for the evolution of life at the Earth's surface. Yet ozone itself is toxic to most plants and animal life. Hence the phrase "**good up high, bad nearby**" is apt for ozone.
 
-O₃ is relatively weakly bound compared to O₂ and can be photolysed over a wide range of wavelengths, with a theoretical threshold at 1180 nm. Absorption occurs in the so-called **Hartley, Huggins and Chappuis bands**. The precise photolysis products depend on the photon energy. The most important processes are photolysis to yield electronically excited oxygen atoms (rate constant $J_{O(^1D)}$) and photolysis to ground-state atomic oxygen ($J_{O(^3P)}$):
+O₃ is relatively weakly bound compared to O₂ and can be photolysed over a wide range of wavelengths, with a theoretical threshold at 1180 nm. Absorption occurs in the so-called **Hartley, Huggins and Chappuis bands**. The precise photolysis products depend on the photon energy. The most important processes are photolysis to yield electronically excited oxygen atoms (rate constant $J_{O(^{1D})}$) and photolysis to ground-state atomic oxygen ($J_{O(^{3P})}$):
 
-$$O_3 + h\nu \xrightarrow{J_{O(^1D)}} O_2(^1\Delta) + O(^1D) \qquad \lambda < 310\ \text{nm (actually longer!)}$$
+$$O_3 + h\nu \xrightarrow{J_{O(^{1D})}} O_2(^1\Delta) + O(^{1D}) \qquad \lambda < 310\ \text{nm (actually longer!)}$$
 
-$$O_3 + h\nu \xrightarrow{J_{O(^3P)}} O_2(^3\Sigma) + O(^3P) \qquad \lambda < 1180\ \text{nm}$$
+$$O_3 + h\nu \xrightarrow{J_{O(^{3P})}} O_2(^3\Sigma) + O(^{3P}) \qquad \lambda < 1180\ \text{nm}$$
 
 Using the absorption cross-section data together with the altitude-dependent spectral irradiance, we can calculate photolysis frequencies for O₃, just as for O₂. Photolysis of O₃ is much more rapid than photolysis of O₂: lifetimes of O₃ with respect to photolysis vary from ~8 hours to ~3 minutes over the altitude range 10–50 km.
 
-Of more interest to our understanding of atmospheric chemistry is the reaction channel producing excited oxygen atoms, $J_{O(^1D)}$. Here we must follow the same approach as before, but rather than assuming unit quantum yield we need the wavelength (and possibly temperature) dependence of $\phi_{(\lambda)}$: at small $\lambda$ the quantum yield is $\sim 1.0$, whilst at $\lambda > 310$ nm it drops to $\sim 0.0$.
+Of more interest to our understanding of atmospheric chemistry is the reaction channel producing excited oxygen atoms, $J_{O(^{1D})}$. Here we must follow the same approach as before, but rather than assuming unit quantum yield we need the wavelength (and possibly temperature) dependence of $\phi_{(\lambda)}$: at small $\lambda$ the quantum yield is $\sim 1.0$, whilst at $\lambda > 310$ nm it drops to $\sim 0.0$.
 
 ![O(1D) quantum yield vs wavelength](../assets/figures/m3-fig3-8-o1d-quantum-yield.png)
 *Figure 3.8 — Wavelength dependence of the O(¹D) quantum yield.*
@@ -91,9 +91,9 @@ We will see later that O(¹D), while present in very low concentrations, is extr
 
 The very low concentrations of O(¹D) (order 1–100 molecules cm⁻³) occur because it is collisionally quenched back to the ground electronic state very rapidly:
 
-$$O(^1D) + O_2 \to O_2 + O(^3P) \qquad k_1 = 4.2\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
+$$O(^{1D}) + O_2 \to O_2 + O(^{3P}) \qquad k_1 = 4.2\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
 
-$$O(^1D) + N_2 \to N_2 + O(^3P) \qquad k_2 = 2.8\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
+$$O(^{1D}) + N_2 \to N_2 + O(^{3P}) \qquad k_2 = 2.8\times10^{-11}\ \text{molecules}^{-1} \text{cm}^3 \text{s}^{-1}$$
 
 ## 3.5 Photolysis of NO₂
 
@@ -101,7 +101,7 @@ Nitrogen dioxide was likely first discovered by Priestley in the late 18th centu
 
 Photolysis of NO₂ proceeds as:
 
-$$NO_2 + h\nu \xrightarrow{J_{NO_2}} NO(^2\Pi) + O(^3P)$$
+$$NO_2 + h\nu \xrightarrow{J_{NO_2}} NO(^2\Pi) + O(^{3P})$$
 
 The photolysis products can go on to form O₃ (through reaction with O₂ in a ter-molecular process). Indeed, photolysis of NO₂ is the main source of O₃ production in the troposphere (where O₂ cannot be photolysed).
 
@@ -120,7 +120,7 @@ NO₂ photolysis happens so rapidly that NO₂ can usually be thought of as bein
 
 Photolysis of N₂O almost exclusively proceeds as:
 
-$$N_2O + h\nu \xrightarrow{J_{N_2O}} N_2 + O(^1D)$$
+$$N_2O + h\nu \xrightarrow{J_{N_2O}} N_2 + O(^{1D})$$
 
 N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note: at the longer wavelengths available in the troposphere there is no photolysis of N₂O, and N₂O **can** contribute significantly to the optical depth at low wavelengths.
 

@@ -31,7 +31,7 @@ where in this case $n = 1$ and this reaction is said to be **first order** with 
 
 We can define a new expression by integrating our rate equation for $A$ and noting that our initial conditions are $A = A_0$ at $t = 0$:
 
-$$\int_0^t k  dt = -\int_0^A [A]^{-n}  dA$$
+$$\int_{0}^{t} k  dt = -\int_{0}^{A} [A]^{-n}  dA$$
 
 As Fig 2.1 highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
 
@@ -165,7 +165,7 @@ $$A + B + M \xrightarrow{k_{obs(T)}} \text{products}$$
 
 Strictly speaking, most reactions require a third body (often referred to as $M$) to remove excess energy from the initial reaction. Consider the reaction between two iodine atoms. When the two atoms come together to form an iodine molecule, energy equal to the bond dissociation energy of I₂ is released into the nascent molecule. This is enough energy to then rupture the I–I bond and reform the iodine atoms. However, if the nascent I₂ molecule (I₂\*) collides with a third body, the encounter can transfer some of the vibrational and rotational energy of the I₂ molecule to translational (and other) excitation of the third body:
 
-$$I + I \underset{k_b}{\overset{k_f}{\rightleftharpoons}} I_2^* \xrightarrow{M} I_2$$
+$$I + I \underset{k_b}{\overset{k_f}{\rightleftharpoons}} I_{2}^{*} \xrightarrow{M} I_2$$
 
 Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approximation can be considered as the sum of their concentrations ($[M] = [N_2]+[O_2]$). The rate coefficients for ter-molecular reactions can be experimentally determined as a function of temperature and pressure to derive the **low-pressure limit** ($k_{0,T}$), which shows pressure dependence, and the **high-pressure limit** ($k_{\infty,T}$), which doesn't. To predict the observed rate constant as a function of temperature and pressure, we combine these two limits using the **Troe equation** (a modification of the Lindemann–Hinshelwood expressions), which yields a pseudo-bi-molecular rate coefficient (units molecules⁻¹ cm³ s⁻¹).
 
@@ -175,27 +175,27 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 >
 > Consider two iodine atoms colliding:
 >
-> $$I + I \xrightarrow{k_1} I_2^*$$ &nbsp;&nbsp;(Eq 1)
+> $$I + I \xrightarrow{k_1} I_{2}^{*}$$ &nbsp;&nbsp;(Eq 1)
 >
-> $$I_2^* \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
+> $$I_{2}^{*} \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
 >
-> $$I_2^* + M \xrightarrow{k_{col}} I_2 + M^*$$ &nbsp;&nbsp;(Eq 3)
+> $$I_{2}^{*} + M \xrightarrow{k_{col}} I_2 + M^*$$ &nbsp;&nbsp;(Eq 3)
 >
 > The only reaction producing our product ($I_2$) is Eq 3, so:
 >
-> $$\frac{d[I_2]}{dt} = k_{col}[I_2^*][M]$$ &nbsp;&nbsp;(Eq 4)
+> $$\frac{d[I_2]}{dt} = k_{col}[I_{2}^{*}][M]$$ &nbsp;&nbsp;(Eq 4)
 >
-> $I_2^*$ is an excited-state form of $I_2$, so it's logical that it should be short-lived — put it into steady state:
+> $I_{2}^{*}$ is an excited-state form of $I_2$, so it's logical that it should be short-lived — put it into steady state:
 >
-> $$\frac{d[I_2^*]}{dt} = 0 = k_1[I]^2 - k_{col}[I_2^*][M] - k_d[I_2^*]$$
+> $$\frac{d[I_{2}^{*}]}{dt} = 0 = k_1[I]^2 - k_{col}[I_{2}^{*}][M] - k_d[I_{2}^{*}]$$
 >
-> $$[I_2^*] = \frac{k_1[I]^2}{k_{col}[M] + k_d}$$ &nbsp;&nbsp;(Eq 5)
+> $$[I_{2}^{*}] = \frac{k_1[I]^2}{k_{col}[M] + k_d}$$ &nbsp;&nbsp;(Eq 5)
 >
 > Substituting Eq 5 into Eq 4:
 >
 > $$\frac{d[I_2]}{dt} = k_{col}[M]\cdot\frac{k_1[I]^2}{k_{col}[M]+k_d}$$ &nbsp;&nbsp;(Eq 6)
 >
-> Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_2^*$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
+> Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_{2}^{*}$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
 >
 > **At low pressure** ($[M]$ small, so $k_{col}[M] < k_d$):
 > $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}$$ &nbsp;&nbsp;(Eq 7)
