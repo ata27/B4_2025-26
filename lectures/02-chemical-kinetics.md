@@ -95,27 +95,27 @@ the system approaches equilibrium with a time constant of $(k_1 + k_{-1})^{-1}$ 
 >
 > Consider a very simple reversible system $A \rightleftharpoons B$, with forward rate constant $k_f$ and backward rate constant $k_b$:
 >
-> $$\frac{d[B]}{dt} = k_f[A] - k_b[B] \tag{Eq 1}$$
+> $$\frac{d[B]}{dt} = k_f[A] - k_b[B]$$ &nbsp;&nbsp;(Eq 1)
 >
 > Let $x$ denote the amount of $A$ molecules present as $B$ molecules, and $a = [A]_0$. Then:
 >
-> $$\frac{dx}{dt} = k_f(a - x) - k_b x \tag{Eq 2}$$
+> $$\frac{dx}{dt} = k_f(a - x) - k_b x$$ &nbsp;&nbsp;(Eq 2)
 >
 > Setting $y \equiv dx/dt$:
 >
-> $$y = k_f a - (k_f + k_b) x \tag{Eq 4}$$
+> $$y = k_f a - (k_f + k_b) x$$ &nbsp;&nbsp;(Eq 4)
 >
 > By the chain rule, $\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt}$. From Eq 2, $dx/dt = y$; from Eq 4, $dy/dx = -(k_f+k_b)$. So:
 >
-> $$\frac{dy}{dt} = -(k_f+k_b)  y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b) dt \tag{Eq 7}$$
+> $$\frac{dy}{dt} = -(k_f+k_b)  y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b) dt$$ &nbsp;&nbsp;(Eq 7)
 >
 > Integrating:
 >
-> $$y = k_f a \cdot \exp\big(-(k_f+k_b)t\big) \tag{Eq 8}$$
+> $$y = k_f a \cdot \exp\big(-(k_f+k_b)t\big)$$ &nbsp;&nbsp;(Eq 8)
 >
 > and, since $y$ relates to $x$ through Eq 4, combining Eq 4 and Eq 8 gives the **exact** solution:
 >
-> $$x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big] \tag{Eq 9}$$
+> $$x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big]$$ &nbsp;&nbsp;(Eq 9)
 >
 > From this we see the timescale for the system to reach equilibrium is exactly $\dfrac{1}{k_f+k_b}$ — compare this exact result against the steady-state approximation numerically in the notebook.
 
@@ -175,31 +175,31 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 >
 > Consider two iodine atoms colliding:
 >
-> $$I + I \xrightarrow{k_1} I_2^* \tag{Eq 1}$$
-> $$I_2^* \xrightarrow{k_d} I + I \tag{Eq 2}$$
-> $$I_2^* + M \xrightarrow{k_{col}} I_2 + M^* \tag{Eq 3}$$
+> $$I + I \xrightarrow{k_1} I_2^*$$ &nbsp;&nbsp;(Eq 1)
+> $$I_2^* \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
+> $$I_2^* + M \xrightarrow{k_{col}} I_2 + M^*$$ &nbsp;&nbsp;(Eq 3)
 >
 > The only reaction producing our product ($I_2$) is Eq 3, so:
 >
-> $$\frac{d[I_2]}{dt} = k_{col}[I_2^*][M] \tag{Eq 4}$$
+> $$\frac{d[I_2]}{dt} = k_{col}[I_2^*][M]$$ &nbsp;&nbsp;(Eq 4)
 >
 > $I_2^*$ is an excited-state form of $I_2$, so it's logical that it should be short-lived — put it into steady state:
 >
 > $$\frac{d[I_2^*]}{dt} = 0 = k_1[I]^2 - k_{col}[I_2^*][M] - k_d[I_2^*]$$
 >
-> $$[I_2^*] = \frac{k_1[I]^2}{k_{col}[M] + k_d} \tag{Eq 5}$$
+> $$[I_2^*] = \frac{k_1[I]^2}{k_{col}[M] + k_d}$$ &nbsp;&nbsp;(Eq 5)
 >
 > Substituting Eq 5 into Eq 4:
 >
-> $$\frac{d[I_2]}{dt} = k_{col}[M]\cdot\frac{k_1[I]^2}{k_{col}[M]+k_d} \tag{Eq 6}$$
+> $$\frac{d[I_2]}{dt} = k_{col}[M]\cdot\frac{k_1[I]^2}{k_{col}[M]+k_d}$$ &nbsp;&nbsp;(Eq 6)
 >
 > Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_2^*$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
 >
 > **At low pressure** ($[M]$ small, so $k_{col}[M] < k_d$):
-> $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d} \tag{Eq 7}$$
+> $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}$$ &nbsp;&nbsp;(Eq 7)
 >
 > **At high pressure** ($[M]$ large, so $k_{col}[M] > k_d$):
-> $$\frac{d[I_2]}{dt} \cong k_1[I]^2 \tag{Eq 8}$$
+> $$\frac{d[I_2]}{dt} \cong k_1[I]^2$$ &nbsp;&nbsp;(Eq 8)
 
 ---
 

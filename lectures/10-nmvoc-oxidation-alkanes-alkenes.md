@@ -50,7 +50,7 @@ Alkane + OH rate constants are typically $10^{-12}$–$10^{-11}$ cm³ molecule�
 
 As with CH₄ oxidation, the alkyl radical reacts with O₂ to form a **peroxy radical**:
 
-$$R + O_2 + M \to RO_2 + M \tag{R4.1}$$
+$$R + O_2 + M \to RO_2 + M$$ &nbsp;&nbsp;(R4.1)
 
 $k_{4.1}$ is fairly similar across measured R groups, spanning $5\times10^{-12}$–$2\times10^{-11}$ cm³ molecule⁻¹ s⁻¹ (independent of M). Under standard tropospheric conditions, R has a lifetime of order $10^{-8}$ s.
 
@@ -58,24 +58,24 @@ $k_{4.1}$ is fairly similar across measured R groups, spanning $5\times10^{-12}$
 
 RO₂ can react with several tropospheric species. Reaction with NO gives two products:
 
-$$RO_2 + NO \to RO + NO_2 \tag{R4.2}$$
-$$RO_2 + NO + M \to RONO_2 + M \tag{R4.3}$$
+$$RO_2 + NO \to RO + NO_2$$ &nbsp;&nbsp;(R4.2)
+$$RO_2 + NO + M \to RONO_2 + M$$ &nbsp;&nbsp;(R4.3)
 
 For most peroxy radicals, R4.2 dominates. For larger radicals, R4.3 becomes increasingly important, with yields up to 30%.
 
 RO₂ can also react with HO₂ to form hydroperoxides:
 
-$$RO_2 + HO_2 \to ROOH + O_2 \tag{R4.4}$$
+$$RO_2 + HO_2 \to ROOH + O_2$$ &nbsp;&nbsp;(R4.4)
 
 Reactions between different alkyl peroxy radicals are rather complex, with several observed overall pathways:
 
-$$RO_2 + RO_2 \to 2RO + O_2 \tag{R4.5}$$
-$$RO_2 + RO_2 \to ROH + RCHO + O_2 \tag{R4.6}$$
-$$RO_2 + RO_2 \to ROOR + O_2 \tag{R4.7}$$
+$$RO_2 + RO_2 \to 2RO + O_2$$ &nbsp;&nbsp;(R4.5)
+$$RO_2 + RO_2 \to ROH + RCHO + O_2$$ &nbsp;&nbsp;(R4.6)
+$$RO_2 + RO_2 \to ROOR + O_2$$ &nbsp;&nbsp;(R4.7)
 
 Reaction with NO₃,
 
-$$RO_2 + NO_3 \to RO + NO_2 + O_2 \tag{R4.8}$$
+$$RO_2 + NO_3 \to RO + NO_2 + O_2$$ &nbsp;&nbsp;(R4.8)
 
 is unimportant during daytime but may become significant at night, when [NO₃] is highest.
 
@@ -101,7 +101,7 @@ Most alkenes are emitted from biogenic sources — trees (isoprene, terpenes, se
 
 Alkene oxidation proceeds mostly via **OH-addition** rather than H-abstraction:
 
-$$C_2H_4 + OH \to HOCH_2CH_2 \tag{R4.9}$$
+$$C_2H_4 + OH \to HOCH_2CH_2$$ &nbsp;&nbsp;(R4.9)
 
 The resulting hydroxy alkyl radical then reacts like the alkyl radical from alkane oxidation (e.g. with O₂ to form a hydroxy peroxy radical, ROHO₂).
 

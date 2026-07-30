@@ -19,38 +19,38 @@ notebook: "../notebooks/08-photostationary-state.ipynb"
 
 Hydroxyl radicals react with methane, constituting the major removal process for atmospheric methane:
 
-$$OH + CH_4 \to H_2O + CH_3 \tag{R3.1}$$
+$$OH + CH_4 \to H_2O + CH_3$$ &nbsp;&nbsp;(R3.1)
 
 The lifetime of CH₄, based on the R3.1 rate coefficient of $6\times10^{-15}$ cm³ molecule⁻¹ s⁻¹ at 288 K and the average tropospheric [OH], is approximately **7 years**. This means methane is well mixed in the troposphere, and its oxidation occurs wherever OH is present. Indeed, the concentration of methane sets an upper limit on the lifetime of OH in the troposphere of about one second.
 
 **In clean, unpolluted air**, about 30% of OH is removed by reaction with CH₄ (the remainder reacts with CO). The methyl radical formed reacts instantly with O₂ to form the **methyl peroxy** radical, CH₃O₂:
 
-$$CH_3 + O_2 + M \to CH_3O_2 + M \tag{R3.2}$$
+$$CH_3 + O_2 + M \to CH_3O_2 + M$$ &nbsp;&nbsp;(R3.2)
 
 In a low-NOx environment (unpolluted air), the principal fate of CH₃O₂ is reaction with HO₂ to produce methyl hydroperoxide, CH₃OOH:
 
-$$HO_2 + CH_3O_2 \to CH_3OOH + O_2 \tag{R3.3}$$
+$$HO_2 + CH_3O_2 \to CH_3OOH + O_2$$ &nbsp;&nbsp;(R3.3)
 
 As in Module 7, peroxides are reservoirs for radicals, and methyl hydroperoxide — like H₂O₂ — is soluble and readily washed out, acting as a sink for HOx. Since HOx is formed from ozone photolysis, this washout makes the overall conversion of O₃ to peroxides (via reaction with methane) into a **sink for O₃**.
 
 Photolysis of methyl hydroperoxide is also possible, releasing **methoxy**, CH₃O, and OH:
 
-$$CH_3OOH + h\nu \to CH_3O + OH \tag{R3.4}$$
+$$CH_3OOH + h\nu \to CH_3O + OH$$ &nbsp;&nbsp;(R3.4)
 
 CH₃O reacts with O₂ to form formaldehyde plus HO₂:
 
-$$CH_3O + O_2 \to HCHO + HO_2 \tag{R3.5}$$
+$$CH_3O + O_2 \to HCHO + HO_2$$ &nbsp;&nbsp;(R3.5)
 
 and formaldehyde is itself photolysed to produce more HO₂:
 
-$$HCHO + h\nu \to HCO + H \tag{R3.6}$$
-$$HCO + O_2 \to CO + HO_2 \tag{R3.7}$$
+$$HCHO + h\nu \to HCO + H$$ &nbsp;&nbsp;(R3.6)
+$$HCO + O_2 \to CO + HO_2$$ &nbsp;&nbsp;(R3.7)
 
 This recycles, and in certain circumstances (such as the dry upper troposphere) may even amplify [HOx].
 
 Recall HO₂ converts back to OH by reaction with ozone:
 
-$$HO_2 + O_3 \to OH + 2O_2 \tag{R3.8 / R2.10}$$
+$$HO_2 + O_3 \to OH + 2O_2$$ &nbsp;&nbsp;(R3.8 / R2.10)
 
 However, the efficiency of this OH recycling is rather low in the clean lower troposphere: both CH₃OOH and HCHO are soluble in water droplets, leading to a net loss of HOx through rainout. R3.8 is competitive with the HO₂ self-reaction at ozone concentrations typical of the clean troposphere, and will also contribute to O₃ removal.
 
@@ -71,9 +71,9 @@ NOx is removed from the atmosphere through dry and wet deposition, with wet depo
 
 Consider first the reactions of NO, NO₂ and O₃ in isolation. NO₂ is photolysed to O(³P), which reacts almost exclusively with O₂ to form O₃ (O-atom reactions with other pollutants don't compete under normal tropospheric conditions). O₃ then reacts with NO, reforming NO₂:
 
-$$NO_2 + h\nu \to NO + O \tag{R3.10}$$
-$$O + O_2 + M \to O_3 + M \tag{R3.11, very fast}$$
-$$NO + O_3 \to NO_2 + O_2 \tag{R3.12}$$
+$$NO_2 + h\nu \to NO + O$$ &nbsp;&nbsp;(R3.10)
+$$O + O_2 + M \to O_3 + M$$ &nbsp;&nbsp;(R3.11, very fast)
+$$NO + O_3 \to NO_2 + O_2$$ &nbsp;&nbsp;(R3.12)
 
 This coupled cycle establishes a **photostationary state**, with [O₃] set by the NO₂/NO ratio via the **Leighton relationship**:
 
@@ -93,14 +93,14 @@ In the real atmosphere, the NO:NO₂ ratio is perturbed by other oxidants — mo
 
 In the daytime, NO reacts with HO₂, regenerating OH (R3.13) and producing NO₂:
 
-$$HO_2 + NO \to OH + NO_2 \tag{R3.13}$$
+$$HO_2 + NO \to OH + NO_2$$ &nbsp;&nbsp;(R3.13)
 
 $$k_{3.13} = 8\times10^{-12}\ \text{cm}^3 \text{molec}^{-1} \text{s}^{-1}$$
 
 NO also reacts with CH₃O₂, leading to HO₂ formation:
 
-$$CH_3O_2 + NO \to CH_3O + NO_2 \tag{R3.14}$$
-$$CH_3O + O_2 \to HCHO + HO_2 \tag{R3.15}$$
+$$CH_3O_2 + NO \to CH_3O + NO_2$$ &nbsp;&nbsp;(R3.14)
+$$CH_3O + O_2 \to HCHO + HO_2$$ &nbsp;&nbsp;(R3.15)
 
 Although R3.13/R3.14 are much slower than NO + O₃ ([HO₂] and [CH₃O₂] ≪ [O₃] in the troposphere), they significantly perturb the photostationary state. This is because reaction of NO with peroxy radicals RO₂ (e.g. HO₂, CH₃O₂) **oxidises NO to NO₂ without consuming O₃**. Ozone production follows when the resulting NO₂ is photolysed and the O product combines with O₂.
 
@@ -132,7 +132,7 @@ $$P(O_3) = k_{3.13}[RO_2][NO]$$
 
 Depending on [NOx], the OH radical that initiates VOC oxidation (and hence ozone production) may have another fate: reaction with NO₂ to form nitric acid:
 
-$$OH + NO_2 + M \to HNO_3 + M \tag{R3.16}$$
+$$OH + NO_2 + M \to HNO_3 + M$$ &nbsp;&nbsp;(R3.16)
 
 This reaction matters for two reasons: HNO₃ is a reservoir species for both HOx and NOx, and its formation **terminates** the free-radical chain leading to ozone production. HNO₃ also has a high deposition velocity over land and is highly soluble, so it's readily lost by wet and dry deposition. Thus, at high NOx levels, the OH + NO₂ reaction controls the net loss of HOx: ***a decrease is observed in the steady-state [HOx] at high NOx levels.***
 

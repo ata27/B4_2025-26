@@ -124,11 +124,11 @@ These sink strengths vary considerably with time of day, season, and geography.
 
 Removal at the Earth's surface (water, soil, vegetation) in the absence of precipitation. Governed by transport through the boundary layer and by uptake at the surface. The flux to the surface, $F$ (molecules cm⁻² s⁻¹), relates to the near-surface concentration $c$ (molecules cm⁻³) via the **deposition velocity** $v_g$ (cm s⁻¹):
 
-$$F = v_g \cdot c \tag{1.1}$$
+$$F = v_g \cdot c$$ &nbsp;&nbsp;(1.1)
 
 The **lifetime** of a species with respect to dry deposition depends on $v_g$ and the mixing height $h$:
 
-$$\tau = \frac{h}{v_g} \tag{1.2}$$
+$$\tau = \frac{h}{v_g}$$ &nbsp;&nbsp;(1.2)
 
 **Worked comparison:**
 
