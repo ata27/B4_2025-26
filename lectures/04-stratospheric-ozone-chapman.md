@@ -71,15 +71,15 @@ From the steady state between O and O₃, [O] decreases very rapidly with decrea
 >
 > This calculation only works where chemical production and loss rates balance. At steady state:
 >
-> $$\frac{d[O_x]}{dt} = 2J_2[O_2] - 2k_4[O][O_3] = 0 \quad\Rightarrow\quad [O_3] = \frac{2J_2[O_2]}{2k_4[O]} \tag{Eq 2}$$
+> $$\frac{d[O_x]}{dt} = 2J_2[O_2] - 2k_4[O][O_3] = 0 \quad\Rightarrow\quad [O_3] = \frac{2J_2[O_2]}{2k_4[O]}$$ &nbsp;&nbsp;(Eq 2)
 >
 > The problem is we don't yet know [O]. Using the O↔O₃ interconversion (reactions 4.2/4.3):
 >
-> $$\frac{[O_3]}{[O]} = \frac{k_3[O_2][M]}{J_3} \tag{Eq 3}$$
+> $$\frac{[O_3]}{[O]} = \frac{k_3[O_2][M]}{J_3}$$ &nbsp;&nbsp;(Eq 3)
 >
 > Rearranging Eq 3 for [O] and substituting into Eq 2:
 >
-> $$[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2] k_3[O_2][M]}{k_4 J_3}} \tag{Eq 5}$$
+> $$[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2] k_3[O_2][M]}{k_4 J_3}}$$ &nbsp;&nbsp;(Eq 5)
 >
 > Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).
 
@@ -137,11 +137,11 @@ Steady state between NO and NO₂ is rapidly established (~100 s). Taking the ra
 
 $$\frac{d[NO]}{dt} = -k_a[NO][O_3] + k_b[NO_2][O] + J_c[NO_2] = 0$$
 
-$$\Rightarrow\quad [NO] = \frac{k_b[NO_2][O] + J_c[NO_2]}{k_a[O_3]} \tag{I}$$
+$$\Rightarrow\quad [NO] = \frac{k_b[NO_2][O] + J_c[NO_2]}{k_a[O_3]}$$ &nbsp;&nbsp;(I)
 
 The rate of odd oxygen destruction by NOx:
 
-$$\frac{d[O_x]}{dt} = -k_a[NO][O_3] - k_b[NO_2][O] + J_c[NO_2] \tag{II}$$
+$$\frac{d[O_x]}{dt} = -k_a[NO][O_3] - k_b[NO_2][O] + J_c[NO_2]$$ &nbsp;&nbsp;(II)
 
 Substituting [NO] from (I) into (II):
 
@@ -151,11 +151,11 @@ $$\left.\frac{d[O_x]}{dt}\right|_{NO_x} = -2k_b[NO_2][O]$$
 
 A more comprehensive picture of stratospheric NOy chemistry (NOy = sum of all nitrogen oxides excluding N₂O) also involves NO₃, N₂O₅, HNO₄, HNO₃ (and ClONO₂ — §4.5). N₂O₅, HNO₃ and ClONO₂ are important **reservoirs** for NOx (and HOx, ClOx) — states where otherwise-reactive O₃-destroying radicals are held in less reactive form. For example, HNO₃ is formed by:
 
-$$OH + NO_2 + M \to HNO_3 + M \tag{4.5}$$
+$$OH + NO_2 + M \to HNO_3 + M$$ &nbsp;&nbsp;(4.5)
 
 and destroyed by
 
-$$HNO_3 + h\nu \to OH + NO_2 \qquad \text{or} \qquad HNO_3 + OH \to H_2O + NO_3 \tag{4.6}$$
+$$HNO_3 + h\nu \to OH + NO_2 \qquad \text{or} \qquad HNO_3 + OH \to H_2O + NO_3$$ &nbsp;&nbsp;(4.6)
 
 At higher latitudes HNO₃ can become the major nitrogen oxide species. HNO₃ is transported from the stratosphere into the troposphere, where it is efficiently rained out — the major **sink** of stratospheric nitrogen oxides.
 

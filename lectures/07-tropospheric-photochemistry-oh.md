@@ -19,7 +19,7 @@ In this module we introduce the basic photochemistry of the troposphere and show
 
 As discussed in the first part of the lecture course, the rate of photolysis is given by:
 
-$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}  F_{(\lambda)}  \sigma_{(i,\lambda)}  d\lambda \tag{2.1}$$
+$$J_{(i)} = \int_{\lambda=0}^{\infty} \phi_{(i,\lambda)}  F_{(\lambda)}  \sigma_{(i,\lambda)}  d\lambda$$ &nbsp;&nbsp;(2.1)
 
 where $J$ is the photolysis frequency (s⁻¹), obtained by integrating the product of the solar flux $F$, the absorption cross-section $\sigma$, and the quantum yield for dissociation $\phi$, over all wavelengths $\lambda$ where the molecule absorbs. Determination of the solar flux in the atmosphere requires either direct measurement, or a calculation including absorption, scattering and reflection of solar radiation entering the atmosphere.
 
@@ -29,7 +29,7 @@ The altitude dependence of photolysis rates was discussed in previous lectures. 
 
 One consequence: photolysis of O₂, which requires photons with wavelength below the threshold for breaking the O–O bond,
 
-$$O_2 + h\nu\ (\lambda < 242\ \text{nm}) \to O + O \tag{R2.1}$$
+$$O_2 + h\nu\ (\lambda < 242\ \text{nm}) \to O + O$$ &nbsp;&nbsp;(R2.1)
 
 *cannot* occur in the troposphere, so ozone cannot be produced there via the Chapman mechanism.
 
@@ -60,12 +60,12 @@ For photolysis to occur there must be spectral overlap with the solar spectrum, 
 
 Above 240 nm, O₂ photolysis is irrelevant, and in the 240–320 nm range O₃ is the dominant absorber. Absorption by ozone occurs in two spectral regions in the troposphere: the visible (450–600 nm) and the UV (290–330 nm). Photolysis of O₃ occurs by two pathways:
 
-$$O_3 + h\nu \to O(^3P) + O_2 \qquad \lambda < 1150\ \text{nm} \tag{R2.2}$$
-$$O_3 + h\nu \to O(^1D) + O_2 \qquad \lambda < 310\ \text{nm} \tag{R2.3}$$
+$$O_3 + h\nu \to O(^3P) + O_2 \qquad \lambda < 1150\ \text{nm}$$ &nbsp;&nbsp;(R2.2)
+$$O_3 + h\nu \to O(^1D) + O_2 \qquad \lambda < 310\ \text{nm}$$ &nbsp;&nbsp;(R2.3)
 
 Photolysis at the longer wavelengths (R2.2) occurs in the visible, yielding ground-state O(³P), followed by recombination with O₂ to reform O₃:
 
-$$O(^3P) + O_2 + M \to O_3 + M \tag{R2.4}$$
+$$O(^3P) + O_2 + M \to O_3 + M$$ &nbsp;&nbsp;(R2.4)
 
 — this process has **no net effect** on ozone concentration.
 
@@ -95,9 +95,9 @@ Assuming steady state, $[O(^1D)] = \dfrac{J_{2.3}[O_3]}{k_{2.5}[M]}$.
 
 Water vapour is abundant throughout most of the troposphere, its mixing ratio falling from ~1–4% at the surface to ~20 ppmv near the tropopause. H₂O competes effectively with quenching by M for reaction with O(¹D), giving a branching ratio, $f$, between quenching and OH formation of about 10%:
 
-$$O_3 + h\nu \to O(^1D) + O_2 \tag{R2.3}$$
-$$O(^1D) + M \to O(^3P) + M \tag{R2.5}$$
-$$O(^1D) + H_2O \to OH + OH \tag{R2.6}$$
+$$O_3 + h\nu \to O(^1D) + O_2$$ &nbsp;&nbsp;(R2.3)
+$$O(^1D) + M \to O(^3P) + M$$ &nbsp;&nbsp;(R2.5)
+$$O(^1D) + H_2O \to OH + OH$$ &nbsp;&nbsp;(R2.6)
 
 Reaction R2.6 is exothermic ($\Delta H^0 = -119$ kJ/mol), while the corresponding reaction of H₂O with O(³P) does not proceed (it's endothermic). The difference in enthalpy is largely because the electronically excited state of atomic oxygen lies ~190 kJ/mol above the ground state.
 
@@ -122,24 +122,24 @@ OH does not react with the major atmospheric components (N₂, O₂, CO₂) but 
 
 Following its formation from O(¹D), OH is rapidly converted into HO₂ — primarily (~70% of the time) by reaction with CO, followed by fast reaction of H with O₂:
 
-$$OH + CO \to CO_2 + H \tag{R2.7}$$
-$$H + O_2 + M \to HO_2 + M \tag{R2.8}$$
+$$OH + CO \to CO_2 + H$$ &nbsp;&nbsp;(R2.7)
+$$H + O_2 + M \to HO_2 + M$$ &nbsp;&nbsp;(R2.8)
 
 About 30% of OH is converted to HO₂ via a more complex chain of reactions initiated by:
 
-$$OH + CH_4 \to CH_3 + H_2O \tag{R2.9}$$
+$$OH + CH_4 \to CH_3 + H_2O$$ &nbsp;&nbsp;(R2.9)
 
 (details in Module 9). The lifetime of OH is less than a second — R2.9 sets an upper limit, since methane is widespread and well-mixed in the troposphere.
 
 In relatively unpolluted (low-NOx) regimes, HO₂ reacts slowly with ozone to regenerate OH:
 
-$$HO_2 + O_3 \to 2O_2 + OH \tag{R2.10}$$
+$$HO_2 + O_3 \to 2O_2 + OH$$ &nbsp;&nbsp;(R2.10)
 
 R2.10 is an interconversion reaction between the two HOx forms, letting us meaningfully define the odd-hydrogen family $HO_x = [OH]+[HO_2]$.
 
 Alternatively, HO₂ can recombine to form hydrogen peroxide:
 
-$$HO_2 + HO_2 \to H_2O_2 + O_2 \tag{R2.11}$$
+$$HO_2 + HO_2 \to H_2O_2 + O_2$$ &nbsp;&nbsp;(R2.11)
 
 H₂O₂ is a reservoir and **sink** for HOx: being highly soluble, it's removed from the atmosphere fairly rapidly by absorption into cloud water and rainout. H₂O₂ can also be photolysed ($\lambda < 400$ nm), releasing HOx, though this is rather slow in the troposphere; alternatively it reacts (slowly) with OH to form HO₂ and water.
 
