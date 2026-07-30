@@ -86,13 +86,13 @@ We should finally consider the timescales of mixing air across the atmosphere. T
 >
 > $$pV = nRT \quad\Rightarrow\quad \frac{n}{V} = \frac{p}{RT} \ \text{(moles per volume)}$$
 >
-> To get into molecules, use $k_B$ rather than $R$:
+> To get into molecules, use $k_B$ rather than $R$ (writing $N$ for number of molecules):
 >
-> $$\frac{\#}{V} = \frac{p}{k_B T}$$
+> $$\frac{N}{V} = \frac{p}{k_B T}$$
 >
 > At 298 K and 1 bar pressure:
 >
-> $$\frac{\#}{V} = \frac{100{,}000}{1.38\times10^{-23} \times 298} = 2.43\times10^{25}\ \text{molecules m}^{-3} = 2.43\times10^{19}\ \text{molecules cm}^{-3}$$
+> $$\frac{N}{V} = \frac{100{,}000}{1.38\times10^{-23} \times 298} = 2.43\times10^{25}\ \text{molecules m}^{-3} = 2.43\times10^{19}\ \text{molecules cm}^{-3}$$
 
 ## 1.2 The Troposphere — basic role and composition
 
