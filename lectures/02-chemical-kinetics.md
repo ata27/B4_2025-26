@@ -79,11 +79,7 @@ In doing so, we have greatly reduced the complexity of this reaction system.
 
 In the atmosphere there are many examples of compounds that can be considered to be in steady state. For the steady-state assumption to apply, it is necessary that the rate constants for destruction of the intermediate greatly exceed those for its formation, so that its concentration remains low and (quasi-)constant.
 
-<<<<<<< HEAD
-Often we will consider the concept of an **air parcel** throughout this course. An air parcel can be thought of as a "box of air." That's consider there are two species in the box, A and B. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
-=======
-Often we will consider the concept of an **air parcel** throughout this course. An air parcel can be thought of as a "box of air." We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
->>>>>>> be57791398a992eec173e2e1b9d04da2605706a6
+Often we will consider the concept of an **air parcel** throughout this course. An air parcel can be thought of as a "box of air." Suppose there are two species in the box, A and B. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
 
 Finally, integrating $d[A]/dt$ with the boundary condition $[A]_0$ at $t_0 = 0$ shows that, for a species with constant production $F_A$ and pseudo-first-order loss $k'$:
 
