@@ -41,6 +41,9 @@ So the large observed change in the Antarctic is **not** explained by the upper-
 
 One of the key questions current research aims to answer is how changes in stratospheric ozone are affected by, and will in turn affect, climate change.
 
+![CCMI Modelled Ozone Trends ](../assets/figures/m5-fig5-3-ccmi.png)
+*Figure 5.3 — Observed and modelled ozone from Chemistry Climate Modelling Initiative models. The observations show good skill of the models and the future scenarios highlight how different emissions/climate pathways will impact ozone*
+
 ---
 
 ## Try it yourself
