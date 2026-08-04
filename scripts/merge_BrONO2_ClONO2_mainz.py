@@ -15,6 +15,8 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from _plot_style import FIGSIZE, LINEWIDTH, FONTSIZE, TITLE_FONTSIZE, LEGEND_FONTSIZE, apply_style, add_energy_axis
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 FIGURES_DIR = REPO_ROOT / "assets" / "figures"
@@ -60,14 +62,17 @@ def main():
         print(f"  Saved {len(df)} points to {species}_298K.csv")
 
     # Plot
-    fig, ax = plt.subplots(figsize=(10, 6))
+    apply_style()
+    fig, ax = plt.subplots(figsize=FIGSIZE)
     for species, df in species_data.items():
-        ax.plot(df.wavelength_nm, df.cross_section_cm2, label=species, lw=1)
+        ax.plot(df.wavelength_nm, df.cross_section_cm2, label=species, lw=LINEWIDTH)
     ax.set_yscale("log")
-    ax.set_xlabel("Wavelength (nm)")
-    ax.set_ylabel("Cross section (cm$^2$/molecule)")
-    ax.set_title("BrONO$_2$ and ClONO$_2$ UV absorption cross sections, 298 K (MPI-Mainz)")
-    ax.legend(fontsize=9, loc="upper right")
+    ax.set_xlabel("Wavelength (nm)", fontsize=FONTSIZE)
+    ax.set_ylabel("Cross section (cm$^2$/molecule)", fontsize=FONTSIZE)
+    ax.set_title("BrONO$_2$ and ClONO$_2$ UV absorption cross sections, 298 K", fontsize=TITLE_FONTSIZE)
+    ax.tick_params(labelsize=FONTSIZE - 1)
+    ax.legend(fontsize=LEGEND_FONTSIZE, loc="upper right")
+    add_energy_axis(ax)
     fig.tight_layout()
     fig.savefig(FIGURES_DIR / "BrONO2_ClONO2_298K.png", dpi=150)
     print("Saved plot to BrONO2_ClONO2_298K.png")

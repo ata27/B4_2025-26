@@ -15,6 +15,8 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from _plot_style import FIGSIZE, LINEWIDTH, FONTSIZE, TITLE_FONTSIZE, LEGEND_FONTSIZE, apply_style, add_energy_axis
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
 FIGURES_DIR = REPO_ROOT / "assets" / "figures"
@@ -87,14 +89,17 @@ def main():
     print(f"\nSaved {len(clipped)} points to O2_merged_50-250nm.csv")
 
     # Plot
-    fig, ax = plt.subplots(figsize=(10, 6))
+    apply_style()
+    fig, ax = plt.subplots(figsize=FIGSIZE)
     for src, grp in clipped.groupby("source"):
-        ax.plot(grp.wavelength_nm, grp.cross_section_cm2, label=src, lw=1)
+        ax.plot(grp.wavelength_nm, grp.cross_section_cm2, label=src, lw=LINEWIDTH)
     ax.set_yscale("log")
-    ax.set_xlabel("Wavelength (nm)")
-    ax.set_ylabel("Cross section (cm$^2$/molecule)")
-    ax.set_title("O$_2$ UV absorption cross section, 50-250 nm (MPI-Mainz)")
-    ax.legend(fontsize=7, loc="upper right")
+    ax.set_xlabel("Wavelength (nm)", fontsize=FONTSIZE)
+    ax.set_ylabel("Cross section (cm$^2$/molecule)", fontsize=FONTSIZE)
+    ax.set_title("O$_2$ UV absorption cross section, 50-250 nm", fontsize=TITLE_FONTSIZE)
+    ax.tick_params(labelsize=FONTSIZE - 1)
+    ax.legend(fontsize=LEGEND_FONTSIZE, loc="upper right")
+    add_energy_axis(ax)
     fig.tight_layout()
     fig.savefig(FIGURES_DIR / "O2_merged_50-250nm.png", dpi=150)
     print("Saved plot to O2_merged_50-250nm.png")
