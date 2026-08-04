@@ -1,0 +1,6 @@
+reactants,products,gamma_liquid_aerosol,gamma_NAT,gamma_ice
+ClONO2 + HCl,Cl + Cl + HONO2,f,0.3,0.3
+ClONO2 + H2O,HOCl + HONO2,0.006,,0.3
+N2O5 + H2O,HONO2 + HONO2,0.1,0.0006,0.03
+N2O5 + HCl,Cl + NO2 + HONO2,,0.003,0.03
+HOCl + HCl,Cl + Cl + H2O,f,,0.3

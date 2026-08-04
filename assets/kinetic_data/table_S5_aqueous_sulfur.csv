@@ -1,0 +1,4 @@
+reactants,products,rate_expression_cm3_molecule-1_s-1,notes
+HSO3-(aq) + H2O2(aq),SO4(2-)(aq),2.1295E+14*exp(-4430.0/T)*([H+]/(1.0 + 13.0*[H+])),H+ prescribed at 1E-5 molecules cm-3
+HSO3-(aq) + O3(aq),SO4(2-)(aq),4.0113E+13*exp(-5530.0/T),
+SO3(2-)(aq) + O3(aq),SO4(2-)(aq),7.43E+16*exp(-5280.0/T),

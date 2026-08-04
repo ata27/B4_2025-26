@@ -1,0 +1,60 @@
+reactants,products
+BrCl + hv,Br + Cl
+BrO + hv,Br + O(3P)
+BrONO2 + hv,Br + NO3
+BrONO2 + hv,BrO + NO2
+CF2Cl2 + hv,Cl + Cl
+CFCl3 + hv,Cl + Cl + Cl
+CH4 + hv,MeOO + H
+Cl2O2 + hv,Cl + Cl + O2
+ClONO2 + hv,Cl + NO3
+ClONO2 + hv,ClO + NO2
+CO2 + hv,CO + O(3P)
+COS + hv,CO + SO2
+EtCHO + hv,EtOO + HO2 + CO
+EtOOH + hv,MeCHO + HO2 + OH
+H2O + hv,OH + H
+H2O2 + hv,OH + OH
+H2SO4 + hv,SO3 + OH
+HACET + hv,MeCO3 + HCHO + HO2
+HCHO + hv,HO2 + HO2 + CO
+HCHO + hv,H2 + CO
+HCl + hv,H + Cl
+HO2NO2 + hv,HO2 + NO2
+HO2NO2 + hv,OH + NO3
+HOBr + hv,OH + Br
+HOCl + hv,OH + Cl
+HONO + hv,OH + NO
+HONO2 + hv,OH + NO2
+i-PrOOH + hv,Me2CO + HO2 + OH
+ISON + hv,NO2 + MACR + HCHO + HO2
+ISOOH + hv,OH + MACR + HCHO + HO2
+MACR + hv,MeCO3 + HCHO + CO + HO2
+MACROOH + hv,OH + HO2 + OH + HO2
+MACROOH + hv,HACET + CO + MGLY + HCHO
+Me2CO + hv,MeCO3 + MeOO
+MeBr + hv,Br + H
+MeCHO + hv,MeOO + HO2 + CO
+MeCHO + hv,CH4 + CO
+MeCO3H + hv,MeOO + OH
+MeCOCH2OOH + hv,MeCO3 + HCHO + OH
+MeONO2 + hv,HO2 + HCHO + NO2
+MeOOH + hv,HO2 + HCHO + OH
+MGLY + hv,MeCO3 + CO + HO2
+MPAN + hv,MACRO2 + NO2
+N2O + hv,N2 + O(1D)
+N2O5 + hv,NO2 + NO3
+NALD + hv,HCHO + CO + NO2 + HO2
+NO + hv,N + O(3P)
+NO2 + hv,NO + O(3P)
+NO3 + hv,NO + O2
+NO3 + hv,NO2 + O(3P)
+n-PrOOH + hv,EtCHO + HO2 + OH
+O2 + hv,O(3P) + O(3P)
+O2 + hv,O(3P) + O(1D)
+O3 + hv,O2 + O(1D)
+O3 + hv,O2 + O(3P)
+OClO + hv,O(3P) + ClO
+PAN + hv,MeCO3 + NO2
+PPAN + hv,EtCO3 + NO2
+SO3 + hv,SO2 + O(3P)
