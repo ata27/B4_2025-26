@@ -50,6 +50,7 @@ def load_table(name: str) -> pd.DataFrame:
         "S6": "table_S6_henry_tropospheric.csv",
         "S7": "table_S7_henry_stratospheric.csv",
         "S8": "table_S8_henry_aerosol_precursor.csv",
+        "VOC": "voc_oxidation_kinetics.csv",
     }
     key = name.upper().replace("TABLE_", "").strip()
     if key not in files:
@@ -221,3 +222,34 @@ def standard_atmosphere(z_m):
     if T_out.size == 1:
         return T_out[0], P_out[0], M_out[0]
     return T_out, P_out, M_out
+
+
+# ----------------------------------------------------------------------
+# VOC oxidant rate constants (single-T, reported at 298 K; voc_oxidation_kinetics.csv)
+# ----------------------------------------------------------------------
+
+def voc_rate_constant(compound: str, oxidant: str = "OH"):
+    """
+    Look up the reported (298 K) bimolecular rate constant for a VOC + oxidant
+    reaction from voc_oxidation_kinetics.csv.
+
+    compound : e.g. 'C2H6', 'APINENE', 'Toluene' (matches the 'compound' column)
+    oxidant  : one of 'OH', 'O3', 'NO3', 'Cl'
+
+    Returns k in cm^3 molecule^-1 s^-1, or None if no rate constant is
+    reported for that oxidant (many alkanes have no O3/NO3 channel, and
+    most alkenes/aromatics have no reported Cl rate here).
+
+    NOTE: unlike Tables S1/S2 (Arrhenius/Troe parameters valid over a T
+    range), this file gives single rate constants only (298 K reference,
+    no temperature dependence) -- do not use k_bimolecular() on these.
+    """
+    df = load_table("VOC")
+    col = f"k{oxidant}_cm3_molecule-1_s-1"
+    if col not in df.columns:
+        raise ValueError(f"Unknown oxidant '{oxidant}'. Choose from OH, O3, NO3, Cl.")
+    row = df[df["compound"].str.strip() == compound.strip()]
+    if row.empty:
+        raise KeyError(f"No VOC entry found for compound '{compound}'")
+    val = row.iloc[0][col]
+    return None if pd.isna(val) else float(val)

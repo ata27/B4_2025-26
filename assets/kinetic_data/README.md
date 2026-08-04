@@ -28,3 +28,11 @@ exponent to reproduce standard JPL/IUPAC rate coefficients, i.e.
 `k = A*(T/300)^alpha*exp(-value/T)`. This has been verified against known
 literature values (OH+CH4, Cl+CH4, BrO+NO) — see the docstring in
 `kinetics.py` for details.
+
+## Additional file (not from Archibald et al. 2020 SI)
+
+| File | Contents |
+|---|---|
+| `voc_oxidation_kinetics.csv` | Rate constants (cm^3 molecule^-1 s^-1, single 298 K value, no T-dependence) for 44 VOCs against OH, O3, NO3, and Cl. Not all oxidant channels are reported for every compound (blank = no data / negligible channel). |
+
+Use `voc_rate_constant(compound, oxidant)` in `kinetics.py` to look values up. Unlike Tables S1/S2, these are single reference-temperature values — `k_bimolecular()` (which needs A/alpha/-Ea/R) does not apply here.
