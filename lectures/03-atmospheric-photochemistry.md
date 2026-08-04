@@ -122,6 +122,10 @@ Photolysis of N₂O almost exclusively proceeds as:
 
 $$N_2O + h\nu \xrightarrow{J_{N_2O}} N_2 + O(^{1}D)$$
 
+![N2O absorption cross-section](../assets/figures/N2O_merged_100-212nm.png)
+*Figure 3.11 — N₂O absorption cross-sections as a function of wavelength (and energy).*
+
+
 N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note: at the longer wavelengths available in the troposphere there is no photolysis of N₂O, and N₂O **can** contribute significantly to the optical depth at low wavelengths.
 
 CFCs (chlorofluorocarbons) contain carbon, fluorine and chlorine and are entirely man-made. PFCs (perfluorinated carbons) are largely man-made, but the simplest PFC (CF₄) has a natural source from the oxidation of certain volcanic rocks. PFCs are very stable — in fact the absorption cross-section of CF₄ is so small that under most stratospheric conditions its lifetime is millions of years, so we won't worry about PFCs for now (although they are strong greenhouse gases, so don't think they aren't important!).
