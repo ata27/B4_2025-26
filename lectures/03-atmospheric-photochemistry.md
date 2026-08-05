@@ -65,7 +65,7 @@ $J$ for O₂ ($\lambda < 250$ nm) varies strongly with altitude, as the relevant
 
 The presence of O₂ has a profound effect on the photochemistry of the atmosphere. O₂ has likely been present in our atmosphere for the last 2 billion years, with its current mixing ratio roughly constant over the last 500 million years. O₂ is produced through photosynthesis and is involved in a number of biogeochemical cycles giving rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O₂ can absorb short-$\lambda$ radiation and photo-dissociate. The absorption cross-section for O₂ consists of characteristic features, many named after the scientists who discovered them. The cross-section at $\lambda < 150$ nm is large but not important to O₂ photolysis in the stratosphere owing to a lack of photons at these wavelengths. The major absorption in the stratosphere is in the **Herzberg continuum** (220–260 nm), $A^3\Sigma_{u}^{+} \leftarrow X^3\Sigma_{g}^{-}$.
 
-![O2 absorption cross sections](../assets/figures/m3-fig3-4-o2-cross-section.png)
+![O2 absorption cross sections](../assets/figures/O2_merged_50-250nm.png)
 *Figure 3.4 — Molecular oxygen absorption cross-sections.*
 
 Assuming unit quantum yield for photolysis of O₂ (O₂ + hν → O(³P) + O(³P)), we can combine the wavelength-dependent flux profile with the absorption cross-section to calculate the photolysis frequency $J_{O_2}$; the reciprocal gives the lifetime/timescale for photolysis. The lifetime of O₂ with respect to photolysis varies over 5 orders of magnitude across the altitude range 20–100 km. The longer-wavelength Herzberg absorption is relatively more important at low altitudes, while the shorter wavelengths (Schumann–Runge Bands, Schumann–Runge Continuum) are only important at high altitudes (photons at these wavelengths are absorbed high up).
@@ -73,6 +73,10 @@ Assuming unit quantum yield for photolysis of O₂ (O₂ + hν → O(³P) + O(³
 ## 3.4 O₃ photolysis
 
 Ozone is central to the chemistry of the atmosphere! The presence of ozone in a layer in the stratosphere (the ozone layer) has helped provide an environment suitable for the evolution of life at the Earth's surface. Yet ozone itself is toxic to most plants and animal life. Hence the phrase "**good up high, bad nearby**" is apt for ozone.
+
+![O3 absorption cross sections](../assets/figures/O3_merged_100-1000nm.png)
+*Figure 3.5 — Molecular ozone absorption cross-sections.*
+
 
 O₃ is relatively weakly bound compared to O₂ and can be photolysed over a wide range of wavelengths, with a theoretical threshold at 1180 nm. Absorption occurs in the so-called **Hartley, Huggins and Chappuis bands**. The precise photolysis products depend on the photon energy. The most important processes are photolysis to yield electronically excited oxygen atoms (rate constant $J_{O(^{1}D)}$) and photolysis to ground-state atomic oxygen ($J_{O(^{3}P)}$):
 
@@ -105,7 +109,7 @@ $$NO_2 + h\nu \xrightarrow{J_{NO_2}} NO(^2\Pi) + O(^{3}P)$$
 
 The photolysis products can go on to form O₃ (through reaction with O₂ in a ter-molecular process). Indeed, photolysis of NO₂ is the main source of O₃ production in the troposphere (where O₂ cannot be photolysed).
 
-![NO2 absorption cross section](../assets/figures/m3-fig3-9a-no2-cross-section.png)
+![NO2 absorption cross section](../assets/figures/NO2_merged_240-662.5nm.png)
 ![NO2 quantum yield](../assets/figures/m3-fig3-9b-no2-quantum-yield.png)
 *Figure 3.9 — NO₂ absorption cross-section and quantum yield.*
 
@@ -130,11 +134,17 @@ N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note:
 
 CFCs (chlorofluorocarbons) contain carbon, fluorine and chlorine and are entirely man-made. PFCs (perfluorinated carbons) are largely man-made, but the simplest PFC (CF₄) has a natural source from the oxidation of certain volcanic rocks. PFCs are very stable — in fact the absorption cross-section of CF₄ is so small that under most stratospheric conditions its lifetime is millions of years, so we won't worry about PFCs for now (although they are strong greenhouse gases, so don't think they aren't important!).
 
+![CFC absorption cross-section](../assets/figures/CFC-11_12_13_298K.png)
+*Figure 3.11 — CFC absorption cross-sections as a function of wavelength (and energy).*
+
 The naming convention for CFCs: the rightmost digit in the name gives the number of fluorine atoms ($n_F$); the next digit to the left gives the number of hydrogen atoms **plus 1** ($n_H+1$); and the next gives the number of carbon atoms **minus 1** ($n_C-1$), with zero values omitted. For example, CFC-11 has $n_F=1$, $n_H=0$ (so digit = 1), $n_C=1$ (so digit = 0), giving CFC-11 = CCl₃F.
 
 CFC absorption cross-sections are fairly large at very short $\lambda$ and almost completely featureless (compare O₃ and NO₂). There is a huge range in CFC lifetimes as a function of altitude — tropospheric lifetimes are many thousands of years, but upper-stratospheric lifetimes are only a few days.
 
 Important breakdown products from the photolysis of Cl- and Br-containing compounds in the stratosphere are the **halogen nitrates**. Their absorption cross-sections differ greatly at $\lambda > 260$ nm, with BrONO₂ having a sufficiently large cross-section at $\lambda > 320$ nm that its lifetime is very short.
+
+![Halogen nitrate absorption cross-section](../assets/figures/BrONO2_ClONO2_298K.png)
+*Figure 3.11 — Halogen nitrate absorption cross-sections as a function of wavelength (and energy).*
 
 ---
 
