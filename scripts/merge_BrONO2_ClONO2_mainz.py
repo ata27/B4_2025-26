@@ -15,7 +15,7 @@ import requests
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from _plot_style import FIGSIZE, LINEWIDTH, FONTSIZE, TITLE_FONTSIZE, LEGEND_FONTSIZE, apply_style, add_energy_axis
+from _plot_style import FIGSIZE, LINEWIDTH, FONTSIZE, TITLE_FONTSIZE, COLORS, apply_style, add_energy_axis
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
@@ -64,14 +64,13 @@ def main():
     # Plot
     apply_style()
     fig, ax = plt.subplots(figsize=FIGSIZE)
-    for species, df in species_data.items():
-        ax.plot(df.wavelength_nm, df.cross_section_cm2, label=species, lw=LINEWIDTH)
+    for color, (species, df) in zip(COLORS, species_data.items()):
+        ax.plot(df.wavelength_nm, df.cross_section_cm2, color=color, lw=LINEWIDTH)
     ax.set_yscale("log")
     ax.set_xlabel("Wavelength (nm)", fontsize=FONTSIZE)
     ax.set_ylabel("Cross section (cm$^2$/molecule)", fontsize=FONTSIZE)
     ax.set_title("BrONO$_2$ and ClONO$_2$ UV absorption cross sections, 298 K", fontsize=TITLE_FONTSIZE)
     ax.tick_params(labelsize=FONTSIZE - 1)
-    ax.legend(fontsize=LEGEND_FONTSIZE, loc="upper right")
     add_energy_axis(ax)
     fig.tight_layout()
     fig.savefig(FIGURES_DIR / "BrONO2_ClONO2_298K.png", dpi=150)

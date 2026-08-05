@@ -9,7 +9,9 @@ FIGSIZE = (6, 4)  # inches (width, height) - fits ~A4 lecture notes
 LINEWIDTH = 2.0
 FONTSIZE = 12
 TITLE_FONTSIZE = 10
-LEGEND_FONTSIZE = 9
+
+# Colour per curve, keyed by how many species/curves share one plot.
+COLORS = ["black", "orange", "blue", "green", "red"]
 
 # E (kJ/mol) = N_A * h * c / wavelength, with wavelength in nm
 _PLANCK = 6.62607015e-34  # J s
@@ -32,11 +34,27 @@ def apply_style():
     plt.rcParams.update({"font.size": FONTSIZE})
 
 
-def add_energy_axis(ax):
+def add_energy_axis(ax, n_ticks=5):
+    """
+    Add a secondary top x-axis showing photon energy (kJ/mol).
+
+    Energy is a 1/wavelength function, so ticks placed at "nice" energy
+    values bunch together in pixel space at the short-wavelength end.
+    Instead, ticks are chosen evenly spaced in wavelength (i.e. evenly
+    spaced in pixels along the shared axis) and labelled with their
+    corresponding energy.
+    """
     secax = ax.secondary_xaxis(
         "top",
         functions=(wavelength_nm_to_energy_kJmol, energy_kJmol_to_wavelength_nm),
     )
     secax.set_xlabel("Photon energy (kJ/mol)", fontsize=FONTSIZE)
     secax.tick_params(labelsize=FONTSIZE - 1)
+
+    xmin, xmax = ax.get_xlim()
+    step = (xmax - xmin) / (n_ticks - 1)
+    wavelengths = [xmin + i * step for i in range(n_ticks)]
+    energies = [wavelength_nm_to_energy_kJmol(w) for w in wavelengths]
+    secax.set_xticks(energies)
+    secax.set_xticklabels([f"{e:.0f}" for e in energies])
     return secax
