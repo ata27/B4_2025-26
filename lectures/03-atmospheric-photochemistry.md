@@ -57,7 +57,7 @@ Figure 3.2 shows the altitude at which the intensity of solar radiation is reduc
 
 The fine structure in Fig 3.2 comes from the fine structure in the absorption cross-sections of the atmospheric absorbers. Briefly: Fig 3.2 shows that little radiation of $\lambda < 300$ nm penetrates below the tropopause. This means the photochemistry of the troposphere is very different from that of the stratosphere.
 
-[Vertical changes in photon flux](../assets/figures/photon_flux_toa_surface_280-500nm.png)
+![Vertical changes in photon flux](../assets/figures/photon_flux_toa_surface_280-500nm.png)
 *Figure 3.3 — Difference between photon flux at the top of atmosphere and the surface.*
 
 These altitude dependencies of photon fluxes matter when we come to calculate photolysis rates in different parts of the atmosphere — at 290 nm there is a factor-of-100 difference in photon flux between 40 km and 15 km, so processes requiring this wavelength proceed much more slowly at 15 km than at 40 km.
