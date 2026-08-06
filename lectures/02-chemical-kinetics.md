@@ -63,7 +63,12 @@ $$\frac{d[B]}{dt} = k_1[A] - k_2[B]$$
 
 $$\frac{d[C]}{dt} = k_2[B]$$
 
-Solutions to these equations for $k_1 = 1$ s⁻¹, $k_2 = 2$ s⁻¹, and (separately) $k_1 = 1$ s⁻¹, $k_2 = 10$ s⁻¹, are worth plotting side by side (see the notebook). What you will notice is that the intermediate $B$ is short-lived relative to $C$, and that as the value of $k_2$ increases, the peak concentration of $B$ decreases. The time it takes for $B$ to reach an almost-steady concentration is $\sim 1/k_2$. In the limit where $k_2 \gg k_1$ we can make the approximation:
+Solutions to these equations for $k_1 = 1$ s⁻¹, $k_2 = 2$ s⁻¹, and (separately) $k_1 = 1$ s⁻¹, $k_2 = 10$ s⁻¹, are worth plotting side by side (see the notebook for details).
+
+![A -> B -> C chain reaction: exact [B] vs the steady-state approximation, for two (k1, k2) pairs](../assets/figures/m2-fig-abc-chain.png)
+*Figure — The A → B → C chain reaction for $(k_1,k_2) = (1,2)$ s⁻¹ (left) and $(1,10)$ s⁻¹ (right), comparing the exact $[B]$ (solid) against the steady-state approximation $[B]_{ss} = k_1[A]/k_2$ (dashed).*
+
+What you will notice is that the intermediate $B$ is short-lived relative to $C$, and that as the value of $k_2$ increases, the peak concentration of $B$ decreases. The time it takes for $B$ to reach an almost-steady concentration is $\sim 1/k_2$. In the limit where $k_2 \gg k_1$ we can make the approximation:
 
 $$\frac{d[B]_{ss}}{dt} \simeq 0$$
 
@@ -81,7 +86,36 @@ In the atmosphere there are many examples of compounds that can be considered to
 
 Often we will consider the concept of an **air parcel** throughout this course. An air parcel can be thought of as a "box of air." Suppose there are two species in the box, A and B. There are emissions of A, $F_A$, and A can undergo reactions (conversion) to form B, which subsequently is lost via other processes. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
 
-Finally, integrating $d[A]/dt$ with the boundary condition $[A]_0$ at $t_0 = 0$ shows that, for a species with constant production $F_A$ and pseudo-first-order loss $k'$:
+<details>
+<summary><strong>Worked derivation: steady-state ratio [B]<sub>ss</sub>/[A]<sub>ss</sub> for a source of A feeding into B</strong></summary>
+
+Consider the box model described above: A is emitted at a constant rate $F_A$ and is lost with pseudo-first-order rate constant $k'$ (converting it to B); B is in turn lost with pseudo-first-order rate constant $k''$.
+
+$$\frac{d[A]}{dt} = F_A - k'[A]$$
+
+$$\frac{d[B]}{dt} = k'[A] - k''[B]$$
+
+**Step 1 — steady state for A.** Setting $d[A]/dt = 0$:
+
+$$0 = F_A - k'[A]_{ss} \quad\Longrightarrow\quad [A]_{ss} = \frac{F_A}{k'}$$
+
+**Step 2 — steady state for B.** Setting $d[B]/dt = 0$ and substituting $[A]_{ss}$:
+
+$$0 = k'[A]_{ss} - k''[B]_{ss} \quad\Longrightarrow\quad [B]_{ss} = \frac{k'[A]_{ss}}{k''}$$
+
+**Step 3 — take the ratio.** Dividing $[B]_{ss}$ by $[A]_{ss}$, the $[A]_{ss}$ cancels:
+
+$$\frac{[B]_{ss}}{[A]_{ss}} = \frac{k'[A]_{ss}/k''}{[A]_{ss}} = \frac{k'}{k''}$$
+
+**Step 4 — rewrite in terms of lifetimes.** Since $k'$ and $k''$ are just the pseudo-first-order loss rate constants for A and B respectively, they define the corresponding lifetimes $\tau_A = 1/k'$ and $\tau_B = 1/k''$ (Section 2.1). Substituting:
+
+$$\frac{[B]_{ss}}{[A]_{ss}} = \frac{k'}{k''} = \frac{1/\tau_A}{1/\tau_B} = \frac{\tau_B}{\tau_A}$$
+
+So the steady-state concentration ratio of a product to its precursor is simply the ratio of their lifetimes: a short-lived product (small $\tau_B$) sits at a low steady-state concentration relative to its precursor, regardless of the details of $F_A$ — this is the same intuition as the A → B → C chain above, just recast for a species with continuous emission rather than a fixed initial concentration.
+
+</details>
+
+Integrating $d[A]/dt$ with the boundary condition $[A]_0$ at $t_0 = 0$ shows that, for a species with constant production $F_A$ and pseudo-first-order loss $k'$:
 
 $$[A]_t = \frac{F_A}{k'}\left(1 - \exp(-k't)\right)$$
 

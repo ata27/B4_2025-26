@@ -67,7 +67,7 @@ def main():
     ax.set_ylabel("Photon flux (s$^{-1}$ cm$^{-2}$ nm$^{-1}$)", fontsize=FONTSIZE)
     ax.set_title("Solar photon flux, 280-500 nm", fontsize=TITLE_FONTSIZE)
     ax.tick_params(labelsize=FONTSIZE - 1)
-    ax.set_ylim(1e12, 1e16)
+    ax.set_ylim(1e12, 1e15)
     ax.legend(fontsize=FONTSIZE - 3, loc="lower right")
     add_energy_axis(ax)
     fig.tight_layout()
