@@ -17,7 +17,7 @@ notebook: "../notebooks/03-photolysis-rates.ipynb"
 
 The sun's energy drives atmospheric chemistry. Assuming that the Sun can be represented as a blackbody emitter, Wien's displacement law ($\lambda_{max} = b/T$) can be used to predict the peak wavelength of solar radiation reaching the top of the atmosphere (TOA). Figure 3.1 shows a profile of solar radiation at the TOA and at the Earth's surface. Strong absorption occurs in a number of wavelength intervals. Whilst significant amounts of the Sun's energy are absorbed in the IR bands of H₂O and CO₂, Fig 3.1 shows that it is absorption by O₃ and O₂ that dominate in the visible and near-UV regions. It is the absorption of radiation by these gases that triggers the cascade of reactions we will focus on in this course. One of the most important quantities we will derive is the **photolysis coefficient** — a first-order rate constant — which can be used to determine the effective lifetime of a gas in the atmosphere with respect to the Sun's energy.
 
-![Solar spectral irradiance at TOA and surface](../assets/figures/m3-fig3-1-solar-spectrum.png)
+![Solar spectral irradiance at TOA and surface](../assets/figures/solar_spectrum.png)
 *Figure 3.1 — Solar spectral irradiance as a function of wavelength at the TOA and at the surface.*
 
 ## 3.1 Calculation of photolysis rate coefficients
