@@ -53,7 +53,7 @@ In principle the O.D. depends on all absorbing species at the wavelength of inte
 Figure 3.2 shows the altitude at which the intensity of solar radiation is reduced by $1/e$ from its TOA value, as a function of wavelength. There is a lot of variation in this plot, but in general we can note: (i) as we move to longer $\lambda$, radiation penetrates closer to the surface before being attenuated; (ii) beyond 320 nm, there is no difference between the photon flux at the TOA and at the surface.
 
 ![Altitude at which attenuation reaches 1/e, vs wavelength](../assets/figures/m3-fig3-2-attenuation-depth.png)
-*Figure 3.2 — Altitude at which attenuation reaches 1/e. Shows how the depth of penetration of radiation varies with wavelength.*
+*Figure 3.2 — Altitude at which attenuation reaches 1/e. Shows how the depth of penetration of radiation varies with wavelength. Based on Thomas 1980 DOI:10.1098/rsta.1980.0167*
 
 The fine structure in Fig 3.2 comes from the fine structure in the absorption cross-sections of the atmospheric absorbers. Briefly: Fig 3.2 shows that little radiation of $\lambda < 300$ nm penetrates below the tropopause. This means the photochemistry of the troposphere is very different from that of the stratosphere.
 
@@ -88,7 +88,7 @@ Using the absorption cross-section data together with the altitude-dependent spe
 
 Of more interest to our understanding of atmospheric chemistry is the reaction channel producing excited oxygen atoms, $J_{O(^{1}D)}$. Here we must follow the same approach as before, but rather than assuming unit quantum yield we need the wavelength (and possibly temperature) dependence of $\phi_{(\lambda)}$: at small $\lambda$ the quantum yield is $\sim 1.0$, whilst at $\lambda > 310$ nm it drops to $\sim 0.0$.
 
-![O(1D) quantum yield vs wavelength](../assets/figures/m3-fig3-8-o1d-quantum-yield.png)
+![O(1D) quantum yield vs wavelength](../assets/figures/O3_QY_O1D.png)
 *Figure 3.8 — Wavelength dependence of the O(¹D) quantum yield.*
 
 We will see later that O(¹D), while present in very low concentrations, is extremely important for atmospheric chemistry. It can actually be produced at somewhat longer wavelengths than 310 nm, possible explanations being: 'hot band' absorption by O₃, or possibly O₃ → O(¹D) + O₂(³Σ) (spin-forbidden).
@@ -110,7 +110,7 @@ $$NO_2 + h\nu \xrightarrow{J_{NO_2}} NO(^2\Pi) + O(^{3}P)$$
 The photolysis products can go on to form O₃ (through reaction with O₂ in a ter-molecular process). Indeed, photolysis of NO₂ is the main source of O₃ production in the troposphere (where O₂ cannot be photolysed).
 
 ![NO2 absorption cross section](../assets/figures/NO2_merged_240-662.5nm.png)
-![NO2 quantum yield](../assets/figures/m3-fig3-9b-no2-quantum-yield.png)
+![NO2 quantum yield](../assets/figures/NO2_QY_NO_O3P.png)
 *Figure 3.9 — NO₂ absorption cross-section and quantum yield.*
 
 As Fig 3.9 shows, the cross-section remains relatively large even at long wavelengths (where the atmosphere is otherwise practically transparent), resulting in large photolysis frequencies even near the surface:
