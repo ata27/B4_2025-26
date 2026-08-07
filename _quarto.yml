@@ -1,0 +1,39 @@
+project:
+  type: book
+
+book:
+  title: "B4 — Chemistry in the Atmosphere"
+  subtitle: "Part II · Michaelmas & Lent Term Lecture Notes"
+  author: "Prof. Alexander T. Archibald"
+  date: today
+  chapters:
+    - index.md
+    - part: "Michaelmas Term"
+      chapters:
+        - lectures/01-basic-structure-troposphere-stratosphere.md
+        - lectures/02-chemical-kinetics.md
+        - lectures/03-atmospheric-photochemistry.md
+        - lectures/04-stratospheric-ozone-chapman.md
+        - lectures/05-model-predictions-global-o3.md
+    - part: "Lent Term"
+      chapters:
+        - lectures/06-atmospheric-composition-sources-sinks-lifetimes.md
+        - lectures/07-tropospheric-photochemistry-oh.md
+        - lectures/08-methane-oxidation-ozone-production.md
+        - lectures/09-ozone-budget-nox-reservoirs.md
+        - lectures/10-nmvoc-oxidation-alkanes-alkenes.md
+        - lectures/11-nmvoc-aromatics-oxygenates.md
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: false
+    code-fold: true
+  pdf:
+    documentclass: report
+    toc: true
+    number-sections: false
+    geometry:
+      - margin=1in
+    mainfont: "Arial Unicode MS"
