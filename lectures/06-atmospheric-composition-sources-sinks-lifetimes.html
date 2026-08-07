@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Atmospheric Composition: Sources, Sinks and Lifetimes – B4 — Chemistry in the Atmosphere</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../lectures/07-tropospheric-photochemistry-oh.html" rel="next">
+<link href="../lectures/05-model-predictions-global-o3.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Lent Term</a></li><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">B4 — Chemistry in the Atmosphere</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Michaelmas Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/01-basic-structure-troposphere-stratosphere.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Basic Physical and Chemical Structure of the Troposphere and Stratosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/02-chemical-kinetics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chemical Kinetics in the Atmosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/03-atmospheric-photochemistry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atmospheric Photochemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/04-stratospheric-ozone-chapman.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stratospheric Ozone Chemistry: the Chapman Mechanism and Catalytic Cycles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lent Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/07-tropospheric-photochemistry-oh.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tropospheric Photochemistry and the Hydroxyl Radical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/08-methane-oxidation-ozone-production.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methane Oxidation and NOx-Driven Ozone Production</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/09-ozone-budget-nox-reservoirs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/10-nmvoc-oxidation-alkanes-alkenes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/11-nmvoc-aromatics-oxygenates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#module-6-atmospheric-composition-sources-sinks-and-lifetimes" id="toc-module-6-atmospheric-composition-sources-sinks-and-lifetimes" class="nav-link active" data-scroll-target="#module-6-atmospheric-composition-sources-sinks-and-lifetimes">Module 6 · Atmospheric Composition: Sources, Sinks and Lifetimes</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1.1 Introduction</a></li>
+  <li><a href="#atmospheric-composition" id="toc-atmospheric-composition" class="nav-link" data-scroll-target="#atmospheric-composition">1.2 Atmospheric Composition</a>
+  <ul class="collapse">
+  <li><a href="#troposphere-vs.-stratosphere" id="toc-troposphere-vs.-stratosphere" class="nav-link" data-scroll-target="#troposphere-vs.-stratosphere">Troposphere vs.&nbsp;stratosphere</a></li>
+  </ul></li>
+  <li><a href="#sources-of-the-minor-constituents" id="toc-sources-of-the-minor-constituents" class="nav-link" data-scroll-target="#sources-of-the-minor-constituents">1.3 Sources of the Minor Constituents</a></li>
+  <li><a href="#sinks-of-the-minor-constituents" id="toc-sinks-of-the-minor-constituents" class="nav-link" data-scroll-target="#sinks-of-the-minor-constituents">1.4 Sinks of the Minor Constituents</a>
+  <ul class="collapse">
+  <li><a href="#dry-deposition" id="toc-dry-deposition" class="nav-link" data-scroll-target="#dry-deposition">1.4.1 Dry deposition</a></li>
+  <li><a href="#wet-deposition" id="toc-wet-deposition" class="nav-link" data-scroll-target="#wet-deposition">1.4.2 Wet deposition</a></li>
+  <li><a href="#acid-deposition-wet-and-dry" id="toc-acid-deposition-wet-and-dry" class="nav-link" data-scroll-target="#acid-deposition-wet-and-dry">1.4.3 Acid deposition (wet and dry)</a></li>
+  </ul></li>
+  <li><a href="#lifetimes-putting-it-together" id="toc-lifetimes-putting-it-together" class="nav-link" data-scroll-target="#lifetimes-putting-it-together">1.5 Lifetimes — putting it together</a></li>
+  <li><a href="#worked-example-1-steady-state-concentration-of-compound-x" id="toc-worked-example-1-steady-state-concentration-of-compound-x" class="nav-link" data-scroll-target="#worked-example-1-steady-state-concentration-of-compound-x">Worked Example 1 — Steady-state concentration of compound X</a></li>
+  <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">Try it yourself</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Lent Term</a></li><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-6-atmospheric-composition-sources-sinks-and-lifetimes" class="level1">
+<h1>Module 6 · Atmospheric Composition: Sources, Sinks and Lifetimes</h1>
+<blockquote class="blockquote">
+<p><strong>Learning objectives</strong> By the end of this module you should be able to: 1. Outline the basic processes controlling trace gas and particle concentrations in the troposphere. 2. List the main natural and anthropogenic sources of tropospheric trace gases. 3. Describe the physical and chemical processes that remove trace constituents from the atmosphere. 4. Explain acid deposition and its effects on ecosystems. 5. Define and calculate the <strong>lifetime</strong> of an atmospheric trace gas.</p>
+</blockquote>
+<hr>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">1.1 Introduction</h2>
+<p>Chemistry in the Atmosphere is a two-part story. The first part of this course covered the stratosphere; this module opens the second part, which deals with the <strong>troposphere</strong> — the lowest part of the atmosphere, extending from the surface up to roughly 8–18 km depending on latitude.</p>
+<p>Two regions matter here:</p>
+<ul>
+<li><strong>Planetary boundary layer (PBL)</strong> — the lowest ~1 km, into which almost all surface emissions are injected. Under still (anticyclonic) conditions, pollutants can build up in the PBL, producing air pollution episodes.</li>
+<li><strong>Free troposphere</strong> — the region above the PBL, extending to the tropopause. Mixing within the troposphere is relatively fast, but the tropopause is a fairly effective barrier to exchange with the stratosphere.</li>
+</ul>
+<p>The troposphere is also where weather happens (clouds, precipitation), and radiative processes here dominate surface climate.</p>
+<p><img src="../assets/figures/fig1-0-boundary-layer-schematic.png" class="img-fluid" alt="Diurnal variation of the planetary boundary layer"> <em>Figure 1.0 — Schematic of the diurnal variation in the planetary boundary layer (after Stull et al., 1990).</em></p>
+<p>Historically, interest in tropospheric chemistry has been driven by air pollution — the effects of trace gases and particles on human health and ecosystems. Two classic pollution regimes are distinguished:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Winter Smog</strong></th>
+<th><strong>Photochemical (Summer) Smog</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First recognised</td>
+<td>Late 18th century</td>
+<td>Mid-1940s, Los Angeles basin</td>
+</tr>
+<tr class="even">
+<td>Conditions</td>
+<td>Winter, often foggy</td>
+<td>High temperature, strong sunlight</td>
+</tr>
+<tr class="odd">
+<td>Cause</td>
+<td>Local pollutant accumulation (topography, temperature inversions)</td>
+<td>High NO and organic emissions</td>
+</tr>
+<tr class="even">
+<td>Key emissions</td>
+<td>High SO₂ and soot (coal burning)</td>
+<td>Organics + NOₓ + sunlight → O₃ + other products (Haagen-Smit, 1952)</td>
+</tr>
+<tr class="odd">
+<td>Ozone formed?</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>This module — and the rest of the course — develops a <strong>quantitative</strong> understanding of the chemistry behind photochemical smog, so that we can predict how to minimise human exposure to harmful pollutants.</p>
+<hr>
+</section>
+<section id="atmospheric-composition" class="level2">
+<h2 class="anchored" data-anchor-id="atmospheric-composition">1.2 Atmospheric Composition</h2>
+<p>The composition of the atmosphere at any point in time reflects a <strong>balance between sources and sinks</strong>:</p>
+<ul>
+<li><strong>Sources</strong> — primary emissions from atmospheric, land, or ocean processes; natural or anthropogenic.</li>
+<li><strong>Sinks</strong> — removal by chemical or physical processes, operating on a wide range of timescales.</li>
+</ul>
+<p>Because sources and sinks are spatially non-uniform, the resulting balance is complex, coupling chemistry with atmospheric transport. Quantifying this coupled system is a central aim of atmospheric chemistry.</p>
+<p><img src="../assets/figures/fig1-1-troposphere-processes.png" class="img-fluid" alt="Key features and processes in the troposphere"> <em>Figure 1.1 — Key features and processes in the troposphere.</em></p>
+<p>About 90% of the total atmospheric mass resides in the troposphere, and most trace-gas emission (and a good deal of trace-gas <em>formation</em>) happens here. Chemically, the troposphere performs two important jobs:</p>
+<ol type="1">
+<li><strong>Destruction</strong> — preventing surface-emitted gases from accumulating to toxic levels or reaching the stratosphere and damaging the ozone layer.</li>
+<li><strong>Transport and transformation</strong> — acting as the conduit for natural biogeochemical cycles.</li>
+</ol>
+<section id="troposphere-vs.-stratosphere" class="level3">
+<h3 class="anchored" data-anchor-id="troposphere-vs.-stratosphere">Troposphere vs.&nbsp;stratosphere</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Stratosphere</th>
+<th>Troposphere</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temperature</td>
+<td>200–250 K</td>
+<td>~288 K (“room temperature”)</td>
+</tr>
+<tr class="even">
+<td>Pressure</td>
+<td>1–100 mbar</td>
+<td>≥1000 mbar</td>
+</tr>
+<tr class="odd">
+<td>UV reaching this altitude</td>
+<td>&lt; 200 nm</td>
+<td>&gt; 290 nm</td>
+</tr>
+<tr class="even">
+<td>Mixing time</td>
+<td>Months–years</td>
+<td>Seconds–days</td>
+</tr>
+<tr class="odd">
+<td>Dynamics</td>
+<td>Large-scale</td>
+<td>Turbulent to large-scale</td>
+</tr>
+<tr class="even">
+<td>Number of compounds</td>
+<td>Limited</td>
+<td>&gt; 10⁶</td>
+</tr>
+<tr class="odd">
+<td>Dominant chemistry</td>
+<td>Mostly inorganic (HOₓ, NOₓ, …)</td>
+<td>Inorganic <strong>and</strong> organic, roughly equal importance</td>
+</tr>
+<tr class="even">
+<td>Water abundance</td>
+<td>Low</td>
+<td>High — clouds, precipitation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="sources-of-the-minor-constituents" class="level2">
+<h2 class="anchored" data-anchor-id="sources-of-the-minor-constituents">1.3 Sources of the Minor Constituents</h2>
+<p>Most trace gases in the troposphere originate as <strong>surface emissions</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Compound</th>
+<th>Main sources</th>
+<th>Emission rate (Tg yr⁻¹)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CH₄</td>
+<td>Wetlands; natural gas leakage; combustion</td>
+<td>400–500</td>
+</tr>
+<tr class="even">
+<td>CO</td>
+<td>Atmospheric VOC oxidation; combustion</td>
+<td>800</td>
+</tr>
+<tr class="odd">
+<td>Isoprene</td>
+<td>Natural vegetation</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>VOC*</td>
+<td>Solvents; combustion; fermentation; vegetation</td>
+<td>≫100</td>
+</tr>
+<tr class="odd">
+<td>NO</td>
+<td>Soil microorganisms; lightning; combustion</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>N₂O</td>
+<td>Soil/marine microorganisms; industry; combustion</td>
+<td>4.4–10.5</td>
+</tr>
+<tr class="odd">
+<td>NH₃</td>
+<td>Animal waste breakdown; soil microorganisms</td>
+<td>82</td>
+</tr>
+<tr class="even">
+<td>SO₂</td>
+<td>DMS** oxidation; volcanoes; combustion; smelting</td>
+<td>110</td>
+</tr>
+<tr class="odd">
+<td>DMS</td>
+<td>Marine microorganisms</td>
+<td>40</td>
+</tr>
+<tr class="even">
+<td>CH₃Cl</td>
+<td>Marine/terrestrial microorganisms</td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td>CH₃Br</td>
+<td>Marine microorganisms; agriculture</td>
+<td>0.1</td>
+</tr>
+<tr class="even">
+<td>CFCs/HCFCs</td>
+<td>Solvents and refrigerants</td>
+<td>1.1</td>
+</tr>
+</tbody>
+</table>
+<p><em>* VOC = volatile organic compounds (hydrocarbons, halocarbons, oxygenated organics). ** DMS = dimethyl sulphide.</em></p>
+<p>Natural emissions are mostly biogenic, though volcanism contributes significantly to atmospheric sulphur. Anthropogenic emissions arise from energy production, industry, and agriculture.</p>
+<p>Chemical transformation of these primary emissions generates secondary products that can themselves be important — notably H₂SO₄, HNO₃, HCl, and a wide range of organic products from the oxidation of S-, N-, Cl-containing, or organic trace gases. Ozone (O₃), formed photochemically in the troposphere, is a particularly important example — central to tropospheric chemistry as well as the stratosphere.</p>
+<hr>
+</section>
+<section id="sinks-of-the-minor-constituents" class="level2">
+<h2 class="anchored" data-anchor-id="sinks-of-the-minor-constituents">1.4 Sinks of the Minor Constituents</h2>
+<p>Removal processes fall into two broad classes:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Sink process</th>
+<th>Species removed</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Physical — dry deposition</strong> to water/land</td>
+<td>SO₂, O₃, HNO₃, CO₂, H₂O₂, aerosol particles</td>
+</tr>
+<tr class="even">
+<td><strong>Physical — wet deposition</strong> in precipitation</td>
+<td>HCl, H₂SO₄, NH₃, SO₂, HNO₃, H₂O₂, aerosol particles</td>
+</tr>
+<tr class="odd">
+<td><strong>Chemical — oxidation by OH</strong></td>
+<td>VOCs, CO, SO₂, NO₂, H₂O₂, H₂S, DMS</td>
+</tr>
+<tr class="even">
+<td><strong>Chemical — direct photolysis</strong></td>
+<td>O₃, HCHO, CH₃I, H₂O₂, NO₂, NO₃</td>
+</tr>
+<tr class="odd">
+<td><strong>Chemical — cloud/aerosol reactions</strong></td>
+<td>H₂SO₄, NH₃, SO₂, HNO₃, VOCs</td>
+</tr>
+</tbody>
+</table>
+<p>These sink strengths vary considerably with time of day, season, and geography.</p>
+<section id="dry-deposition" class="level3">
+<h3 class="anchored" data-anchor-id="dry-deposition">1.4.1 Dry deposition</h3>
+<p>Removal at the Earth’s surface (water, soil, vegetation) in the absence of precipitation. Governed by transport through the boundary layer and by uptake at the surface. The flux to the surface, <span class="math inline">\(F\)</span> (molecules cm⁻² s⁻¹), relates to the near-surface concentration <span class="math inline">\(c\)</span> (molecules cm⁻³) via the <strong>deposition velocity</strong> <span class="math inline">\(v_g\)</span> (cm s⁻¹):</p>
+<p><span class="math display">\[F = v_g \cdot c\]</span> &nbsp;&nbsp;(1.1)</p>
+<p>The <strong>lifetime</strong> of a species with respect to dry deposition depends on <span class="math inline">\(v_g\)</span> and the mixing height <span class="math inline">\(h\)</span>:</p>
+<p><span class="math display">\[\tau = \frac{h}{v_g}\]</span> &nbsp;&nbsp;(1.2)</p>
+<p><strong>Worked comparison:</strong></p>
+<ul>
+<li>SO₂: <span class="math inline">\(v_g \approx 0.8\)</span> cm s⁻¹ over NW Europe, mixed through <span class="math inline">\(h \approx 1\)</span> km → <span class="math inline">\(\tau \approx 1.4\)</span> days.</li>
+<li>O₃: similar <span class="math inline">\(v_g\)</span> over land, but well-mixed up to the tropopause (<span class="math inline">\(h \approx 12\)</span> km) → <span class="math inline">\(\tau \approx 17\)</span> days.</li>
+</ul>
+<p>The large difference is entirely down to the mixing height — the same deposition velocity gives a very different lifetime depending on how deep an atmospheric column the species is spread through.</p>
+<p><img src="../assets/figures/fig1-2-surface-deposition.png" class="img-fluid" alt="Schematic illustration of surface deposition"> <em>Figure 1.2 — Schematic illustration of surface deposition.</em></p>
+</section>
+<section id="wet-deposition" class="level3">
+<h3 class="anchored" data-anchor-id="wet-deposition">1.4.2 Wet deposition</h3>
+<p>Removal via precipitation (cloud, rain, snow):</p>
+<ul>
+<li><strong>Rain-out / in-cloud scavenging</strong> — gases absorbed into droplets (possibly followed by reaction); particles act as condensation nuclei or are captured by coagulation.</li>
+<li><strong>Wash-out / below-cloud scavenging</strong> — uptake into falling precipitation; removal times of order hours for soluble gases in moderate rain.</li>
+</ul>
+<p>Most of these processes are <strong>reversible</strong> (e.g.&nbsp;droplet evaporation can release particles or gases back to the gas phase), and because precipitation is highly variable, quantitative estimates of wet deposition rates are difficult.</p>
+<p>As an approximation, the wet deposition rate is taken as first-order in concentration:</p>
+<p><span class="math display">\[\text{Rate} = \lambda c\]</span></p>
+<p>where <span class="math inline">\(\lambda\)</span>, the washout (scavenging) coefficient, scales with mean precipitation and is typically <strong>0.12–0.5 day⁻¹</strong> (lifetime 2–8 days).</p>
+</section>
+<section id="acid-deposition-wet-and-dry" class="level3">
+<h3 class="anchored" data-anchor-id="acid-deposition-wet-and-dry">1.4.3 Acid deposition (wet and dry)</h3>
+<p>Oxidising conditions in the atmosphere (Modules 2–3) generate inorganic acids (H₂SO₄, HNO₃, HCl) and organic acids (formic, acetic). These lower the pH of precipitation and are also removed by dry deposition.</p>
+<p>“Acid rain” is not a modern discovery — Robert Boyle noted sulphur and acidity in rain in the 17th century — but it was only widely recognised as a fossil-fuel-driven pollution problem in the 1970s.</p>
+<p><strong>Ecological effects:</strong></p>
+<ul>
+<li>Sulfate/nitrate deposition leaches nutrient cations (Ca, Mg, K) from foliage and soils, reducing buffering capacity and nutrient availability for trees.</li>
+<li>Mobilises soil aluminium, interfering with root nutrient uptake; combined with O₃ toxicity, this leaves trees more vulnerable to drought, temperature extremes and disease.</li>
+<li>Leached aluminium and low pH are toxic to fish and other aquatic species.</li>
+<li>SO₂/NOₓ oxidation products damage buildings and cultural heritage — here <strong>dry</strong> deposition is usually the dominant pathway.</li>
+</ul>
+<p>Regulation has cut SO₂ and NOₓ emissions substantially in recent decades (SO₂ more than NOₓ), but both remain major anthropogenic air-quality pollutants.</p>
+<hr>
+</section>
+</section>
+<section id="lifetimes-putting-it-together" class="level2">
+<h2 class="anchored" data-anchor-id="lifetimes-putting-it-together">1.5 Lifetimes — putting it together</h2>
+<p>The <strong>atmospheric lifetime</strong> (or residence time) <span class="math inline">\(\tau\)</span> of a species is the average time a molecule spends in the atmosphere before removal. For a species at steady state with a single first-order loss process of rate constant <span class="math inline">\(k_{\text{loss}}\)</span>:</p>
+<p><span class="math display">\[\tau = \frac{1}{k_{\text{loss}}}\]</span></p>
+<p>More generally, for a reservoir of total burden <span class="math inline">\(N\)</span> (molecules) with a total removal rate <span class="math inline">\(R\)</span> (molecules s⁻¹):</p>
+<p><span class="math display">\[\tau = \frac{N}{R}\]</span></p>
+<p>When several independent loss processes act in parallel (e.g.&nbsp;OH oxidation <em>and</em> dry deposition), the loss rates add, so the lifetimes combine as <strong>reciprocals</strong>:</p>
+<p><span class="math display">\[\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots\]</span></p>
+<p>— the fastest process dominates the overall lifetime.</p>
+<blockquote class="blockquote">
+<p><strong>Key points — Module 1</strong> - Atmospheric composition is set by the <strong>balance of sources and sinks</strong>. - <strong>Sources</strong>: mainly surface emission, but some species (notably O₃) are produced photochemically in the atmosphere itself. - <strong>Sinks</strong>: physical (dry/wet deposition) and chemical (oxidation, photolysis) removal, with widely varying efficiency and timescale depending on the species. - <strong>Lifetime</strong> ties source/sink strength to the standing concentration, and is essential for comparing how “long-lived” different pollutants are.</p>
+</blockquote>
+<hr>
+</section>
+<section id="worked-example-1-steady-state-concentration-of-compound-x" class="level2">
+<h2 class="anchored" data-anchor-id="worked-example-1-steady-state-concentration-of-compound-x">Worked Example 1 — Steady-state concentration of compound X</h2>
+<p><strong>Problem.</strong> Compound X is emitted at the surface at a rate of 1 tonne yr⁻¹ (molar mass 44 g mol⁻¹). It is lost by reaction with OH, with rate constant <span class="math inline">\(k = 1\times10^{-11}\)</span> cm³ molecule⁻¹ s⁻¹, and by dry deposition with <span class="math inline">\(v_g = 1\)</span> cm s⁻¹. Assume <span class="math inline">\([\text{OH}] = 10^{6}\)</span> cm⁻³ and a boundary-layer mixing height of <span class="math inline">\(h = 1\)</span> km.</p>
+<p><strong>Method.</strong> 1. Convert the emission rate to a molecular flux (molecules cm⁻² s⁻¹) using the molar mass and an assumed emission area, or work in a well-mixed box of height <span class="math inline">\(h\)</span> to get a volumetric production rate (molecules cm⁻³ s⁻¹). 2. Write the two loss rate constants: chemical, <span class="math inline">\(k_{\text{OH}} = k[\text{OH}]\)</span>; physical, <span class="math inline">\(k_{\text{dep}} = v_g / h\)</span>. 3. At steady state, production = total loss: <span class="math inline">\(P = (k_{\text{OH}} + k_{\text{dep}})[\text{X}]_{ss}\)</span>. 4. Solve for <span class="math inline">\([\text{X}]_{ss}\)</span>, and use <span class="math inline">\(\tau = 1/(k_{\text{OH}}+k_{\text{dep}})\)</span> to sanity-check against the emission rate.</p>
+<p>This is exactly the kind of steady-state / pseudo-first-order problem you’ll meet repeatedly through the course — it’s worth being fluent doing it both by hand and by setting up the balance numerically. <strong>The companion notebook (<code>06-sources-sinks-lifetimes.ipynb</code>) walks through this example step by step, and lets you explore how <span class="math inline">\([\text{X}]_{ss}\)</span> and <span class="math inline">\(\tau\)</span> respond to changing <span class="math inline">\(k\)</span>, <span class="math inline">\([\text{OH}]\)</span>, <span class="math inline">\(v_g\)</span> and <span class="math inline">\(h\)</span>.</strong></p>
+<hr>
+</section>
+<section id="try-it-yourself" class="level2">
+<h2 class="anchored" data-anchor-id="try-it-yourself">Try it yourself</h2>
+<p>Open <strong><a href="../notebooks/06-sources-sinks-lifetimes.ipynb"><code>notebooks/06-sources-sinks-lifetimes.ipynb</code></a></strong> to:</p>
+<ul>
+<li>Solve Worked Example 1 numerically and check it against the by-hand answer.</li>
+<li>Build a simple one-box steady-state / time-dependent model with combined chemical + deposition loss.</li>
+<li>Explore how lifetime and steady-state concentration change as you vary <span class="math inline">\(k_{\text{OH}}\)</span>, <span class="math inline">\([\text{OH}]\)</span>, <span class="math inline">\(v_g\)</span>, and mixing height <span class="math inline">\(h\)</span>.</li>
+<li>Reproduce the SO₂ vs.&nbsp;O₃ dry-deposition lifetime comparison from §1.4.1.</li>
+</ul>
+<hr>
+<p><em>Next: <a href="../lectures/07-tropospheric-photochemistry-oh.html">Module 7 — Tropospheric Photochemistry and the Hydroxyl Radical</a></em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../lectures/05-model-predictions-global-o3.html" class="pagination-link" aria-label="Model Predictions of Changes in Global O₃">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../lectures/07-tropospheric-photochemistry-oh.html" class="pagination-link" aria-label="Tropospheric Photochemistry and the Hydroxyl Radical">
+        <span class="nav-page-text"><span class="chapter-title">Tropospheric Photochemistry and the Hydroxyl Radical</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

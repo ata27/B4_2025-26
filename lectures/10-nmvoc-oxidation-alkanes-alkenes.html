@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes – B4 — Chemistry in the Atmosphere</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../lectures/11-nmvoc-aromatics-oxygenates.html" rel="next">
+<link href="../lectures/09-ozone-budget-nox-reservoirs.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Lent Term</a></li><li class="breadcrumb-item"><a href="../lectures/10-nmvoc-oxidation-alkanes-alkenes.html"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">B4 — Chemistry in the Atmosphere</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Michaelmas Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/01-basic-structure-troposphere-stratosphere.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Basic Physical and Chemical Structure of the Troposphere and Stratosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/02-chemical-kinetics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chemical Kinetics in the Atmosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/03-atmospheric-photochemistry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atmospheric Photochemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/04-stratospheric-ozone-chapman.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stratospheric Ozone Chemistry: the Chapman Mechanism and Catalytic Cycles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lent Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/07-tropospheric-photochemistry-oh.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tropospheric Photochemistry and the Hydroxyl Radical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/08-methane-oxidation-ozone-production.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methane Oxidation and NOx-Driven Ozone Production</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/09-ozone-budget-nox-reservoirs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/10-nmvoc-oxidation-alkanes-alkenes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/11-nmvoc-aromatics-oxygenates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#module-10-oxidation-of-non-methane-organic-compounds-i-alkanes-and-alkenes" id="toc-module-10-oxidation-of-non-methane-organic-compounds-i-alkanes-and-alkenes" class="nav-link active" data-scroll-target="#module-10-oxidation-of-non-methane-organic-compounds-i-alkanes-and-alkenes">Module 10 · Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">4.0 Introduction</a></li>
+  <li><a href="#the-role-of-nmvocs-in-ozone-production" id="toc-the-role-of-nmvocs-in-ozone-production" class="nav-link" data-scroll-target="#the-role-of-nmvocs-in-ozone-production">4.1 The role of NMVOCs in ozone production</a></li>
+  <li><a href="#prediction-of-rate-coefficients-for-initiation-of-nmvoc-oxidation" id="toc-prediction-of-rate-coefficients-for-initiation-of-nmvoc-oxidation" class="nav-link" data-scroll-target="#prediction-of-rate-coefficients-for-initiation-of-nmvoc-oxidation">4.2 Prediction of rate coefficients for initiation of NMVOC oxidation</a></li>
+  <li><a href="#oxidation-of-alkanes" id="toc-oxidation-of-alkanes" class="nav-link" data-scroll-target="#oxidation-of-alkanes">4.3 Oxidation of alkanes</a>
+  <ul class="collapse">
+  <li><a href="#fate-of-ro₂" id="toc-fate-of-ro₂" class="nav-link" data-scroll-target="#fate-of-ro₂">Fate of RO₂</a></li>
+  <li><a href="#auto-oxidation" id="toc-auto-oxidation" class="nav-link" data-scroll-target="#auto-oxidation">Auto-oxidation</a></li>
+  <li><a href="#fate-of-ro" id="toc-fate-of-ro" class="nav-link" data-scroll-target="#fate-of-ro">Fate of RO</a></li>
+  </ul></li>
+  <li><a href="#oxidation-of-alkenes" id="toc-oxidation-of-alkenes" class="nav-link" data-scroll-target="#oxidation-of-alkenes">4.4 Oxidation of alkenes</a></li>
+  <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">Try it yourself</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Lent Term</a></li><li class="breadcrumb-item"><a href="../lectures/10-nmvoc-oxidation-alkanes-alkenes.html"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-10-oxidation-of-non-methane-organic-compounds-i-alkanes-and-alkenes" class="level1">
+<h1>Module 10 · Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</h1>
+<blockquote class="blockquote">
+<p><strong>Aims of this module</strong> 1. The basic reaction schemes of VOCs with OH. 2. Ozonolysis reactions of alkenes. 3. (Aromatic oxidation follows in Module 11.)</p>
+</blockquote>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">4.0 Introduction</h2>
+<p>The reactions of larger organic compounds are similar to those of methane discussed in Modules 8–9 — leading, in the presence of sufficient NOx, to the generation of ozone.</p>
+<p><strong>Non-methane volatile organic compounds (NMVOCs)</strong> include, by definition, all gaseous hydrocarbons and partially oxidised hydrocarbons in the atmosphere, but exclude methane, CFCs, CO and CO₂.</p>
+<p>There are many anthropogenic and biogenic NMVOC sources, but on a global scale <strong>biogenic, natural sources dominate</strong> — only about 10–20% of NMVOC emissions are anthropogenic (fossil fuel and biomass combustion, agriculture, industry). Over 10,000 NMVOCs have been found in the atmosphere — <strong>but the structure of most of them is unknown!</strong> Urgent work is needed in analytical/experimental atmospheric chemistry to fill this knowledge gap.</p>
+<p>Governmental environmental policy (partly aimed at reducing ozone formation) has significantly reduced anthropogenic NMVOC emissions in Europe over recent decades — the opposite trend holds in developing nations like China and India.</p>
+</section>
+<section id="the-role-of-nmvocs-in-ozone-production" class="level2">
+<h2 class="anchored" data-anchor-id="the-role-of-nmvocs-in-ozone-production">4.1 The role of NMVOCs in ozone production</h2>
+<p>Whilst fascinating in their own right, the real reason we care about NMVOCs in the troposphere is that their photo-oxidation can generate ozone and other secondary pollutants harmful to human health and crops. There are countless possible NMVOC structures, but the capacity of different hydrocarbons to produce ozone (and HOx) depends roughly on the number of C–H bonds in the molecule — for example, C₂H₆ oxidation in the presence of NO produces around double the O₃ molecules of CH₄ oxidation to CO₂ (mole/mole basis). Generally, each –CH₂– group oxidised to CO₂ in the presence of NO yields a maximum of <strong>3 O₃ molecules</strong>.</p>
+<p>The general mechanism of ozone formation in the presence of VOC and NOx centres on the reactions of organic (RO₂) and inorganic (HO₂) peroxy radicals, which facilitate the interconversion of NO to NO₂ and so enable tropospheric ozone production (as in Modules 8–9).</p>
+<p>As NMVOC complexity increases, the reaction mechanism becomes more complicated. In reality, reaction with NO₃, O₃, and even direct photolysis, may also be important initiation steps — the relative importance of each pathway is set by the respective (pseudo-)first-order rate constants.</p>
+<p>This module (and Module 11) outlines the oxidation schemes for the most abundant organic compound classes in the troposphere. Based on this you should be able to construct plausible oxidation mechanisms for many different NMVOCs.</p>
+</section>
+<section id="prediction-of-rate-coefficients-for-initiation-of-nmvoc-oxidation" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-of-rate-coefficients-for-initiation-of-nmvoc-oxidation">4.2 Prediction of rate coefficients for initiation of NMVOC oxidation</h2>
+<p>The first step in NMVOC oxidation is reaction with an oxidant — suitable oxidants include OH, Cl, O₃ and NO₃ (and, to a very small extent, Br). Which dominates depends on both the abundance of the oxidant and the rate constant for its reaction with the specific NMVOC. <em>Knowledge of these rate constants is vital for evaluating the atmospheric lifetime and degradation mechanisms of organic compounds.</em></p>
+<p>Rate constants have been measured in the laboratory for many reactions, and patterns of reactivity can be recognised within a given reaction type (e.g.&nbsp;H-abstraction, addition to C=C bonds) related to molecular structure. There are clear trends in rate constants with carbon number for many oxidants, but also significant deviations from these trends — carbon number alone is not ultimately the best predictor of the initiation rate constant.</p>
+<p>This nonetheless enables prediction of rate constants for molecules of known structure that are experimentally difficult to measure directly, and similar relationships can help predict products and their yields for reactions with multiple possible pathways.</p>
+</section>
+<section id="oxidation-of-alkanes" class="level2">
+<h2 class="anchored" data-anchor-id="oxidation-of-alkanes">4.3 Oxidation of alkanes</h2>
+<p>Under tropospheric conditions, alkanes react mostly with OH, and to a minor extent (~10%) with Cl radicals. Both proceed via H-abstraction, generating an <strong>alkyl radical</strong> plus water or HCl respectively. This reaction is generally faster for tertiary H atoms (&gt;CH) than secondary (–CH₂–) or primary (–CH₃) H atoms.</p>
+<p>Alkane + OH rate constants are typically <span class="math inline">\(10^{-12}\)</span>–<span class="math inline">\(10^{-11}\)</span> cm³ molecule⁻¹ s⁻¹ (increasing slightly with carbon number) — about <span class="math inline">\(10^3\)</span> times faster than CH₄ + OH (<span class="math inline">\(k = 6.2\times10^{-15}\)</span> cm³ molecule⁻¹ s⁻¹). Alkane + Cl rate constants are around <span class="math inline">\(10^{-10}\)</span> cm³ molecule⁻¹ s⁻¹, but tropospheric [Cl] is very low (though uncertain, estimated at <span class="math inline">\(10^2\)</span>–<span class="math inline">\(10^5\)</span> molecules cm⁻³), so Cl oxidation doesn’t affect the overall alkane lifetime — though these reactions do represent a significant sink for Cl itself.</p>
+<p>As with CH₄ oxidation, the alkyl radical reacts with O₂ to form a <strong>peroxy radical</strong>:</p>
+<p><span class="math display">\[R + O_2 + M \to RO_2 + M\]</span> &nbsp;&nbsp;(R4.1)</p>
+<p><span class="math inline">\(k_{4.1}\)</span> is fairly similar across measured R groups, spanning <span class="math inline">\(5\times10^{-12}\)</span>–<span class="math inline">\(2\times10^{-11}\)</span> cm³ molecule⁻¹ s⁻¹ (independent of M). Under standard tropospheric conditions, R has a lifetime of order <span class="math inline">\(10^{-8}\)</span> s.</p>
+<section id="fate-of-ro₂" class="level3">
+<h3 class="anchored" data-anchor-id="fate-of-ro₂">Fate of RO₂</h3>
+<p>RO₂ can react with several tropospheric species. Reaction with NO gives two products:</p>
+<p><span class="math display">\[RO_2 + NO \to RO + NO_2\]</span> &nbsp;&nbsp;(R4.2)</p>
+<p><span class="math display">\[RO_2 + NO + M \to RONO_2 + M\]</span> &nbsp;&nbsp;(R4.3)</p>
+<p>For most peroxy radicals, R4.2 dominates. For larger radicals, R4.3 becomes increasingly important, with yields up to 30%.</p>
+<p>RO₂ can also react with HO₂ to form hydroperoxides:</p>
+<p><span class="math display">\[RO_2 + HO_2 \to ROOH + O_2\]</span> &nbsp;&nbsp;(R4.4)</p>
+<p>Reactions between different alkyl peroxy radicals are rather complex, with several observed overall pathways:</p>
+<p><span class="math display">\[RO_2 + RO_2 \to 2RO + O_2\]</span> &nbsp;&nbsp;(R4.5)</p>
+<p><span class="math display">\[RO_2 + RO_2 \to ROH + RCHO + O_2\]</span> &nbsp;&nbsp;(R4.6)</p>
+<p><span class="math display">\[RO_2 + RO_2 \to ROOR + O_2\]</span> &nbsp;&nbsp;(R4.7)</p>
+<p>Reaction with NO₃,</p>
+<p><span class="math display">\[RO_2 + NO_3 \to RO + NO_2 + O_2\]</span> &nbsp;&nbsp;(R4.8)</p>
+<p>is unimportant during daytime but may become significant at night, when [NO₃] is highest.</p>
+<p>Reaction of RO₂ with NO₂ forms peroxynitrates, which are highly unstable at tropospheric temperatures and decompose back to RO₂ + NO₂ — not a significant pathway overall.</p>
+<p>Among all RO₂ reactions, reaction with NO is by far dominant in the <strong>polluted</strong> atmosphere. Reactions with HO₂ and other RO₂ matter mainly in the <strong>clean/remote</strong> atmosphere, where NO is in the low-ppt range.</p>
+</section>
+<section id="auto-oxidation" class="level3">
+<h3 class="anchored" data-anchor-id="auto-oxidation">Auto-oxidation</h3>
+<p>In recent years, hydrogen atom-shift (H-shift) reactions have attracted much attention, as they can generate highly oxidised compounds bearing multiple hydroperoxy (–OOH) groups. This chemistry requires a sufficiently long carbon chain to enable 5/6-membered-ring transition states, so it’s more important for biogenic NMVOC (terpenes, C10; isoprene, C5) than for anthropogenic NMVOC (dominated by C2–C4 compounds). Over the last decade it has become established that these highly functionalised molecules not only form rapidly in the atmosphere but can lead to new aerosol particle formation, influencing clouds and climate. This process of H-shift, followed by O₂ addition and subsequent internal H-shift, is termed <strong>“auto-oxidation”</strong>, since it requires no bimolecular reaction beyond addition of O₂.</p>
+</section>
+<section id="fate-of-ro" class="level3">
+<h3 class="anchored" data-anchor-id="fate-of-ro">Fate of RO</h3>
+<p>RO reacts via three channels: reaction with O₂, isomerization, and decomposition. The <strong>isomerization</strong> channel is only possible for compounds with more than 4 carbon atoms (able to form a 6-membered transition state). The O₂ and isomerization channels (where available) are generally more important than decomposition. Reaction of RO with NO and NO₂ to form nitro-compounds/organic nitrates is generally too slow to be significant.</p>
+<blockquote class="blockquote">
+<p><strong>Example 4 — the fate of the 2-pentoxy radical in the urban boundary layer</strong></p>
+<p>Using the RO reaction channels above (O₂-addition, isomerization via 6-membered TS, and decomposition), sketch the competing pathways for 2-pentoxy and estimate which dominates in a polluted urban boundary layer, given typical [O₂], [NO] and temperature — see the companion notebook for a quantitative rate-constant comparison.</p>
+</blockquote>
+</section>
+</section>
+<section id="oxidation-of-alkenes" class="level2">
+<h2 class="anchored" data-anchor-id="oxidation-of-alkenes">4.4 Oxidation of alkenes</h2>
+<p>Most alkenes are emitted from biogenic sources — trees (isoprene, terpenes, sesquiterpenes) — with a smaller anthropogenic contribution, particularly for smaller carbon-number alkenes. Besides contributing to the atmosphere’s oxidative capacity (they’re a direct/primary oxidant sink), alkenes are also important organic aerosol precursors. Over many regions, biogenic hydrocarbons are more abundant than anthropogenic ones.</p>
+<p>Alkene oxidation proceeds mostly via <strong>OH-addition</strong> rather than H-abstraction:</p>
+<p><span class="math display">\[C_2H_4 + OH \to HOCH_2CH_2\]</span> &nbsp;&nbsp;(R4.9)</p>
+<p>The resulting hydroxy alkyl radical then reacts like the alkyl radical from alkane oxidation (e.g.&nbsp;with O₂ to form a hydroxy peroxy radical, ROHO₂).</p>
+<p><strong>NO₃</strong>, the main night-time oxidant, reacts across the C=C double bond, forming an excited nitro-oxy alkyl radical, which either forms an epoxide or nitro-oxy peroxy radicals (following the RO₂ scheme above). Terpenes — the most abundant atmospheric alkenes — react very rapidly with NO₃ (<span class="math inline">\(k \sim 10^{-12}\)</span>–<span class="math inline">\(10^{-10}\)</span> cm³ molecule⁻¹ s⁻¹), so NO₃ oxidation remains important even though [NO₃] rarely exceeds ppt levels.</p>
+<p>In contrast to alkanes, alkenes also react significantly with <strong>ozone</strong>. Initial O₃ addition across the C=C bond forms a primary ozonide, which is unstable and decomposes via two pathways to form <strong>Criegee intermediates</strong> (Criegee biradicals). Though postulated over 50 years ago (with first atmospheric rate estimates over 30 years ago), it’s only in the last few years that their structure and kinetics have been unambiguously identified.</p>
+<p>In the gas phase, the Criegee intermediate is either stabilised or decomposes via various channels — one, via a hydroperoxide intermediate, yields a carbonyl <strong>and OH</strong>. This OH-formation route can be especially important at night, when other major OH sources are inactive.</p>
+<p><img src="../assets/figures/m11-fig4-6-hox-sources-rural.png" class="img-fluid" alt="Calculated HOx generation rates from various sources, rural site"> <em>Figure 4.6 — Calculated rates of HOx generation from various sources at a rural site (Paulson and Orlando, Geophysical Research Letters, 1996).</em></p>
+<p>The major fate of the <em>stabilised</em> Criegee intermediate is believed to be reaction with H₂O, leading to carboxylic acids and hydroxy-hydroperoxides. Other reactions include those with NO₂, SO₂ and organics — the relative importance of these is not fully characterised.</p>
+<hr>
+</section>
+<section id="try-it-yourself" class="level2">
+<h2 class="anchored" data-anchor-id="try-it-yourself">Try it yourself</h2>
+<p>Open <strong><a href="../notebooks/10-nmvoc-alkanes-alkenes.ipynb"><code>notebooks/10-nmvoc-alkanes-alkenes.ipynb</code></a></strong> to:</p>
+<ul>
+<li>Compare alkane OH- vs.&nbsp;Cl-oxidation lifetimes given realistic [OH] and [Cl] ranges, and confirm Cl oxidation doesn’t control the overall alkane lifetime.</li>
+<li>Solve Example 4 (2-pentoxy radical fate) by comparing rate constants for the O₂, isomerization and decomposition channels at representative urban boundary-layer [O₂], [NO], T.</li>
+<li>Estimate O₃ yield per NMVOC carbon atom from the “max 3 O₃ per –CH₂– group” rule, and compare ethane vs.&nbsp;a longer-chain alkane.</li>
+<li>Build a simple RO₂ fate calculator (R4.2–R4.8) and see how the dominant RO₂ loss pathway shifts between polluted and remote-marine [NO] regimes.</li>
+</ul>
+<hr>
+<p><em>Next: <a href="../lectures/11-nmvoc-aromatics-oxygenates.html">Module 11 — Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics</a></em></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../lectures/09-ozone-budget-nox-reservoirs.html" class="pagination-link" aria-label="The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../lectures/11-nmvoc-aromatics-oxygenates.html" class="pagination-link" aria-label="Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics">
+        <span class="nav-page-text"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
