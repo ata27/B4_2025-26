@@ -118,8 +118,8 @@ The photolysis products can go on to form O₃ (through reaction with O₂ in a 
 
 As Fig 3.9 shows, the cross-section remains relatively large even at long wavelengths (where the atmosphere is otherwise practically transparent), resulting in large photolysis frequencies even near the surface:
 
-![NO2 photolysis rates vs solar zenith angle](../assets/figures/m3-fig3-10-no2-photolysis-zenith.png)
-*Figure 3.10 — NO₂ photolysis rates as a function of solar zenith angle.*
+![NO2 photolysis rates vs solar zenith angle](../assets/figures/JNO2_altitude_sza_heatmap.png)
+*Figure 3.10 — NO₂ photolysis rates as a function of solar zenith angle and altitude.*
 
 NO₂ photolysis happens so rapidly that NO₂ can usually be thought of as being in steady state (i.e. the first-order rate of loss — photolysis — is large enough to keep its concentration low and steady) during daylight hours. Fig 3.10 shows that even at high solar zenith angles photolysis remains rapid (Δτ ~ 5% between midday and 6 am). This is an important aspect of NO₂ chemistry, and one that will let us simplify complex reaction chains later in the course.
 
