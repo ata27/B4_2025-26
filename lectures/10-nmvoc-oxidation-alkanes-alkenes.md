@@ -24,6 +24,9 @@ There are many anthropogenic and biogenic NMVOC sources, but on a global scale *
 
 Governmental environmental policy (partly aimed at reducing ozone formation) has significantly reduced anthropogenic NMVOC emissions in Europe over recent decades — the opposite trend holds in developing nations like China and India.
 
+![Historical NMVOC emissions since 1970](../assets/figures/uk_nmvoc_annual_emissions.png)
+[]{#fig-4-1}*Figure 4.1 — Historical UK NMVOC emissions since 1970. Current UK and European legislated values are being adhered to.*
+
 ## 4.1 The role of NMVOCs in ozone production
 
 Whilst fascinating in their own right, the real reason we care about NMVOCs in the troposphere is that their photo-oxidation can generate ozone and other secondary pollutants harmful to human health and crops. There are countless possible NMVOC structures, but the capacity of different hydrocarbons to produce ozone (and HOx) depends roughly on the number of C–H bonds in the molecule — for example, C₂H₆ oxidation in the presence of NO produces around double the O₃ molecules of CH₄ oxidation to CO₂ (mole/mole basis). Generally, each –CH₂– group oxidised to CO₂ in the presence of NO yields a maximum of **3 O₃ molecules**.
