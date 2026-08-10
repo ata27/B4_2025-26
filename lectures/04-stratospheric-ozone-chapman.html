@@ -383,8 +383,8 @@ window.Quarto = {
 <p><span class="math display">\[\frac{d([O]+[O_3])}{dt} = 2J_2[O_2] - 2k_4[O][O_3]\]</span></p>
 <p>The use of odd oxygen thus leads, as we’ll see again later, to both conceptual and mathematical simplification.</p>
 <p>The timescale for steady state between reactions 4.1 and 4.4 varies strongly with altitude: ~hours at 40 km, but many years at 20 km. Invoking steady state in the upper stratosphere is a good approximation; in the lower stratosphere it would be poor, since solar intensity, temperature, and atmospheric transport all vary too rapidly to allow steady state to be established.</p>
-<p><img src="../assets/figures/m4-fig4-1-o-o3-profiles.png" class="img-fluid" alt="Observed and calculated altitude profiles of O and O3"> <em>Figure 4.1 — Observed and calculated altitude profiles of O(³P) and O₃.</em></p>
-<p>From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes (Fig 4.1).</p>
+<p><img src="../assets/figures/m4-fig4-1-o-o3-profiles.png" class="img-fluid" alt="Observed and calculated altitude profiles of O and O3"> <span id="fig-4-1"></span><em>Figure 4.1 — Observed and calculated altitude profiles of O(³P) and O₃.</em></p>
+<p>From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes (<a href="#fig-4-1">Fig 4.1</a>).</p>
 <blockquote class="blockquote">
 <p><strong>Exercise 6 — Steady-state distribution of ozone</strong></p>
 <p>This calculation only works where chemical production and loss rates balance. At steady state:</p>
@@ -395,9 +395,9 @@ window.Quarto = {
 <p><span class="math display">\[[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2] k_3[O_2][M]}{k_4 J_3}}\]</span> &nbsp;&nbsp;(Eq 5)</p>
 <p>Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).</p>
 </blockquote>
-<p><img src="../assets/figures/m4-fig4-2-chapman-vs-observed.png" class="img-fluid" alt="Measured and Chapman-calculated O3 mixing ratio profiles"> <em>Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs.&nbsp;altitude.</em></p>
-<p>For many years it was thought that Chapman’s model could adequately explain the distribution of stratospheric ozone. However, with improved laboratory and atmospheric measurements, it became apparent that reaction 4.4 only removes about <strong>25%</strong> of the odd oxygen produced by oxygen photolysis. Calculations based on just the Chapman reactions seriously overestimate stratospheric ozone concentrations (Fig 4.2).</p>
-<p><img src="../assets/figures/m4-fig4-3-total-o3-latitude-season.png" class="img-fluid" alt="Total ozone vs latitude and season"> <em>Figure 4.3 — Variation of total ozone as a function of latitude and season, showing highest values at high latitudes just after the polar night. Photochemical theory alone would predict highest ozone over the tropics; the observed distribution is strong evidence for the role of large-scale <strong>transport</strong> (the winds) in shaping the ozone distribution.</em></p>
+<p><img src="../assets/figures/m4-fig4-2-chapman-vs-observed.png" class="img-fluid" alt="Measured and Chapman-calculated O3 mixing ratio profiles"> <span id="fig-4-2"></span><em>Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs.&nbsp;altitude.</em></p>
+<p>For many years it was thought that Chapman’s model could adequately explain the distribution of stratospheric ozone. However, with improved laboratory and atmospheric measurements, it became apparent that reaction 4.4 only removes about <strong>25%</strong> of the odd oxygen produced by oxygen photolysis. Calculations based on just the Chapman reactions seriously overestimate stratospheric ozone concentrations (<a href="#fig-4-2">Fig 4.2</a>).</p>
+<p><img src="../assets/figures/m4-fig4-3-total-o3-latitude-season.png" class="img-fluid" alt="Total ozone vs latitude and season"> <span id="fig-4-3"></span><em>Figure 4.3 — Variation of total ozone as a function of latitude and season, showing highest values at high latitudes just after the polar night. Photochemical theory alone would predict highest ozone over the tropics; the observed distribution is strong evidence for the role of large-scale <strong>transport</strong> (the winds) in shaping the ozone distribution.</em></p>
 <p>Observations of the total ozone column helped meteorologists and atmospheric physicists show there is a global overturning circulation, known after its discoverers as the <strong>Brewer–Dobson Circulation (BDC)</strong>, which takes air from the tropics and redistributes it poleward.</p>
 </section>
 <section id="catalytic-cycles" class="level2">
@@ -457,9 +457,9 @@ window.Quarto = {
 <p><span class="math display">\[NO_2 + O_3 \to NO_3 + O_2 \qquad k = 8.5\times10^{-13}\exp(-2450/T)\ \text{cm}^3\text{s}^{-1}\]</span></p>
 <p>During the day NO₃ is photolysed very rapidly (~seconds), but at night it’s removed by the fast termolecular reaction:</p>
 <p><span class="math display">\[NO_2 + NO_3 + M \to N_2O_5 + M\]</span></p>
-<p>The slope of the night-time NO₂ decay (Fig 4.5) is thus set by [O₃] and temperature (since at high temperatures <span class="math inline">\(N_2O_5 \to NO_2 + NO_3\)</span>).</p>
-<p><img src="../assets/figures/m4-fig4-5-no2-diurnal.png" class="img-fluid" alt="Measured and modelled diurnal variation of NO2"> <em>Figure 4.5 — Measured and modelled diurnal variation of NO₂.</em></p>
-<p>Fig 4.5 shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.</p>
+<p>The slope of the night-time NO₂ decay (<a href="#fig-4-5">Fig 4.5</a>) is thus set by [O₃] and temperature (since at high temperatures <span class="math inline">\(N_2O_5 \to NO_2 + NO_3\)</span>).</p>
+<p><img src="../assets/figures/m4-fig4-5-no2-diurnal.png" class="img-fluid" alt="Measured and modelled diurnal variation of NO2"> <span id="fig-4-5"></span><em>Figure 4.5 — Measured and modelled diurnal variation of NO₂.</em></p>
+<p><a href="#fig-4-5">Fig 4.5</a> shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.</p>
 </section>
 </section>
 <section id="the-oxides-of-hydrogen-hox" class="level2">
@@ -551,7 +551,7 @@ window.Quarto = {
 <p>Open <strong><a href="../notebooks/04-chapman-mechanism.ipynb"><code>notebooks/04-chapman-mechanism.ipynb</code></a></strong> to:</p>
 <ul>
 <li>Solve Exercise 5 (O↔︎O₃ interconversion timescale) as a function of altitude, and confirm it becomes “fast” only in the upper stratosphere.</li>
-<li>Implement Exercise 6’s steady-state Chapman [O₃] formula (Eq 5) and reproduce the qualitative shape of Fig 4.2 — including the ~overestimate relative to the real atmosphere once you compare against a fixed “observed” profile.</li>
+<li>Implement Exercise 6’s steady-state Chapman [O₃] formula (Eq 5) and reproduce the qualitative shape of <a href="#fig-4-2">Fig 4.2</a> — including the ~overestimate relative to the real atmosphere once you compare against a fixed “observed” profile.</li>
 <li>Build a generic catalytic-cycle odd-oxygen-loss calculator, <span class="math inline">\(d[O_x]/dt|_X = -2k_b[XO][O]\)</span>, and compare the relative importance of NOx-, HOx- and ClOx-driven loss for representative concentrations at a chosen altitude.</li>
 <li>Explore how reservoir partitioning (e.g.&nbsp;the HNO₃ ⇌ NOx or HCl ⇌ ClOx balance) changes the <em>effective</em> catalytic efficiency of a family, even when the intrinsic <span class="math inline">\(k_a\)</span>, <span class="math inline">\(k_b\)</span> are fixed.</li>
 </ul>

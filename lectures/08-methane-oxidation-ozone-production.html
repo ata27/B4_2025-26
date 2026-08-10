@@ -321,7 +321,7 @@ window.Quarto = {
 <p><span class="math display">\[HO_2 + O_3 \to OH + 2O_2\]</span> &nbsp;&nbsp;(R3.8 / R2.10)</p>
 <p>However, the efficiency of this OH recycling is rather low in the clean lower troposphere: both CH₃OOH and HCHO are soluble in water droplets, leading to a net loss of HOx through rainout. R3.8 is competitive with the HO₂ self-reaction at ozone concentrations typical of the clean troposphere, and will also contribute to O₃ removal.</p>
 <p><strong>To recap:</strong> R3.3, together with loss of peroxides (or HCHO) in rain, leads to a net loss of HOx radicals. <strong>As ozone is lost in the process of generating HOx from O(¹D), there is a net loss of ozone overall</strong> — in the <em>unpolluted</em> (low-NOx) troposphere.</p>
-<p><img src="../assets/figures/m8-fig3-2-diurnal-peroxides-ozone.jpeg" class="img-fluid" alt="Diurnal variation of peroxides and ozone in the clean marine troposphere"> <em>Figure 3.2 — Diurnal variation of peroxides ROOH (open symbols) and ozone (filled symbols) in the clean marine troposphere, showing production of peroxides and destruction of ozone during daytime (highlighted region).</em></p>
+<p><img src="../assets/figures/m8-fig3-2-diurnal-peroxides-ozone.jpeg" class="img-fluid" alt="Diurnal variation of peroxides and ozone in the clean marine troposphere"> <span id="fig-3-2"></span><em>Figure 3.2 — Diurnal variation of peroxides ROOH (open symbols) and ozone (filled symbols) in the clean marine troposphere, showing production of peroxides and destruction of ozone during daytime (highlighted region).</em></p>
 </section>
 <section id="nitrogen-oxides-and-production-of-tropospheric-ozone" class="level2">
 <h2 class="anchored" data-anchor-id="nitrogen-oxides-and-production-of-tropospheric-ozone">3.2 Nitrogen oxides and production of tropospheric ozone</h2>
@@ -376,8 +376,8 @@ window.Quarto = {
 <p>This reaction matters for two reasons: HNO₃ is a reservoir species for both HOx and NOx, and its formation <strong>terminates</strong> the free-radical chain leading to ozone production. HNO₃ also has a high deposition velocity over land and is highly soluble, so it’s readily lost by wet and dry deposition. Thus, at high NOx levels, the OH + NO₂ reaction controls the net loss of HOx: <strong><em>a decrease is observed in the steady-state [HOx] at high NOx levels.</em></strong></p>
 <p>R3.12 (NO + O₃ → NO₂ + O₂) is temperature-dependent: <span class="math inline">\(k_{3.12} = 2\times10^{-12}\exp(-1400/T)\)</span> cm³ molecule⁻¹ s⁻¹. This, together with changes in [O₃] and [OH] between the boundary layer and the upper troposphere, affects the lifetime of NOx with altitude. Assuming only R3.10, R3.12 and R3.16 set the NOx lifetime:</p>
 <p><span class="math display">\[\tau_{NOx} = \frac{[NO_x]}{k_{3.16}[NO_2][OH]}\]</span></p>
-<p>Fig 3.3 shows this lifetime increasing to about <strong>15 days</strong> in the tropical upper troposphere, versus around <strong>one day</strong> in the boundary layer.</p>
-<p><img src="../assets/figures/m8-fig3-3-nox-lifetime-altitude.png" class="img-fluid" alt="NOx lifetime vs latitude and altitude"> <em>Figure 3.3 — Lifetime of NOx in the troposphere (days), as a function of latitude and height.</em></p>
+<p><a href="#fig-3-3">Fig 3.3</a> shows this lifetime increasing to about <strong>15 days</strong> in the tropical upper troposphere, versus around <strong>one day</strong> in the boundary layer.</p>
+<p><img src="../assets/figures/m8-fig3-3-nox-lifetime-altitude.png" class="img-fluid" alt="NOx lifetime vs latitude and altitude"> <span id="fig-3-3"></span><em>Figure 3.3 — Lifetime of NOx in the troposphere (days), as a function of latitude and height.</em></p>
 </section>
 <section id="ozone-production-under-low-and-high-nox-conditions" class="level2">
 <h2 class="anchored" data-anchor-id="ozone-production-under-low-and-high-nox-conditions">3.5 Ozone production under low and high NOx conditions</h2>
@@ -389,18 +389,18 @@ window.Quarto = {
 <p><span class="math display">\[NO_2+h\nu\to NO+O\ (R3.10) \qquad O+O_2+M\to O_3+M\ (R3.11)\]</span></p>
 <p><span class="math display">\[\textbf{Overall: } CO + 2O_2 + h\nu \to CO_2 + O_3\]</span></p>
 <p>Clearly, increasing [NOx] increases the rate of the ozone-production cycle. There’s a critical NOx concentration at which production outweighs destruction.</p>
-<p><img src="../assets/figures/m8-fig3-4-o3-production-vs-nox.jpeg" class="img-fluid" alt="Schematic net O3 production vs NOx mixing ratio"> <em>Figure 3.4 — Schematic representation of the dependence of net ozone production on NOx mixing ratio.</em></p>
+<p><img src="../assets/figures/m8-fig3-4-o3-production-vs-nox.jpeg" class="img-fluid" alt="Schematic net O3 production vs NOx mixing ratio"> <span id="fig-3-4"></span><em>Figure 3.4 — Schematic representation of the dependence of net ozone production on NOx mixing ratio.</em></p>
 <p>The figure divides into three regions, illustrating a strongly non-linear dependence of ozone production on NOx:</p>
 <ul>
 <li><strong>Region A</strong> — ozone <em>destruction</em> dominates. As NOx increases, the production rate rises until it exceeds the (NOx-independent) destruction rate, and net production begins.</li>
 <li>The transition — where does it occur? To first approximation, treat HO₂ as the only peroxy radical. The transition occurs when enough NO is present for NO + HO₂ (<span class="math inline">\(k_{3.13} \approx 8\times10^{-12}\)</span> cm³ s⁻¹) to compete with the much slower O₃ + HO₂ (<span class="math inline">\(k_{3.8} \approx 2\times10^{-15}\)</span> cm³ s⁻¹). Equating these rates ([HO₂] cancels) gives <span class="math inline">\([NO] = k_{3.8}[O_3]/k_{3.13}\)</span>. For a typical [O₃] ~ 40 ppbv, this gives <span class="math inline">\([NO] \sim 0.01\)</span> ppbv (10 pptv). Anthropogenic NO emissions (largely motor vehicles) significantly exceed this over much of the northern-hemisphere land area, so the ozone-production cycle dominates there. Even in clean oceanic air (Cape Grim, Tasmania), small amounts of NO suffice to cause net ozone production — photochemical ozone production is thus a global phenomenon. Only in remote marine areas ([NOx] &lt; 10 pptv) does photochemistry act as a net O₃ <strong>sink</strong>.</li>
 </ul>
-<p><img src="../assets/figures/m8-fig3-5-net-o3-production-vs-no.jpeg" class="img-fluid" alt="Net O3 production vs [NO], Cape Grim"> <em>Figure 3.5 — Net ozone production as a function of [NO] (ppt), in clean oceanic air at Cape Grim, Tasmania.</em></p>
+<p><img src="../assets/figures/m8-fig3-5-net-o3-production-vs-no.jpeg" class="img-fluid" alt="Net O3 production vs [NO], Cape Grim"> <span id="fig-3-5"></span><em>Figure 3.5 — Net ozone production as a function of [NO] (ppt), in clean oceanic air at Cape Grim, Tasmania.</em></p>
 <ul>
 <li>Ozone production does <strong>not</strong> keep increasing with NOx indefinitely — at high enough NOx, production peaks and then <em>decreases</em>. This turnover is caused by the increasing rate of the termination reaction R3.16: more NOx means more OH + NO₂ → HNO�3, making the free-radical-catalysed production cycle less efficient.</li>
 </ul>
 <p>This complex mechanism produces a strongly non-linear relationship between ozone amounts and precursor emission rates — an ozone “isopleth” surface in NOx–VOC emission space:</p>
-<p><img src="../assets/figures/m8-fig3-6-isopleth.png" class="img-fluid" alt="O3 isopleth as a function of NOx and VOC emissions"> <em>Figure 3.6 — Modelled ozone mixing ratio (ppb) as a function of NOx emission rate and VOC emission rate.</em></p>
+<p><img src="../assets/figures/m8-fig3-6-isopleth.png" class="img-fluid" alt="O3 isopleth as a function of NOx and VOC emissions"> <span id="fig-3-6"></span><em>Figure 3.6 — Modelled ozone mixing ratio (ppb) as a function of NOx emission rate and VOC emission rate.</em></p>
 <p>Quite different regulatory responses are needed depending on where a region sits on this isopleth surface. For example: at point B, reducing NOx emissions without reducing VOC (path B→C) has limited effect; reducing VOC alone (path B→A) would require ~3 orders of magnitude reduction to see significant effects. <strong>There is no magic bullet</strong> — the chemistry is complex! More detailed analysis suggests the best results come from tighter regulation of the most reactive hydrocarbons <em>combined with</em> NOx reduction. (Note: not all VOCs are anthropogenic — isoprene, for example, is biogenic, emitted from certain plants and trees, at an emission rate comparable to CH₄.)</p>
 <p>An increase in NOx at point C leads to ozone production — this regime is <strong>‘NOx-limited’</strong>. At point A, adding VOCs leads to ozone production — this regime is <strong>‘VOC-limited’</strong>. Much of the industrialised northern hemisphere is VOC-limited (high ambient NOx); many tropical and southern-hemisphere locations are NOx-limited. Predicting the atmospheric response to emissions policy is consequently very complex.</p>
 <hr>
@@ -411,7 +411,7 @@ window.Quarto = {
 <ul>
 <li>Solve Example 3 (photostationary-state establishment timescale) and confirm it’s fast (~100 s) relative to NOx/O₃ budget timescales.</li>
 <li>Implement the Leighton relationship and reproduce how <span class="math inline">\([O_3]_{ss}\)</span> depends on the NO₂/NO ratio.</li>
-<li>Compute the low-NOx/high-NOx transition [NO] (§3.5) and reproduce the qualitative shape of Fig 3.4/3.5 as a function of [NO], including the high-NOx turnover from R3.16.</li>
+<li>Compute the low-NOx/high-NOx transition [NO] (§3.5) and reproduce the qualitative shape of <a href="#fig-3-4">Fig 3.4</a>/3.5 as a function of [NO], including the high-NOx turnover from R3.16.</li>
 <li>Build a simple ozone-isopleth calculator as a function of NOx and VOC emission rates, and locate NOx-limited vs.&nbsp;VOC-limited regimes.</li>
 </ul>
 <hr>
