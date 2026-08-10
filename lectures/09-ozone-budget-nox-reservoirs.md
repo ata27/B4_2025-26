@@ -66,6 +66,9 @@ $$HONO + h\nu \to OH + NO$$ &nbsp;&nbsp;(R3.17)
 
 This generates a pulse of OH into the early-morning atmosphere, partly responsible for kick-starting daytime photochemistry (see Module 7, §2.4.1).
 
+![Overview of NOy chemistry](../assets/figures/m9-fig3-9.png)
+*Figure 3.9 — Schematic illustration of tropospheric NOx chemistry emphasising the major NOx reservoir molecules.*
+
 ### 3.8.1 Formation of the NOx reservoir peroxyacetyl nitrate (PAN)
 
 Peroxyacetyl nitrate (PAN: CH₃C(O)O₂NO₂) forms readily in the troposphere as a degradation product of C₂+ hydrocarbons in the presence of NO₂. For example, OH + acetaldehyde (a typical VOC degradation product) forms acetylperoxy radicals:
