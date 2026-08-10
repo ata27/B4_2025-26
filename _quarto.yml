@@ -23,6 +23,10 @@ book:
         - lectures/09-ozone-budget-nox-reservoirs.md
         - lectures/10-nmvoc-oxidation-alkanes-alkenes.md
         - lectures/11-nmvoc-aromatics-oxygenates.md
+    - part: "Problem Sets"
+      chapters:
+        - problems/StratosChem_Questions_Only.md
+        - problems/TroposChem_Questions_Only.md
 
 format:
   html:

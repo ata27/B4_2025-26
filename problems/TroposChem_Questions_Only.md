@@ -157,9 +157,9 @@ Data: k1 = 4.0 × 10¹⁵ exp(−13000/T) s⁻¹; k₋₁/k2 = 0.5 (independent 
 
 **2.** What is the main difference in the oxidation schemes of alkanes and alkenes?
 
-**3.** Two oxidation products of limonene have been observed, see below. Show mechanisms that would explain these products. Consider all relevant atmospheric oxidants.
+**3.** Two oxidation products of limonene have been observed. Show mechanisms that would explain these products. Consider all relevant atmospheric oxidants.
 
-![Limonene oxidation products](media/chapter4_limonene_products.jpeg)
+<!-- TODO: figure missing — media/chapter4_limonene_products.jpeg not in repo -->
 
 **4.** This question wants you to think about the atmospheric fate of 1-pentene.
 
@@ -169,9 +169,8 @@ Data: k1 = 4.0 × 10¹⁵ exp(−13000/T) s⁻¹; k₋₁/k2 = 0.5 (independent 
 
 **5.** Explain the mechanism of formation of these two products from oxidation of alpha-pinene and explain which oxidants are going to dominate alpha-pinene destruction in a NOx-free tropospheric environment. **[2.5+2.5+2, 2.5 points for each mechanism and 2 for the oxidants]** *(from Tripos 2021, Paper 3 Q44)*
 
-![Alpha-pinene oxidation products](media/chapter4_alphapinene_products.png)
+<!-- TODO: figure missing — media/chapter4_alphapinene_products.png not in repo -->
 
 **6.** Explain the mechanism of formation of these two products from oxidation of isoprene (2-methyl-1,3-butadiene) in a polluted environment at nighttime. State which oxidants are relevant in these conditions. **[7]** *(from Tripos 2022, Paper 3 Q43)*
 
-![Isoprene oxidation products, molecule 1](media/chapter4_isoprene_mech_15.png)
-![Isoprene oxidation products, molecule 2](media/chapter4_isoprene_mech_16.png)
+<!-- TODO: figures missing — media/chapter4_isoprene_mech_15.png, media/chapter4_isoprene_mech_16.png not in repo -->
