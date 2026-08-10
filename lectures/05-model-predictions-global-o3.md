@@ -35,14 +35,14 @@ Ozone depletion has indeed been detected in the upper stratosphere in line with 
 
 ![Observed ozonesonde profile, before](../assets/figures/m5-fig5-2a-ozonesonde-before.png)
 ![Observed ozonesonde profile, after 6 weeks](../assets/figures/m5-fig5-2b-ozonesonde-after.png)
-*Figure 5.2 — Observed (ozone-sonde) vertical profiles of temperature and ozone. Note the difference between the two panels after 6 weeks — the springtime Antarctic ozone hole is a *lower*-stratospheric phenomenon, not the upper-stratospheric signature predicted by gas-phase catalytic cycles alone.*
+[]{#fig-5-2}*Figure 5.2 — Observed (ozone-sonde) vertical profiles of temperature and ozone. Note the difference between the two panels after 6 weeks — the springtime Antarctic ozone hole is a *lower*-stratospheric phenomenon, not the upper-stratospheric signature predicted by gas-phase catalytic cycles alone.*
 
 So the large observed change in the Antarctic is **not** explained by the upper-stratospheric losses calculated from gas-phase catalytic cycles. Our theory of catalytic cycles is correct — it explains ozone behaviour away from polar regions (e.g. the observed loss in the upper stratosphere) — but it is **incomplete**. Explaining the Antarctic ozone hole requires additional chemistry (heterogeneous reactions on polar stratospheric cloud surfaces, which activate ClOx from its reservoirs far more efficiently at low temperatures) — the subject of further courses.
 
 One of the key questions current research aims to answer is how changes in stratospheric ozone are affected by, and will in turn affect, climate change.
 
 ![CCMI Modelled Ozone Trends ](../assets/figures/m5-fig5-3-ccmi.png)
-*Figure 5.3 — Observed and modelled ozone from Chemistry Climate Modelling Initiative models. The observations show good skill of the models and the future scenarios highlight how different emissions/climate pathways will impact ozone. Taken from WMO Global Ozone Research and Monitoring Project Report No. 55)*
+[]{#fig-5-3}*Figure 5.3 — Observed and modelled ozone from Chemistry Climate Modelling Initiative models. The observations show good skill of the models and the future scenarios highlight how different emissions/climate pathways will impact ozone. Taken from WMO Global Ozone Research and Monitoring Project Report No. 55)*
 
 ---
 

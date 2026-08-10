@@ -24,16 +24,16 @@ For simple chemical systems, we can write out differential equations that descri
 
 $$\frac{d[A]}{dt} = -k[A]^n$$
 
-where in this case $n = 1$ and this reaction is said to be **first order** with respect to $A$ (molecules cm⁻³). Plots of the change in concentration of $A$ with time are shown in Fig 2.1 for different values of rate coefficient, $k$ (s⁻¹). Fig 2.1 highlights that the larger the value of the rate coefficient (sometimes called rate constant, and erroneously "the rate" — naughty!) the faster the loss of $A$ with time.
+where in this case $n = 1$ and this reaction is said to be **first order** with respect to $A$ (molecules cm⁻³). Plots of the change in concentration of $A$ with time are shown in [Fig 2.1](#fig-2-1) for different values of rate coefficient, $k$ (s⁻¹). [Fig 2.1](#fig-2-1) highlights that the larger the value of the rate coefficient (sometimes called rate constant, and erroneously "the rate" — naughty!) the faster the loss of $A$ with time.
 
 ![First order decay of A with respect to time](../assets/figures/m2-fig2-1-first-order-decay.png)
-*Figure 2.1 — Plots of the first-order decay of A with respect to time.*
+[]{#fig-2-1}*Figure 2.1 — Plots of the first-order decay of A with respect to time.*
 
 We can define a new expression by integrating our rate equation for $A$ and noting that our initial conditions are $A = A_0$ at $t = 0$:
 
 $$\int_{0}^{t} k  dt = -\int_{0}^{A} [A]^{-n}  dA$$
 
-As Fig 2.1 highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
+As [Fig 2.1](#fig-2-1) highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
 
 $$\tau = 1/k$$
 
@@ -66,7 +66,7 @@ $$\frac{d[C]}{dt} = k_2[B]$$
 Solutions to these equations for $k_1 = 1$ s⁻¹, $k_2 = 2$ s⁻¹, and (separately) $k_1 = 1$ s⁻¹, $k_2 = 10$ s⁻¹, are worth plotting side by side (see the notebook for details).
 
 ![A -> B -> C chain reaction: exact [B] vs the steady-state approximation, for two (k1, k2) pairs](../assets/figures/m2-fig-abc-chain.png)
-*Figure — The A → B → C chain reaction for $(k_1,k_2) = (1,2)$ s⁻¹ (left) and $(1,10)$ s⁻¹ (right), comparing the exact $[B]$ (solid) against the steady-state approximation $[B]_{ss} = k_1[A]/k_2$ (dashed).*
+[]{#fig-2-1a}*Figure 2.1a — The A → B → C chain reaction for $(k_1,k_2) = (1,2)$ s⁻¹ (left) and $(1,10)$ s⁻¹ (right), comparing the exact $[B]$ (solid) against the steady-state approximation $[B]_{ss} = k_1[A]/k_2$ (dashed).*
 
 What you will notice is that the intermediate $B$ is short-lived relative to $C$, and that as the value of $k_2$ increases, the peak concentration of $B$ decreases. The time it takes for $B$ to reach an almost-steady concentration is $\sim 1/k_2$. In the limit where $k_2 \gg k_1$ we can make the approximation:
 
@@ -167,10 +167,10 @@ We will consider many examples of using steady state in the supervision question
 
 So far we have considered some very trivial examples. Whilst these have been trivial, they are still very useful for our studies of atmospheric chemistry. But an important complication for us as atmospheric chemists is that the reaction vessel we use in our studies is the atmosphere itself! You only need to venture outdoors to note that the reactions taking place in the atmosphere are doing so under far-from-controlled conditions. The gases and particles we are interested in are affected not only by chemical change but also by transport — for example through the wind. In this course we won't dwell much on atmospheric transport (that's covered in greater detail in the Part III course). What is important, however, is to have a feel for the **relative** time scales of chemistry and transport.
 
-The time constants (**lifetimes**) of a range of constituents of interest to the atmospheric chemist are presented in Fig 2.2. As we've seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.
+The time constants (**lifetimes**) of a range of constituents of interest to the atmospheric chemist are presented in [Fig 2.2](#fig-2-2). As we've seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.
 
 ![Comparison of spatial and chemical scales of selected atmospheric gases](../assets/figures/m2-fig2-2-lifetime-scales.png)
-*Figure 2.2 — Comparison of spatial and chemical scales of selected gases in the atmosphere.*
+[]{#fig-2-2}*Figure 2.2 — Comparison of spatial and chemical scales of selected gases in the atmosphere.*
 
 ## 2.2 Bi-molecular rate coefficients
 
@@ -187,9 +187,9 @@ $$k_{obs(T)} = A \exp\left(-\frac{E_a}{RT}\right) \quad \text{(molecules}^{-1}\t
 where $A$ is often referred to as the Arrhenius pre-exponential factor, $E_a$ the reaction activation energy (J mol⁻¹), $R$ the gas constant (J K⁻¹ mol⁻¹) and $T$ temperature (K). Many bi-molecular reactions in the atmosphere show temperature dependence in their kinetics. A good example is the reaction of OH with methane (one of the most temperature-dependent reactions known).
 
 ![Arrhenius plot for OH + CH4](../assets/figures/m2-fig2-3-arrhenius-oh-ch4.png)
-*Figure 2.3 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.*
+[]{#fig-2-3}*Figure 2.3 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.*
 
-Fig 2.3 demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.
+[Fig 2.3](#fig-2-3) demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.
 
 ## 2.3 Ter-molecular rate coefficients
 
@@ -243,7 +243,7 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 
 Open **[`notebooks/02-chemical-kinetics.ipynb`](../notebooks/02-chemical-kinetics.ipynb)** to:
 
-- Reproduce Fig 2.1 (first-order decay for a range of $k$) and confirm $\tau = 1/k$.
+- Reproduce [Fig 2.1](#fig-2-1) (first-order decay for a range of $k$) and confirm $\tau = 1/k$.
 - Solve the $A \to B \to C$ chain reaction numerically for both $(k_1,k_2)=(1,2)$ and $(1,10)$ s⁻¹, and check the steady-state approximation for $[B]$ against the full numerical solution.
 - Solve Exercise 3 (the $A \rightleftharpoons B$ system) both analytically (Eq 9) and numerically, and quantify how the error in the steady-state approximation depends on $k_f/k_b$.
 - Plot an Arrhenius line from $A$ and $E_a$, and fit $A$/$E_a$ back out from a synthetic $k(T)$ dataset — the same exercise you'd do with real IUPAC/JPL kinetics data.

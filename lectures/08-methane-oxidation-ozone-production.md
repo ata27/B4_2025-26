@@ -58,7 +58,7 @@ However, the efficiency of this OH recycling is rather low in the clean lower tr
 **To recap:** R3.3, together with loss of peroxides (or HCHO) in rain, leads to a net loss of HOx radicals. **As ozone is lost in the process of generating HOx from O(¹D), there is a net loss of ozone overall** — in the *unpolluted* (low-NOx) troposphere.
 
 ![Diurnal variation of peroxides and ozone in the clean marine troposphere](../assets/figures/m8-fig3-2-diurnal-peroxides-ozone.jpeg)
-*Figure 3.2 — Diurnal variation of peroxides ROOH (open symbols) and ozone (filled symbols) in the clean marine troposphere, showing production of peroxides and destruction of ozone during daytime (highlighted region).*
+[]{#fig-3-2}*Figure 3.2 — Diurnal variation of peroxides ROOH (open symbols) and ozone (filled symbols) in the clean marine troposphere, showing production of peroxides and destruction of ozone during daytime (highlighted region).*
 
 ## 3.2 Nitrogen oxides and production of tropospheric ozone
 
@@ -144,10 +144,10 @@ R3.12 (NO + O₃ → NO₂ + O₂) is temperature-dependent: $k_{3.12} = 2\times
 
 $$\tau_{NOx} = \frac{[NO_x]}{k_{3.16}[NO_2][OH]}$$
 
-Fig 3.3 shows this lifetime increasing to about **15 days** in the tropical upper troposphere, versus around **one day** in the boundary layer.
+[Fig 3.3](#fig-3-3) shows this lifetime increasing to about **15 days** in the tropical upper troposphere, versus around **one day** in the boundary layer.
 
 ![NOx lifetime vs latitude and altitude](../assets/figures/m8-fig3-3-nox-lifetime-altitude.png)
-*Figure 3.3 — Lifetime of NOx in the troposphere (days), as a function of latitude and height.*
+[]{#fig-3-3}*Figure 3.3 — Lifetime of NOx in the troposphere (days), as a function of latitude and height.*
 
 ## 3.5 Ozone production under low and high NOx conditions
 
@@ -168,7 +168,7 @@ $$\textbf{Overall: } CO + 2O_2 + h\nu \to CO_2 + O_3$$
 Clearly, increasing [NOx] increases the rate of the ozone-production cycle. There's a critical NOx concentration at which production outweighs destruction.
 
 ![Schematic net O3 production vs NOx mixing ratio](../assets/figures/m8-fig3-4-o3-production-vs-nox.jpeg)
-*Figure 3.4 — Schematic representation of the dependence of net ozone production on NOx mixing ratio.*
+[]{#fig-3-4}*Figure 3.4 — Schematic representation of the dependence of net ozone production on NOx mixing ratio.*
 
 The figure divides into three regions, illustrating a strongly non-linear dependence of ozone production on NOx:
 
@@ -176,14 +176,14 @@ The figure divides into three regions, illustrating a strongly non-linear depend
 - The transition — where does it occur? To first approximation, treat HO₂ as the only peroxy radical. The transition occurs when enough NO is present for NO + HO₂ ($k_{3.13} \approx 8\times10^{-12}$ cm³ s⁻¹) to compete with the much slower O₃ + HO₂ ($k_{3.8} \approx 2\times10^{-15}$ cm³ s⁻¹). Equating these rates ([HO₂] cancels) gives $[NO] = k_{3.8}[O_3]/k_{3.13}$. For a typical [O₃] ~ 40 ppbv, this gives $[NO] \sim 0.01$ ppbv (10 pptv). Anthropogenic NO emissions (largely motor vehicles) significantly exceed this over much of the northern-hemisphere land area, so the ozone-production cycle dominates there. Even in clean oceanic air (Cape Grim, Tasmania), small amounts of NO suffice to cause net ozone production — photochemical ozone production is thus a global phenomenon. Only in remote marine areas ([NOx] < 10 pptv) does photochemistry act as a net O₃ **sink**.
 
 ![Net O3 production vs [NO], Cape Grim](../assets/figures/m8-fig3-5-net-o3-production-vs-no.jpeg)
-*Figure 3.5 — Net ozone production as a function of [NO] (ppt), in clean oceanic air at Cape Grim, Tasmania.*
+[]{#fig-3-5}*Figure 3.5 — Net ozone production as a function of [NO] (ppt), in clean oceanic air at Cape Grim, Tasmania.*
 
 - Ozone production does **not** keep increasing with NOx indefinitely — at high enough NOx, production peaks and then *decreases*. This turnover is caused by the increasing rate of the termination reaction R3.16: more NOx means more OH + NO₂ → HNO�3, making the free-radical-catalysed production cycle less efficient.
 
 This complex mechanism produces a strongly non-linear relationship between ozone amounts and precursor emission rates — an ozone "isopleth" surface in NOx–VOC emission space:
 
 ![O3 isopleth as a function of NOx and VOC emissions](../assets/figures/m8-fig3-6-isopleth.png)
-*Figure 3.6 — Modelled ozone mixing ratio (ppb) as a function of NOx emission rate and VOC emission rate.*
+[]{#fig-3-6}*Figure 3.6 — Modelled ozone mixing ratio (ppb) as a function of NOx emission rate and VOC emission rate.*
 
 Quite different regulatory responses are needed depending on where a region sits on this isopleth surface. For example: at point B, reducing NOx emissions without reducing VOC (path B→C) has limited effect; reducing VOC alone (path B→A) would require ~3 orders of magnitude reduction to see significant effects. **There is no magic bullet** — the chemistry is complex! More detailed analysis suggests the best results come from tighter regulation of the most reactive hydrocarbons *combined with* NOx reduction. (Note: not all VOCs are anthropogenic — isoprene, for example, is biogenic, emitted from certain plants and trees, at an emission rate comparable to CH₄.)
 
@@ -197,7 +197,7 @@ Open **[`notebooks/08-photostationary-state.ipynb`](../notebooks/08-photostation
 
 - Solve Example 3 (photostationary-state establishment timescale) and confirm it's fast (~100 s) relative to NOx/O₃ budget timescales.
 - Implement the Leighton relationship and reproduce how $[O_3]_{ss}$ depends on the NO₂/NO ratio.
-- Compute the low-NOx/high-NOx transition [NO] (§3.5) and reproduce the qualitative shape of Fig 3.4/3.5 as a function of [NO], including the high-NOx turnover from R3.16.
+- Compute the low-NOx/high-NOx transition [NO] (§3.5) and reproduce the qualitative shape of [Fig 3.4](#fig-3-4)/3.5 as a function of [NO], including the high-NOx turnover from R3.16.
 - Build a simple ozone-isopleth calculator as a function of NOx and VOC emission rates, and locate NOx-limited vs. VOC-limited regimes.
 
 ---

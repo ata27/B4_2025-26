@@ -18,10 +18,10 @@ notebook: "../notebooks/09-nox-reservoirs.ipynb"
 
 ## 3.6 The budget of tropospheric ozone
 
-The main processes controlling tropospheric O₃ are shown schematically in Fig 3.7. There are four main terms: **transport from the stratosphere** (where the ozone mixing ratio is much higher than in the troposphere — a genuinely important source); **in-situ photochemical production and destruction**; and **deposition at the surface**. These terms approach balance in the annual mean, but are not independent — increased stratospheric flux, or increased photochemical production, might for example lead to additional O₃ deposition. Precursors of photochemical ozone production originate from both anthropogenic and biogenic processes.
+The main processes controlling tropospheric O₃ are shown schematically in [Fig 3.7](#fig-3-7). There are four main terms: **transport from the stratosphere** (where the ozone mixing ratio is much higher than in the troposphere — a genuinely important source); **in-situ photochemical production and destruction**; and **deposition at the surface**. These terms approach balance in the annual mean, but are not independent — increased stratospheric flux, or increased photochemical production, might for example lead to additional O₃ deposition. Precursors of photochemical ozone production originate from both anthropogenic and biogenic processes.
 
 ![Schematic of processes controlling tropospheric O3](../assets/figures/m9-fig3-7-o3-budget-schematic.png)
-*Figure 3.7 — Schematic of the processes controlling tropospheric O₃.*
+[]{#fig-3-7}*Figure 3.7 — Schematic of the processes controlling tropospheric O₃.*
 
 **Table 3.2 — approximate global budget of tropospheric ozone (Tg/year)**
 
@@ -33,10 +33,10 @@ Although the chemical production and destruction terms are individually large, t
 
 O₃ destruction via O(¹D) + H₂O dominates in the tropics and near the surface, where [H₂O] is highest. O₃ surface deposition (expressed as a deposition velocity) depends strongly on surface type and is quite uncertain — some models use a deposition term half the size of others. Deposition to vegetated surfaces is much stronger than to ocean or snow/ice, but the dependence on vegetation type is still not well quantified.
 
-Ozone concentrations in Europe and other industrialised regions increased strongly over roughly the last hundred years (Fig 3.8), due to increased anthropogenic activity and associated NOx/VOC emissions.
+Ozone concentrations in Europe and other industrialised regions increased strongly over roughly the last hundred years ([Fig 3.8](#fig-3-8)), due to increased anthropogenic activity and associated NOx/VOC emissions.
 
 ![Historical ozone concentrations in Paris since 1870](../assets/figures/m9-fig3-8-historical-paris-ozone.png)
-*Figure 3.8 — Historical ozone concentrations in Paris since 1870. Annual average concentrations increased by a factor of 5–10 over this period.*
+[]{#fig-3-8}*Figure 3.8 — Historical ozone concentrations in Paris since 1870. Annual average concentrations increased by a factor of 5–10 over this period.*
 
 ## 3.7 Formation of carbonyl compounds
 
@@ -58,6 +58,8 @@ Radicals from R3.5 and R3.7 re-enter the HOx family, which can react further (e.
 
 The importance of NOx to tropospheric chemistry is clear from the preceding discussion of its influence on ozone production. It follows that any mechanism removing NOx from the atmosphere, or transporting it from polluted to clean regions, could be highly significant for ozone photochemistry — particularly given how little NO is needed for net ozone production (§3.5).
 
+An overview of the important NOx reservoirs, that comprise NOy in the troposphere, are shown in [Figure 3.9](#fig-3-9). 
+
 We already discussed the role of HNO₃ as an important NOx sink (§3.4) and its ecosystem effects (Module 6, §1.4.3).
 
 **Nitrous acid**, HONO (HNO₂), is mostly formed in heterogeneous reactions from NO₂, and represents a night-time reservoir for both HOx and NOx. HONO is quickly photolysed at sunrise, regenerating NO and OH:
@@ -66,8 +68,8 @@ $$HONO + h\nu \to OH + NO$$ &nbsp;&nbsp;(R3.17)
 
 This generates a pulse of OH into the early-morning atmosphere, partly responsible for kick-starting daytime photochemistry (see Module 7, §2.4.1).
 
-![Overview of NOy chemistry](../assets/figures/m9-fig3-9.png)
-*Figure 3.9 — Schematic illustration of tropospheric NOx chemistry emphasising the major NOx reservoir molecules.*
+![Overview of NOy chemistry](../assets/figures/m9-figure3-9.png)
+[]{#fig-3-9}*Figure 3.9 — Schematic illustration of tropospheric NOx chemistry emphasising the major NOx reservoir molecules.*
 
 ### 3.8.1 Formation of the NOx reservoir peroxyacetyl nitrate (PAN)
 
@@ -94,7 +96,7 @@ The decomposition rate depends on the relative amounts of NO and NO₂, and on t
 Above the boundary layer, lower temperatures give PAN a much longer lifetime (up to several weeks) — long enough for significant transport to other parts of the atmosphere, where, on reaching warmer regions, it can dissociate, releasing NO₂ and affecting ozone chemistry there.
 
 ![Modelled nitrogen compound concentrations vs altitude](../assets/figures/m9-fig3-10-pan-altitude-profile.png)
-*Figure 3.10 — Modelled concentrations of nitrogen compounds as a function of altitude throughout the troposphere. In the upper troposphere, PAN is the dominant nitrogen species.*
+[]{#fig-3-10}*Figure 3.10 — Modelled concentrations of nitrogen compounds as a function of altitude throughout the troposphere. In the upper troposphere, PAN is the dominant nitrogen species.*
 
 PAN has indeed been detected in significant quantities in parts of the atmosphere remote from direct pollution, implying it affects the global ozone budget.
 

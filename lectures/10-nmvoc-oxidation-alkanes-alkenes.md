@@ -115,7 +115,7 @@ In contrast to alkanes, alkenes also react significantly with **ozone**. Initial
 In the gas phase, the Criegee intermediate is either stabilised or decomposes via various channels — one, via a hydroperoxide intermediate, yields a carbonyl **and OH**. This OH-formation route can be especially important at night, when other major OH sources are inactive.
 
 ![Calculated HOx generation rates from various sources, rural site](../assets/figures/m11-fig4-6-hox-sources-rural.png)
-*Figure 4.6 — Calculated rates of HOx generation from various sources at a rural site (Paulson and Orlando, Geophysical Research Letters, 1996).*
+[]{#fig-4-6}*Figure 4.6 — Calculated rates of HOx generation from various sources at a rural site (Paulson and Orlando, Geophysical Research Letters, 1996).*
 
 The major fate of the *stabilised* Criegee intermediate is believed to be reaction with H₂O, leading to carboxylic acids and hydroxy-hydroperoxides. Other reactions include those with NO₂, SO₂ and organics — the relative importance of these is not fully characterised.
 

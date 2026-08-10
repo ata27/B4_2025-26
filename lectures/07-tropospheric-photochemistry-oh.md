@@ -77,7 +77,7 @@ At the high pressures found in the troposphere, O(¹D) is rapidly quenched to gr
 ***The photolysis process R2.3 is in fact central to the chemistry of the troposphere, as it is the primary step in generating OH radicals — which, as we shall see, initiate oxidative chemistry.***
 
 ![O3 cross-section, quantum yield (R2.3), and solar photon flux at the surface](../assets/figures/m7-fig2-2-o3-cross-section-qy-flux.png)
-*Figure 2.2a — Cross-section, quantum yield for reaction R2.3, and solar photon flux at the Earth's surface.*
+[]{#fig-2-2a}*Figure 2.2a — Cross-section, quantum yield for reaction R2.3, and solar photon flux at the Earth's surface.*
 
 ### 2.3.1 Fate of O(¹D) in a dry atmosphere
 
@@ -110,7 +110,7 @@ R2.6 represents the principal (though not sole) mechanism for generating hydroxy
 The diurnal behaviour of [OH] closely tracks $J_{O(^{1}D)}$ over the course of a day, measured in the unpolluted conditions typical of the Southern Hemisphere marine environment — demonstrating the fast conversion of O(¹D) into OH and the dominance of R2.3/R2.5–R2.6 in OH production. Under sunny conditions, $J_{O(^{1}D)}$ reaches a maximum of about $3\times10^{-5}$ s⁻¹.
 
 ![OH and J(O1D) diurnal profile](../assets/figures/m7-fig2-2b-oh-jo1d-diurnal.jpeg)
-*Figure 2.2b — Typical diurnal variation of [OH] and J(O¹D) in the clean marine atmosphere.*
+[]{#fig-2-2b}*Figure 2.2b — Typical diurnal variation of [OH] and J(O¹D) in the clean marine atmosphere.*
 
 ### 2.4.1 Other sources of OH in the troposphere
 
@@ -212,7 +212,7 @@ Fully halogenated hydrocarbons do not react with OH (the abstraction reaction to
 Direct atmospheric measurements have convincingly confirmed the presence of OH in the daytime troposphere. Measurements in very clean atmospheres over the Southern Ocean confirm the basic mechanism, in which HOx radicals are predicted to have a **square-root dependence** on the ozone photolysis rate. The observations also show that ozone is slowly destroyed through photolysis, and that peroxides like H₂O₂ are formed.
 
 ![HO2(+RO2) vs sqrt(J(O1D)) correlation, Cape Grim](../assets/figures/m7-fig2-5-ho2-vs-sqrt-jo1d.png)
-*Figure 2.5 — Correlation plot of measured HO₂ (+RO₂) radical concentrations vs. calculated J(O¹D), showing the dependence of peroxy radical concentration on the square root of J(O¹D). Data from the Cape Grim observatory, Tasmania.*
+[]{#fig-2-5}*Figure 2.5 — Correlation plot of measured HO₂ (+RO₂) radical concentrations vs. calculated J(O¹D), showing the dependence of peroxy radical concentration on the square root of J(O¹D). Data from the Cape Grim observatory, Tasmania.*
 
 > **Key points — Module 7**
 > - Photolysis of trace gases in the troposphere occurs only at wavelengths longer than ~300 nm.
@@ -227,7 +227,7 @@ Open **[`notebooks/07-oh-steady-state.ipynb`](../notebooks/07-oh-steady-state.ip
 
 - Reproduce the [OH] = 1.4 × 10⁶ cm⁻³ and [HO₂] = 2 × 10⁸ cm⁻³ steady-state results from §2.5.1 numerically.
 - Solve Example 2 (tropical boundary layer OH) by adjusting [H₂O], the O₃ column/$J_{O(^{1}D)}$, and [CO] to tropical values, and compare the resulting [OH] to the mid-latitude case.
-- Explore the predicted square-root dependence of [HOx] on $J_{O(^{1}D)}$ (Fig 2.5) from the steady-state equations, and check it against the observational correlation.
+- Explore the predicted square-root dependence of [HOx] on $J_{O(^{1}D)}$ ([Fig 2.5](#fig-2-5)) from the steady-state equations, and check it against the observational correlation.
 - Rank trace gases by OH-reaction lifetime using Table 2.2, and see how lifetime scales with rate coefficient for fixed [OH].
 
 ---

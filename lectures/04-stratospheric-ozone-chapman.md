@@ -65,9 +65,9 @@ The use of odd oxygen thus leads, as we'll see again later, to both conceptual a
 The timescale for steady state between reactions 4.1 and 4.4 varies strongly with altitude: ~hours at 40 km, but many years at 20 km. Invoking steady state in the upper stratosphere is a good approximation; in the lower stratosphere it would be poor, since solar intensity, temperature, and atmospheric transport all vary too rapidly to allow steady state to be established.
 
 ![Observed and calculated altitude profiles of O and O3](../assets/figures/m4-fig4-1-o-o3-profiles.png)
-*Figure 4.1 — Observed and calculated altitude profiles of O(³P) and O₃.*
+[]{#fig-4-1}*Figure 4.1 — Observed and calculated altitude profiles of O(³P) and O₃.*
 
-From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes (Fig 4.1).
+From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes ([Fig 4.1](#fig-4-1)).
 
 > **Exercise 6 — Steady-state distribution of ozone**
 >
@@ -86,12 +86,12 @@ From the steady state between O and O₃, [O] decreases very rapidly with decrea
 > Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).
 
 ![Measured and Chapman-calculated O3 mixing ratio profiles](../assets/figures/m4-fig4-2-chapman-vs-observed.png)
-*Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs. altitude.*
+[]{#fig-4-2}*Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs. altitude.*
 
-For many years it was thought that Chapman's model could adequately explain the distribution of stratospheric ozone. However, with improved laboratory and atmospheric measurements, it became apparent that reaction 4.4 only removes about **25%** of the odd oxygen produced by oxygen photolysis. Calculations based on just the Chapman reactions seriously overestimate stratospheric ozone concentrations (Fig 4.2).
+For many years it was thought that Chapman's model could adequately explain the distribution of stratospheric ozone. However, with improved laboratory and atmospheric measurements, it became apparent that reaction 4.4 only removes about **25%** of the odd oxygen produced by oxygen photolysis. Calculations based on just the Chapman reactions seriously overestimate stratospheric ozone concentrations ([Fig 4.2](#fig-4-2)).
 
 ![Total ozone vs latitude and season](../assets/figures/m4-fig4-3-total-o3-latitude-season.png)
-*Figure 4.3 — Variation of total ozone as a function of latitude and season, showing highest values at high latitudes just after the polar night. Photochemical theory alone would predict highest ozone over the tropics; the observed distribution is strong evidence for the role of large-scale **transport** (the winds) in shaping the ozone distribution.*
+[]{#fig-4-3}*Figure 4.3 — Variation of total ozone as a function of latitude and season, showing highest values at high latitudes just after the polar night. Photochemical theory alone would predict highest ozone over the tropics; the observed distribution is strong evidence for the role of large-scale **transport** (the winds) in shaping the ozone distribution.*
 
 Observations of the total ozone column helped meteorologists and atmospheric physicists show there is a global overturning circulation, known after its discoverers as the **Brewer–Dobson Circulation (BDC)**, which takes air from the tropics and redistributes it poleward.
 
@@ -185,12 +185,12 @@ During the day NO₃ is photolysed very rapidly (~seconds), but at night it's re
 
 $$NO_2 + NO_3 + M \to N_2O_5 + M$$
 
-The slope of the night-time NO₂ decay (Fig 4.5) is thus set by [O₃] and temperature (since at high temperatures $N_2O_5 \to NO_2 + NO_3$).
+The slope of the night-time NO₂ decay ([Fig 4.5](#fig-4-5)) is thus set by [O₃] and temperature (since at high temperatures $N_2O_5 \to NO_2 + NO_3$).
 
 ![Measured and modelled diurnal variation of NO2](../assets/figures/m4-fig4-5-no2-diurnal.png)
-*Figure 4.5 — Measured and modelled diurnal variation of NO₂.*
+[]{#fig-4-5}*Figure 4.5 — Measured and modelled diurnal variation of NO₂.*
 
-Fig 4.5 shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.
+[Fig 4.5](#fig-4-5) shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.
 
 ## 4.4 The oxides of hydrogen, HOx
 
@@ -313,7 +313,7 @@ The relative importance of the different catalytic destruction cycles is set by:
 Open **[`notebooks/04-chapman-mechanism.ipynb`](../notebooks/04-chapman-mechanism.ipynb)** to:
 
 - Solve Exercise 5 (O↔O₃ interconversion timescale) as a function of altitude, and confirm it becomes "fast" only in the upper stratosphere.
-- Implement Exercise 6's steady-state Chapman [O₃] formula (Eq 5) and reproduce the qualitative shape of Fig 4.2 — including the ~overestimate relative to the real atmosphere once you compare against a fixed "observed" profile.
+- Implement Exercise 6's steady-state Chapman [O₃] formula (Eq 5) and reproduce the qualitative shape of [Fig 4.2](#fig-4-2) — including the ~overestimate relative to the real atmosphere once you compare against a fixed "observed" profile.
 - Build a generic catalytic-cycle odd-oxygen-loss calculator, $d[O_x]/dt|_X = -2k_b[XO][O]$, and compare the relative importance of NOx-, HOx- and ClOx-driven loss for representative concentrations at a chosen altitude.
 - Explore how reservoir partitioning (e.g. the HNO₃ ⇌ NOx or HCl ⇌ ClOx balance) changes the *effective* catalytic efficiency of a family, even when the intrinsic $k_a$, $k_b$ are fixed.
 

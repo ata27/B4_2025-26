@@ -15,10 +15,10 @@ notebook: "../notebooks/03-photolysis-rates.ipynb"
 > 2. Use the Beer–Lambert law and optical depth to describe how photon flux and photolysis rates vary with altitude and solar zenith angle.
 > 3. Describe the absorption and photolysis behaviour of O₂, O₃, NO₂ and N₂O/CFCs, and explain why the troposphere and stratosphere have such different photochemical environments.
 
-The sun's energy drives atmospheric chemistry. Assuming that the Sun can be represented as a blackbody emitter, Wien's displacement law ($\lambda_{max} = b/T$) can be used to predict the peak wavelength of solar radiation reaching the top of the atmosphere (TOA). Figure 3.1 shows a profile of solar radiation at the TOA and at the Earth's surface. Strong absorption occurs in a number of wavelength intervals. Whilst significant amounts of the Sun's energy are absorbed in the IR bands of H₂O and CO₂, Fig 3.1 shows that it is absorption by O₃ and O₂ that dominate in the visible and near-UV regions. It is the absorption of radiation by these gases that triggers the cascade of reactions we will focus on in this course. One of the most important quantities we will derive is the **photolysis coefficient** — a first-order rate constant — which can be used to determine the effective lifetime of a gas in the atmosphere with respect to the Sun's energy.
+The sun's energy drives atmospheric chemistry. Assuming that the Sun can be represented as a blackbody emitter, Wien's displacement law ($\lambda_{max} = b/T$) can be used to predict the peak wavelength of solar radiation reaching the top of the atmosphere (TOA). [Figure 3.1](#fig-3-1) shows a profile of solar radiation at the TOA and at the Earth's surface. Strong absorption occurs in a number of wavelength intervals. Whilst significant amounts of the Sun's energy are absorbed in the IR bands of H₂O and CO₂, [Fig 3.1](#fig-3-1) shows that it is absorption by O₃ and O₂ that dominate in the visible and near-UV regions. It is the absorption of radiation by these gases that triggers the cascade of reactions we will focus on in this course. One of the most important quantities we will derive is the **photolysis coefficient** — a first-order rate constant — which can be used to determine the effective lifetime of a gas in the atmosphere with respect to the Sun's energy.
 
 ![Solar spectral irradiance at TOA and surface](../assets/figures/solar_spectrum.png)
-*Figure 3.1 — Solar spectral irradiance as a function of wavelength at the TOA and at the surface.*
+[]{#fig-3-1}*Figure 3.1 — Solar spectral irradiance as a function of wavelength at the TOA and at the surface.*
 
 ## 3.1 Calculation of photolysis rate coefficients
 
@@ -50,15 +50,15 @@ In principle the O.D. depends on all absorbing species at the wavelength of inte
 
 ## 3.2 Altitude dependence of photolysis
 
-Figure 3.2 shows the altitude at which the intensity of solar radiation is reduced by $1/e$ from its TOA value, as a function of wavelength. There is a lot of variation in this plot, but in general we can note: (i) as we move to longer $\lambda$, radiation penetrates closer to the surface before being attenuated; (ii) beyond 320 nm, there is no difference between the photon flux at the TOA and at the surface.
+[Figure 3.2](#fig-3-2) shows the altitude at which the intensity of solar radiation is reduced by $1/e$ from its TOA value, as a function of wavelength. There is a lot of variation in this plot, but in general we can note: (i) as we move to longer $\lambda$, radiation penetrates closer to the surface before being attenuated; (ii) beyond 320 nm, there is no difference between the photon flux at the TOA and at the surface.
 
 ![Altitude at which attenuation reaches 1/e, vs wavelength](../assets/figures/m3-fig3-2-attenuation-depth.png)
-*Figure 3.2 — Altitude at which attenuation reaches 1/e. Shows how the depth of penetration of radiation varies with wavelength. Based on Thomas 1980 DOI:10.1098/rsta.1980.0167*
+[]{#fig-3-2}*Figure 3.2 — Altitude at which attenuation reaches 1/e. Shows how the depth of penetration of radiation varies with wavelength. Based on Thomas 1980 DOI:10.1098/rsta.1980.0167*
 
-The fine structure in Fig 3.2 comes from the fine structure in the absorption cross-sections of the atmospheric absorbers. Briefly: Fig 3.2 shows that little radiation of $\lambda < 300$ nm penetrates below the tropopause. This means the photochemistry of the troposphere is very different from that of the stratosphere.
+The fine structure in [Fig 3.2](#fig-3-2) comes from the fine structure in the absorption cross-sections of the atmospheric absorbers. Briefly: [Fig 3.2](#fig-3-2) shows that little radiation of $\lambda < 300$ nm penetrates below the tropopause. This means the photochemistry of the troposphere is very different from that of the stratosphere.
 
 ![Vertical changes in photon flux](../assets/figures/photon_flux_toa_surface_280-500nm.png)
-*Figure 3.3 — Difference between photon flux at the top of atmosphere and the surface.*
+[]{#fig-3-3}*Figure 3.3 — Difference between photon flux at the top of atmosphere and the surface.*
 
 These altitude dependencies of photon fluxes matter when we come to calculate photolysis rates in different parts of the atmosphere — at 290 nm there is a factor-of-100 difference in photon flux between 40 km and 15 km, so processes requiring this wavelength proceed much more slowly at 15 km than at 40 km.
 
@@ -69,7 +69,7 @@ $J$ for O₂ ($\lambda < 250$ nm) varies strongly with altitude, as the relevant
 The presence of O₂ has a profound effect on the photochemistry of the atmosphere. O₂ has likely been present in our atmosphere for the last 2 billion years, with its current mixing ratio roughly constant over the last 500 million years. O₂ is produced through photosynthesis and is involved in a number of biogeochemical cycles giving rise to long lifetimes in the lower atmosphere (thousands of years). However, in the stratosphere O₂ can absorb short-$\lambda$ radiation and photo-dissociate. The absorption cross-section for O₂ consists of characteristic features, many named after the scientists who discovered them. The cross-section at $\lambda < 150$ nm is large but not important to O₂ photolysis in the stratosphere owing to a lack of photons at these wavelengths. The major absorption in the stratosphere is in the **Herzberg continuum** (220–260 nm), $A^3\Sigma_{u}^{+} \leftarrow X^3\Sigma_{g}^{-}$.
 
 ![O2 absorption cross sections](../assets/figures/O2_merged_50-250nm.png)
-*Figure 3.4 — Molecular oxygen absorption cross-sections.*
+[]{#fig-3-4}*Figure 3.4 — Molecular oxygen absorption cross-sections.*
 
 Assuming unit quantum yield for photolysis of O₂ (O₂ + hν → O(³P) + O(³P)), we can combine the wavelength-dependent flux profile with the absorption cross-section to calculate the photolysis frequency $J_{O_2}$; the reciprocal gives the lifetime/timescale for photolysis. The lifetime of O₂ with respect to photolysis varies over 5 orders of magnitude across the altitude range 20–100 km. The longer-wavelength Herzberg absorption is relatively more important at low altitudes, while the shorter wavelengths (Schumann–Runge Bands, Schumann–Runge Continuum) are only important at high altitudes (photons at these wavelengths are absorbed high up).
 
@@ -78,7 +78,7 @@ Assuming unit quantum yield for photolysis of O₂ (O₂ + hν → O(³P) + O(³
 Ozone is central to the chemistry of the atmosphere! The presence of ozone in a layer in the stratosphere (the ozone layer) has helped provide an environment suitable for the evolution of life at the Earth's surface. Yet ozone itself is toxic to most plants and animal life. Hence the phrase "**good up high, bad nearby**" is apt for ozone.
 
 ![O3 absorption cross sections](../assets/figures/O3_merged_100-1000nm.png)
-*Figure 3.5 — Molecular ozone absorption cross-sections.*
+[]{#fig-3-5}*Figure 3.5 — Molecular ozone absorption cross-sections.*
 
 
 O₃ is relatively weakly bound compared to O₂ and can be photolysed over a wide range of wavelengths, with a theoretical threshold at 1180 nm. Absorption occurs in the so-called **Hartley, Huggins and Chappuis bands**. The precise photolysis products depend on the photon energy. The most important processes are photolysis to yield electronically excited oxygen atoms (rate constant $J_{O(^{1}D)}$) and photolysis to ground-state atomic oxygen ($J_{O(^{3}P)}$):
@@ -92,7 +92,7 @@ Using the absorption cross-section data together with the altitude-dependent spe
 Of more interest to our understanding of atmospheric chemistry is the reaction channel producing excited oxygen atoms, $J_{O(^{1}D)}$. Here we must follow the same approach as before, but rather than assuming unit quantum yield we need the wavelength (and possibly temperature) dependence of $\phi_{(\lambda)}$: at small $\lambda$ the quantum yield is $\sim 1.0$, whilst at $\lambda > 310$ nm it drops to $\sim 0.0$.
 
 ![O(1D) quantum yield vs wavelength](../assets/figures/O3_QY_O1D.png)
-*Figure 3.8 — Wavelength dependence of the O(¹D) quantum yield.*
+[]{#fig-3-8}*Figure 3.8 — Wavelength dependence of the O(¹D) quantum yield.*
 
 We will see later that O(¹D), while present in very low concentrations, is extremely important for atmospheric chemistry. It can actually be produced at somewhat longer wavelengths than 310 nm, possible explanations being: 'hot band' absorption by O₃, or possibly O₃ → O(¹D) + O₂(³Σ) (spin-forbidden).
 
@@ -114,14 +114,14 @@ The photolysis products can go on to form O₃ (through reaction with O₂ in a 
 
 ![NO2 absorption cross section](../assets/figures/NO2_merged_240-662.5nm.png)
 ![NO2 quantum yield](../assets/figures/NO2_QY_NO_O3P.png)
-*Figure 3.9 — NO₂ absorption cross-section and quantum yield.*
+[]{#fig-3-9}*Figure 3.9 — NO₂ absorption cross-section and quantum yield.*
 
-As Fig 3.9 shows, the cross-section remains relatively large even at long wavelengths (where the atmosphere is otherwise practically transparent), resulting in large photolysis frequencies even near the surface:
+As [Fig 3.9](#fig-3-9) shows, the cross-section remains relatively large even at long wavelengths (where the atmosphere is otherwise practically transparent), resulting in large photolysis frequencies even near the surface:
 
 ![NO2 photolysis rates vs solar zenith angle](../assets/figures/JNO2_altitude_sza_heatmap.png)
-*Figure 3.10 — NO₂ photolysis rates as a function of solar zenith angle and altitude.*
+[]{#fig-3-10}*Figure 3.10 — NO₂ photolysis rates as a function of solar zenith angle and altitude.*
 
-NO₂ photolysis happens so rapidly that NO₂ can usually be thought of as being in steady state (i.e. the first-order rate of loss — photolysis — is large enough to keep its concentration low and steady) during daylight hours. Fig 3.10 shows that even at high solar zenith angles photolysis remains rapid (Δτ ~ 5% between midday and 6 am). This is an important aspect of NO₂ chemistry, and one that will let us simplify complex reaction chains later in the course.
+NO₂ photolysis happens so rapidly that NO₂ can usually be thought of as being in steady state (i.e. the first-order rate of loss — photolysis — is large enough to keep its concentration low and steady) during daylight hours. [Fig 3.10](#fig-3-10) shows that even at high solar zenith angles photolysis remains rapid (Δτ ~ 5% between midday and 6 am). This is an important aspect of NO₂ chemistry, and one that will let us simplify complex reaction chains later in the course.
 
 ## 3.6 Photolysis of N₂O and other compounds
 
@@ -130,7 +130,7 @@ Photolysis of N₂O almost exclusively proceeds as:
 $$N_2O + h\nu \xrightarrow{J_{N_2O}} N_2 + O(^{1}D)$$
 
 ![N2O absorption cross-section](../assets/figures/N2O_merged_100-212nm.png)
-*Figure 3.11 — N₂O absorption cross-sections as a function of wavelength (and energy).*
+[]{#fig-3-11}*Figure 3.11 — N₂O absorption cross-sections as a function of wavelength (and energy).*
 
 
 N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note: at the longer wavelengths available in the troposphere there is no photolysis of N₂O, and N₂O **can** contribute significantly to the optical depth at low wavelengths.
@@ -138,7 +138,7 @@ N₂O absorbs strongly at short $\lambda$ ($< 220$ nm). The main things to note:
 CFCs (chlorofluorocarbons) contain carbon, fluorine and chlorine and are entirely man-made. PFCs (perfluorinated carbons) are largely man-made, but the simplest PFC (CF₄) has a natural source from the oxidation of certain volcanic rocks. PFCs are very stable — in fact the absorption cross-section of CF₄ is so small that under most stratospheric conditions its lifetime is millions of years, so we won't worry about PFCs for now (although they are strong greenhouse gases, so don't think they aren't important!).
 
 ![CFC absorption cross-section](../assets/figures/CFC-11_12_13_298K.png)
-*Figure 3.11 — CFC absorption cross-sections as a function of wavelength (and energy).*
+[]{#fig-3-12}*Figure 3.12 — CFC absorption cross-sections as a function of wavelength (and energy).*
 
 The naming convention for CFCs: the rightmost digit in the name gives the number of fluorine atoms ($n_F$); the next digit to the left gives the number of hydrogen atoms **plus 1** ($n_H+1$); and the next gives the number of carbon atoms **minus 1** ($n_C-1$), with zero values omitted. For example, CFC-11 has $n_F=1$, $n_H=0$ (so digit = 1), $n_C=1$ (so digit = 0), giving CFC-11 = CCl₃F.
 
@@ -147,7 +147,7 @@ CFC absorption cross-sections are fairly large at very short $\lambda$ and almos
 Important breakdown products from the photolysis of Cl- and Br-containing compounds in the stratosphere are the **halogen nitrates**. Their absorption cross-sections differ greatly at $\lambda > 260$ nm, with BrONO₂ having a sufficiently large cross-section at $\lambda > 320$ nm that its lifetime is very short.
 
 ![Halogen nitrate absorption cross-section](../assets/figures/BrONO2_ClONO2_298K.png)
-*Figure 3.11 — Halogen nitrate absorption cross-sections as a function of wavelength (and energy).*
+[]{#fig-3-13}*Figure 3.13 — Halogen nitrate absorption cross-sections as a function of wavelength (and energy).*
 
 ---
 
@@ -155,10 +155,10 @@ Important breakdown products from the photolysis of Cl- and Br-containing compou
 
 Open **[`notebooks/03-photolysis-rates.ipynb`](../notebooks/03-photolysis-rates.ipynb)** to:
 
-- Implement the Beer–Lambert / optical-depth calculation and reproduce the qualitative shape of Fig 3.2 (attenuation depth vs. wavelength) for a simplified O₂/O₃ atmosphere.
+- Implement the Beer–Lambert / optical-depth calculation and reproduce the qualitative shape of [Fig 3.2](#fig-3-2) (attenuation depth vs. wavelength) for a simplified O₂/O₃ atmosphere.
 - Compute a toy photolysis coefficient $J_i = \int \phi  F  \sigma  d\lambda$ numerically given synthetic $\sigma(\lambda)$, $\phi(\lambda)$ and $F(\lambda)$ data, and convert to a photolysis lifetime.
 - Explore how $J$ scales with solar zenith angle via the $\sec(\theta)$ airmass factor, and reproduce the qualitative NO₂ vs. O₂ altitude-dependence contrast described in §3.2.
-- Plot the O(¹D) quantum-yield step function (Fig 3.8) and see how a sharp cutoff wavelength propagates into a photolysis rate integral.
+- Plot the O(¹D) quantum-yield step function ([Fig 3.8](#fig-3-8)) and see how a sharp cutoff wavelength propagates into a photolysis rate integral.
 
 ---
 

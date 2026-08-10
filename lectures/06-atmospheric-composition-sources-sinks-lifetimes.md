@@ -31,7 +31,7 @@ Two regions matter here:
 The troposphere is also where weather happens (clouds, precipitation), and radiative processes here dominate surface climate.
 
 ![Diurnal variation of the planetary boundary layer](../assets/figures/fig1-0-boundary-layer-schematic.png)
-*Figure 1.0 — Schematic of the diurnal variation in the planetary boundary layer (after Stull et al., 1990).*
+[]{#fig-1-0}*Figure 1.0 — Schematic of the diurnal variation in the planetary boundary layer (after Stull et al., 1990).*
 
 Historically, interest in tropospheric chemistry has been driven by air pollution — the effects of trace gases and particles on human health and ecosystems. Two classic pollution regimes are distinguished:
 
@@ -57,7 +57,7 @@ The composition of the atmosphere at any point in time reflects a **balance betw
 Because sources and sinks are spatially non-uniform, the resulting balance is complex, coupling chemistry with atmospheric transport. Quantifying this coupled system is a central aim of atmospheric chemistry.
 
 ![Key features and processes in the troposphere](../assets/figures/fig1-1-troposphere-processes.png)
-*Figure 1.1 — Key features and processes in the troposphere.*
+[]{#fig-1-1}*Figure 1.1 — Key features and processes in the troposphere.*
 
 About 90% of the total atmospheric mass resides in the troposphere, and most trace-gas emission (and a good deal of trace-gas *formation*) happens here. Chemically, the troposphere performs two important jobs:
 
@@ -138,7 +138,7 @@ $$\tau = \frac{h}{v_g}$$ &nbsp;&nbsp;(1.2)
 The large difference is entirely down to the mixing height — the same deposition velocity gives a very different lifetime depending on how deep an atmospheric column the species is spread through.
 
 ![Schematic illustration of surface deposition](../assets/figures/fig1-2-surface-deposition.png)
-*Figure 1.2 — Schematic illustration of surface deposition.*
+[]{#fig-1-2}*Figure 1.2 — Schematic illustration of surface deposition.*
 
 ### 1.4.2 Wet deposition
 
