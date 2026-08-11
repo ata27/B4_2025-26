@@ -12,7 +12,7 @@ notebook: "../notebooks/11-aromatics-oxygenates.ipynb"
 > **Aims of this module**
 > 3. The oxidation scheme of aromatic compounds (continuing from Module 10).
 
-## 4.5 Oxidation of aromatics
+## 11.1 Oxidation of aromatics
 
 Most aromatics are emitted by anthropogenic processes — motor vehicle emissions, solvent use. They are also the most important anthropogenic organic aerosol precursors. Atmospherically relevant aromatics include benzene, toluene, xylenes and other methylated/ethylated benzene derivatives. **OH is the most important oxidant** for aromatics, with two competing pathways:
 
@@ -22,7 +22,7 @@ Most aromatics are emitted by anthropogenic processes — motor vehicle emission
 
 One of the more likely reaction routes (illustrated for toluene) generates mainly small dicarbonyls, like butenedial and methylglyoxal.
 
-## 4.6 Oxidation of oxygenated organics
+## 11.2 Oxidation of oxygenated organics
 
 The alkane, alkene and aromatic reactions above all yield oxygenated compounds, which react further — ultimately to CO₂, or are removed by wet and dry deposition.
 
@@ -33,7 +33,7 @@ The alkane, alkene and aromatic reactions above all yield oxygenated compounds, 
 
 Aldehydes (especially formaldehyde), ketones, and organic hydroperoxides are also readily photolysed in the troposphere — feeding back into HOx production, as discussed throughout Modules 8–10.
 
-> **Key points — Module 10/11 (Chapter 4)**
+> **Key points — Module 10/11**
 > - The OH-oxidation mechanism for many VOCs involves peroxy radicals, and leads, in the presence of NOx, to net production of ozone and HOx.
 > - Alkenes react with OH but also efficiently with ozone, forming ozonides and ultimately hydroperoxides and carboxylic acids.
 > - Tropospheric oxidation of aromatic compounds is highly complex and only partly understood; small dicarbonyls are abundant oxidation products.
@@ -42,7 +42,7 @@ Aldehydes (especially formaldehyde), ketones, and organic hydroperoxides are als
 <details>
 <summary><strong>Example 5 — propose a mechanism for the oxidation of 2-methyl-2-butene</strong></summary>
 
-Using the alkene oxidation framework from Module 10 (§4.4) — OH addition across the C=C bond, the competing O₃ + alkene → Criegee pathway, and the general RO₂ fate scheme from §4.3 — sketch a plausible oxidation mechanism for 2-methyl-2-butene, and identify the expected major carbonyl products. The companion notebook sets up the rate-constant comparison needed to judge which initiation pathway (OH vs. O₃ vs. NO₃) dominates under different conditions.
+Using the alkene oxidation framework from Module 10 (§10.4) — OH addition across the C=C bond, the competing O₃ + alkene → Criegee pathway, and the general RO₂ fate scheme from §10.3 — sketch a plausible oxidation mechanism for 2-methyl-2-butene, and identify the expected major carbonyl products. The companion notebook sets up the rate-constant comparison needed to judge which initiation pathway (OH vs. O₃ vs. NO₃) dominates under different conditions.
 
 </details>
 
@@ -55,7 +55,7 @@ Open **[`notebooks/11-aromatics-oxygenates.ipynb`](../notebooks/11-aromatics-oxy
 - Compare OH-abstraction vs. OH-addition branching for a toluene-like aromatic, and see how the >90%/<10% split shapes the product distribution.
 - Solve Example 5 by comparing pseudo-first-order initiation rates ($k_{OH}[OH]$, $k_{O_3}[O_3]$, $k_{NO_3}[NO_3]$) for a representative alkene across day/night and clean/polluted scenarios, to identify which oxidant dominates initiation.
 - Build a simple multi-generation oxidation tracker (alkane → alkyl radical → peroxy radical → carbonyl → further oxidation), and estimate how many generations of oxidation are needed to reach CO₂ for a chosen starting NMVOC.
-- Wrap up the course: combine Module 10/11's rate-constant machinery with Module 7's OH steady-state calculator to estimate whole-atmosphere NMVOC oxidation lifetimes for a few compounds of your choice, and compare to Table 2.2 (Module 7).
+- Wrap up the course: combine Module 10/11's rate-constant machinery with Module 7's OH steady-state calculator to estimate whole-atmosphere NMVOC oxidation lifetimes for a few compounds of your choice, and compare to Table 7.2 (Module 7).
 
 ---
 

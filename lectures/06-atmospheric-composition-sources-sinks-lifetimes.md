@@ -19,7 +19,7 @@ notebook: "../notebooks/06-sources-sinks-lifetimes.ipynb"
 
 ---
 
-## 1.1 Introduction
+## 6.1 Introduction
 
 Chemistry in the Atmosphere is a two-part story. The first part of this course covered the stratosphere; this module opens the second part, which deals with the **troposphere** — the lowest part of the atmosphere, extending from the surface up to roughly 8–18 km depending on latitude.
 
@@ -31,7 +31,7 @@ Two regions matter here:
 The troposphere is also where weather happens (clouds, precipitation), and radiative processes here dominate surface climate.
 
 ![Diurnal variation of the planetary boundary layer](../assets/figures/fig1-0-boundary-layer-schematic.png)
-[]{#fig-1-0}*Figure 1.0 — Schematic of the diurnal variation in the planetary boundary layer (after Stull et al., 1990).*
+[]{#fig-6-0}*Figure 6.0 — Schematic of the diurnal variation in the planetary boundary layer (after Stull et al., 1990).*
 
 Historically, interest in tropospheric chemistry has been driven by air pollution — the effects of trace gases and particles on human health and ecosystems. Two classic pollution regimes are distinguished:
 
@@ -47,7 +47,7 @@ This module — and the rest of the course — develops a **quantitative** under
 
 ---
 
-## 1.2 Atmospheric Composition
+## 6.2 Atmospheric Composition
 
 The composition of the atmosphere at any point in time reflects a **balance between sources and sinks**:
 
@@ -57,7 +57,7 @@ The composition of the atmosphere at any point in time reflects a **balance betw
 Because sources and sinks are spatially non-uniform, the resulting balance is complex, coupling chemistry with atmospheric transport. Quantifying this coupled system is a central aim of atmospheric chemistry.
 
 ![Key features and processes in the troposphere](../assets/figures/fig1-1-troposphere-processes.png)
-[]{#fig-1-1}*Figure 1.1 — Key features and processes in the troposphere.*
+[]{#fig-6-1}*Figure 6.1 — Key features and processes in the troposphere.*
 
 About 90% of the total atmospheric mass resides in the troposphere, and most trace-gas emission (and a good deal of trace-gas *formation*) happens here. Chemically, the troposphere performs two important jobs:
 
@@ -79,7 +79,7 @@ About 90% of the total atmospheric mass resides in the troposphere, and most tra
 
 ---
 
-## 1.3 Sources of the Minor Constituents
+## 6.3 Sources of the Minor Constituents
 
 Most trace gases in the troposphere originate as **surface emissions**.
 
@@ -106,7 +106,7 @@ Chemical transformation of these primary emissions generates secondary products 
 
 ---
 
-## 1.4 Sinks of the Minor Constituents
+## 6.4 Sinks of the Minor Constituents
 
 Removal processes fall into two broad classes:
 
@@ -120,15 +120,15 @@ Removal processes fall into two broad classes:
 
 These sink strengths vary considerably with time of day, season, and geography.
 
-### 1.4.1 Dry deposition
+### 6.4.1 Dry deposition
 
 Removal at the Earth's surface (water, soil, vegetation) in the absence of precipitation. Governed by transport through the boundary layer and by uptake at the surface. The flux to the surface, $F$ (molecules cm⁻² s⁻¹), relates to the near-surface concentration $c$ (molecules cm⁻³) via the **deposition velocity** $v_g$ (cm s⁻¹):
 
-$$F = v_g \cdot c$$ &nbsp;&nbsp;(1.1)
+$$F = v_g \cdot c$$ &nbsp;&nbsp;(6.1)
 
 The **lifetime** of a species with respect to dry deposition depends on $v_g$ and the mixing height $h$:
 
-$$\tau = \frac{h}{v_g}$$ &nbsp;&nbsp;(1.2)
+$$\tau = \frac{h}{v_g}$$ &nbsp;&nbsp;(6.2)
 
 **Worked comparison:**
 
@@ -138,9 +138,9 @@ $$\tau = \frac{h}{v_g}$$ &nbsp;&nbsp;(1.2)
 The large difference is entirely down to the mixing height — the same deposition velocity gives a very different lifetime depending on how deep an atmospheric column the species is spread through.
 
 ![Schematic illustration of surface deposition](../assets/figures/fig1-2-surface-deposition.png)
-[]{#fig-1-2}*Figure 1.2 — Schematic illustration of surface deposition.*
+[]{#fig-6-2}*Figure 6.2 — Schematic illustration of surface deposition.*
 
-### 1.4.2 Wet deposition
+### 6.4.2 Wet deposition
 
 Removal via precipitation (cloud, rain, snow):
 
@@ -155,7 +155,7 @@ $$\text{Rate} = \lambda c$$
 
 where $\lambda$, the washout (scavenging) coefficient, scales with mean precipitation and is typically **0.12–0.5 day⁻¹** (lifetime 2–8 days).
 
-### 1.4.3 Acid deposition (wet and dry)
+### 6.4.3 Acid deposition (wet and dry)
 
 Oxidising conditions in the atmosphere (Modules 2–3) generate inorganic acids (H₂SO₄, HNO₃, HCl) and organic acids (formic, acetic). These lower the pH of precipitation and are also removed by dry deposition.
 
@@ -172,7 +172,7 @@ Regulation has cut SO₂ and NOₓ emissions substantially in recent decades (SO
 
 ---
 
-## 1.5 Lifetimes — putting it together
+## 6.5 Lifetimes — putting it together
 
 The **atmospheric lifetime** (or residence time) $\tau$ of a species is the average time a molecule spends in the atmosphere before removal. For a species at steady state with a single first-order loss process of rate constant $k_{\text{loss}}$:
 
@@ -188,7 +188,7 @@ $$\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots$$
 
 — the fastest process dominates the overall lifetime.
 
-> **Key points — Module 1**
+> **Key points — Module 6**
 > - Atmospheric composition is set by the **balance of sources and sinks**.
 > - **Sources**: mainly surface emission, but some species (notably O₃) are produced photochemically in the atmosphere itself.
 > - **Sinks**: physical (dry/wet deposition) and chemical (oxidation, photolysis) removal, with widely varying efficiency and timescale depending on the species.
@@ -220,7 +220,7 @@ Open **[`notebooks/06-sources-sinks-lifetimes.ipynb`](../notebooks/06-sources-si
 - Solve Worked Example 1 numerically and check it against the by-hand answer.
 - Build a simple one-box steady-state / time-dependent model with combined chemical + deposition loss.
 - Explore how lifetime and steady-state concentration change as you vary $k_{\text{OH}}$, $[\text{OH}]$, $v_g$, and mixing height $h$.
-- Reproduce the SO₂ vs. O₃ dry-deposition lifetime comparison from §1.4.1.
+- Reproduce the SO₂ vs. O₃ dry-deposition lifetime comparison from §6.4.1.
 
 ---
 
