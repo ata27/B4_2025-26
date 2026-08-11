@@ -42,3 +42,8 @@ format:
     geometry:
       - margin=1in
     mainfont: "Arial Unicode MS"
+    include-in-header:
+      text: |
+        \usepackage{pdfpages}
+        \let\oldmaketitle\maketitle
+        \renewcommand{\maketitle}{\includepdf[pages=-]{assets/figures/front_cover.pdf}}
