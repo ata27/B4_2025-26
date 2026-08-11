@@ -17,11 +17,24 @@ notebook: "../notebooks/05-ozone-loss-antarctic.ipynb"
 
 On the basis of the previous discussion, the rate of change of ozone (odd oxygen) can be written as:
 
-$$\frac{d([O]+[O_3])}{dt} = 2J_a[O_2] - 2k_a[O][O_3] - 2k_b[O][NO_2] - 2k_c[O][HO_2] - 2k_d[O][ClO] - 2k_e[O][BrO] - \text{etc.}$$
+$$
+\begin{align}
+\frac{d([O]+[O_3])}{dt} &= 2J_a[O_2] \\
+&\quad - 2k_a[O][O_3] \\
+&\quad - 2k_b[O][NO_2] \\
+&\quad - 2k_c[O][HO_2] \\
+&\quad - 2k_d[O][ClO] \\
+&\quad - 2k_e[O][BrO] \\
+&\quad - \text{etc.}
+\end{align}
+$$
 
-It was realised in the 1970s that an increase in the concentration of the radical catalysts (e.g. NOx emitted directly into the stratosphere by aircraft; ClOx following degradation of CFCs; HOx either directly from aviation or through a changing climate) would change the balance in this equation, leading to lower ozone. Fig 4.11 (Module 4) showed a simplified version of the relative importance of the various catalytic Ox destruction cycles as a function of altitude.
+It was realised in the 1970s that an increase in the concentration of the radical catalysts (e.g. NOx emitted directly into the stratosphere by aircraft; ClOx following degradation of CFCs; HOx either directly from aviation or through a changing climate) would change the balance in this equation, leading to lower ozone. [Fig 4.13](#fig-4-12) (Module 4) showed a simplified version of the relative importance of the various catalytic Ox destruction cycles as a function of altitude.
 
-In the case of the CFCs, peak depletion was predicted at about 40 km — the altitude at which ClO was predicted to peak. Chlorine-driven loss was predicted to be small in the low stratosphere, where [O] is low and ClOx was thought to be mostly locked up in the reservoirs ClONO₂ and HCl. Model calculations of the change in O₃ for a change in ClOx from around 1 ppb to 3 ppb (somewhat below present-day values) show reductions of greater than **20%** at ~40 km at high latitudes.
+In the case of the CFCs, peak depletion was predicted at about 40 km — the altitude at which ClO was predicted to peak. Chlorine-driven loss was predicted to be small in the low stratosphere, where [O] is low and ClOx was thought to be mostly locked up in the reservoirs ClONO₂ and HCl. Model calculations of the change in O₃ for a change in ClOx from around 1 ppb to 3 ppb (somewhat below present-day values) show reductions of greater than **20%** at ~40 km at high latitudes [Fig 5.1](#fig-5-1).
+
+![Modelled and observed ozone trends](../assets/figures/m5-1-o3-loss.png)
+[]{#fig-5-1}*Figure 5.1 — Modelled % change in O₃ for a change in ClOx from around 1 to 3 ppb (left panel) and observed rate of change in ozone column (%/yr) (right panel).*
 
 Why the high-latitude enhancement? As CH₄ mixing ratios fall toward high latitudes (because the source of methane is the tropical troposphere), the reaction converting ClOx to HCl slows:
 

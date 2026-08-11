@@ -186,11 +186,20 @@ A more comprehensive picture of stratospheric NOy chemistry (NOy = sum of all ni
 
 N₂O₅, HNO₃ and ClONO₂ are important **reservoirs** for NOx (and HOx, ClOx) — states where otherwise-reactive O₃-destroying radicals are held in less reactive form. For example, HNO₃ is formed by:
 
-$$OH + NO_2 + M \to HNO_3 + M$$ &nbsp;&nbsp;(4.5)
+$$
+\begin{align}
+OH + NO_2 + M &\to HNO_3 + M \tag{4.5}
+\end{align}
+$$
 
 and destroyed by
 
-$$HNO_3 + h\nu \to OH + NO_2 \qquad \text{or} \qquad HNO_3 + OH \to H_2O + NO_3$$ &nbsp;&nbsp;(4.6)
+$$
+\begin{align}
+HNO_3 + h\nu &\to OH + NO_2 \\
+HNO_3 + OH &\to H_2O + NO_3
+\end{align} \tag{4.6}
+$$
 
 At higher latitudes HNO₃ can become the major nitrogen oxide species. HNO₃ is transported from the stratosphere into the troposphere, where it is efficiently rained out — the major **sink** of stratospheric nitrogen oxides.
 
@@ -209,7 +218,13 @@ Balloon-borne tunable diode laser spectroscopy (TDLS) measurements have confirme
 
 During sunlight hours, NO and NO₂ are in rapid equilibrium via:
 
-$$NO + O_3 \to NO_2 + O_2 \qquad O + NO_2 \to NO + O_2 \qquad NO_2 + h\nu \to NO + O$$
+$$
+\begin{align}
+NO + O_3 &\to NO_2 + O_2 \\
+O + NO_2 &\to NO + O_2 \\
+NO_2 + h\nu &\to NO + O
+\end{align}
+$$
 
 At sunset, photolysis ceases and [O] decreases rapidly, so [NO₂] rises rapidly. Thereafter [NO₂] falls via:
 
@@ -300,7 +315,13 @@ A comprehensive description of stratospheric HOx chemistry is shown below:
 
 Hydrogen radicals are removed from the stratosphere by reformation of H₂O and reactions producing the temporary reservoirs HNO₃ and H₂O₂:
 
-$$OH+NO_2+M\to HNO_3+M \qquad HO_2+OH\to H_2O+O_2 \qquad HO_2+HO_2\to H_2O_2+O_2$$
+$$
+\begin{align}
+OH + NO_2 + M &\to HNO_3 + M \\
+HO_2 + OH &\to H_2O + O_2 \\
+HO_2 + HO_2 &\to H_2O_2 + O_2
+\end{align}
+$$
 
 Typical modelled distributions of HOx species in the stratosphere are shown in [Fig 4.8](#fig-4-8). 
 
@@ -358,11 +379,21 @@ A more comprehensive description of stratospheric ClOx chemistry is shown below.
 
 Two important reservoirs for ClOx are HCl and ClONO₂, formed by:
 
-$$Cl+CH_4\to HCl+CH_3 \qquad ClO+NO_2+M\to ClONO_2+M$$
+$$
+\begin{align}
+Cl + CH_4 &\to HCl + CH_3 \\
+ClO + NO_2 + M &\to ClONO_2 + M
+\end{align}
+$$
 
 and removed by:
 
-$$OH+HCl\to H_2O+Cl \qquad ClONO_2+h\nu\to Cl+NO_3$$
+$$
+\begin{align}
+OH + HCl &\to H_2O + Cl \\
+ClONO_2 + h\nu &\to Cl + NO_3
+\end{align}
+$$
 
 Note the contrast with NOx: whereas OH forms the NOx reservoir HNO₃, here OH acts to *release* Cl from the reservoir HCl. Typical distributions of reactive chlorine species are shown in [Fig 4.11](#fig-4-11).
 
