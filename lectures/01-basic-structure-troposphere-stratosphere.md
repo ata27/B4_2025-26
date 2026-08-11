@@ -30,7 +30,7 @@ In this course we will be primarily concerned with the lowermost layers, the str
 ![Zonally averaged annual mean temperature](../assets/figures/m1-fig1-2-zonal-temp.png)
 []{#fig-1-2}*Figure 1.2 — Zonally averaged annual mean temperature.*
 
-In order to calculate how temperature varies with altitude a radiative transfer model is needed. These sorts of calculations are beyond the scope of this course. What is important to appreciate is the general structure of temperature in the atmosphere, noting the different temperature environments found in the different layers. Indeed, these different temperature environments allow air to be well vertically mixed in the troposphere but poorly so in the stratosphere. However, mixing in the stratosphere is very rapid zonally. The temperature inversions associated with the pauses give rise to the unique chemical environments found in the different layers of the atmosphere.
+Energy balance models can be used to determine the resulting temperature from the balance of incoming solar radiation and outgoing longwave radiation, but in order to calculate how temperature varies with altitude a **radiative transfer model** is needed. These sorts of calculations are beyond the scope of this course. What is important to appreciate is the general structure of temperature in the atmosphere, noting the different temperature environments found in the different layers. Indeed, these different temperature environments allow air to be well vertically mixed in the troposphere but poorly so in the stratosphere. However, mixing in the stratosphere is very rapid zonally. The temperature inversions associated with the pauses give rise to the unique chemical environments found in the different layers of the atmosphere.
 
 ## 1.1 The hydrostatic equation
 
@@ -73,36 +73,40 @@ Above this height atomic oxygen becomes the dominant oxygen species, the concent
 
 At still higher altitudes, above 100 km, diffusive separation can occur, with light molecules such as hydrogen reaching higher altitudes (and even leaving the atmosphere altogether).
 
-We should finally consider the timescales of mixing air across the atmosphere. The general circulation of the atmosphere is complex, but the key points to note are the different $\tau$ for mixing north–south, east–west and vertically.
+We should finally consider the timescales (**$\tau$**) of mixing air across the atmosphere. The general circulation of the atmosphere is complex, but the key points to note are the different $\tau$ for mixing north–south, east–west and vertically.
 
 ![Typical mixing timescales in the horizontal and vertical across the atmosphere](../assets/figures/m1-fig1-4-mixing-timescales.png)
 []{#fig-1-4}*Figure 1.4 — Some typical mixing timescales ($\tau$) in the horizontal and vertical across the atmosphere.*
 
-> **Exercise 1 — Calculation of the number density at different altitudes**
->
-> The number density is another word for concentration, in molecules cm⁻³.
->
-> We can make use of the ideal gas equation to calculate the concentration of a gas:
->
-> $$pV = nRT \quad\Rightarrow\quad \frac{n}{V} = \frac{p}{RT} \ \text{(moles per volume)}$$
->
-> To get into molecules, use $k_B$ rather than $R$ (writing $N$ for number of molecules):
->
-> $$\frac{N}{V} = \frac{p}{k_B T}$$
->
-> At 298 K and 1 bar pressure:
->
-> $$\frac{N}{V} = \frac{100{,}000}{1.38\times10^{-23} \times 298} = 2.43\times10^{25}\ \text{molecules m}^{-3} = 2.43\times10^{19}\ \text{molecules cm}^{-3}$$
+<details>
+<summary><strong>Exercise 1 — Calculation of the number density at different altitudes</strong></summary>
+
+The number density is another word for concentration, in molecules cm⁻³.
+
+We can make use of the ideal gas equation to calculate the concentration of a gas:
+
+$$pV = nRT \quad\Rightarrow\quad \frac{n}{V} = \frac{p}{RT} \ \text{(moles per volume)}$$
+
+To get into molecules, use $k_B$ rather than $R$ (writing $N$ for number of molecules):
+
+$$\frac{N}{V} = \frac{p}{k_B T}$$
+
+At 298 K and 1 bar pressure:
+
+$$\frac{N}{V} = \frac{100{,}000}{1.38\times10^{-23} \times 298} = 2.43\times10^{25}\ \text{molecules m}^{-3} = 
+[M] = 2.43\times10^{19}\ \text{molecules cm}^{-3}$$
+
+</details>
 
 ## 1.2 The Troposphere — basic role and composition
 
-As we've seen, the troposphere is that part of the atmosphere which lies between the surface of the Earth and about 10 to 15 km, depending on latitude (see [Fig 1.2](#fig-1-2)). While air in the troposphere is reasonably well mixed, it is inhibited from rapid exchange with the stratosphere because the tropopause is a relatively impermeable barrier to transport. The troposphere is also the region where most of what we regard as weather (clouds, precipitation, etc.) occurs. Radiative processes in the troposphere are the dominant processes affecting surface climate and climate change.
+As we've seen, the troposphere is that part of the atmosphere which lies between the surface of the Earth and about 10 to 18 km, depending on latitude (see [Fig 1.2](#fig-1-2)). While air in the troposphere is reasonably well mixed, it is inhibited from rapid exchange with the stratosphere because the tropopause is a relatively impermeable barrier to transport. The troposphere is also the region where most of what we regard as weather (clouds, precipitation, etc.) occurs. Radiative processes in the troposphere are the dominant processes affecting surface climate and climate change.
 
 Chemically, the troposphere serves some very important functions. Chemical destruction (by OH (day) and NO₃ (night)) in the troposphere is the main mechanism preventing many gases emitted at the surface of the Earth from accumulating to amounts that are toxic to life or ultimately damaging to the stratospheric ozone layer or the climate system. This destruction (or usually the concentration of the oxidants) is an expression of the **'oxidizing capacity'**. The troposphere provides a system of transport and chemical transformation for the natural biogeochemical cycles.
 
-Table 1.1 shows the principal gaseous constituents of the troposphere, their mixing ratios and their atmospheric lifetimes. Disregarding the highly variable amounts of water, 99.9% of the atmosphere is composed of N₂, O₂ and the noble gases, principally Ar. These gases have been present at constant levels over geological timescales (although there is some debate over the fluctuations in O₂).
+[Table 1.1](#tab-1-1) shows the principal gaseous constituents of the troposphere, their mixing ratios and their atmospheric lifetimes. Disregarding the highly variable amounts of water, 99.9% of the atmosphere is composed of N₂, O₂ and the noble gases, principally Ar. These gases have been present at constant levels over geological timescales (although there is some debate over the fluctuations in O₂).
 
-**Table 1.1 — Composition of the Troposphere**
+[]{#tab-1-1}**Table 1.1 — Composition of the Troposphere**
 
 | Constituent | Mole fraction | Lifetime (yr) |
 |---|---|---|
@@ -128,26 +132,28 @@ The remaining gases, representing less than 0.1% of the atmosphere, are diverse 
 ![Typical mixing ratio profiles of a range of species](../assets/figures/m1-fig1-5-mixing-ratios.jpeg)
 []{#fig-1-5}*Figure 1.5 — Some typical mixing ratio profiles of a range of species.*
 
-> **Key points in [Figure 1.5](#fig-1-5)**
-> - Mixing ratios tell us how [X] varies with [M] (NB [M] decreases exponentially with increasing height).
-> - Long-lived gases have nearly constant mixing ratios (e.g. CO₂, N₂, O₂, He).
-> - Increases in mixing ratio of a compound reveal to us that it is undergoing chemical production.
-> - Decreases in mixing ratio denote chemical destruction (or loss).
+::: {.callout-note}
+## Key points in [Figure 1.5](#fig-1-5)
+- Mixing ratios tell us how [X] varies with [M] (NB [M] decreases exponentially with increasing height).
+- Long-lived gases have nearly constant mixing ratios (e.g. CO₂, N₂, O₂, He).
+- Increases in mixing ratio of a compound reveal to us that it is undergoing chemical production.
+- Decreases in mixing ratio denote chemical destruction (or loss).
+:::
 
 ## 1.4 The Stratosphere — basic structure and composition
 
 The stratosphere lies above the troposphere, bounded by the tropopause and the stratopause at about 50 km. Temperature increases with altitude in the stratosphere — a *stable* situation which leads to a long removal time for pollution reaching the stratosphere.
 
-Ozone is perhaps the most important stratospheric constituent. O₃ absorbs ultraviolet radiation, which leads to the observed stratospheric temperature structure and also protects life at the surface from harmful radiation at $\lambda < 300$ nm. Ozone is also an important infrared absorber — it's a greenhouse gas involved in climate change.
+Ozone (O₃) is perhaps the most important stratospheric constituent. Ozone absorbs ultraviolet radiation, which leads to the observed stratospheric temperature structure and also protects life at the surface from harmful radiation at $\lambda < 300$ nm. Ozone is also an important infrared absorber — it's a greenhouse gas involved in climate change.
 
 Stratospheric chemistry is mainly concerned with the sources and sinks of ozone. Ozone has a peak stratospheric mixing ratio of about 10 ppm. Its local abundance is determined by a balance between photochemical production following photolysis of molecular oxygen and **catalytic** destruction by a variety of radical species (e.g. OH, HO₂, NO, NO₂, Cl, ClO, etc.), which are present at much lower concentration (usually ppb or less). (In those regions where the chemical lifetime of ozone becomes long, transport will also be important in determining the local concentration.) The radicals are produced following the breakdown of **source gases** (source gases shown in [Fig 1.5](#fig-1-5)) including H₂O, CH₄, N₂O and the CFCs (CFCl₃, etc.).
 
-Throughout the bulk of the stratosphere gas phase reactions dominate. However, ozone loss in polar latitudes is initiated by reactions on the surface of particles or droplets — polar stratospheric clouds — in the lower stratosphere. Reactions on aerosol droplets (mainly sulphuric acid) are also now known to be important in the middle latitude lower stratosphere.
+Throughout the bulk of the stratosphere gas phase reactions dominate. However, ozone loss in polar latitudes is initiated by reactions on the surface of particles or droplets — polar stratospheric clouds — in the lower stratosphere. Reactions on aerosol droplets (mainly sulphuric acid) are also now known to be important in the middle latitude lower stratosphere. (We will cover this chemistry in detail in IDP1.)
 
 ![Variation of ozone concentration with altitude](../assets/figures/m1-fig1-6-ozone-profile.png)
 []{#fig-1-6}*Figure 1.6 — Variation of ozone concentration with altitude, expressed as an absolute number density ($n_{O_3}$, with peak just above 10¹² cm⁻³) and as a mixing ratio (mole fraction, $n_{O_3}/n_{air}$).*
 
-We will see later that it is also possible to measure the amount of a species integrated between the earth's surface and the top of the atmosphere. This integral, e.g. $\int [O_3]  dz$, is loosely called the **column amount**, the **column density** or the **total column**. It commonly has units of molecules cm⁻². For the special case of ozone, the unit is named after Dobson, an early measurement pioneer.
+We will see later that it is also possible to measure the amount of a species integrated between the earth's surface and the top of the atmosphere. This integral, e.g. $\int [x]  dz$, is loosely called the **column amount**, the **column density** or the **total column**. It commonly has units of molecules cm⁻². For the special case of ozone, the unit is named after Gordon Dobson, an early measurement pioneer.
 
 1 Dobson Unit (DU) = 2.69×10¹⁶ molec cm⁻². A typical column density for ozone is about 300 DU — i.e. an ozone column that would be 3 mm thick when shrunk down to the surface.
 
