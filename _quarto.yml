@@ -15,6 +15,7 @@ book:
         - lectures/03-atmospheric-photochemistry.md
         - lectures/04-stratospheric-ozone-chapman.md
         - lectures/05-model-predictions-global-o3.md
+        - lectures/05b-stratospheric-measurement-techniques.md
     - part: "Lent Term"
       chapters:
         - lectures/06-atmospheric-composition-sources-sinks-lifetimes.md

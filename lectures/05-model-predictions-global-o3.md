@@ -69,4 +69,4 @@ Open **[`notebooks/05-ozone-loss-antarctic.ipynb`](../notebooks/05-ozone-loss-an
 
 ---
 
-*This concludes the Michaelmas term (Lectures 1–6). Next: [Module 6 — Atmospheric Composition: Sources, Sinks and Lifetimes](06-atmospheric-composition-sources-sinks-lifetimes.md), opening the Lent term (Lectures 7–12).*
+*Next: [Module 5b — Measurement Techniques for Stratospheric Composition](05b-stratospheric-measurement-techniques.md).*

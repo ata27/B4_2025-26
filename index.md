@@ -9,6 +9,7 @@ These are the lecture notes for **B4 — Chemistry in the Atmosphere** (Cambridg
 3. Atmospheric Photochemistry
 4. Stratospheric Ozone Chemistry: the Chapman Mechanism and Catalytic Cycles
 5. Model Predictions of Changes in Global O₃
+   - 5b. Measurement Techniques for Stratospheric Composition
 
 **Lent term**
 
