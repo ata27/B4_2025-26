@@ -182,6 +182,11 @@ window.Quarto = {
   <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -300,14 +305,21 @@ window.Quarto = {
 </blockquote>
 <section id="time-scales-and-lifetimes" class="level2">
 <h2 class="anchored" data-anchor-id="time-scales-and-lifetimes">2.1 Time scales and lifetimes</h2>
-<p>As atmospheric chemists we are fundamentally interested in understanding how the constituents of the atmosphere (the gases and particles that make it up) change with time. For example, the questions of how the concentration of O₃ will change in the future and how it has changed in the past are crucial to the science of the Antarctic ozone hole. In order to understand these types of questions we rely on a solid knowledge of (i) what the constituents (chemical and <strong>aerosol</strong> species) are in the atmosphere and (ii) how the constituents in the atmosphere react over time. Hence, it’s fair to say that chemical kinetics is at the heart of atmospheric chemistry.</p>
+<p>As atmospheric chemists we are fundamentally interested in understanding how the constituents of the atmosphere (the gases and particles that make it up) change with time. For example, the questions of how the concentration of O₃ will change in the future and how it has changed in the past are crucial to the science of the Antarctic ozone hole and air pollution. In order to understand these types of questions we rely on a solid knowledge of (i) what the constituents (chemical and <strong>aerosol</strong> species) are in the atmosphere and (ii) how the constituents in the atmosphere react over time. Hence, it’s fair to say that chemical kinetics is at the heart of atmospheric chemistry!</p>
 <p>For simple chemical systems, we can write out differential equations that describe how the components of the system will change over time. Let’s start with a trivial example. Suppose that we study, in a closed constant-volume system, a reaction whose rate depends on the concentration of one reacting substance, <span class="math inline">\(A\)</span>, only. We can write:</p>
 <p><span class="math display">\[\frac{d[A]}{dt} = -k[A]^n\]</span></p>
 <p>where in this case <span class="math inline">\(n = 1\)</span> and this reaction is said to be <strong>first order</strong> with respect to <span class="math inline">\(A\)</span> (molecules cm⁻³). Plots of the change in concentration of <span class="math inline">\(A\)</span> with time are shown in <a href="#fig-2-1">Fig 2.1</a> for different values of rate coefficient, <span class="math inline">\(k\)</span> (s⁻¹). <a href="#fig-2-1">Fig 2.1</a> highlights that the larger the value of the rate coefficient (sometimes called rate constant, and erroneously “the rate” — naughty!) the faster the loss of <span class="math inline">\(A\)</span> with time.</p>
 <p><img src="../assets/figures/m2-fig2-1-first-order-decay.png" class="img-fluid" alt="First order decay of A with respect to time"> <span id="fig-2-1"></span><em>Figure 2.1 — Plots of the first-order decay of A with respect to time.</em></p>
 <p>We can define a new expression by integrating our rate equation for <span class="math inline">\(A\)</span> and noting that our initial conditions are <span class="math inline">\(A = A_0\)</span> at <span class="math inline">\(t = 0\)</span>:</p>
 <p><span class="math display">\[\int_{0}^{t} k  dt = -\int_{0}^{A} [A]^{-n}  dA\]</span></p>
-<p>As <a href="#fig-2-1">Fig 2.1</a> highlights, the decay of <span class="math inline">\(A\)</span> with time can be described as a simple exponential process. We can use this graph and the equations above to define the <strong>time constant</strong> (<span class="math inline">\(\tau\)</span>) as the time taken for the concentration of <span class="math inline">\(A\)</span> to be reduced by <span class="math inline">\(1/e^{\text{th}}\)</span> of its value:</p>
+<details>
+<summary>
+<strong>Integrating the rate equation</strong>
+</summary>
+<p>Given that <span class="math inline">\(k\)</span> and <span class="math inline">\(n\)</span> are constants we can then write:</p>
+<p><span class="math display">\[[A]_t = [A]_0 \exp(-kt)\]</span></p>
+</details>
+<p>As <a href="#fig-2-1">Fig 2.1</a> highlights, the decay of <span class="math inline">\(A\)</span> with time can be described as a simple exponential process. We can use this graph and the equations above to define the <strong>time constant - or lifetime - </strong> (<span class="math inline">\(\tau\)</span>) as the time taken for the concentration of <span class="math inline">\(A\)</span> to be reduced by <span class="math inline">\(1/e^{\text{th}}\)</span> of its value:</p>
 <p><span class="math display">\[\tau = 1/k\]</span></p>
 <p>The smaller this time constant, the greater the loss of <span class="math inline">\(A\)</span> with time and hence the shorter its <strong>lifetime</strong>.</p>
 <section id="pseudo-first-order-kinetics" class="level3">
@@ -332,10 +344,31 @@ window.Quarto = {
 <p>where the subscript <span class="math inline">\(ss\)</span> denotes that we are treating the intermediate <span class="math inline">\(B\)</span> as being in <strong>steady state</strong>.</p>
 <p>Following this through, we can re-write the remaining equations describing our reaction (substituting <span class="math inline">\([B]_{ss} = k_1[A]/k_2\)</span>):</p>
 <p><span class="math display">\[\frac{d[A]}{dt} = -k_1[A]\]</span></p>
-<p><span class="math display">\[\frac{d[C]}{dt} = k_2 \cdot \frac{k_1[A]}{k_2} \simeq k_1[A]\]</span></p>
+<p><span class="math display">\[\frac{d[C]}{dt} \simeq k_2 \cdot \frac{k_1[A]}{k_2} \simeq k_1[A]\]</span></p>
 <p>In doing so, we have greatly reduced the complexity of this reaction system.</p>
 <p>In the atmosphere there are many examples of compounds that can be considered to be in steady state. For the steady-state assumption to apply, it is necessary that the rate constants for destruction of the intermediate greatly exceed those for its formation, so that its concentration remains low and (quasi-)constant.</p>
-<p>Often we will consider the concept of an <strong>air parcel</strong> throughout this course. An air parcel can be thought of as a “box of air.” Suppose there are two species in the box, A and B. There are emissions of A, <span class="math inline">\(F_A\)</span>, and A can undergo reactions (conversion) to form B, which subsequently is lost via other processes. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for <span class="math inline">\([A]\)</span> and <span class="math inline">\([B]\)</span>, and hence an expression for the ratio <span class="math inline">\([B]_{ss}/[A]_{ss}\)</span>.</p>
+<details>
+<summary>
+<strong>More on the steady state</strong>
+</summary>
+<p>In the chain reaction example it is clear that the steady-state approximation (<strong>SSA</strong>) will work when <span class="math inline">\(k_2 \gg k_1\)</span>.</p>
+<p>But when can we use the SSA, and when does it not work?</p>
+<p>We need to consider several factors. First, the SSA will only work for an <strong>intermediate</strong> — in this course we can read that as meaning a radical species. So your first task is to identify the radicals and consider putting them into the SSA. Next, we need to examine the relative rates of formation and destruction. This is where things get tricky: the rate of destruction depends on the concentration of the species we are putting into steady state, so we probably don’t know it in advance. However, we can get a sense of the numbers involved in the rate of production, and start to gauge whether the <strong>source</strong> of our intermediate is tiny, small, medium, large or massive. Our <strong>loss</strong> rates will need to balance these for the SSA to be valid. For example, the SSA will fail when we have a really large source of our intermediate but only a small amount of loss.</p>
+<p>Finally, we can put some quantitative bounds on this — for example, by calculating the timescale over which the SSA starts to break down.</p>
+<p>Consider the following reaction scheme:</p>
+<p><span class="math display">\[O_2 + h\nu \xrightarrow{J_1} O(^{3}P) + O(^{1}D)\]</span></p>
+<p><span class="math display">\[O(^{1}D) + M \xrightarrow{k_q} O(^{3}P) + M\]</span></p>
+<p><span class="math display">\[\frac{d[O(^1D)]}{dt} = J_1[O_2] - k_q[M][O(^1D)]\]</span></p>
+<p>Let’s assume <span class="math inline">\([O(^1D)]\)</span> is in steady state:</p>
+<p><span class="math display">\[[O(^1D)]_{ss} = \frac{J_1[O_2]}{k_q[M]}\]</span></p>
+<p>Compare that to the full solution of the ODE:</p>
+<p><span class="math display">\[[O(^1D)]_t = \frac{J_1[O_2]}{k_q[M]}\left(1 - \exp(-k_q[M]t)\right)\]</span></p>
+<p>We note that the timescale for the system (<span class="math inline">\([O(^1D)]\)</span>) is given by <span class="math inline">\(1/(k_q[M])\)</span>, and that the full solution and the steady-state solution only differ by an exponential term. This is useful because we can appeal to the graph of <span class="math inline">\(y = \exp(-x)\)</span> to gain some insight into the problem: <span class="math inline">\(\exp(-4.6) \simeq 0.01\)</span> — in other words, once <span class="math inline">\(k_q[M]t = 4.6\)</span>, our SSA solution is within 1% of the full ODE solution. Rearranging, the time for the SSA to be within 1% of the full solution is:</p>
+<p><span class="math display">\[t = \frac{4.6}{k_q[M]}\]</span></p>
+<p>For <span class="math inline">\(k_q = 3\times10^{-11}\ \text{molecule}^{-1}\ \text{cm}^3\ \text{s}^{-1}\)</span> and <span class="math inline">\([M] = 3\times10^{14}\ \text{molecule cm}^{-3}\)</span>, this gives <span class="math inline">\(t = 5\times10^{-4}\)</span> s — i.e.&nbsp;very short, so it is very likely that the SSA is valid.</p>
+</details>
+<p><img src="../assets/figures/m2-fig2-x-box-fluxes.png" class="img-fluid" alt="Our simple air parcel model"> <span id="fig-2-2"></span><em>Figure 2.2 — Schematic of an air parcel containing two species, A and B.</em></p>
+<p>Often we will consider the concept of an <strong>air parcel</strong> throughout this course (schematically shown in <a href="#fig-2-2">Figure 2.2</a>). An air parcel can be thought of as a “box of air.” Suppose there are two species in the box, A and B. There are emissions of A, <span class="math inline">\(F_A\)</span>, and A can undergo reactions (conversion) to form B, which subsequently is lost via other processes. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for <span class="math inline">\([A]\)</span> and <span class="math inline">\([B]\)</span>, and hence an expression for the ratio <span class="math inline">\([B]_{ss}/[A]_{ss}\)</span>.</p>
 <details>
 <summary>
 <strong>Worked derivation: steady-state ratio [B]<sub>ss</sub>/[A]<sub>ss</sub> for a source of A feeding into B</strong>
@@ -358,8 +391,10 @@ window.Quarto = {
 <p>Note that for a system of two first-order (or pseudo-first-order) reactions,</p>
 <p><span class="math display">\[A \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} B\]</span></p>
 <p>the system approaches equilibrium with a time constant of <span class="math inline">\((k_1 + k_{-1})^{-1}\)</span> (s). So we only need <span class="math inline">\(k_1\)</span> <strong>or</strong> <span class="math inline">\(k_{-1}\)</span> to be large for <span class="math inline">\(\tau\)</span> to be small — which is what lets us apply the steady-state approximation.</p>
-<blockquote class="blockquote">
-<p><strong>Exercise 3 — The error in the steady-state approximation</strong></p>
+<details>
+<summary>
+<strong>Exercise 3 — Derivation of the timescale for equilibrium</strong>
+</summary>
 <p>Consider a very simple reversible system <span class="math inline">\(A \rightleftharpoons B\)</span>, with forward rate constant <span class="math inline">\(k_f\)</span> and backward rate constant <span class="math inline">\(k_b\)</span>:</p>
 <p><span class="math display">\[\frac{d[B]}{dt} = k_f[A] - k_b[B]\]</span> &nbsp;&nbsp;(Eq 1)</p>
 <p>Let <span class="math inline">\(x\)</span> denote the amount of <span class="math inline">\(A\)</span> molecules present as <span class="math inline">\(B\)</span> molecules, and <span class="math inline">\(a = [A]_0\)</span>. Then:</p>
@@ -373,20 +408,14 @@ window.Quarto = {
 <p>and, since <span class="math inline">\(y\)</span> relates to <span class="math inline">\(x\)</span> through Eq 4, combining Eq 4 and Eq 8 gives the <strong>exact</strong> solution:</p>
 <p><span class="math display">\[x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big]\]</span> &nbsp;&nbsp;(Eq 9)</p>
 <p>From this we see the timescale for the system to reach equilibrium is exactly <span class="math inline">\(\dfrac{1}{k_f+k_b}\)</span> — compare this exact result against the steady-state approximation numerically in the notebook.</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>Common question</strong></p>
-<p><em>Q: When can I put [X] into steady state?</em></p>
-<p><em>A: When we have a system we can approximate as having 1st-order loss (<span class="math inline">\(L'\)</span>, s⁻¹) and 0th-order production (<span class="math inline">\(R_p\)</span>), and the rate of loss is fast (i.e.&nbsp;<span class="math inline">\(1/L'\)</span> is small), such that as soon as X is made it gets (pretty much) destroyed:</em></p>
-<p><span class="math display">\[\frac{d[X]_{ss}}{dt} \simeq 0 = R_p - L'[X]\]</span></p>
-</blockquote>
+</details>
 <p>We will consider many examples of using steady state in the supervision questions, but in general a good opening argument for whether or not to put something into steady state is to consider whether or not it is a <strong>radical</strong>.</p>
 </section>
 <section id="chemistry-vs.-transport-timescales" class="level3">
 <h3 class="anchored" data-anchor-id="chemistry-vs.-transport-timescales">Chemistry vs.&nbsp;transport timescales</h3>
 <p>So far we have considered some very trivial examples. Whilst these have been trivial, they are still very useful for our studies of atmospheric chemistry. But an important complication for us as atmospheric chemists is that the reaction vessel we use in our studies is the atmosphere itself! You only need to venture outdoors to note that the reactions taking place in the atmosphere are doing so under far-from-controlled conditions. The gases and particles we are interested in are affected not only by chemical change but also by transport — for example through the wind. In this course we won’t dwell much on atmospheric transport (that’s covered in greater detail in the Part III course). What is important, however, is to have a feel for the <strong>relative</strong> time scales of chemistry and transport.</p>
-<p>The time constants (<strong>lifetimes</strong>) of a range of constituents of interest to the atmospheric chemist are presented in <a href="#fig-2-2">Fig 2.2</a>. As we’ve seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.</p>
-<p><img src="../assets/figures/m2-fig2-2-lifetime-scales.png" class="img-fluid" alt="Comparison of spatial and chemical scales of selected atmospheric gases"> <span id="fig-2-2"></span><em>Figure 2.2 — Comparison of spatial and chemical scales of selected gases in the atmosphere.</em></p>
+<p>The time constants (<strong>lifetimes</strong>) of a range of constituents of interest to the atmospheric chemist are presented in <a href="#fig-2-3">Fig 2.3</a>. As we’ve seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.</p>
+<p><img src="../assets/figures/m2-fig2-2-lifetime-scales.png" class="img-fluid" alt="Comparison of spatial and chemical scales of selected atmospheric gases"> <span id="fig-2-3"></span><em>Figure 2.3 — Comparison of spatial and chemical scales of selected gases in the atmosphere.</em></p>
 </section>
 </section>
 <section id="bi-molecular-rate-coefficients" class="level2">
@@ -397,8 +426,8 @@ window.Quarto = {
 <p>Second-order, or bi-molecular, rate coefficients are usually expressed using the following form in atmospheric chemistry:</p>
 <p><span class="math display">\[k_{obs(T)} = A \exp\left(-\frac{E_a}{RT}\right) \quad \text{(molecules}^{-1}\text{ cm}^3\text{ s}^{-1}\text{)}\]</span></p>
 <p>where <span class="math inline">\(A\)</span> is often referred to as the Arrhenius pre-exponential factor, <span class="math inline">\(E_a\)</span> the reaction activation energy (J mol⁻¹), <span class="math inline">\(R\)</span> the gas constant (J K⁻¹ mol⁻¹) and <span class="math inline">\(T\)</span> temperature (K). Many bi-molecular reactions in the atmosphere show temperature dependence in their kinetics. A good example is the reaction of OH with methane (one of the most temperature-dependent reactions known).</p>
-<p><img src="../assets/figures/m2-fig2-3-arrhenius-oh-ch4.png" class="img-fluid" alt="Arrhenius plot for OH + CH4"> <span id="fig-2-3"></span><em>Figure 2.3 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.</em></p>
-<p><a href="#fig-2-3">Fig 2.3</a> demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.</p>
+<p><img src="../assets/figures/m2-fig2-3-arrhenius-oh-ch4.png" class="img-fluid" alt="Arrhenius plot for OH + CH4"> <span id="fig-2-4"></span><em>Figure 2.4 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.</em></p>
+<p><a href="#fig-2-4">Fig 2.4</a> demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.</p>
 </section>
 <section id="ter-molecular-rate-coefficients" class="level2">
 <h2 class="anchored" data-anchor-id="ter-molecular-rate-coefficients">2.3 Ter-molecular rate coefficients</h2>
@@ -406,9 +435,12 @@ window.Quarto = {
 <p><span class="math display">\[A + B + M \xrightarrow{k_{obs(T)}} \text{products}\]</span></p>
 <p>Strictly speaking, most reactions require a third body (often referred to as <span class="math inline">\(M\)</span>) to remove excess energy from the initial reaction. Consider the reaction between two iodine atoms. When the two atoms come together to form an iodine molecule, energy equal to the bond dissociation energy of I₂ is released into the nascent molecule. This is enough energy to then rupture the I–I bond and reform the iodine atoms. However, if the nascent I₂ molecule (I₂*) collides with a third body, the encounter can transfer some of the vibrational and rotational energy of the I₂ molecule to translational (and other) excitation of the third body:</p>
 <p><span class="math display">\[I + I \underset{k_b}{\overset{k_f}{\rightleftharpoons}} I_{2}^{\ast} \xrightarrow{M} I_2\]</span></p>
-<p>Under atmospheric conditions, <span class="math inline">\(M\)</span> is usually N₂ or O₂, and to a first approximation can be considered as the sum of their concentrations (<span class="math inline">\([M] = [N_2]+[O_2]\)</span>). The rate coefficients for ter-molecular reactions can be experimentally determined as a function of temperature and pressure to derive the <strong>low-pressure limit</strong> (<span class="math inline">\(k_{0,T}\)</span>), which shows pressure dependence, and the <strong>high-pressure limit</strong> (<span class="math inline">\(k_{\infty,T}\)</span>), which doesn’t. To predict the observed rate constant as a function of temperature and pressure, we combine these two limits using the <strong>Troe equation</strong> (a modification of the Lindemann–Hinshelwood expressions), which yields a pseudo-bi-molecular rate coefficient (units molecules⁻¹ cm³ s⁻¹).</p>
-<blockquote class="blockquote">
-<p><strong>Exercise 4 — Relating the bi-molecular and ter-molecular reactions</strong></p>
+<p>Under atmospheric conditions, <span class="math inline">\(M\)</span> is usually N₂ or O₂, and to a first approximation can be considered as the sum of their concentrations (<span class="math inline">\([M] = [N_2]+[O_2]\)</span>). The rate coefficients for ter-molecular reactions can be experimentally determined as a function of temperature and pressure to derive the <strong>low-pressure limit</strong> (<span class="math inline">\(k_{0,T}\)</span>), which shows pressure dependence, and the <strong>high-pressure limit</strong> (<span class="math inline">\(k_{\infty,T}\)</span>), which doesn’t. To predict the observed rate constant as a function of temperature and pressure, we combine these two limits using the <strong>Troe equation</strong> (a modification of the Lindemann–Hinshelwood expressions), which yields a pseudo-bi-molecular rate coefficient (units molecules⁻¹ cm³ s⁻¹):</p>
+<p><span class="math inline">\(k_{obs(M,T)} = \left( \frac{k_{0,T}[M]}{1 + \frac{k_{0,T}[M]}{k_{\infty,T}}} \right) F \left\{ 1 + \left[ \log_{10} \left( \frac{k_{0,T}[M]}{k_{\infty,T}} \right) \right]^2 \right\}^{-1}\)</span></p>
+<details>
+<summary>
+<strong>Exercise 4 — Relating the bi-molecular and ter-molecular reactions</strong>
+</summary>
 <p>In <em>Kinetics of Chemical Reactions</em> at 1A, we were told that whenever two molecules collide they bring with them enough energy to break the chemical bond that they try to form. This somewhat strange fact can be seen here in more detail.</p>
 <p>Consider two iodine atoms colliding:</p>
 <p><span class="math display">\[I + I \xrightarrow{k_1} I_{2}^{\ast}\]</span> &nbsp;&nbsp;(Eq 1)</p>
@@ -424,7 +456,7 @@ window.Quarto = {
 <p>Eq 6 shows the formation of <span class="math inline">\(I_2\)</span> behaving as a third-order (ter-molecular) process (second order in <span class="math inline">\(I\)</span>, first order in <span class="math inline">\(M\)</span>), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in <span class="math inline">\(M\)</span> and <span class="math inline">\(I_{2}^{\ast}\)</span>). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).</p>
 <p><strong>At low pressure</strong> (<span class="math inline">\([M]\)</span> small, so <span class="math inline">\(k_{col}[M] &lt; k_d\)</span>): <span class="math display">\[\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}\]</span> &nbsp;&nbsp;(Eq 7)</p>
 <p><strong>At high pressure</strong> (<span class="math inline">\([M]\)</span> large, so <span class="math inline">\(k_{col}[M] &gt; k_d\)</span>): <span class="math display">\[\frac{d[I_2]}{dt} \cong k_1[I]^2\]</span> &nbsp;&nbsp;(Eq 8)</p>
-</blockquote>
+</details>
 <hr>
 </section>
 <section id="try-it-yourself" class="level2">

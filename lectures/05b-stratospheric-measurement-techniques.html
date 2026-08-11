@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Measurement Techniques for Stratospheric Composition – B4 — Chemistry in the Atmosphere</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" rel="next">
+<link href="../lectures/05-model-predictions-global-o3.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d3f7f8e73c8d287b30bcf59c2b563615.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/01-basic-structure-troposphere-stratosphere.html">Michaelmas Term</a></li><li class="breadcrumb-item"><a href="../lectures/05b-stratospheric-measurement-techniques.html"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">B4 — Chemistry in the Atmosphere</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Michaelmas Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/01-basic-structure-troposphere-stratosphere.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Basic Physical and Chemical Structure of the Troposphere and Stratosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/02-chemical-kinetics.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chemical Kinetics in the Atmosphere</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/03-atmospheric-photochemistry.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atmospheric Photochemistry</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/04-stratospheric-ozone-chapman.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Stratospheric Ozone Chemistry: the Chapman Mechanism and Catalytic Cycles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lent Term</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/07-tropospheric-photochemistry-oh.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tropospheric Photochemistry and the Hydroxyl Radical</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/08-methane-oxidation-ozone-production.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methane Oxidation and NOx-Driven Ozone Production</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/09-ozone-budget-nox-reservoirs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">The Tropospheric Ozone Budget, Carbonyl Formation and NOx Reservoirs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/10-nmvoc-oxidation-alkanes-alkenes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds I: Alkanes and Alkenes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/11-nmvoc-aromatics-oxygenates.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Oxidation of Non-Methane Organic Compounds II: Aromatics and Oxygenated Organics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Problem Sets</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problems/StratosChem_Questions_Only.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Suggested Exercises and Sample Tripos Questions for Part II Chemistry in the Atmosphere (Lectures 1–6)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problems/TroposChem_Questions_Only.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Exercises — Part II Chemistry in the Atmosphere: Tropospheric Chemistry (Lent 2024)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#module-5b-measurement-techniques-for-stratospheric-composition" id="toc-module-5b-measurement-techniques-for-stratospheric-composition" class="nav-link active" data-scroll-target="#module-5b-measurement-techniques-for-stratospheric-composition">Module 5b · Measurement Techniques for Stratospheric Composition</a>
+  <ul class="collapse">
+  <li><a href="#b.1-measurement-strategies-in-situ-vs-remote" id="toc-b.1-measurement-strategies-in-situ-vs-remote" class="nav-link" data-scroll-target="#b.1-measurement-strategies-in-situ-vs-remote">5b.1 Measurement strategies: <em>in situ</em> vs remote</a></li>
+  <li><a href="#b.2-remote-measurement-principles-and-geometries" id="toc-b.2-remote-measurement-principles-and-geometries" class="nav-link" data-scroll-target="#b.2-remote-measurement-principles-and-geometries">5b.2 Remote measurement: principles and geometries</a></li>
+  <li><a href="#b.3-specific-examples-of-remote-sensing" id="toc-b.3-specific-examples-of-remote-sensing" class="nav-link" data-scroll-target="#b.3-specific-examples-of-remote-sensing">5b.3 Specific examples of remote sensing</a>
+  <ul class="collapse">
+  <li><a href="#dobson-spectrophotometer" id="toc-dobson-spectrophotometer" class="nav-link" data-scroll-target="#dobson-spectrophotometer">Dobson spectrophotometer</a></li>
+  <li><a href="#ground-based-methods-microwave-emission-spectrometry" id="toc-ground-based-methods-microwave-emission-spectrometry" class="nav-link" data-scroll-target="#ground-based-methods-microwave-emission-spectrometry">Ground-based methods: microwave emission spectrometry</a></li>
+  <li><a href="#satellite-measurements-of-vertical-profiles" id="toc-satellite-measurements-of-vertical-profiles" class="nav-link" data-scroll-target="#satellite-measurements-of-vertical-profiles">Satellite measurements of vertical profiles</a></li>
+  </ul></li>
+  <li><a href="#b.4-in-situ-measurements" id="toc-b.4-in-situ-measurements" class="nav-link" data-scroll-target="#b.4-in-situ-measurements">5b.4 <em>In situ</em> measurements</a>
+  <ul class="collapse">
+  <li><a href="#ozone-measurements-uv-absorption" id="toc-ozone-measurements-uv-absorption" class="nav-link" data-scroll-target="#ozone-measurements-uv-absorption">Ozone measurements: UV absorption</a></li>
+  <li><a href="#h₂o-measurements-by-fluorescence" id="toc-h₂o-measurements-by-fluorescence" class="nav-link" data-scroll-target="#h₂o-measurements-by-fluorescence">H₂O measurements by fluorescence</a></li>
+  <li><a href="#tunable-diode-laser-spectroscopy-tdls" id="toc-tunable-diode-laser-spectroscopy-tdls" class="nav-link" data-scroll-target="#tunable-diode-laser-spectroscopy-tdls">Tunable diode laser spectroscopy (TDLS)</a></li>
+  <li><a href="#clo-and-other-radicals-by-resonance-fluorescence" id="toc-clo-and-other-radicals-by-resonance-fluorescence" class="nav-link" data-scroll-target="#clo-and-other-radicals-by-resonance-fluorescence">ClO (and other radicals) by resonance fluorescence</a></li>
+  <li><a href="#measurement-of-oh" id="toc-measurement-of-oh" class="nav-link" data-scroll-target="#measurement-of-oh">Measurement of OH</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/01-basic-structure-troposphere-stratosphere.html">Michaelmas Term</a></li><li class="breadcrumb-item"><a href="../lectures/05b-stratospheric-measurement-techniques.html"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="module-5b-measurement-techniques-for-stratospheric-composition" class="level1">
+<h1>Module 5b · Measurement Techniques for Stratospheric Composition</h1>
+<blockquote class="blockquote">
+<p><strong>Learning aims</strong> By the end of this module you should be able to:</p>
+<ol type="1">
+<li>Explain the principle behind Dobson-spectrophotometer ozone measurements and derive the two-wavelength ratio method.</li>
+<li>Distinguish <em>in situ</em> from remote measurement strategies, and nadir from limb-sounding satellite geometries, in terms of their spatial/temporal coverage trade-offs.</li>
+<li>Describe the physical basis of absorption and emission spectroscopy for atmospheric composition, including how pressure broadening enables vertical-profile retrieval.</li>
+<li>Outline the operating principles of the main <em>in situ</em> techniques used for O₃, H₂O, ClO/BrO and OH, and explain why each technique suits its target species.</li>
+</ol>
+</blockquote>
+<section id="b.1-measurement-strategies-in-situ-vs-remote" class="level2">
+<h2 class="anchored" data-anchor-id="b.1-measurement-strategies-in-situ-vs-remote">5b.1 Measurement strategies: <em>in situ</em> vs remote</h2>
+<p>A variety of methods are used to measure atmospheric composition. These divide into two broad categories.</p>
+<p><strong>In situ (local)</strong> measurements are obtained only in the vicinity of the sampling instrument, from a variety of platforms — aircraft, balloons, the ground.</p>
+<ul>
+<li><em>Advantages:</em> high spatial/temporal resolution.</li>
+<li><em>Disadvantages:</em> limited coverage (altitude, latitude, longitude).</li>
+<li><em>Methods include:</em> grab sampling of long-lived species for later analysis; gas chromatography; mass spectrometry; electrochemical methods; chemiluminescence; and spectroscopic techniques including resonance fluorescence and tunable diode laser spectroscopy (TDLS).</li>
+</ul>
+<p><strong>Remote (non-local)</strong> measurements can be made some distance from the sampling instrument, from satellites, aircraft, balloons or the ground.</p>
+<ul>
+<li><em>Advantages:</em> good spatial and temporal coverage (satellites).</li>
+<li><em>Disadvantages:</em> poor spatial resolution.</li>
+<li><em>Methods:</em> spectroscopic, spanning microwave to UV, using either emission or absorption.</li>
+</ul>
+</section>
+<section id="b.2-remote-measurement-principles-and-geometries" class="level2">
+<h2 class="anchored" data-anchor-id="b.2-remote-measurement-principles-and-geometries">5b.2 Remote measurement: principles and geometries</h2>
+<p>Remote measurements rely on the fact that many molecules of interest have absorption (and thus emission) features in the earth’s atmosphere. Measurements are made over a wide range of wavelengths, from microwave through to the ultraviolet; the technique used depends on the wavelength of the spectral feature of the molecule of interest.</p>
+<p>Solar energy input at the top of the earth’s atmosphere is characteristic of that from a black body at ~6000 K, while outgoing infrared emission from the atmosphere is broadly characteristic of a black body at 245 K. Over this wavelength range, a wide range of atmospheric constituents have absorption features.</p>
+<p><img src="../assets/figures/m-measure-fig1-blackbody-curves.png" class="img-fluid" alt="Black-body curves corresponding to solar and mean atmospheric temperatures (top) and absorption by atmospheric gases (bottom) as a function of wavelength"> <span id="fig-5b-1"></span><em>Figure 5b.1 — Black-body curves corresponding to solar and mean atmospheric temperatures (top) and absorption by atmospheric gases (bottom) as a function of wavelength. (Houghton)</em></p>
+<p>Although, particularly in the IR, the absorption spectrum of the atmosphere is very complex — with overlapping absorption features due to the vibration–rotation bands of many molecules — given sufficient spectral resolution, transitions of individual molecules can be resolved.</p>
+<p>The spectroscopic signal <strong>detected</strong> by an instrument, <span class="math inline">\(I_{\nu,o}\)</span>, depends on two broad factors, depending on the observational geometry, as seen in the basic radiative transfer equation. One term depends on the (external) source, <span class="math inline">\(I_{\nu,s}\)</span>, and the transmission of radiation from the source through the atmosphere. A further term describes the contribution from emission (and subsequent absorption) along the atmospheric path to the instrument:</p>
+<p><span class="math display">\[I_{\nu,o} = I_{\nu,s}\exp(-\tau') + \int B_\nu(T(\tau))\exp(-\tau)\,d\tau \tag{5b.1}\]</span></p>
+<p>where <span class="math inline">\(d\tau = \sum_i n_i \sigma_i\, dz\)</span> is the optical depth at <span class="math inline">\(\nu\)</span>.</p>
+<p>Usually only one of these terms is important. In UV spectroscopy, the sun is usually the source: there is <strong>absorption</strong> by atmospheric constituents, but no emission in the UV along the atmospheric path, so only the first term matters. Measurements of atmospheric <strong>emission</strong> are often made in the infrared or microwave, where the radiance measured depends on the emission and subsequent absorption along the path.</p>
+<p>For composition measurements in emission, satellite measurements usually view the limb (with “cold space” as the source, which is negligible) rather than the nadir (downward-looking, with the earth’s surface as the source).</p>
+<p><strong>Absorption spectroscopy.</strong> In the ultraviolet and visible, absorption methods are generally used, in which the <em>absorption by</em> the atmosphere of radiation from a distant source (usually the sun) is detected. Knowledge of the absorption characteristics of the species of interest allows the quantity of absorber between source and detector to be deduced. Measurements using this technique can be made from satellites, balloons, and the ground.</p>
+<p><img src="../assets/figures/m-measure-fig2-absorption-schematic.png" class="img-fluid" alt="Schematic of absorption measurements: source, atmospheric path and detector geometry"> <span id="fig-5b-2"></span><em>Figure 5b.2 — Schematic of absorption measurements.</em></p>
+<p><strong>Emission spectroscopy.</strong> In the atmosphere, peak energy is in the infrared. In this region, emission methods — in which <em>emission from</em> molecules of interest is detected — can be employed. As the energy emitted from a region depends on both the absorption properties of the gas and the temperature, the latter must also be measured. Using interferometry, simultaneous measurements of a wide range of constituents are possible.</p>
+<p><img src="../assets/figures/m-measure-fig3-emission-schematic.png" class="img-fluid" alt="Schematic of emission measurements: atmospheric layer, radiative path and detector geometry"> <span id="fig-5b-3"></span><em>Figure 5b.3 — Schematic of emission measurements.</em></p>
+<p>Different signals — reflecting the relative importance of the terms in Eq. 5b.1, and the different viewing geometries — are shown below.</p>
+<p><img src="../assets/figures/m-measure-fig4-viewing-geometries-spectra.png" class="img-fluid" alt="Calculated spectra for different observational modes, illustrating the relative contribution of absorption and emission terms"> <span id="fig-5b-4"></span><em>Figure 5b.4 — Calculated spectra for different observational modes.</em></p>
+</section>
+<section id="b.3-specific-examples-of-remote-sensing" class="level2">
+<h2 class="anchored" data-anchor-id="b.3-specific-examples-of-remote-sensing">5b.3 Specific examples of remote sensing</h2>
+<section id="dobson-spectrophotometer" class="level3">
+<h3 class="anchored" data-anchor-id="dobson-spectrophotometer">Dobson spectrophotometer</h3>
+<p>As we’ve seen, ozone absorbs strongly at wavelengths shorter than ~310 nm (the Hartley band, see <a href="../lectures/03-atmospheric-photochemistry.html#fig-3-5">Fig 3.5</a>), preventing it reaching the earth’s surface. However, at longer wavelengths (in the Huggins band) ozone absorption is much weaker, and at these wavelengths a significant amount of solar radiation does reach the earth’s surface. Dobson exploited the fact that if you know the absorption cross-section of ozone in the Huggins band, and measure the attenuation of the atmosphere, the total number of molecules of ozone between the measuring instrument and the top of the atmosphere can be determined.</p>
+<p>The Beer–Lambert law states that the attenuation of an absorbing path with absorption cross-section <span class="math inline">\(\sigma_1\)</span> (cm²) and absorber amount <span class="math inline">\(U\)</span> (cm⁻²) is given by:</p>
+<p><span class="math display">\[\text{attenuation} = \exp\{-\sigma_1 U\}\]</span></p>
+<p>Thus if <span class="math inline">\(T_1\)</span> is the solar intensity at the top of the atmosphere, the irradiance reaching the surface, <span class="math inline">\(S_1\)</span>, will be:</p>
+<p><span class="math display">\[S_1 = T_1 \exp\{-\sigma_1 U\}\]</span></p>
+<p>In practice, Dobson found it much easier to measure the <em>relative</em> intensity at two nearby wavelengths. To do this he inserted a mechanical attenuator at one wavelength, adjusting the attenuation until the intensity at the two wavelengths was identical. Pairs of wavelengths were typically ~20 nm apart (e.g.&nbsp;305 nm and 325 nm), with an order of magnitude difference in cross-section (see Huggins band, <a href="../lectures/03-atmospheric-photochemistry.html#fig-3-5">Fig 3.5</a>). The relative intensity at the two wavelengths is thus:</p>
+<p><span class="math display">\[S_1/S_2 = (T_1/T_2)\exp\{-(\sigma_1-\sigma_2)U\}\]</span></p>
+<p>The ratio of solar flux at the top of the atmosphere <span class="math inline">\(T_1/T_2\)</span> is known to be constant and can be measured, allowing <span class="math inline">\(U\)</span> to be deduced. Of course, <span class="math inline">\(U\)</span> is the ozone amount in the slant line of sight between the observer and the sun. To deduce the vertical column of ozone, account has to be made of the solar zenith angle, <span class="math inline">\(\theta\)</span>. In a horizontally stratified atmosphere the vertical column is related to that observed at an angle <span class="math inline">\(\theta\)</span> by:</p>
+<p><span class="math display">\[U_{\text{vert}} = U_{\text{slant}}\cos(\theta)\]</span></p>
+<p>In fact there is additional attenuation in the atmosphere due both to Rayleigh scattering and scattering and absorption by cloud particles. The derivation can be modified to account for these, and once the difference at two wavelengths is taken, the residual effect of scattering is small and fairly easily accounted for.</p>
+<p>The Dobson measurement uses pairs of wavelengths. For other species, measurements often match absorption features over a broader spectral range — e.g.&nbsp;Differential Optical Absorption Spectroscopy (DOAS), a fitting procedure that nevertheless gives excellent selectivity for species with banded structure similar to the ozone Huggins bands (NO₂, NO₃, OClO, BrO, etc.).</p>
+</section>
+<section id="ground-based-methods-microwave-emission-spectrometry" class="level3">
+<h3 class="anchored" data-anchor-id="ground-based-methods-microwave-emission-spectrometry">Ground-based methods: microwave emission spectrometry</h3>
+<p>In the IR and microwave, the absorption cross-section <span class="math inline">\(\sigma\)</span> cannot be assumed independent of pressure and temperature (i.e.&nbsp;altitude), because transitions are pressure- and Doppler-broadened. The absorption of an atmospheric path then depends on the distribution of the absorbing gas along that path. For emission (rather than absorption) there is an additional factor: the radiant energy emitted from a layer depends on temperature via the Planck function, so the emitted energy depends on both the absorber distribution and the temperature profile.</p>
+<p>Several ground-based techniques exploit these facts to obtain the vertical profile of constituents. In the microwave, transitions are usually pure rotational, and their shape is dominated by pressure broadening:</p>
+<p><span class="math display">\[\sigma_L = \frac{S\,\alpha\,P\,U}{\pi\left[(\nu-\nu_0)^2 + (\alpha P)^2\right]}\]</span></p>
+<p>where <span class="math inline">\(\nu\)</span> is frequency (<span class="math inline">\(\nu_0\)</span> the line centre), <span class="math inline">\(S\)</span> is the transition strength, <span class="math inline">\(\alpha\)</span> is the Lorentz width at atmospheric pressure, <span class="math inline">\(P\)</span> is the ambient pressure (bar), and <span class="math inline">\(U\)</span> is the absorber amount. The width at half height is thus <span class="math inline">\(\alpha P\)</span> — proportional to pressure — while the area under the line equals the transition strength <span class="math inline">\(S\)</span> times the absorber amount <span class="math inline">\(U\)</span>.</p>
+<p><img src="../assets/figures/m-measure-fig5-pressure-broadened-line.png" class="img-fluid" alt="Illustration of a pressure-broadened spectral line: width scales with pressure, area scales with absorber amount"> <span id="fig-5b-5"></span><em>Figure 5b.5 — Pressure-broadened line shape.</em></p>
+<p>Atmospheric pressure falls approximately exponentially with altitude, so an emission line’s width at high altitude is much narrower than one from low altitude. When atmospheric absorption is weak, the energy reaching the surface closely approximates the sum of that emitted from all altitudes.</p>
+<p><img src="../assets/figures/m-measure-fig6-microwave-radiometer-schematic.png" class="img-fluid" alt="Schematic showing how contributions from different altitudes combine in the signal seen by a ground-based microwave radiometer"> <span id="fig-5b-6"></span><em>Figure 5b.6 — Schematic of the signal seen by a microwave radiometer.</em></p>
+<p>This effect is clearly visible in data showing the normalised emission spectrum of the <span class="math inline">\(J = 15/2 \rightarrow 13/2\)</span> rotational transition of ClO at 278 GHz, measured with a ground-based heterodyne microwave receiver in Antarctica.</p>
+<p><img src="../assets/figures/m-measure-fig7-clo-microwave-spectrum.png" class="img-fluid" alt="Normalised ClO emission spectrum at 278 GHz measured by a ground-based heterodyne microwave receiver in Antarctica"> <span id="fig-5b-7"></span><em>Figure 5b.7 — Ground-based microwave emission spectrum of the ClO 278 GHz transition.</em></p>
+<p>The spectrum consists of a broad feature (~200 MHz wide) plus a narrow feature (~20 MHz wide), corresponding to atmospheric pressures of ~80 mbar and ~8 mbar — i.e.&nbsp;~18 km and ~35 km respectively. The relative sizes of the two peaks show that a relatively larger proportion of the ClO resides at the lower altitude. A least-squares fit to the data produces the vertical profile below.</p>
+<p><img src="../assets/figures/m-measure-fig8-clo-vertical-profile.png" class="img-fluid" alt="Vertical profile of ClO retrieved by least-squares fitting of the ground-based microwave spectrum"> <span id="fig-5b-8"></span><em>Figure 5b.8 — Retrieved vertical profile of ClO.</em></p>
+<p>This measurement was particularly important because it demonstrated that high concentrations of ClO existed in the low Antarctic stratosphere, linking chlorine to the ozone loss found there. A very important series of ClO measurements has also been made using a satellite-borne microwave emission spectrometer, MLS.</p>
+</section>
+<section id="satellite-measurements-of-vertical-profiles" class="level3">
+<h3 class="anchored" data-anchor-id="satellite-measurements-of-vertical-profiles">Satellite measurements of vertical profiles</h3>
+<p>Satellites fall into two classes defined by their orbits: geostationary (geosynchronous) orbiters, and polar (low Earth) orbiters (LEO). Although costly to develop and launch, satellite measurements have advantages over ground-based techniques — most obviously, for satellites orbiting pole to pole, near-global coverage is obtained relatively quickly.</p>
+<p>Two basic viewing geometries are used:</p>
+<ul>
+<li><strong>Nadir (vertical) sounding</strong> — the instrument views the atmosphere vertically. This gives good horizontal resolution (a few km) but generally poor vertical resolution. Nadir sounding has been used very successfully for temperature sounding (using CO₂ emission), but is less suitable for measuring minor constituents.</li>
+<li><strong>Limb sounding</strong> — the instrument views the limb of the earth. This improves vertical resolution at the expense of horizontal resolution.</li>
+</ul>
+<p><img src="../assets/figures/m-measure-fig9-limb-sounding-schematic.png" class="img-fluid" alt="Schematic comparison of nadir and limb-sounding viewing geometries"> <span id="fig-5b-9"></span><em>Figure 5b.9 — Schematic of limb sounding.</em></p>
+<p>An important advantage of limb sounding is that the absorbing path sampled is ~70 times the vertical path. The extra path length increases the absorption of more weakly absorbing or less abundant species, permitting their detection. Using limb sounding, observations are possible by measuring thermal emission from the atmosphere (IR and microwave), or by measuring the absorption of solar radiation by the atmosphere (solar occultation).</p>
+<p>Profile measurements are made by scanning the instrument field of view across the limb of the earth; for occultation this is done during sunrise and sunset. The profile is built up as follows: the concentration in the topmost shell (shell 1) is determined first, with the line of sight at viewing angle 1. The scan then steps down to viewing angle 2 (following the sun, for solar occultation); the line of sight now passes through shells 1 and 2, but since the concentration in shell 1 is already known, that in shell 2 can be determined. Successive steps to lower altitudes build up a full profile.</p>
+<p><img src="../assets/figures/m-measure-fig10-limb-retrieval-schematic.png" class="img-fluid" alt="Schematic of the onion-peeling retrieval used to build a vertical profile from successive limb-sounding viewing angles"> <span id="fig-5b-10"></span><em>Figure 5b.10 — Schematic of the limb-sounding retrieval.</em></p>
+</section>
+</section>
+<section id="b.4-in-situ-measurements" class="level2">
+<h2 class="anchored" data-anchor-id="b.4-in-situ-measurements">5b.4 <em>In situ</em> measurements</h2>
+<section id="ozone-measurements-uv-absorption" class="level3">
+<h3 class="anchored" data-anchor-id="ozone-measurements-uv-absorption">Ozone measurements: UV absorption</h3>
+<p>O₃ is routinely measured using its absorption in the Hartley band (see <a href="../lectures/03-atmospheric-photochemistry.html#fig-3-5">Fig 3.5</a>) around 250 nm (a Hg resonance lamp provides a source at 253.7 nm), where ozone absorbs strongly. The absorption occurs in a cell in which the light path is folded many times. The light beam is split (to allow measurement of <span class="math inline">\(I_0\)</span> and <span class="math inline">\(I_{tr}\)</span>), and the Beer–Lambert law is used to determine absolute concentrations of ozone (down to ~1 ppbv).</p>
+<p><img src="../assets/figures/m-measure-fig11-uv-absorption-schematic.png" class="img-fluid" alt="Schematic of a folded-path UV absorption ozone monitor"> <span id="fig-5b-11"></span><em>Figure 5b.11 — Schematic of a UV absorption ozone measurement.</em></p>
+<p><strong>Ozone electrochemical concentration cell (ECC) sonde.</strong> A very widely used method for O₃ is the ECC sonde — a simple, compact, inexpensive device for measuring O₃ profiles with good vertical resolution up to about 30 km. The throw-away sonde, weighing a few kg, is carried by a small balloon. It consists of an electrochemical cell containing potassium iodide in solution; ozone reacts with the KI, forming iodine:</p>
+<p><span class="math display">\[2\text{KI} + \text{O}_3 + \text{H}_2\text{O} \rightarrow 2\text{KOH} + \text{I}_2 + \text{O}_2\]</span></p>
+<p>This simple device has been used to show the extent of ozone losses in the Antarctic.</p>
+<p><strong>Chemiluminescence.</strong> A variety of measurements are possible by the chemiluminescence technique: a known amount of chemical is injected into the air sample, reacting with the species of interest to produce an excited product; photons emitted as the excited product de-excites are then detected. Two commonly made measurements are O₃ (reacting it with ethylene, C₂H₄) and NO (by reaction with injected O₃). An extension passes the sample over a heated gold catalyst in the presence of added CO, reducing all available reactive nitrogen compounds to NO, which is then measured as before — giving a measurement of total reactive nitrogen in the air sample.</p>
+</section>
+<section id="h₂o-measurements-by-fluorescence" class="level3">
+<h3 class="anchored" data-anchor-id="h₂o-measurements-by-fluorescence">H₂O measurements by fluorescence</h3>
+<p>Knowledge of water concentrations is crucial, since reaction of H₂O with excited atomic oxygen (O¹D) is the major stratospheric source of the hydroxyl radical OH. Very sensitive measurements of H₂O have been made with the Lyman-α fluorescence hygrometer, which uses a Lyman-α light source at 121.6 nm to dissociate H₂O and form an excited OH molecule:</p>
+<p><span class="math display">\[\text{H}_2\text{O} + h\nu \rightarrow \text{OH}^* + \text{O} \qquad k_1\ (\lambda = 121.6\text{ nm}) \tag{5b.2}\]</span></p>
+<p>The excited OH molecule can then radiate:</p>
+<p><span class="math display">\[\text{OH}^* \rightarrow \text{OH} + h\nu \qquad A\ (\lambda = 309\text{ nm}) \tag{5b.3}\]</span></p>
+<p>or be quenched by collision:</p>
+<p><span class="math display">\[\text{OH}^* + M \rightarrow \text{OH} + M \qquad k_q[M] \tag{5b.4}\]</span></p>
+<p>The rate of fluorescence from the sampled air is then proportional to:</p>
+<p><span class="math display">\[RF = \frac{[\text{H}_2\text{O}]}{A + k_q[M]} \tag{5b.5}\]</span></p>
+<p>A photomultiplier detects the resonantly scattered photons; calibration is necessary to determine various instrumental factors. Equation 5b.5 can be approximated as:</p>
+<p><span class="math display">\[RF \approx \frac{[\text{H}_2\text{O}]}{[M]\,k_q} \tag{5b.6}\]</span></p>
+<p>showing that the measurement is, in principle, one of mixing ratio, not concentration. This makes the instrument sufficiently sensitive to measure in the upper stratosphere, where — although the absolute water concentration is much lower — <span class="math inline">\([M]\)</span>, and hence the quenching, is also much reduced.</p>
+<p><img src="../assets/figures/m-measure-fig12-h2o-lyman-alpha-profile.png" class="img-fluid" alt="Vertical profile of H₂O measured on a balloon-borne Lyman-α fluorescence hygrometer, showing fine structure and a gradual increase with altitude"> <span id="fig-5b-12"></span><em>Figure 5b.12 — H₂O profile measured using a Lyman-α fluorescence hygrometer.</em></p>
+<p>The measurements above were made on a balloon-borne instrument. The structure in the H₂O profile is consistent with the long lifetime of H₂O in the upper stratosphere and can be used to identify how long air has spent there; the gradual increase with altitude is due to methane oxidation.</p>
+</section>
+<section id="tunable-diode-laser-spectroscopy-tdls" class="level3">
+<h3 class="anchored" data-anchor-id="tunable-diode-laser-spectroscopy-tdls">Tunable diode laser spectroscopy (TDLS)</h3>
+<p>TDLS is used for absorption measurements in the infrared. It employs a laser light source of very narrow wavelength, tunable over a small range — narrow enough to resolve weak absorptions lying between, e.g., H₂O and CO₂ lines, so that small absorptions due to specific rotational lines in a rovibrational spectrum can be measured with high selectivity. Conversely, it is difficult to measure many species simultaneously (unlike conventional FTIR spectroscopy). Lead-salt lasers have often been used, with tuning usually accomplished by varying the temperature (~3 cm⁻¹ per K); folded cells are usually used to increase the absorption path. Successful measurements include NO₂, CH₄, HNO₃, HCHO and SO₂ — for example, the diurnal-cycle measurements of NO₂ discussed in <strong>section 4.3</strong> were made by TDLS.</p>
+</section>
+<section id="clo-and-other-radicals-by-resonance-fluorescence" class="level3">
+<h3 class="anchored" data-anchor-id="clo-and-other-radicals-by-resonance-fluorescence">ClO (and other radicals) by resonance fluorescence</h3>
+<p>Radical concentrations determine the partitioning between different species in the atmosphere and thus control the ozone photochemical balance. However, because of their small concentrations and high reactivities, few measurements of important atmospheric radicals have been made. One successful technique is resonance fluorescence — sometimes preceded by chemical conversion — which, by its nature, is limited to <em>in situ</em> approaches. It involves exciting an allowed electronic transition of the species of interest and detecting any resonantly scattered photons; the number of scattered photons is related to the concentration of scattering molecules by laboratory calibration.</p>
+<p>Anderson made measurements of the hydroxyl radical by direct fluorescence using the <span class="math inline">\(A^2\Sigma \leftarrow X^2\Pi\)</span> transition of OH at 308 nm, with a balloon-borne instrument providing profiles up to 40 km.</p>
+<p>For ClO, resonance fluorescence cannot be applied directly, since ClO pre-dissociates on a time-scale shorter than that for re-emission of a photon. Instead, ClO is converted to chlorine atoms by injecting nitric oxide:</p>
+<p><span class="math display">\[\text{ClO} + \text{NO} \rightarrow \text{Cl} + \text{NO}_2\]</span></p>
+<p>Using the apparatus described, the conversion efficiency to chlorine atoms is around 95%. Resonant scattering from the <span class="math inline">\(^2P_{3/2} - {}^2D_{5/2}\)</span> Cl transition at 118.9 nm is then detected in the normal way; BrO is detected similarly.</p>
+<p><img src="../assets/figures/m-measure-fig13-clo-bro-resonance-fluorescence.png" class="img-fluid" alt="Balloon-borne ClO/BrO resonance fluorescence instrument configuration (Anderson)"> <span id="fig-5b-13"></span><em>Figure 5b.13 — The balloon-borne ClO/BrO resonance fluorescence detector (Anderson). An aircraft version also exists.</em></p>
+</section>
+<section id="measurement-of-oh" class="level3">
+<h3 class="anchored" data-anchor-id="measurement-of-oh">Measurement of OH</h3>
+<p>OH is a vital atmospheric species: it “cleanses” the troposphere as the main daytime oxidant (see Dr Kalberer’s lectures), and plays a major role in stratospheric chemistry. It is very short-lived and difficult to measure.</p>
+<p><strong>Resonance fluorescence.</strong> Techniques similar to the stratospheric OH measurements described above have been employed in the troposphere, exploiting the <span class="math inline">\(A^2\Sigma^+ \leftarrow X^2\Pi\)</span> transition around 308 nm. A complication is that this radiation can itself produce OH, via photolysis of O₃ in the presence of water vapour; this contamination can be reduced by measuring at low pressure.</p>
+<p><strong>Differential optical absorption spectroscopy.</strong> The strongly banded structure of the <span class="math inline">\(A^2\Sigma^+ \leftarrow X^2\Pi\)</span> transition makes it an excellent candidate for DOAS measurements. OH has been measured this way using multipass cells (total path ~2 km) or open double-pass instruments with a source and retro-reflector some kilometres apart. Sensitivity tends to be moderate (~10⁶ cm⁻³), owing to reflective losses and the “averaging” of concentration along long paths — but this is adequate for daytime measurements in the presence of significant OH sources.</p>
+<p><strong>Global inferral.</strong> OH concentrations have also been derived by estimating the lifetimes of species — such as CH₃CCl₃ — whose only sink is reaction with OH. A key question here is exactly what a “global” OH concentration means, since OH is very short-lived and expected to show significant spatial and temporal variability.</p>
+<p><img src="../assets/figures/m-measure-fig14-ch3ccl3-decline.png" class="img-fluid" alt="Observed decline in atmospheric CH₃CCl₃ mixing ratio following controls under the Montreal Protocol"> <span id="fig-5b-14"></span><em>Figure 5b.14 — Observed decline in atmospheric CH₃CCl₃ (methyl chloroform) mixing ratio (ppt).</em></p>
+<p>The figure shows the observed decline in atmospheric CH₃CCl₃ mixing ratios, reflecting the impact of controls under the Montreal Protocol. Emissions into the atmosphere are now essentially zero, so the observed change is entirely due to chemical loss by reaction with OH — making the decay rate itself a global-average OH “clock”.</p>
+<hr>
+<p><em>This concludes the Michaelmas term (Lectures 1–5, 5b). Next: <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Module 6 — Atmospheric Composition: Sources, Sinks and Lifetimes</a>, opening the Lent term (Lectures 7–12).</em></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../lectures/05-model-predictions-global-o3.html" class="pagination-link" aria-label="Model Predictions of Changes in Global O₃">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" class="pagination-link" aria-label="Atmospheric Composition: Sources, Sinks and Lifetimes">
+        <span class="nav-page-text"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

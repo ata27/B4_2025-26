@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../lectures/07-tropospheric-photochemistry-oh.html" rel="next">
-<link href="../lectures/05-model-predictions-global-o3.html" rel="prev">
+<link href="../lectures/05b-stratospheric-measurement-techniques.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -182,6 +182,11 @@ window.Quarto = {
   <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -271,7 +276,6 @@ window.Quarto = {
   <li><a href="#acid-deposition-wet-and-dry" id="toc-acid-deposition-wet-and-dry" class="nav-link" data-scroll-target="#acid-deposition-wet-and-dry">1.4.3 Acid deposition (wet and dry)</a></li>
   </ul></li>
   <li><a href="#lifetimes-putting-it-together" id="toc-lifetimes-putting-it-together" class="nav-link" data-scroll-target="#lifetimes-putting-it-together">1.5 Lifetimes — putting it together</a></li>
-  <li><a href="#worked-example-1-steady-state-concentration-of-compound-x" id="toc-worked-example-1-steady-state-concentration-of-compound-x" class="nav-link" data-scroll-target="#worked-example-1-steady-state-concentration-of-compound-x">Worked Example 1 — Steady-state concentration of compound X</a></li>
   <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">Try it yourself</a></li>
   </ul></li>
   </ul>
@@ -606,12 +610,14 @@ window.Quarto = {
 <p><strong>Key points — Module 1</strong> - Atmospheric composition is set by the <strong>balance of sources and sinks</strong>. - <strong>Sources</strong>: mainly surface emission, but some species (notably O₃) are produced photochemically in the atmosphere itself. - <strong>Sinks</strong>: physical (dry/wet deposition) and chemical (oxidation, photolysis) removal, with widely varying efficiency and timescale depending on the species. - <strong>Lifetime</strong> ties source/sink strength to the standing concentration, and is essential for comparing how “long-lived” different pollutants are.</p>
 </blockquote>
 <hr>
-</section>
-<section id="worked-example-1-steady-state-concentration-of-compound-x" class="level2">
-<h2 class="anchored" data-anchor-id="worked-example-1-steady-state-concentration-of-compound-x">Worked Example 1 — Steady-state concentration of compound X</h2>
+<details>
+<summary>
+<strong>Worked Example 1 — Steady-state concentration of compound X</strong>
+</summary>
 <p><strong>Problem.</strong> Compound X is emitted at the surface at a rate of 1 tonne yr⁻¹ (molar mass 44 g mol⁻¹). It is lost by reaction with OH, with rate constant <span class="math inline">\(k = 1\times10^{-11}\)</span> cm³ molecule⁻¹ s⁻¹, and by dry deposition with <span class="math inline">\(v_g = 1\)</span> cm s⁻¹. Assume <span class="math inline">\([\text{OH}] = 10^{6}\)</span> cm⁻³ and a boundary-layer mixing height of <span class="math inline">\(h = 1\)</span> km.</p>
 <p><strong>Method.</strong> 1. Convert the emission rate to a molecular flux (molecules cm⁻² s⁻¹) using the molar mass and an assumed emission area, or work in a well-mixed box of height <span class="math inline">\(h\)</span> to get a volumetric production rate (molecules cm⁻³ s⁻¹). 2. Write the two loss rate constants: chemical, <span class="math inline">\(k_{\text{OH}} = k[\text{OH}]\)</span>; physical, <span class="math inline">\(k_{\text{dep}} = v_g / h\)</span>. 3. At steady state, production = total loss: <span class="math inline">\(P = (k_{\text{OH}} + k_{\text{dep}})[\text{X}]_{ss}\)</span>. 4. Solve for <span class="math inline">\([\text{X}]_{ss}\)</span>, and use <span class="math inline">\(\tau = 1/(k_{\text{OH}}+k_{\text{dep}})\)</span> to sanity-check against the emission rate.</p>
 <p>This is exactly the kind of steady-state / pseudo-first-order problem you’ll meet repeatedly through the course — it’s worth being fluent doing it both by hand and by setting up the balance numerically. <strong>The companion notebook (<code>06-sources-sinks-lifetimes.ipynb</code>) walks through this example step by step, and lets you explore how <span class="math inline">\([\text{X}]_{ss}\)</span> and <span class="math inline">\(\tau\)</span> respond to changing <span class="math inline">\(k\)</span>, <span class="math inline">\([\text{OH}]\)</span>, <span class="math inline">\(v_g\)</span> and <span class="math inline">\(h\)</span>.</strong></p>
+</details>
 <hr>
 </section>
 <section id="try-it-yourself" class="level2">
@@ -1033,8 +1039,8 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lectures/05-model-predictions-global-o3.html" class="pagination-link" aria-label="Model Predictions of Changes in Global O₃">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></span>
+      <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="pagination-link" aria-label="Measurement Techniques for Stratospheric Composition">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

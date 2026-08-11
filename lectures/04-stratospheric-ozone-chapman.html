@@ -182,6 +182,11 @@ window.Quarto = {
   <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -367,14 +372,16 @@ window.Quarto = {
 </tbody>
 </table>
 <p>Notice that the photolysis of oxygen is much slower than the photolysis of ozone (<span class="math inline">\(J_2 \ll J_3\)</span>; values given are for ~40 km). Reactions 4.2 and 4.3 have very short time constants for the conversion of O to O₃ and vice versa, and establish a <strong>steady state</strong> much more rapidly than reactions 4.1 and 4.4.</p>
-<blockquote class="blockquote">
-<p><strong>Exercise 5 — Time constants for inter-conversion of O and O₃</strong></p>
-<p>As in Exercise 3, the time scale for interconversion of species is <span class="math inline">\((k_f+k_b)^{-1}\)</span> (both must be first-order or pseudo-first-order rate constants).</p>
+<details>
+<summary>
+<strong>Exercise 5 — Time constants for inter-conversion of O and O₃</strong>
+</summary>
+<p>As in Exercise 3, we found that the time scale for interconversion of two species is <span class="math inline">\((k_f+k_b)^{-1}\)</span> (both must be first-order or pseudo-first-order rate constants).</p>
 <p>O and O₃ are linked by interconversion reactions: <span class="math display">\[O\ (+O_2+M) \xrightarrow{k_f} O_3 \qquad O_3\ (+h\nu) \xrightarrow{k_b} O\ (+O_2)\]</span></p>
 <p>Here <span class="math inline">\(k_f = k_{O+O_2}[M][O_2]\)</span> (pseudo-first-order for reaction 4.2) and <span class="math inline">\(k_b = J_3\)</span>.</p>
-<p>Focusing on the middle stratosphere (30 km, <span class="math inline">\(T=225\)</span> K), from Module 1’s Exercise 1 we have <span class="math inline">\([M]_{30\text{km}} = 2.4\times10^{19}\exp(-30/7) = 3.3\times10^{17}\)</span> cm⁻³ (<span class="math inline">\([O_2] = 0.2[M]\)</span>). The interconversion timescale is:</p>
-<p><span class="math display">\[\big(3.3\times10^{17}\times0.2\times3.3\times10^{17}\times6\times10^{-34}(300/225)^2 + 2\times10^{-3}\big)^{-1} = 0.43\ \text{seconds!} \quad \text{i.e. fast!}\]</span></p>
-</blockquote>
+<p>Focusing on the upper/middle stratosphere (40 km, <span class="math inline">\(T=225\)</span> K), from Module 1’s Exercise 1 we have <span class="math inline">\([M]_{40\text{km}} = 2.4\times10^{19}\exp(-40/7) = 7.9\times10^{16}\)</span> cm⁻³ (<span class="math inline">\([O_2] = 0.2[M]\)</span>). The interconversion timescale is:</p>
+<p><span class="math display">\[\big(7.9\times10^{16}\times0.2\times7.9\times10^{16}\times6\times10^{-34}(300/225)^2 + 2\times10^{-3}\big)^{-1} = 0.75\ \text{seconds!} \quad \text{i.e. fast!}\]</span></p>
+</details>
 <p>Reactions 4.2 and 4.3 only interconvert the “odd oxygen” species O and O₃ — i.e.&nbsp;they <strong>conserve odd oxygen</strong> (<span class="math inline">\([O_x] = [O]+[O_3]\)</span>). In defining <span class="math inline">\(O_x\)</span> we’ve invoked the idea of a <strong>chemical family</strong>: a collection of compounds connected via fast interconversion reactions, in steady state with each other. Since odd oxygen is only formed by reaction 4.1 and only removed by reaction 4.4:</p>
 <p><span class="math display">\[\frac{d[O_x]}{dt} = 2J_2[O_2] - 2k_4[O][O_3]\]</span></p>
 <p>Without invoking the O↔︎O₃ steady state we’d instead have the more complex system:</p>
@@ -382,11 +389,19 @@ window.Quarto = {
 <p><span class="math display">\[\frac{d[O_3]}{dt} = k_3[O][O_2][M] - J_3[O_3] - k_4[O][O_3]\]</span></p>
 <p><span class="math display">\[\frac{d([O]+[O_3])}{dt} = 2J_2[O_2] - 2k_4[O][O_3]\]</span></p>
 <p>The use of odd oxygen thus leads, as we’ll see again later, to both conceptual and mathematical simplification.</p>
+<details>
+<summary>
+<strong>Note on oxygen</strong>
+</summary>
+Note that we will always consider <span class="math inline">\([O_2]\)</span> to be unaffected by this chemistry (<span class="math inline">\(d[O_2]/dt = 0\)</span> and <span class="math inline">\([O_2] \approx 0.2[M]\)</span>) unless otherwise stated.
+</details>
 <p>The timescale for steady state between reactions 4.1 and 4.4 varies strongly with altitude: ~hours at 40 km, but many years at 20 km. Invoking steady state in the upper stratosphere is a good approximation; in the lower stratosphere it would be poor, since solar intensity, temperature, and atmospheric transport all vary too rapidly to allow steady state to be established.</p>
 <p><img src="../assets/figures/m4-fig4-1-o-o3-profiles.png" class="img-fluid" alt="Observed and calculated altitude profiles of O and O3"> <span id="fig-4-1"></span><em>Figure 4.1 — Observed and calculated altitude profiles of O(³P) and O₃.</em></p>
 <p>From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes (<a href="#fig-4-1">Fig 4.1</a>).</p>
-<blockquote class="blockquote">
-<p><strong>Exercise 6 — Steady-state distribution of ozone</strong></p>
+<details>
+<summary>
+<strong>Exercise 6 — Steady-state distribution of ozone</strong>
+</summary>
 <p>This calculation only works where chemical production and loss rates balance. At steady state:</p>
 <p><span class="math display">\[\frac{d[O_x]}{dt} = 2J_2[O_2] - 2k_4[O][O_3] = 0 \quad\Rightarrow\quad [O_3] = \frac{2J_2[O_2]}{2k_4[O]}\]</span> &nbsp;&nbsp;(Eq 2)</p>
 <p>The problem is we don’t yet know [O]. Using the O↔︎O₃ interconversion (reactions 4.2/4.3):</p>
@@ -394,7 +409,7 @@ window.Quarto = {
 <p>Rearranging Eq 3 for [O] and substituting into Eq 2:</p>
 <p><span class="math display">\[[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] = \sqrt{\frac{J_2[O_2] k_3[O_2][M]}{k_4 J_3}}\]</span> &nbsp;&nbsp;(Eq 5)</p>
 <p>Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).</p>
-</blockquote>
+</details>
 <p><img src="../assets/figures/m4-fig4-2-chapman-vs-observed.png" class="img-fluid" alt="Measured and Chapman-calculated O3 mixing ratio profiles"> <span id="fig-4-2"></span><em>Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs.&nbsp;altitude.</em></p>
 <p>For many years it was thought that Chapman’s model could adequately explain the distribution of stratospheric ozone. However, with improved laboratory and atmospheric measurements, it became apparent that reaction 4.4 only removes about <strong>25%</strong> of the odd oxygen produced by oxygen photolysis. Calculations based on just the Chapman reactions seriously overestimate stratospheric ozone concentrations (<a href="#fig-4-2">Fig 4.2</a>).</p>
 <p><img src="../assets/figures/m4-fig4-3-total-o3-latitude-season.png" class="img-fluid" alt="Total ozone vs latitude and season"> <span id="fig-4-3"></span><em>Figure 4.3 — Variation of total ozone as a function of latitude and season, showing highest values at high latitudes just after the polar night. Photochemical theory alone would predict highest ozone over the tropics; the observed distribution is strong evidence for the role of large-scale <strong>transport</strong> (the winds) in shaping the ozone distribution.</em></p>
@@ -427,9 +442,20 @@ window.Quarto = {
 <section id="catalytic-cycle" class="level3">
 <h3 class="anchored" data-anchor-id="catalytic-cycle">4.3.2 Catalytic cycle</h3>
 <p>With X = NO:</p>
-<p><span class="math display">\[NO + O_3 \to NO_2 + O_2 \quad (k_a) \qquad NO_2 + O \to NO + O_2 \quad (k_b)\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+NO + O_3 &amp;\to NO_2 + O_2 \quad (k_a) \\
+NO_2 + O &amp;\to NO + O_2 \quad (k_b)
+\end{aligned}
+\]</span></p>
 <p>This cycle is responsible for about <strong>50%</strong> of odd oxygen removal from the stratosphere, despite competing reactions — the most important being NO₂ photolysis, which is very rapid even at low altitudes (Module 3). NO₂ photolysis produces a <strong><em>null cycle</em></strong> in which odd oxygen is conserved:</p>
-<p><span class="math display">\[NO_2 + h\nu \to NO + O \quad (J_c) \qquad O + O_2 + M \to O_3 + M \qquad NO + O_3 \to NO_2 + O_2\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+NO_2 + h\nu &amp;\to NO + O \quad (J_c) \\
+O + O_2 + M &amp;\to O_3 + M \\
+NO + O_3 &amp;\to NO_2 + O_2
+\end{aligned}
+\]</span></p>
 <p>Steady state between NO and NO₂ is rapidly established (~100 s). Taking the rate of change of NO:</p>
 <p><span class="math display">\[\frac{d[NO]}{dt} = -k_a[NO][O_3] + k_b[NO_2][O] + J_c[NO_2] = 0\]</span></p>
 <p><span class="math display">\[\Rightarrow\quad [NO] = \frac{k_b[NO_2][O] + J_c[NO_2]}{k_a[O_3]}\]</span> &nbsp;&nbsp;(I)</p>
@@ -440,11 +466,24 @@ window.Quarto = {
 </section>
 <section id="reservoirs-and-sinks" class="level3">
 <h3 class="anchored" data-anchor-id="reservoirs-and-sinks">4.3.3 Reservoirs and sinks</h3>
-<p>A more comprehensive picture of stratospheric NOy chemistry (NOy = sum of all nitrogen oxides excluding N₂O) also involves NO₃, N₂O₅, HNO₄, HNO₃ (and ClONO₂ — §4.5). N₂O₅, HNO₃ and ClONO₂ are important <strong>reservoirs</strong> for NOx (and HOx, ClOx) — states where otherwise-reactive O₃-destroying radicals are held in less reactive form. For example, HNO₃ is formed by:</p>
-<p><span class="math display">\[OH + NO_2 + M \to HNO_3 + M\]</span> &nbsp;&nbsp;(4.5)</p>
+<p>A more comprehensive picture of stratospheric NOy chemistry (NOy = sum of all nitrogen oxides excluding N₂O) also involves NO₃, N₂O₅, HNO₄, HNO₃ (and ClONO₂ — §4.5).</p>
+<p><img src="../assets/figures/m4-noy-fluxes.png" class="img-fluid" alt="NOy reaction fluxes in the stratosphere"> <span id="fig-4-4"></span><em>Figure 4.4 — Key sources, sinks and species involved in the chemistry of NOy in the stratosphere.</em></p>
+<p>N₂O₅, HNO₃ and ClONO₂ are important <strong>reservoirs</strong> for NOx (and HOx, ClOx) — states where otherwise-reactive O₃-destroying radicals are held in less reactive form. For example, HNO₃ is formed by:</p>
+<p><span class="math display">\[
+\begin{align}
+OH + NO_2 + M &amp;\to HNO_3 + M \tag{4.5}
+\end{align}
+\]</span></p>
 <p>and destroyed by</p>
-<p><span class="math display">\[HNO_3 + h\nu \to OH + NO_2 \qquad \text{or} \qquad HNO_3 + OH \to H_2O + NO_3\]</span> &nbsp;&nbsp;(4.6)</p>
+<p><span class="math display">\[
+\begin{align}
+HNO_3 + h\nu &amp;\to OH + NO_2 \\
+HNO_3 + OH &amp;\to H_2O + NO_3 \tag{4.6}
+\end{align}
+\]</span></p>
 <p>At higher latitudes HNO₃ can become the major nitrogen oxide species. HNO₃ is transported from the stratosphere into the troposphere, where it is efficiently rained out — the major <strong>sink</strong> of stratospheric nitrogen oxides.</p>
+<p>Typical (modelled) distributions of NOy species are shown in (<a href="#fig-4-5">Fig 4.5</a>).</p>
+<p><img src="../assets/figures/m4-noy-vert-profile.png" class="img-fluid" alt="Vertical profile of NOy species in the stratosphere"> <span id="fig-4-5"></span><em>Figure 4.5 — Vertical profile of key NOy species in the stratosphere.</em></p>
 <p>Reactions 4.5 and 4.6 are both favoured by low temperatures. For the termolecular reaction 4.5, this is obvious; the temperature (and pressure!) dependence for HNO₃ + OH (4.6) is more surprising — it clearly doesn’t proceed by simple H-abstraction, but instead via a short-lived intermediate. Both reactions are very important in the very low stratosphere.</p>
 <p>Climate change predictions indicate the troposphere will warm (‘global warming’) while the stratosphere cools. A cooler lower stratosphere would favour formation of the reservoir species (reaction 4.5) and water vapour from HOx (reaction 4.6). The resulting reduction in HOx radicals is predicted to lead to an <strong>increase</strong> in lower-stratospheric ozone later this century (with consequences also for the troposphere, since the stratosphere is a source of ozone to it).</p>
 </section>
@@ -452,14 +491,20 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="diurnal-variation-of-the-nitrogen-oxides">4.3.4 Diurnal variation of the nitrogen oxides</h3>
 <p>Balloon-borne tunable diode laser spectroscopy (TDLS) measurements have confirmed the basic chemistry above, including the night-time decay of NO₂.</p>
 <p>During sunlight hours, NO and NO₂ are in rapid equilibrium via:</p>
-<p><span class="math display">\[NO + O_3 \to NO_2 + O_2 \qquad O + NO_2 \to NO + O_2 \qquad NO_2 + h\nu \to NO + O\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+NO + O_3 &amp;\to NO_2 + O_2 \\
+O + NO_2 &amp;\to NO + O_2 \\
+NO_2 + h\nu &amp;\to NO + O
+\end{align}
+\]</span></p>
 <p>At sunset, photolysis ceases and [O] decreases rapidly, so [NO₂] rises rapidly. Thereafter [NO₂] falls via:</p>
 <p><span class="math display">\[NO_2 + O_3 \to NO_3 + O_2 \qquad k = 8.5\times10^{-13}\exp(-2450/T)\ \text{cm}^3\text{s}^{-1}\]</span></p>
 <p>During the day NO₃ is photolysed very rapidly (~seconds), but at night it’s removed by the fast termolecular reaction:</p>
 <p><span class="math display">\[NO_2 + NO_3 + M \to N_2O_5 + M\]</span></p>
-<p>The slope of the night-time NO₂ decay (<a href="#fig-4-5">Fig 4.5</a>) is thus set by [O₃] and temperature (since at high temperatures <span class="math inline">\(N_2O_5 \to NO_2 + NO_3\)</span>).</p>
-<p><img src="../assets/figures/m4-fig4-5-no2-diurnal.png" class="img-fluid" alt="Measured and modelled diurnal variation of NO2"> <span id="fig-4-5"></span><em>Figure 4.5 — Measured and modelled diurnal variation of NO₂.</em></p>
-<p><a href="#fig-4-5">Fig 4.5</a> shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.</p>
+<p>The slope of the night-time NO₂ decay (<a href="#fig-4-6">Fig 4.6</a>) is thus set by [O₃] and temperature (since at high temperatures <span class="math inline">\(N_2O_5 \to NO_2 + NO_3\)</span>).</p>
+<p><img src="../assets/figures/m4-fig4-5-no2-diurnal.png" class="img-fluid" alt="Measured and modelled diurnal variation of NO2"> <span id="fig-4-6"></span><em>Figure 4.6 — Measured and modelled diurnal variation of NO₂.</em></p>
+<p><a href="#fig-4-6">Fig 4.6</a> shows [NO₂] falling at dawn with the onset of photolysis; the daytime increase in [NO₂] reflects the slow (~hours) photolysis of N₂O₅. Global measurements of NO₂, N₂O and HNO₃ have also been obtained from satellite instruments working in the infrared.</p>
 </section>
 </section>
 <section id="the-oxides-of-hydrogen-hox" class="level2">
@@ -478,20 +523,53 @@ window.Quarto = {
 <p>H, OH and HO₂ (collectively HOx) are closely coupled on a timescale of seconds by interconversion reactions. The three-body reaction</p>
 <p><span class="math display">\[H + O_2 + M \to HO_2 + M \qquad (k = 6\times10^{-32}(300/T)^2\ \text{cm}^6 \text{s}^{-1})\]</span></p>
 <p>is 100 times faster than O + O₂ + M (4.2), keeping the HO₂:H ratio very high in the stratosphere. At lower pressures in the upper stratosphere/mesosphere, H atom concentrations can rise, enabling:</p>
-<p><span class="math display">\[H + O_3 \to OH + O_2 \qquad OH + O \to H + O_2\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+H + O_3 &amp;\to OH + O_2 \\
+OH + O &amp;\to H + O_2
+\end{aligned}
+\]</span></p>
 <p>More important in the stratosphere itself:</p>
-<p><span class="math display">\[OH + O_3 \to HO_2 + O_2 \quad (k_a) \qquad HO_2 + O \to OH + O_2 \quad (k_b)\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+OH + O_3 &amp;\to HO_2 + O_2 \quad (k_a) \\
+HO_2 + O &amp;\to OH + O_2 \quad (k_b)
+\end{aligned}
+\]</span></p>
 <p>with, as for NOx, a null cycle:</p>
-<p><span class="math display">\[OH+O_3\to HO_2+O_2 \qquad HO_2+NO\to NO_2+OH\ (k_c) \qquad NO_2+h\nu\to NO+O \qquad O+O_2+M\to O_3+M\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+OH + O_3 &amp;\to HO_2 + O_2 \\
+HO_2 + NO &amp;\to NO_2 + OH \quad (k_c) \\
+NO_2 + h\nu &amp;\to NO + O \\
+O + O_2 + M &amp;\to O_3 + M
+\end{aligned}
+\]</span></p>
 <p>The steady state between OH and HO₂ is rapidly established. By the same procedure as §4.3.2:</p>
 <p><span class="math display">\[\left.\frac{d[O_x]}{dt}\right|_{HO_x} = -2k_b[HO_2][O]\]</span></p>
 <p>In the lower stratosphere, as [O] falls, this cycle becomes inefficient and an alternative cycle not involving O becomes important:</p>
-<p><span class="math display">\[OH+O_3\to HO_2+O_2 \qquad HO_2+O_3\to OH+O_2+O_2 \qquad \textbf{net: } 2O_3 \to 3O_2\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+OH + O_3 &amp;\to HO_2 + O_2 \\
+HO_2 + O_3 &amp;\to OH + O_2 + O_2 \\
+\textbf{net: } 2O_3 &amp;\to 3O_2
+\end{aligned}
+\]</span></p>
 </section>
 <section id="reservoirs-and-sinks-1" class="level3">
 <h3 class="anchored" data-anchor-id="reservoirs-and-sinks-1">4.4.3 Reservoirs and sinks</h3>
+<p>A comprehensive description of stratospheric HOx chemistry is shown below:</p>
+<p><img src="../assets/figures/m4-hox-fluxes.png" class="img-fluid" alt="Modelled reaction fluxes of HOx species"> <span id="fig-4-7"></span><em>Figure 4.7 — Reaction fluxes of HOx species.</em></p>
 <p>Hydrogen radicals are removed from the stratosphere by reformation of H₂O and reactions producing the temporary reservoirs HNO₃ and H₂O₂:</p>
-<p><span class="math display">\[OH+NO_2+M\to HNO_3+M \qquad HO_2+OH\to H_2O+O_2 \qquad HO_2+HO_2\to H_2O_2+O_2\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+OH + NO_2 + M &amp;\to HNO_3 + M \\
+HO_2 + OH &amp;\to H_2O + O_2 \\
+HO_2 + HO_2 &amp;\to H_2O_2 + O_2
+\end{align}
+\]</span></p>
+<p>Typical modelled distributions of HOx species in the stratosphere are shown in <a href="#fig-4-8">Fig 4.8</a>.</p>
+<p><img src="../assets/figures/m4-hox-vert-profile.png" class="img-fluid" alt="Modelled vertical profile of HOx species"> <span id="fig-4-8"></span><em>Figure 4.8 — Vertical profile of HOx species in the stratosphere.</em></p>
 </section>
 </section>
 <section id="the-oxides-of-chlorine-clox" class="level2">
@@ -500,24 +578,51 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="sources-2">4.5.1 Sources</h3>
 <p>The major <em>natural</em> source of chlorine to the stratosphere is CH₃Cl (~0.6 ppb). Stratospheric chlorine is currently over 3 ppb, with the increase due largely to manmade CF₂Cl₂ and CFCl₃, used as aerosol propellants, refrigerants and foam-blowing agents since the 1960s. Chemically inert in the troposphere, these CFCs are transported effectively to the stratosphere, where they are broken down by photolysis and reaction with O(¹D), releasing chlorine atoms. The troposphere acts as a reservoir for these species, giving them lifetimes of 50–100 years (the long atmospheric lifetime reflects the time needed to cycle up to the very low pressures where local loss is more rapid). Other species contribute to the total chlorine budget (e.g.&nbsp;CCl₄, CH₃CCl₃).</p>
 <p>As a consequence of the large stratospheric O₃ losses observed in polar regions, driven by Cl-compounds (see Part III), the use and release of all these compounds is now regulated by the <strong>Montreal Protocol</strong>.</p>
+<p>The historic and predicted future evolution of these source gases are shown in <a href="#fig-4-9">Fig 4.9</a>.</p>
+<p><img src="../assets/figures/m4-ods-eesc.png" class="img-fluid" alt="Time series of ozone depleting substances (ODS)"> <span id="fig-4-9"></span><em>Figure 4.9 — Historic and expected future mixing ratios of ODS shown in effective equivalent stratospheric chlorine (EESC).</em></p>
 <p>Because of their long lifetimes, these species will continue to play an important, if diminishing, role in ozone chemistry for at least the next 100 years. A group of substitute compounds, the HCFCs, are also regulated — being shorter-lived (they have a C–H bond, so react with OH in the troposphere), meaning the chlorine they carry is less likely to reach the stratosphere. However, many are potent greenhouse gases, as are some of the chlorine- and bromine-free replacements, the HFCs. Because of the long CFC lifetimes, there is little scope for more rapid reduction in total stratospheric chlorine.</p>
 </section>
 <section id="catalytic-cycle-1" class="level3">
 <h3 class="anchored" data-anchor-id="catalytic-cycle-1">4.5.2 Catalytic cycle</h3>
 <p>With X = Cl:</p>
-<p><span class="math display">\[Cl+O_3\to ClO+O_2\ (k_a) \qquad ClO+O\to Cl+O_2\ (k_b)\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+Cl + O_3 &amp;\to ClO + O_2 &amp; (k_a) \\
+ClO + O &amp;\to Cl + O_2 &amp; (k_b)
+\end{align}
+\]</span></p>
 <p>with, again, a null cycle:</p>
-<p><span class="math display">\[Cl+O_3\to ClO+O_2 \qquad ClO+NO\to NO_2+Cl\ (k_c) \qquad NO_2+h\nu\to NO+O \qquad O+O_2+M\to O_3+M\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+Cl + O_3 &amp;\to ClO + O_2 \\
+ClO + NO &amp;\to NO_2 + Cl &amp; (k_c) \\
+NO_2 + h\nu &amp;\to NO + O \\
+O + O_2 + M &amp;\to O_3 + M
+\end{align}
+\]</span></p>
 <p>By the same steady-state procedure as before:</p>
 <p><span class="math display">\[\left.\frac{d[O_x]}{dt}\right|_{ClO_x} = -2k_b[ClO][O]\]</span></p>
 </section>
 <section id="reservoirs-and-sinks-2" class="level3">
 <h3 class="anchored" data-anchor-id="reservoirs-and-sinks-2">4.5.3 Reservoirs and sinks</h3>
+<p>A more comprehensive description of stratospheric ClOx chemistry is shown below.</p>
+<p><img src="../assets/figures/m4-cly-fluxes.png" class="img-fluid" alt="Reaction fluxes involved in stratospheric Cly chemistry"> <span id="fig-4-10"></span><em>Figure 4.10 — Sources, sinks and reservoirs involved in stratospheric Cly chemistry.</em></p>
 <p>Two important reservoirs for ClOx are HCl and ClONO₂, formed by:</p>
-<p><span class="math display">\[Cl+CH_4\to HCl+CH_3 \qquad ClO+NO_2+M\to ClONO_2+M\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+Cl + CH_4 &amp;\to HCl + CH_3 \\
+ClO + NO_2 + M &amp;\to ClONO_2 + M
+\end{align}
+\]</span></p>
 <p>and removed by:</p>
-<p><span class="math display">\[OH+HCl\to H_2O+Cl \qquad ClONO_2+h\nu\to Cl+NO_3\]</span></p>
-<p>Note the contrast with NOx: whereas OH forms the NOx reservoir HNO₃, here OH acts to <em>release</em> Cl from the reservoir HCl.</p>
+<p><span class="math display">\[
+\begin{align}
+OH + HCl &amp;\to H_2O + Cl \\
+ClONO_2 + h\nu &amp;\to Cl + NO_3
+\end{align}
+\]</span></p>
+<p>Note the contrast with NOx: whereas OH forms the NOx reservoir HNO₃, here OH acts to <em>release</em> Cl from the reservoir HCl. Typical distributions of reactive chlorine species are shown in <a href="#fig-4-11">Fig 4.11</a>.</p>
+<p><img src="../assets/figures/m4-cly-vert-profile.png" class="img-fluid" alt="Vertical profiles of stratospheric Cly"> <span id="fig-4-11"></span><em>Figure 4.11 — The vertical distribution of main stratospheric Cly species.</em></p>
 </section>
 </section>
 <section id="other-halogens" class="level2">
@@ -530,20 +635,33 @@ window.Quarto = {
 <section id="catalytic-cycle-2" class="level3">
 <h3 class="anchored" data-anchor-id="catalytic-cycle-2">4.6.2 Catalytic cycle</h3>
 <p>As with chlorine:</p>
-<p><span class="math display">\[Br+O_3\to BrO+O_2 \qquad BrO+O\to Br+O_2\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+Br + O_3 &amp;\to BrO + O_2 \\
+BrO + O &amp;\to Br + O_2
+\end{align}
+\]</span></p>
 </section>
 <section id="reservoirs-and-sinks-3" class="level3">
 <h3 class="anchored" data-anchor-id="reservoirs-and-sinks-3">4.6.3 Reservoirs and sinks</h3>
 <p>Bromine differs from chlorine in that Br + CH₄ → HBr + CH₃ is 74 kJ mol⁻¹ endothermic, making the slower reaction with HO₂ the main source of HBr instead:</p>
 <p><span class="math display">\[HO_2+Br\to HBr+O_2\]</span></p>
 <p>Analogously to chlorine, BrONO₂ is formed and destroyed via:</p>
-<p><span class="math display">\[BrO+NO_2+M\to BrONO_2+M \qquad BrONO_2+h\nu\to Br+NO_3\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+BrO + NO_2 + M &amp;\to BrONO_2 + M \\
+BrONO_2 + h\nu &amp;\to Br + NO_3
+\end{align}
+\]</span></p>
 <p>However, BrONO₂ photolysis occurs at longer wavelengths than for ClONO₂, with a larger <span class="math inline">\(\sigma\)</span>, making it ~20 times faster than for chlorine. The net effect: active BrO, rather than reservoirs, are favoured for BrOx — increasing its O₃ destruction efficiency per atom relative to chlorine.</p>
+<p>Typical distributions of reactive bromine species are shown in <a href="#fig-4-12">Fig 4.12</a>.</p>
+<p><img src="../assets/figures/m4-bry-vert-profile.png" class="img-fluid" alt="Vertical profiles of stratospheric Bry"> <span id="fig-4-12"></span><em>Figure 4.12 — The vertical distribution of main stratospheric Bry species.</em></p>
 </section>
 </section>
 <section id="relative-importance-of-the-ox-nox-hox-clox-and-brox-cycles" class="level2">
 <h2 class="anchored" data-anchor-id="relative-importance-of-the-ox-nox-hox-clox-and-brox-cycles">4.7 Relative importance of the Ox, NOx, HOx, ClOx and BrOx cycles</h2>
 <p>The relative importance of the different catalytic destruction cycles is set by: the reaction rates of the different cycles; the stratospheric lifetimes of the various source gases (a longer lifetime implies release of the catalysts at a higher altitude, and further poleward); and the partitioning between reactive and reservoir species. The different chemical cycles contribute to odd oxygen loss in different proportions as a function of altitude — HOx and NOx cycles tend to dominate in different altitude bands, with ClOx/BrOx becoming disproportionately important in the polar lower stratosphere where heterogeneous chemistry (Part III) activates them from their reservoirs.</p>
+<p><img src="../assets/figures/m4-vert-fluxes.png" class="img-fluid" alt="Vertical distribution of stratospheric Ox destruction fluxes"> <span id="fig-4-13"></span><em>Figure 4.13 — The vertical distribution of the main stratospheric Ox destruction fluxes. On the right the relative role of each family is shown.</em></p>
 <hr>
 </section>
 <section id="try-it-yourself" class="level2">

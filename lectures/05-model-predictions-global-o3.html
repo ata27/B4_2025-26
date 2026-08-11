@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" rel="next">
+<link href="../lectures/05b-stratospheric-measurement-techniques.html" rel="next">
 <link href="../lectures/04-stratospheric-ozone-chapman.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -182,6 +182,11 @@ window.Quarto = {
   <a href="../lectures/05-model-predictions-global-o3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Model Predictions of Changes in Global O₃</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -291,9 +296,20 @@ window.Quarto = {
 <p><strong>Learning aims</strong> By the end of this module you should be able to: 1. Write down the multi-family odd-oxygen budget equation combining Ox, NOx, HOx, ClOx and BrOx loss terms. 2. Explain why gas-phase catalytic cycles predict ozone loss concentrated in the upper stratosphere. 3. Explain why a large <em>local</em> percentage change in ozone does not necessarily translate into a large <em>column</em> change, and why this means gas-phase chemistry alone cannot explain the Antarctic ozone hole.</p>
 </blockquote>
 <p>On the basis of the previous discussion, the rate of change of ozone (odd oxygen) can be written as:</p>
-<p><span class="math display">\[\frac{d([O]+[O_3])}{dt} = 2J_a[O_2] - 2k_a[O][O_3] - 2k_b[O][NO_2] - 2k_c[O][HO_2] - 2k_d[O][ClO] - 2k_e[O][BrO] - \text{etc.}\]</span></p>
-<p>It was realised in the 1970s that an increase in the concentration of the radical catalysts (e.g.&nbsp;NOx emitted directly into the stratosphere by aircraft; ClOx following degradation of CFCs; HOx either directly from aviation or through a changing climate) would change the balance in this equation, leading to lower ozone. Fig 4.11 (Module 4) showed a simplified version of the relative importance of the various catalytic Ox destruction cycles as a function of altitude.</p>
-<p>In the case of the CFCs, peak depletion was predicted at about 40 km — the altitude at which ClO was predicted to peak. Chlorine-driven loss was predicted to be small in the low stratosphere, where [O] is low and ClOx was thought to be mostly locked up in the reservoirs ClONO₂ and HCl. Model calculations of the change in O₃ for a change in ClOx from around 1 ppb to 3 ppb (somewhat below present-day values) show reductions of greater than <strong>20%</strong> at ~40 km at high latitudes.</p>
+<p><span class="math display">\[
+\begin{align}
+\frac{d([O]+[O_3])}{dt} &amp;= 2J_a[O_2] \\
+&amp;\quad - 2k_a[O][O_3] \\
+&amp;\quad - 2k_b[O][NO_2] \\
+&amp;\quad - 2k_c[O][HO_2] \\
+&amp;\quad - 2k_d[O][ClO] \\
+&amp;\quad - 2k_e[O][BrO] \\
+&amp;\quad - \text{etc.}
+\end{align}
+\]</span></p>
+<p>It was realised in the 1970s that an increase in the concentration of the radical catalysts (e.g.&nbsp;NOx emitted directly into the stratosphere by aircraft; ClOx following degradation of CFCs; HOx either directly from aviation or through a changing climate) would change the balance in this equation, leading to lower ozone. <a href="#fig-4-12">Fig 4.13</a> (Module 4) showed a simplified version of the relative importance of the various catalytic Ox destruction cycles as a function of altitude.</p>
+<p>In the case of the CFCs, peak depletion was predicted at about 40 km — the altitude at which ClO was predicted to peak. Chlorine-driven loss was predicted to be small in the low stratosphere, where [O] is low and ClOx was thought to be mostly locked up in the reservoirs ClONO₂ and HCl. Model calculations of the change in O₃ for a change in ClOx from around 1 ppb to 3 ppb (somewhat below present-day values) show reductions of greater than <strong>20%</strong> at ~40 km at high latitudes <a href="#fig-5-1">Fig 5.1</a>.</p>
+<p><img src="../assets/figures/m5-1-o3-loss.png" class="img-fluid" alt="Modelled and observed ozone trends"> <span id="fig-5-1"></span><em>Figure 5.1 — Modelled % change in O₃ for a change in ClOx from around 1 to 3 ppb (left panel) and observed rate of change in ozone column (%/yr) (right panel).</em></p>
 <p>Why the high-latitude enhancement? As CH₄ mixing ratios fall toward high latitudes (because the source of methane is the tropical troposphere), the reaction converting ClOx to HCl slows:</p>
 <p><span class="math display">\[Cl + CH_4 \to HCl + CH_3\]</span></p>
 <p>allowing more ClOx to remain in active form — leading to greater O₃ loss.</p>
@@ -313,7 +329,7 @@ window.Quarto = {
 <li>Compare that column-integral behaviour to what a <em>lower-stratospheric</em> perturbation (like the real ozone hole) would do to the total column, to see why the altitude at which loss occurs matters so much.</li>
 </ul>
 <hr>
-<p><em>This concludes the Michaelmas term (Lectures 1–6). Next: <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html">Module 6 — Atmospheric Composition: Sources, Sinks and Lifetimes</a>, opening the Lent term (Lectures 7–12).</em></p>
+<p><em>Next: <a href="../lectures/05b-stratospheric-measurement-techniques.html">Module 5b — Measurement Techniques for Stratospheric Composition</a>.</em></p>
 
 
 </section>
@@ -727,8 +743,8 @@ window.Quarto = {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lectures/06-atmospheric-composition-sources-sinks-lifetimes.html" class="pagination-link" aria-label="Atmospheric Composition: Sources, Sinks and Lifetimes">
-        <span class="nav-page-text"><span class="chapter-title">Atmospheric Composition: Sources, Sinks and Lifetimes</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../lectures/05b-stratospheric-measurement-techniques.html" class="pagination-link" aria-label="Measurement Techniques for Stratospheric Composition">
+        <span class="nav-page-text"><span class="chapter-title">Measurement Techniques for Stratospheric Composition</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
