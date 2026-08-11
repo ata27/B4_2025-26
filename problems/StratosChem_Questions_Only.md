@@ -1,4 +1,4 @@
-# Suggested Exercises and Sample Tripos Questions for Part II Chemistry in the Atmosphere (Lectures 1–6)
+# Exercises — Part II Chemistry in the Atmosphere: Stratospheric Chemistry (Lectures 1-6)
 
 *Students will find past tripos papers from 2015 onwards helpful.*
 

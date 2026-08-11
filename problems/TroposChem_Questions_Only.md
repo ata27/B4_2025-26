@@ -1,8 +1,8 @@
-# Exercises — Part II Chemistry in the Atmosphere: Tropospheric Chemistry (Lent 2024)
+# Exercises — Part II Chemistry in the Atmosphere: Tropospheric Chemistry (Lectures 7-12)
 
 *Students will also find past tripos questions since 2015 relevant to the content of this course.*
 
-## Chapter 1
+## Chapter 6
 
 **1.** The deposition velocity of ozone to the ground is 10⁻² m s⁻¹ and the mixed layer height is 500 m.
 
@@ -26,7 +26,7 @@ OH + CCl₃CH₃ → H₂O + CCl₃CH₂
 
 Estimate the global mean concentration of OH using the results from the analysis above (k = 1.2 × 10⁻¹⁴ cm³ molecule⁻¹ s⁻¹) and comment on your result.
 
-## Chapter 2
+## Chapter 7
 
 **1.** At wavelengths below 398 nm the quantum yield for the photolysis of NO₂ is unity:
 
@@ -95,7 +95,7 @@ In the presence of NOx (NO + NO₂), the following reactions occur:
 
 (g) Comment on its dependence on solar intensity.
 
-## Chapter 3
+## Chapter 8
 
 **1.** The dominant loss process for tropospheric CH₄ is by the reaction:
 
@@ -151,7 +151,7 @@ Derive an expression for the ratio [NO₂]/[NO].
 
 Data: k1 = 4.0 × 10¹⁵ exp(−13000/T) s⁻¹; k₋₁/k2 = 0.5 (independent of temperature); k5 = 2.0 × 10⁻¹² exp(−1400/T) cm³ molecule⁻¹ s⁻¹; 1 ppb = 2.46 × 10¹⁰ molecule cm⁻³ at 298 K and 1 bar; atmospheric pressure at 5 km = 0.542 bar.
 
-## Chapter 4
+## Chapter 9-11
 
 **1.** Outline, in brief, the role that organic peroxy radicals play in the formation of tropospheric ozone.
 
