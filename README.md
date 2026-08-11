@@ -25,7 +25,7 @@ scripts/      Scripts used to generate reference data, for reproducibility
 | 3 | 3 | Atmospheric Photochemistry |
 | 4 | 4–5 | Stratospheric Ozone Chemistry: the Chapman Mechanism and Catalytic Cycles |
 | 5 | 6 | Model Predictions of Changes in Global O₃ |
-| 5b | 5b | Measurement Techniques for Stratospheric Composition |
+| 5b | Bonus | Measurement Techniques for Stratospheric Composition |
 
 **Lent term (Lectures 7–12)**
 
