@@ -162,7 +162,20 @@ Important breakdown products from the photolysis of Cl- and Br-containing compou
 
 Finally, [Figure 3.14](#fig-3-14) gives an important overview of the photolysis coefficients (**J-rates**) of many trace gases in the stratosphere. This is a key figure we can come back to as it provides an important justification for the use of steady state. Essentially, during daylight hours we can see that species which have lifetimes with respect to photolysis shorter than 1 hour are very good candidates to apply steady state to.
 
----
+## 3.7 Scattering and albedo
+
+So far when discussing the transmission of radiation through the atmosphere we have considered the role of atmospheric gases absorbing solar radiation. In addition to this we also need to consider scattering of radiation. Scattering occurs when incident radiation is redirected from its original path. The amount of scattering that happens is a complex function that depends on the wavelength of the radiation and the size and type of particles and gases present. Three types of scattering take place:
+
+- **Rayleigh scattering** – λ >> dp (size of particle); light scattered isotropically; gives rise to blue sky.
+- **Mie scattering** – λ ~ dp; scattering strongest along direction of incident beam.
+- **Non-selective scattering** – λ << dp; gives rise to white appearance of fogs and clouds.
+
+If the atmosphere is considered to be multiple scattering, we see a significant enhancement in the ratio of the incident radiation to that at the top of the atmosphere (I(z)/I(∞)). These enhancements as a function of altitude and wavelength are shown in [Figure 3.15](#fig-3-15) The scattering allows photons to traverse a region more than once, increasing the apparent photon flux proportionately and hence the photolysis rates for species. Since the degree of scattering is proportional to air density, only those wavelengths which penetrate to the lower atmosphere show enhancement.
+
+If surface albedo (i.e. reflectivity) is also included, the enhancement is even more marked. The albedo of the Earth varies from ~100% (fresh snow and ice) to ~5% (forest), with the average, known as the planetary albedo, being ~35%. [Figure 3.15](#fig-3-15) shows how different wavelengths of light are affected by not only scattering but also by the presence of a reflective lower surface (albedo 50%). As with the impacts of enhancements from scattering, our main concern is that increases in the apparent flux of photons as a result of changes in albedo will affect the photolysis frequencies we calculate.
+
+![Summary of J-rates](../assets/figures/m3-photolysis-enhancements.png)
+[]{#fig-3-15}*Figure 3.15 — (left) Enhancement ratios as a function of altitude and wavelength including the effect of multiple scattering; (right) Enhancement ratios including multiple scattering and surface albedo of 0.5.*
 
 ## Try it yourself
 

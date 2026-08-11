@@ -197,8 +197,8 @@ and destroyed by
 $$
 \begin{align}
 HNO_3 + h\nu &\to OH + NO_2 \\
-HNO_3 + OH &\to H_2O + NO_3
-\end{align} \tag{4.6}
+HNO_3 + OH &\to H_2O + NO_3 \tag{4.6}
+\end{align}
 $$
 
 At higher latitudes HNO₃ can become the major nitrogen oxide species. HNO₃ is transported from the stratosphere into the troposphere, where it is efficiently rained out — the major **sink** of stratospheric nitrogen oxides.
