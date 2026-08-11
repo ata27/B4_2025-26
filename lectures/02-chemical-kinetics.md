@@ -18,7 +18,7 @@ notebook: "../notebooks/02-chemical-kinetics.ipynb"
 
 ## 2.1 Time scales and lifetimes
 
-As atmospheric chemists we are fundamentally interested in understanding how the constituents of the atmosphere (the gases and particles that make it up) change with time. For example, the questions of how the concentration of O₃ will change in the future and how it has changed in the past are crucial to the science of the Antarctic ozone hole. In order to understand these types of questions we rely on a solid knowledge of (i) what the constituents (chemical and **aerosol** species) are in the atmosphere and (ii) how the constituents in the atmosphere react over time. Hence, it's fair to say that chemical kinetics is at the heart of atmospheric chemistry.
+As atmospheric chemists we are fundamentally interested in understanding how the constituents of the atmosphere (the gases and particles that make it up) change with time. For example, the questions of how the concentration of O₃ will change in the future and how it has changed in the past are crucial to the science of the Antarctic ozone hole and air pollution. In order to understand these types of questions we rely on a solid knowledge of (i) what the constituents (chemical and **aerosol** species) are in the atmosphere and (ii) how the constituents in the atmosphere react over time. Hence, it's fair to say that chemical kinetics is at the heart of atmospheric chemistry!
 
 For simple chemical systems, we can write out differential equations that describe how the components of the system will change over time. Let's start with a trivial example. Suppose that we study, in a closed constant-volume system, a reaction whose rate depends on the concentration of one reacting substance, $A$, only. We can write:
 
@@ -33,7 +33,17 @@ We can define a new expression by integrating our rate equation for $A$ and noti
 
 $$\int_{0}^{t} k  dt = -\int_{0}^{A} [A]^{-n}  dA$$
 
-As [Fig 2.1](#fig-2-1) highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
+<details>
+<summary><strong>Integrating the rate equation</strong></summary>
+
+Given that $k$ and $n$ are constants we can then write:
+
+$$[A]_t = [A]_0 \exp(-kt)$$
+
+</details>
+
+
+As [Fig 2.1](#fig-2-1) highlights, the decay of $A$ with time can be described as a simple exponential process. We can use this graph and the equations above to define the **time constant - or lifetime - ** ($\tau$) as the time taken for the concentration of $A$ to be reduced by $1/e^{\text{th}}$ of its value:
 
 $$\tau = 1/k$$
 
@@ -78,13 +88,51 @@ Following this through, we can re-write the remaining equations describing our r
 
 $$\frac{d[A]}{dt} = -k_1[A]$$
 
-$$\frac{d[C]}{dt} = k_2 \cdot \frac{k_1[A]}{k_2} \simeq k_1[A]$$
+$$\frac{d[C]}{dt} \simeq k_2 \cdot \frac{k_1[A]}{k_2} \simeq k_1[A]$$
 
 In doing so, we have greatly reduced the complexity of this reaction system.
 
 In the atmosphere there are many examples of compounds that can be considered to be in steady state. For the steady-state assumption to apply, it is necessary that the rate constants for destruction of the intermediate greatly exceed those for its formation, so that its concentration remains low and (quasi-)constant.
 
-Often we will consider the concept of an **air parcel** throughout this course. An air parcel can be thought of as a "box of air." Suppose there are two species in the box, A and B. There are emissions of A, $F_A$, and A can undergo reactions (conversion) to form B, which subsequently is lost via other processes. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
+<details>
+<summary><strong>More on the steady state</strong></summary>
+
+In the chain reaction example it is clear that the steady-state approximation (**SSA**) will work when $k_2 \gg k_1$.
+
+But when can we use the SSA, and when does it not work?
+
+We need to consider several factors. First, the SSA will only work for an **intermediate** — in this course we can read that as meaning a radical species. So your first task is to identify the radicals and consider putting them into the SSA. Next, we need to examine the relative rates of formation and destruction. This is where things get tricky: the rate of destruction depends on the concentration of the species we are putting into steady state, so we probably don't know it in advance. However, we can get a sense of the numbers involved in the rate of production, and start to gauge whether the **source** of our intermediate is tiny, small, medium, large or massive. Our **loss** rates will need to balance these for the SSA to be valid. For example, the SSA will fail when we have a really large source of our intermediate but only a small amount of loss.
+
+Finally, we can put some quantitative bounds on this — for example, by calculating the timescale over which the SSA starts to break down.
+
+Consider the following reaction scheme:
+
+$$O_2 + h\nu \xrightarrow{J_1} O(^{3}P) + O(^{1}D)$$
+
+$$O(^{1}D) + M \xrightarrow{k_q} O(^{3}P) + M$$
+
+$$\frac{d[O(^1D)]}{dt} = J_1[O_2] - k_q[M][O(^1D)]$$
+
+Let's assume $[O(^1D)]$ is in steady state:
+
+$$[O(^1D)]_{ss} = \frac{J_1[O_2]}{k_q[M]}$$
+
+Compare that to the full solution of the ODE:
+
+$$[O(^1D)]_t = \frac{J_1[O_2]}{k_q[M]}\left(1 - \exp(-k_q[M]t)\right)$$
+
+We note that the timescale for the system ($[O(^1D)]$) is given by $1/(k_q[M])$, and that the full solution and the steady-state solution only differ by an exponential term. This is useful because we can appeal to the graph of $y = \exp(-x)$ to gain some insight into the problem: $\exp(-4.6) \simeq 0.01$ — in other words, once $k_q[M]t = 4.6$, our SSA solution is within 1% of the full ODE solution. Rearranging, the time for the SSA to be within 1% of the full solution is:
+
+$$t = \frac{4.6}{k_q[M]}$$
+
+For $k_q = 3\times10^{-11}\ \text{molecule}^{-1}\ \text{cm}^3\ \text{s}^{-1}$ and $[M] = 3\times10^{14}\ \text{molecule cm}^{-3}$, this gives $t = 5\times10^{-4}$ s — i.e. very short, so it is very likely that the SSA is valid.
+
+</details>
+
+![Our simple air parcel model](../assets/figures/m2-fig2-x-box-fluxes.png)
+[]{#fig-2-2}*Figure 2.2 — Schematic of an air parcel containing two species, A and B.*
+
+Often we will consider the concept of an **air parcel** throughout this course (schematically shown in [Figure 2.2](#fig-2-2)). An air parcel can be thought of as a "box of air." Suppose there are two species in the box, A and B. There are emissions of A, $F_A$, and A can undergo reactions (conversion) to form B, which subsequently is lost via other processes. We can consider what the inputs into the box are, and what the outputs are — and appeal to steady state to write down steady-state solutions for $[A]$ and $[B]$, and hence an expression for the ratio $[B]_{ss}/[A]_{ss}$.
 
 <details>
 <summary><strong>Worked derivation: steady-state ratio [B]<sub>ss</sub>/[A]<sub>ss</sub> for a source of A feeding into B</strong></summary>
@@ -125,41 +173,37 @@ $$A \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} B$$
 
 the system approaches equilibrium with a time constant of $(k_1 + k_{-1})^{-1}$ (s). So we only need $k_1$ **or** $k_{-1}$ to be large for $\tau$ to be small — which is what lets us apply the steady-state approximation.
 
-> **Exercise 3 — The error in the steady-state approximation**
->
-> Consider a very simple reversible system $A \rightleftharpoons B$, with forward rate constant $k_f$ and backward rate constant $k_b$:
->
-> $$\frac{d[B]}{dt} = k_f[A] - k_b[B]$$ &nbsp;&nbsp;(Eq 1)
->
-> Let $x$ denote the amount of $A$ molecules present as $B$ molecules, and $a = [A]_0$. Then:
->
-> $$\frac{dx}{dt} = k_f(a - x) - k_b x$$ &nbsp;&nbsp;(Eq 2)
->
-> Setting $y \equiv dx/dt$:
->
-> $$y = k_f a - (k_f + k_b) x$$ &nbsp;&nbsp;(Eq 4)
->
-> By the chain rule, $\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt}$. From Eq 2, $dx/dt = y$; from Eq 4, $dy/dx = -(k_f+k_b)$. So:
->
-> $$\frac{dy}{dt} = -(k_f+k_b)  y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b) dt$$ &nbsp;&nbsp;(Eq 7)
->
-> Integrating:
->
-> $$y = k_f a \cdot \exp\big(-(k_f+k_b)t\big)$$ &nbsp;&nbsp;(Eq 8)
->
-> and, since $y$ relates to $x$ through Eq 4, combining Eq 4 and Eq 8 gives the **exact** solution:
->
-> $$x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big]$$ &nbsp;&nbsp;(Eq 9)
->
-> From this we see the timescale for the system to reach equilibrium is exactly $\dfrac{1}{k_f+k_b}$ — compare this exact result against the steady-state approximation numerically in the notebook.
+<details>
+<summary><strong>Exercise 3 — Derivation of the timescale for equilibrium</strong></summary>
 
-> **Common question**
->
-> *Q: When can I put [X] into steady state?*
->
-> *A: When we have a system we can approximate as having 1st-order loss ($L'$, s⁻¹) and 0th-order production ($R_p$), and the rate of loss is fast (i.e. $1/L'$ is small), such that as soon as X is made it gets (pretty much) destroyed:*
->
-> $$\frac{d[X]_{ss}}{dt} \simeq 0 = R_p - L'[X]$$
+Consider a very simple reversible system $A \rightleftharpoons B$, with forward rate constant $k_f$ and backward rate constant $k_b$:
+
+$$\frac{d[B]}{dt} = k_f[A] - k_b[B]$$ &nbsp;&nbsp;(Eq 1)
+
+Let $x$ denote the amount of $A$ molecules present as $B$ molecules, and $a = [A]_0$. Then:
+
+$$\frac{dx}{dt} = k_f(a - x) - k_b x$$ &nbsp;&nbsp;(Eq 2)
+
+Setting $y \equiv dx/dt$:
+
+$$y = k_f a - (k_f + k_b) x$$ &nbsp;&nbsp;(Eq 4)
+
+By the chain rule, $\dfrac{dy}{dt} = \dfrac{dy}{dx}\cdot\dfrac{dx}{dt}$. From Eq 2, $dx/dt = y$; from Eq 4, $dy/dx = -(k_f+k_b)$. So:
+
+$$\frac{dy}{dt} = -(k_f+k_b)  y \quad\Rightarrow\quad \frac{dy}{y} = -(k_f+k_b) dt$$ &nbsp;&nbsp;(Eq 7)
+
+Integrating:
+
+$$y = k_f a \cdot \exp\big(-(k_f+k_b)t\big)$$ &nbsp;&nbsp;(Eq 8)
+
+and, since $y$ relates to $x$ through Eq 4, combining Eq 4 and Eq 8 gives the **exact** solution:
+
+$$x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big]$$ &nbsp;&nbsp;(Eq 9)
+
+From this we see the timescale for the system to reach equilibrium is exactly $\dfrac{1}{k_f+k_b}$ — compare this exact result against the steady-state approximation numerically in the notebook.
+
+</details>
+
 
 We will consider many examples of using steady state in the supervision questions, but in general a good opening argument for whether or not to put something into steady state is to consider whether or not it is a **radical**.
 
@@ -167,10 +211,10 @@ We will consider many examples of using steady state in the supervision question
 
 So far we have considered some very trivial examples. Whilst these have been trivial, they are still very useful for our studies of atmospheric chemistry. But an important complication for us as atmospheric chemists is that the reaction vessel we use in our studies is the atmosphere itself! You only need to venture outdoors to note that the reactions taking place in the atmosphere are doing so under far-from-controlled conditions. The gases and particles we are interested in are affected not only by chemical change but also by transport — for example through the wind. In this course we won't dwell much on atmospheric transport (that's covered in greater detail in the Part III course). What is important, however, is to have a feel for the **relative** time scales of chemistry and transport.
 
-The time constants (**lifetimes**) of a range of constituents of interest to the atmospheric chemist are presented in [Fig 2.2](#fig-2-2). As we've seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.
+The time constants (**lifetimes**) of a range of constituents of interest to the atmospheric chemist are presented in [Fig 2.3](#fig-2-3). As we've seen, compounds with very short time constants change in concentration very rapidly with time — so one would expect that their concentrations will be very different over short spatial scales.
 
 ![Comparison of spatial and chemical scales of selected atmospheric gases](../assets/figures/m2-fig2-2-lifetime-scales.png)
-[]{#fig-2-2}*Figure 2.2 — Comparison of spatial and chemical scales of selected gases in the atmosphere.*
+[]{#fig-2-3}*Figure 2.3 — Comparison of spatial and chemical scales of selected gases in the atmosphere.*
 
 ## 2.2 Bi-molecular rate coefficients
 
@@ -187,9 +231,9 @@ $$k_{obs(T)} = A \exp\left(-\frac{E_a}{RT}\right) \quad \text{(molecules}^{-1}\t
 where $A$ is often referred to as the Arrhenius pre-exponential factor, $E_a$ the reaction activation energy (J mol⁻¹), $R$ the gas constant (J K⁻¹ mol⁻¹) and $T$ temperature (K). Many bi-molecular reactions in the atmosphere show temperature dependence in their kinetics. A good example is the reaction of OH with methane (one of the most temperature-dependent reactions known).
 
 ![Arrhenius plot for OH + CH4](../assets/figures/m2-fig2-3-arrhenius-oh-ch4.png)
-[]{#fig-2-3}*Figure 2.3 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.*
+[]{#fig-2-4}*Figure 2.4 — Arrhenius plot for the reaction between methane and the hydroxyl radical in the gas phase.*
 
-[Fig 2.3](#fig-2-3) demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.
+[Fig 2.4](#fig-2-4) demonstrates that the reaction OH + CH₄ proceeds with a significant activation energy barrier. As temperature is decreased there will be a lower fraction of reactants that can overcome this barrier, and hence the observed rate of reaction will decrease.
 
 ## 2.3 Ter-molecular rate coefficients
 
@@ -201,41 +245,46 @@ Strictly speaking, most reactions require a third body (often referred to as $M$
 
 $$I + I \underset{k_b}{\overset{k_f}{\rightleftharpoons}} I_{2}^{\ast} \xrightarrow{M} I_2$$
 
-Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approximation can be considered as the sum of their concentrations ($[M] = [N_2]+[O_2]$). The rate coefficients for ter-molecular reactions can be experimentally determined as a function of temperature and pressure to derive the **low-pressure limit** ($k_{0,T}$), which shows pressure dependence, and the **high-pressure limit** ($k_{\infty,T}$), which doesn't. To predict the observed rate constant as a function of temperature and pressure, we combine these two limits using the **Troe equation** (a modification of the Lindemann–Hinshelwood expressions), which yields a pseudo-bi-molecular rate coefficient (units molecules⁻¹ cm³ s⁻¹).
+Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approximation can be considered as the sum of their concentrations ($[M] = [N_2]+[O_2]$). The rate coefficients for ter-molecular reactions can be experimentally determined as a function of temperature and pressure to derive the **low-pressure limit** ($k_{0,T}$), which shows pressure dependence, and the **high-pressure limit** ($k_{\infty,T}$), which doesn't. To predict the observed rate constant as a function of temperature and pressure, we combine these two limits using the **Troe equation** (a modification of the Lindemann–Hinshelwood expressions), which yields a pseudo-bi-molecular rate coefficient (units molecules⁻¹ cm³ s⁻¹): 
 
-> **Exercise 4 — Relating the bi-molecular and ter-molecular reactions**
->
-> In *Kinetics of Chemical Reactions* at 1A, we were told that whenever two molecules collide they bring with them enough energy to break the chemical bond that they try to form. This somewhat strange fact can be seen here in more detail.
->
-> Consider two iodine atoms colliding:
->
-> $$I + I \xrightarrow{k_1} I_{2}^{\ast}$$ &nbsp;&nbsp;(Eq 1)
->
-> $$I_{2}^{\ast} \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
->
-> $$I_{2}^{\ast} + M \xrightarrow{k_{col}} I_2 + M^{\ast}$$ &nbsp;&nbsp;(Eq 3)
->
-> The only reaction producing our product ($I_2$) is Eq 3, so:
->
-> $$\frac{d[I_2]}{dt} = k_{col}[I_{2}^{\ast}][M]$$ &nbsp;&nbsp;(Eq 4)
->
-> $I_{2}^{\ast}$ is an excited-state form of $I_2$, so it's logical that it should be short-lived — put it into steady state:
->
-> $$\frac{d[I_{2}^{\ast}]}{dt} = 0 = k_1[I]^2 - k_{col}[I_{2}^{\ast}][M] - k_d[I_{2}^{\ast}]$$
->
-> $$[I_{2}^{\ast}] = \frac{k_1[I]^2}{k_{col}[M] + k_d}$$ &nbsp;&nbsp;(Eq 5)
->
-> Substituting Eq 5 into Eq 4:
->
-> $$\frac{d[I_2]}{dt} = k_{col}[M]\cdot\frac{k_1[I]^2}{k_{col}[M]+k_d}$$ &nbsp;&nbsp;(Eq 6)
->
-> Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_{2}^{\ast}$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
->
-> **At low pressure** ($[M]$ small, so $k_{col}[M] < k_d$):
-> $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}$$ &nbsp;&nbsp;(Eq 7)
->
-> **At high pressure** ($[M]$ large, so $k_{col}[M] > k_d$):
-> $$\frac{d[I_2]}{dt} \cong k_1[I]^2$$ &nbsp;&nbsp;(Eq 8)
+$k_{obs(M,T)} = \left( \frac{k_{0,T}[M]}{1 + \frac{k_{0,T}[M]}{k_{\infty,T}}} \right) F \left\{ 1 + \left[ \log_{10} \left( \frac{k_{0,T}[M]}{k_{\infty,T}} \right) \right]^2 \right\}^{-1}$
+
+<details>
+<summary><strong>Exercise 4 — Relating the bi-molecular and ter-molecular reactions</strong></summary>
+
+In *Kinetics of Chemical Reactions* at 1A, we were told that whenever two molecules collide they bring with them enough energy to break the chemical bond that they try to form. This somewhat strange fact can be seen here in more detail.
+
+Consider two iodine atoms colliding:
+
+$$I + I \xrightarrow{k_1} I_{2}^{\ast}$$ &nbsp;&nbsp;(Eq 1)
+
+$$I_{2}^{\ast} \xrightarrow{k_d} I + I$$ &nbsp;&nbsp;(Eq 2)
+
+$$I_{2}^{\ast} + M \xrightarrow{k_{col}} I_2 + M^{\ast}$$ &nbsp;&nbsp;(Eq 3)
+
+The only reaction producing our product ($I_2$) is Eq 3, so:
+
+$$\frac{d[I_2]}{dt} = k_{col}[I_{2}^{\ast}][M]$$ &nbsp;&nbsp;(Eq 4)
+
+$I_{2}^{\ast}$ is an excited-state form of $I_2$, so it's logical that it should be short-lived — put it into steady state:
+
+$$\frac{d[I_{2}^{\ast}]}{dt} = 0 = k_1[I]^2 - k_{col}[I_{2}^{\ast}][M] - k_d[I_{2}^{\ast}]$$
+
+$$[I_{2}^{\ast}] = \frac{k_1[I]^2}{k_{col}[M] + k_d}$$ &nbsp;&nbsp;(Eq 5)
+
+Substituting Eq 5 into Eq 4:
+
+$$\frac{d[I_2]}{dt} = k_{col}[M]\cdot\frac{k_1[I]^2}{k_{col}[M]+k_d}$$ &nbsp;&nbsp;(Eq 6)
+
+Eq 6 shows the formation of $I_2$ behaving as a third-order (ter-molecular) process (second order in $I$, first order in $M$), whereas Eq 4 shows it as a second-order (bi-molecular) process (first order in $M$ and $I_{2}^{\ast}$). In general, most (all) reactions that appear bi-molecular are formally ter-molecular, and this example extends to practically every association reaction (two species reacting by colliding together).
+
+**At low pressure** ($[M]$ small, so $k_{col}[M] < k_d$):
+$$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}$$ &nbsp;&nbsp;(Eq 7)
+
+**At high pressure** ($[M]$ large, so $k_{col}[M] > k_d$):
+$$\frac{d[I_2]}{dt} \cong k_1[I]^2$$ &nbsp;&nbsp;(Eq 8)
+
+</details>
 
 ---
 

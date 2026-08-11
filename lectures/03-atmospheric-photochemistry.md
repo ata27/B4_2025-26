@@ -60,7 +60,7 @@ The fine structure in [Fig 3.2](#fig-3-2) comes from the fine structure in the a
 ![Vertical changes in photon flux](../assets/figures/photon_flux_toa_surface_280-500nm.png)
 []{#fig-3-3}*Figure 3.3 — Difference between photon flux at the top of atmosphere and the surface.*
 
-These altitude dependencies of photon fluxes matter when we come to calculate photolysis rates in different parts of the atmosphere — at 290 nm there is a factor-of-100 difference in photon flux between 40 km and 15 km, so processes requiring this wavelength proceed much more slowly at 15 km than at 40 km.
+These altitude dependencies of photon fluxes matter when we come to calculate photolysis rates in different parts of the atmosphere — [Fig 3.3](#fig-3-3) shows that at 290 nm there is over a factor-of-1000 difference in photon flux between the top of the atmosphere and the surface, so processes requiring this wavelength proceed much more slowly in the troposphere than the stratosphere.
 
 $J$ for O₂ ($\lambda < 250$ nm) varies strongly with altitude, as the relevant photons are absorbed and removed on the way down. In contrast, $J$ for NO₂ + hν → NO + O ($\lambda < 400$ nm) varies little with altitude, and it is this photolysis reaction that leads to ozone production in the troposphere (covered in more detail later).
 
@@ -86,6 +86,14 @@ O₃ is relatively weakly bound compared to O₂ and can be photolysed over a wi
 $$O_3 + h\nu \xrightarrow{J_{O(^{1}D)}} O_2(^1\Delta) + O(^{1}D) \qquad \lambda < 310\ \text{nm (actually longer!)}$$
 
 $$O_3 + h\nu \xrightarrow{J_{O(^{3}P)}} O_2(^3\Sigma) + O(^{3}P) \qquad \lambda < 1180\ \text{nm}$$
+
+The exact products that are formed depend on the energy from the photons. Calculations of these are given below where the values correspond to the maximum limits of the photons (in nm): 
+
+|              | $O_2(^3\Sigma_g^-)$ | $O_2(^1\Delta_g)$ | $O_2(^1\Sigma_g^+)$ | $O_2(^3\Sigma_u^+)$ | $O_2(^3\Sigma_u^-)$ |
+|--------------|----------------------|--------------------|-----------------------|-----------------------|-----------------------|
+| $O(^3P)$     | 1180                 | 590                | 460                   | 230                   | 170                   |
+| $O(^1D)$     | 410                  | 310                | 260                   | 167                   | 150                   |
+| $O(^1S)$     | 234                  | 196                | 179                   | 129                   | 108                   |
 
 Using the absorption cross-section data together with the altitude-dependent spectral irradiance, we can calculate photolysis frequencies for O₃, just as for O₂. Photolysis of O₃ is much more rapid than photolysis of O₂: lifetimes of O₃ with respect to photolysis vary from ~8 hours to ~3 minutes over the altitude range 10–50 km.
 
@@ -148,6 +156,11 @@ Important breakdown products from the photolysis of Cl- and Br-containing compou
 
 ![Halogen nitrate absorption cross-section](../assets/figures/BrONO2_ClONO2_298K.png)
 []{#fig-3-13}*Figure 3.13 — Halogen nitrate absorption cross-sections as a function of wavelength (and energy).*
+
+![Summary of J-rates](../assets/figures/m3-fig3-15-j-rate-overview.png)
+[]{#fig-3-14}*Figure 3.14 — Overview of the photolysis coefficients of important trace gases in the stratosphere.*
+
+Finally, [Figure 3.14](#fig-3-14) gives an important overview of the photolysis coefficients (**J-rates**) of many trace gases in the stratosphere. This is a key figure we can come back to as it provides an important justification for the use of steady state. Essentially, during daylight hours we can see that species which have lifetimes with respect to photolysis shorter than 1 hour are very good candidates to apply steady state to.
 
 ---
 

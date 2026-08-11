@@ -157,25 +157,28 @@ We will see later that it is also possible to measure the amount of a species in
 
 1 Dobson Unit (DU) = 2.69×10¹⁶ molec cm⁻². A typical column density for ozone is about 300 DU — i.e. an ozone column that would be 3 mm thick when shrunk down to the surface.
 
-> **Exercise 2 — Calculation of the column of a well-mixed gas**
->
-> Definition of the column:
->
-> $$\text{Column} = \int [x]  dz$$ &nbsp;&nbsp;(Eq 1)
->
-> For a well-mixed gas the concentration decreases exponentially with altitude following the barometric equation:
->
-> $$p = p_0 e^{-z/H} \quad \text{(just replace } p \text{ for } [x] \text{)}$$
->
-> Thus, we can re-write Eq 1 as:
->
-> $$\text{Column} = [x]_0 \int e^{-z/H}  dz$$ &nbsp;&nbsp;(Eq 2)
->
-> where $[x]_0$ is the concentration at a fixed point in the atmosphere. We then integrate Eq 2 between $z$ and infinity (the top of the atmosphere) to get:
->
-> $$\text{Column} = [x]_0 \cdot H$$ &nbsp;&nbsp;(Eq 3)
->
-> From *Exercise 1* we can work out $[x]_0$ as being the number density at the surface multiplied by the mixing ratio (which will be constant over all altitudes).
+<details>
+<summary><strong>Exercise 2 — Calculation of the column of a well-mixed gas</strong></summary>
+
+Definition of the column:
+
+$$\text{Column} = \int [x]  dz$$ &nbsp;&nbsp;(Eq 1)
+
+For a well-mixed gas the concentration decreases exponentially with altitude following the barometric equation:
+
+$$p = p_0 e^{-z/H} \quad \text{(just replace } p \text{ for } [x] \text{)}$$
+
+Thus, we can re-write Eq 1 as:
+
+$$\text{Column} = [x]_0 \int e^{-z/H}  dz$$ &nbsp;&nbsp;(Eq 2)
+
+where $[x]_0$ is the concentration at a fixed point in the atmosphere. We then integrate Eq 2 between $z$ and infinity (the top of the atmosphere) to get:
+
+$$\text{Column} = [x]_0 \cdot H$$ &nbsp;&nbsp;(Eq 3)
+
+From *Exercise 1* we can work out $[x]_0$ as being the number density at the surface multiplied by the mixing ratio (which will be constant over all altitudes).
+
+</details>
 
 ---
 

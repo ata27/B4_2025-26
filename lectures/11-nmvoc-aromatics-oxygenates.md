@@ -39,9 +39,12 @@ Aldehydes (especially formaldehyde), ketones, and organic hydroperoxides are als
 > - Tropospheric oxidation of aromatic compounds is highly complex and only partly understood; small dicarbonyls are abundant oxidation products.
 > - Alkenes and aromatics are important biogenic and anthropogenic precursors of organic aerosols, respectively.
 
-> **Example 5 — propose a mechanism for the oxidation of 2-methyl-2-butene**
->
-> Using the alkene oxidation framework from Module 10 (§4.4) — OH addition across the C=C bond, the competing O₃ + alkene → Criegee pathway, and the general RO₂ fate scheme from §4.3 — sketch a plausible oxidation mechanism for 2-methyl-2-butene, and identify the expected major carbonyl products. The companion notebook sets up the rate-constant comparison needed to judge which initiation pathway (OH vs. O₃ vs. NO₃) dominates under different conditions.
+<details>
+<summary><strong>Example 5 — propose a mechanism for the oxidation of 2-methyl-2-butene</strong></summary>
+
+Using the alkene oxidation framework from Module 10 (§4.4) — OH addition across the C=C bond, the competing O₃ + alkene → Criegee pathway, and the general RO₂ fate scheme from §4.3 — sketch a plausible oxidation mechanism for 2-methyl-2-butene, and identify the expected major carbonyl products. The companion notebook sets up the rate-constant comparison needed to judge which initiation pathway (OH vs. O₃ vs. NO₃) dominates under different conditions.
+
+</details>
 
 ---
 
