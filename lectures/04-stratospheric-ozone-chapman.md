@@ -35,7 +35,10 @@ These early observations provided the first challenge for atmospheric chemists: 
 
 Notice that the photolysis of oxygen is much slower than the photolysis of ozone ($J_2 \ll J_3$; values given are for ~40 km). Reactions 4.2 and 4.3 have very short time constants for the conversion of O to O₃ and vice versa, and establish a **steady state** much more rapidly than reactions 4.1 and 4.4.
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 5 — Time constants for inter-conversion of O and O₃</strong></summary>
 
 As in Exercise 3, we found that the time scale for interconversion of two species is $(k_f+k_b)^{-1}$ (both must be first-order or pseudo-first-order rate constants).
@@ -50,6 +53,9 @@ Focusing on the upper/middle stratosphere (40 km, $T=225$ K), from Module 1's Ex
 $$\big(7.9\times10^{16}\times0.2\times7.9\times10^{16}\times6\times10^{-34}(300/225)^2 + 2\times10^{-3}\big)^{-1} = 0.75\ \text{seconds!} \quad \text{i.e. fast!}$$
 
 </details>
+```{=latex}
+\color{black}
+```
 
 Reactions 4.2 and 4.3 only interconvert the "odd oxygen" species O and O₃ — i.e. they **conserve odd oxygen** ($[O_x] = [O]+[O_3]$). In defining $O_x$ we've invoked the idea of a **chemical family**: a collection of compounds connected via fast interconversion reactions, in steady state with each other. Since odd oxygen is only formed by reaction 4.1 and only removed by reaction 4.4:
 
@@ -78,7 +84,10 @@ The timescale for steady state between reactions 4.1 and 4.4 varies strongly wit
 
 From the steady state between O and O₃, [O] decreases very rapidly with decreasing altitude (both [M] and [O₂] are proportional to pressure), so reaction cycles involving O become very inefficient at low altitudes ([Fig 4.1](#fig-4-1)).
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 6 — Steady-state distribution of ozone</strong></summary>
 
 This calculation only works where chemical production and loss rates balance. At steady state:
@@ -96,6 +105,9 @@ $$[O_3]^2 = \frac{2J_2[O_2]  k_3[O_2][M]}{2k_4 J_3} \quad\Rightarrow\quad [O_3] 
 Now [O₃] can be calculated purely from rate constants and altitude (via [O₂] and [M]).
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ![Measured and Chapman-calculated O3 mixing ratio profiles](../assets/figures/m4-fig4-2-chapman-vs-observed.png)
 []{#fig-4-2}*Figure 4.2 — Measured and calculated (Chapman mechanism) distributions of O₃ mixing ratios vs. altitude.*

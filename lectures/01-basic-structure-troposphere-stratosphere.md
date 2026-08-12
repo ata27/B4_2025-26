@@ -78,7 +78,10 @@ We should finally consider the timescales (**$\tau$**) of mixing air across the 
 ![Typical mixing timescales in the horizontal and vertical across the atmosphere](../assets/figures/m1-fig1-4-mixing-timescales.png)
 []{#fig-1-4}*Figure 1.4 — Some typical mixing timescales ($\tau$) in the horizontal and vertical across the atmosphere.*
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 1 — Calculation of the number density at different altitudes</strong></summary>
 
 The number density is another word for concentration, in molecules cm⁻³.
@@ -97,6 +100,9 @@ $$\frac{N}{V} = \frac{100{,}000}{1.38\times10^{-23} \times 298} = 2.43\times10^{
 [M] = 2.43\times10^{19}\ \text{molecules cm}^{-3}$$
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ## 1.2 The Troposphere — basic role and composition
 
@@ -157,7 +163,10 @@ We will see later that it is also possible to measure the amount of a species in
 
 1 Dobson Unit (DU) = 2.69×10¹⁶ molec cm⁻². A typical column density for ozone is about 300 DU — i.e. an ozone column that would be 3 mm thick when shrunk down to the surface.
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 2 — Calculation of the column of a well-mixed gas</strong></summary>
 
 Definition of the column:
@@ -179,6 +188,9 @@ $$\text{Column} = [x]_0 \cdot H$$ &nbsp;&nbsp;(Eq 3)
 From *Exercise 1* we can work out $[x]_0$ as being the number density at the surface multiplied by the mixing ratio (which will be constant over all altitudes).
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ---
 

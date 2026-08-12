@@ -200,7 +200,7 @@ $$\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots$$
 \color{blue}
 ```
 <details style="color: blue;">
-<summary><strong>Worked Example 1 — Steady-state concentration of compound X</strong></summary>
+<summary><strong>Exercise 7 — Steady-state concentration of compound X</strong></summary>
 
 **Problem.** Compound X is emitted at the surface at a rate of 1 tonne yr⁻¹ (molar mass 44 g mol⁻¹). It is lost by reaction with OH, with rate constant $k = 1\times10^{-11}$ cm³ molecule⁻¹ s⁻¹, and by dry deposition with $v_g = 1$ cm s⁻¹. Assume $[\text{OH}] = 10^{6}$ cm⁻³ and a boundary-layer mixing height of $h = 1$ km.
 
@@ -223,7 +223,7 @@ This is exactly the kind of steady-state / pseudo-first-order problem you'll mee
 
 Open **[`notebooks/06-sources-sinks-lifetimes.ipynb`](../notebooks/06-sources-sinks-lifetimes.ipynb)** to:
 
-- Solve Worked Example 1 numerically and check it against the by-hand answer.
+- Solve Exercise 7 numerically and check it against the by-hand answer.
 - Build a simple one-box steady-state / time-dependent model with combined chemical + deposition loss.
 - Explore how lifetime and steady-state concentration change as you vary $k_{\text{OH}}$, $[\text{OH}]$, $v_g$, and mixing height $h$.
 - Reproduce the SO₂ vs. O₃ dry-deposition lifetime comparison from §6.4.1.

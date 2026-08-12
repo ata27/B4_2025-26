@@ -173,7 +173,10 @@ $$A \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} B$$
 
 the system approaches equilibrium with a time constant of $(k_1 + k_{-1})^{-1}$ (s). So we only need $k_1$ **or** $k_{-1}$ to be large for $\tau$ to be small — which is what lets us apply the steady-state approximation.
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 3 — Derivation of the timescale for equilibrium</strong></summary>
 
 Consider a very simple reversible system $A \rightleftharpoons B$, with forward rate constant $k_f$ and backward rate constant $k_b$:
@@ -203,6 +206,9 @@ $$x = \frac{k_f a}{k_f + k_b}\Big[1 - \exp\big(-(k_f+k_b)t\big)\Big]$$ &nbsp;&nb
 From this we see the timescale for the system to reach equilibrium is exactly $\dfrac{1}{k_f+k_b}$ — compare this exact result against the steady-state approximation numerically in the notebook.
 
 </details>
+```{=latex}
+\color{black}
+```
 
 
 We will consider many examples of using steady state in the supervision questions, but in general a good opening argument for whether or not to put something into steady state is to consider whether or not it is a **radical**.
@@ -249,7 +255,10 @@ Under atmospheric conditions, $M$ is usually N₂ or O₂, and to a first approx
 
 $k_{obs(M,T)} = \left( \frac{k_{0,T}[M]}{1 + \frac{k_{0,T}[M]}{k_{\infty,T}}} \right) F \left\{ 1 + \left[ \log_{10} \left( \frac{k_{0,T}[M]}{k_{\infty,T}} \right) \right]^2 \right\}^{-1}$
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Exercise 4 — Relating the bi-molecular and ter-molecular reactions</strong></summary>
 
 In *Kinetics of Chemical Reactions* at 1A, we were told that whenever two molecules collide they bring with them enough energy to break the chemical bond that they try to form. This somewhat strange fact can be seen here in more detail.
@@ -285,6 +294,9 @@ $$\frac{d[I_2]}{dt} \cong [M][I]^2 \frac{k_1 k_{col}}{k_d}$$ &nbsp;&nbsp;(Eq 7)
 $$\frac{d[I_2]}{dt} \cong k_1[I]^2$$ &nbsp;&nbsp;(Eq 8)
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ---
 
