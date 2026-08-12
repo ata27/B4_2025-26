@@ -77,7 +77,7 @@ At the high pressures found in the troposphere, O(¹D) is rapidly quenched to gr
 ***The photolysis process R7.3 is in fact central to the chemistry of the troposphere, as it is the primary step in generating OH radicals — which, as we shall see, initiate oxidative chemistry.***
 
 ![O3 cross-section, quantum yield (R7.3), and solar photon flux at the surface](../assets/figures/m7-fig2-2-o3-cross-section-qy-flux.png)
-[]{#fig-7-2a}*Figure 7.2a — Cross-section, quantum yield for reaction R7.3, and solar photon flux at the Earth's surface.*
+[]{#fig-7-1}*Figure 7.1 — Cross-section, quantum yield for reaction R7.3, and solar photon flux at the Earth's surface.*
 
 ### 7.3.1 Fate of O(¹D) in a dry atmosphere
 
@@ -110,7 +110,7 @@ R7.6 represents the principal (though not sole) mechanism for generating hydroxy
 The diurnal behaviour of [OH] closely tracks $J_{O(^{1}D)}$ over the course of a day, measured in the unpolluted conditions typical of the Southern Hemisphere marine environment — demonstrating the fast conversion of O(¹D) into OH and the dominance of R7.3/R7.5–R7.6 in OH production. Under sunny conditions, $J_{O(^{1}D)}$ reaches a maximum of about $3\times10^{-5}$ s⁻¹.
 
 ![OH and J(O1D) diurnal profile](../assets/figures/m7-fig2-2b-oh-jo1d-diurnal.jpeg)
-[]{#fig-7-2b}*Figure 7.2b — Typical diurnal variation of [OH] and J(O¹D) in the clean marine atmosphere.*
+[]{#fig-7-2}*Figure 7.2 — Typical diurnal variation of [OH] and J(O¹D) in the clean marine atmosphere.*
 
 ### 7.4.1 Other sources of OH in the troposphere
 
@@ -123,6 +123,10 @@ Photolysis of organic compounds such as formaldehyde, and reaction of alkenes wi
 ## 7.5 The HOx family
 
 OH does not react with the major atmospheric components (N₂, O₂, CO₂) but reacts with most trace gases.
+
+![Overview of the HOx family](../assets/figures/m7-hox-overview.png)
+[]{#fig-7-3}*Figure 7.3 — Schematic of reactions governing HOx radicals in troposphere.*
+
 
 Following its formation from O(¹D), OH is rapidly converted into HO₂ — primarily (~70% of the time) by reaction with CO, followed by fast reaction of H with O₂:
 

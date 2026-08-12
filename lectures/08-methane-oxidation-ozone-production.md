@@ -55,6 +55,10 @@ $$HO_2 + O_3 \to OH + 2O_2$$ &nbsp;&nbsp;(R8.8 / R7.10)
 
 However, the efficiency of this OH recycling is rather low in the clean lower troposphere: both CH₃OOH and HCHO are soluble in water droplets, leading to a net loss of HOx through rainout. R8.8 is competitive with the HO₂ self-reaction at ozone concentrations typical of the clean troposphere, and will also contribute to O₃ removal.
 
+![Overview of methane oxidation in the troposphere](../assets/figures/m9-methane-overview.png)
+[]{#fig-8-1}*Figure 8.1 — Atmospheric oxidation scheme for methane.*
+
+
 **To recap:** R8.3, together with loss of peroxides (or HCHO) in rain, leads to a net loss of HOx radicals. **As ozone is lost in the process of generating HOx from O(¹D), there is a net loss of ozone overall** — in the *unpolluted* (low-NOx) troposphere.
 
 ![Diurnal variation of peroxides and ozone in the clean marine troposphere](../assets/figures/m8-fig3-2-diurnal-peroxides-ozone.jpeg)
