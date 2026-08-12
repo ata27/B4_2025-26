@@ -86,12 +86,18 @@ At steady state:
 
 $$[O_3]_{ss} = \frac{J_{8.10}[NO_2]}{k_{8.12}[NO]}$$
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Example 3 — timescale for establishment of the photostationary state</strong></summary>
 
 As in Modules 2 and 4, the timescale to reach photostationary state between NO, NO₂ and O₃ is set by the sum of the pseudo-first-order forward and backward rates linking the species — here approximately $(J_{8.10} + k_{8.12}[O_3])^{-1}$. Work through this calculation with typical boundary-layer $J_{8.10}$ and [O₃] in the notebook: the PSS is normally established on a timescale of order 100 seconds — fast compared to the hours/days over which NOx and O₃ budgets otherwise evolve.
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ### 8.2.2 Reaction of peroxy radicals with NO leads to O₃ production
 

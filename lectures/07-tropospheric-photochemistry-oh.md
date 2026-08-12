@@ -176,12 +176,18 @@ $$k_{7.10}[HO_2][O_3] = k_{7.7}[OH][CO]$$
 
 In general, the precise ratio depends on the composition of the air parcel — [O₃], [CO], etc.
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Example 2 — steady-state [OH] in the tropical atmospheric boundary layer</strong></summary>
 
 In the tropics, [H₂O] is much higher than at mid-latitudes. The reduced overhead ozone column (see Michaelmas Module 1) also leads to increased rates of ozone photolysis. Work through the same steady-state derivation as above, but substituting tropical values for [H₂O], the overhead O₃ column (and hence $J_{O(^{1}D)}$), and [CO]/[O₃] — see the companion notebook.
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ## 7.6 Trace gas oxidation
 

@@ -97,12 +97,18 @@ In recent years, hydrogen atom-shift (H-shift) reactions have attracted much att
 
 RO reacts via three channels: reaction with O₂, isomerization, and decomposition. The **isomerization** channel is only possible for compounds with more than 4 carbon atoms (able to form a 6-membered transition state). The O₂ and isomerization channels (where available) are generally more important than decomposition. Reaction of RO with NO and NO₂ to form nitro-compounds/organic nitrates is generally too slow to be significant.
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Example 4 — the fate of the 2-pentoxy radical in the urban boundary layer</strong></summary>
 
 Using the RO reaction channels above (O₂-addition, isomerization via 6-membered TS, and decomposition), sketch the competing pathways for 2-pentoxy and estimate which dominates in a polluted urban boundary layer, given typical [O₂], [NO] and temperature — see the companion notebook for a quantitative rate-constant comparison.
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ## 10.4 Oxidation of alkenes
 

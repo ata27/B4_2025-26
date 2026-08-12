@@ -196,7 +196,10 @@ $$\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots$$
 
 ---
 
-<details>
+```{=latex}
+\color{blue}
+```
+<details style="color: blue;">
 <summary><strong>Worked Example 1 — Steady-state concentration of compound X</strong></summary>
 
 **Problem.** Compound X is emitted at the surface at a rate of 1 tonne yr⁻¹ (molar mass 44 g mol⁻¹). It is lost by reaction with OH, with rate constant $k = 1\times10^{-11}$ cm³ molecule⁻¹ s⁻¹, and by dry deposition with $v_g = 1$ cm s⁻¹. Assume $[\text{OH}] = 10^{6}$ cm⁻³ and a boundary-layer mixing height of $h = 1$ km.
@@ -210,6 +213,9 @@ $$\frac{1}{\tau_{\text{total}}} = \frac{1}{\tau_1} + \frac{1}{\tau_2} + \cdots$$
 This is exactly the kind of steady-state / pseudo-first-order problem you'll meet repeatedly through the course — it's worth being fluent doing it both by hand and by setting up the balance numerically. **The companion notebook (`06-sources-sinks-lifetimes.ipynb`) walks through this example step by step, and lets you explore how $[\text{X}]_{ss}$ and $\tau$ respond to changing $k$, $[\text{OH}]$, $v_g$ and $h$.**
 
 </details>
+```{=latex}
+\color{black}
+```
 
 ---
 
