@@ -612,7 +612,7 @@ window.Quarto = {
 <hr>
 <details style="color: blue;">
 <summary>
-<strong>Worked Example 1 — Steady-state concentration of compound X</strong>
+<strong>Exercise 7 — Steady-state concentration of compound X</strong>
 </summary>
 <p><strong>Problem.</strong> Compound X is emitted at the surface at a rate of 1 tonne yr⁻¹ (molar mass 44 g mol⁻¹). It is lost by reaction with OH, with rate constant <span class="math inline">\(k = 1\times10^{-11}\)</span> cm³ molecule⁻¹ s⁻¹, and by dry deposition with <span class="math inline">\(v_g = 1\)</span> cm s⁻¹. Assume <span class="math inline">\([\text{OH}] = 10^{6}\)</span> cm⁻³ and a boundary-layer mixing height of <span class="math inline">\(h = 1\)</span> km.</p>
 <p><strong>Method.</strong> 1. Convert the emission rate to a molecular flux (molecules cm⁻² s⁻¹) using the molar mass and an assumed emission area, or work in a well-mixed box of height <span class="math inline">\(h\)</span> to get a volumetric production rate (molecules cm⁻³ s⁻¹). 2. Write the two loss rate constants: chemical, <span class="math inline">\(k_{\text{OH}} = k[\text{OH}]\)</span>; physical, <span class="math inline">\(k_{\text{dep}} = v_g / h\)</span>. 3. At steady state, production = total loss: <span class="math inline">\(P = (k_{\text{OH}} + k_{\text{dep}})[\text{X}]_{ss}\)</span>. 4. Solve for <span class="math inline">\([\text{X}]_{ss}\)</span>, and use <span class="math inline">\(\tau = 1/(k_{\text{OH}}+k_{\text{dep}})\)</span> to sanity-check against the emission rate.</p>
@@ -624,7 +624,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="try-it-yourself">Try it yourself</h2>
 <p>Open <strong><a href="../notebooks/06-sources-sinks-lifetimes.ipynb"><code>notebooks/06-sources-sinks-lifetimes.ipynb</code></a></strong> to:</p>
 <ul>
-<li>Solve Worked Example 1 numerically and check it against the by-hand answer.</li>
+<li>Solve Exercise 7 numerically and check it against the by-hand answer.</li>
 <li>Build a simple one-box steady-state / time-dependent model with combined chemical + deposition loss.</li>
 <li>Explore how lifetime and steady-state concentration change as you vary <span class="math inline">\(k_{\text{OH}}\)</span>, <span class="math inline">\([\text{OH}]\)</span>, <span class="math inline">\(v_g\)</span>, and mixing height <span class="math inline">\(h\)</span>.</li>
 <li>Reproduce the SO₂ vs.&nbsp;O₃ dry-deposition lifetime comparison from §6.4.1.</li>
