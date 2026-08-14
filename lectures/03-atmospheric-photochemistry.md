@@ -157,7 +157,7 @@ Important breakdown products from the photolysis of Cl- and Br-containing compou
 ![Halogen nitrate absorption cross-section](../assets/figures/BrONO2_ClONO2_298K.png)
 []{#fig-3-13}*Figure 3.13 — Halogen nitrate absorption cross-sections as a function of wavelength (and energy).*
 
-![Summary of J-rates](../assets/figures/m3-fig3-15-j-rate-overview.png)
+![Summary of J-rates](../assets/figures/j_rates_altitude_profile.png)
 []{#fig-3-14}*Figure 3.14 — Overview of the photolysis coefficients of important trace gases in the stratosphere.*
 
 Finally, [Figure 3.14](#fig-3-14) gives an important overview of the photolysis coefficients (**J-rates**) of many trace gases in the stratosphere. This is a key figure we can come back to as it provides an important justification for the use of steady state. Essentially, during daylight hours we can see that species which have lifetimes with respect to photolysis shorter than 1 hour are very good candidates to apply steady state to.
