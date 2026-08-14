@@ -25,7 +25,7 @@ There are many anthropogenic and biogenic NMVOC sources, but on a global scale *
 Governmental environmental policy (partly aimed at reducing ozone formation) has significantly reduced anthropogenic NMVOC emissions in Europe over recent decades — the opposite trend holds in developing nations like China and India.
 
 ![Historical NMVOC emissions since 1970](../assets/figures/uk_nmvoc_annual_emissions.png)
-[]{#fig-10-1}*Figure 10.1 — Historical UK NMVOC emissions since 1970. Current UK and European legislated values are being adhered to.*
+[]{#fig-10-0}*Figure 10.0 — Historical UK NMVOC emissions since 1970. Current UK and European legislated values are being adhered to.*
 
 ## 10.1 The role of NMVOCs in ozone production
 
@@ -41,6 +41,10 @@ This module (and Module 11) outlines the oxidation schemes for the most abundant
 
 The first step in NMVOC oxidation is reaction with an oxidant — suitable oxidants include OH, Cl, O₃ and NO₃ (and, to a very small extent, Br). Which dominates depends on both the abundance of the oxidant and the rate constant for its reaction with the specific NMVOC. *Knowledge of these rate constants is vital for evaluating the atmospheric lifetime and degradation mechanisms of organic compounds.*
 
+![VOC oxidation kinetics and lifetime](../assets/figures/voc_oxidation_kinetics_lifetimes.png)
+[]{#fig-10-1}*Figure 10.1 — Reaction rate constants for VOCs with different carbon number with different oxidants; corresponding lifetimes to oxidation given [OH] $= 1\times10^{6}$ cm⁻³; [Cl] $= 1\times10^{5}$ cm⁻³; [NO₃] = 1 ppt and [O₃] = 40 ppb.*
+
+
 Rate constants have been measured in the laboratory for many reactions, and patterns of reactivity can be recognised within a given reaction type (e.g. H-abstraction, addition to C=C bonds) related to molecular structure. There are clear trends in rate constants with carbon number for many oxidants, but also significant deviations from these trends — carbon number alone is not ultimately the best predictor of the initiation rate constant.
 
 This nonetheless enables prediction of rate constants for molecules of known structure that are experimentally difficult to measure directly, and similar relationships can help predict products and their yields for reactions with multiple possible pathways.
@@ -48,6 +52,9 @@ This nonetheless enables prediction of rate constants for molecules of known str
 ## 10.3 Oxidation of alkanes
 
 Under tropospheric conditions, alkanes react mostly with OH, and to a minor extent (~10%) with Cl radicals. Both proceed via H-abstraction, generating an **alkyl radical** plus water or HCl respectively. This reaction is generally faster for tertiary H atoms (>CH) than secondary (–CH₂–) or primary (–CH₃) H atoms.
+
+![alkane oxidation mechanism](../assets/figures/generic-alkane.png)
+[]{#fig-10-2}*Figure 10.2 — OH initiated oxidation mechanism of alkanes.*
 
 Alkane + OH rate constants are typically $10^{-12}$–$10^{-11}$ cm³ molecule⁻¹ s⁻¹ (increasing slightly with carbon number) — about $10^3$ times faster than CH₄ + OH ($k = 6.2\times10^{-15}$ cm³ molecule⁻¹ s⁻¹). Alkane + Cl rate constants are around $10^{-10}$ cm³ molecule⁻¹ s⁻¹, but tropospheric [Cl] is very low (though uncertain, estimated at $10^2$–$10^5$ molecules cm⁻³), so Cl oxidation doesn't affect the overall alkane lifetime — though these reactions do represent a significant sink for Cl itself.
 
@@ -94,6 +101,10 @@ Among all RO₂ reactions, reaction with NO is by far dominant in the **polluted
 In recent years, hydrogen atom-shift (H-shift) reactions have attracted much attention, as they can generate highly oxidised compounds bearing multiple hydroperoxy (–OOH) groups. This chemistry requires a sufficiently long carbon chain to enable 5/6-membered-ring transition states, so it's more important for biogenic NMVOC (terpenes, C10; isoprene, C5) than for anthropogenic NMVOC (dominated by C2–C4 compounds). Over the last decade it has become established that these highly functionalised molecules not only form rapidly in the atmosphere but can lead to new aerosol particle formation, influencing clouds and climate. This process of H-shift, followed by O₂ addition and subsequent internal H-shift, is termed **"auto-oxidation"**, since it requires no bimolecular reaction beyond addition of O₂.
 
 ### Fate of RO
+
+![alkoxy radical decomposition](../assets/figures/pentoxy.png)
+[]{#fig-10-2}*Figure 10.2 — Decomposition of alkoxy radicals under tropospheric conditions.*
+
 
 RO reacts via three channels: reaction with O₂, isomerization, and decomposition. The **isomerization** channel is only possible for compounds with more than 4 carbon atoms (able to form a 6-membered transition state). The O₂ and isomerization channels (where available) are generally more important than decomposition. Reaction of RO with NO and NO₂ to form nitro-compounds/organic nitrates is generally too slow to be significant.
 
