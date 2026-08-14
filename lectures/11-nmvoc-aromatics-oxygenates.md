@@ -18,9 +18,19 @@ Most aromatics are emitted by anthropogenic processes — motor vehicle emission
 
 **(a) H-abstraction** (yield < 10%). Further reactions follow the alkane pathway, ultimately leading to aldehydes (e.g. benzaldehyde from toluene oxidation) or aromatic nitrates.
 
+![H-abstraction of Benzene](../assets/figures/m11-aromatic-abs.png)
+[]{#fig-11-1}*Figure 11.1 — Hydrogen atom abstraction in the oxidation of Benzene*
+
+
 **(b) OH addition to the aromatic ring** (yield > 90%). Further reactions of the resulting OH–aromatic adduct are rather unclear, with many possible pathways proposed. **The oxidation of aromatic compounds in the atmosphere is one of the least understood areas in tropospheric chemistry.**
 
+![OH-addition of Benzene](../assets/figures/m11-aromatic-add.png)
+[]{#fig-11-2}*Figure 11.2 — OH addition in the oxidation of Benzene*
+
 One of the more likely reaction routes (illustrated for toluene) generates mainly small dicarbonyls, like butenedial and methylglyoxal.
+
+![Toluene oxidation mechanism](../assets/figures/toluene-mech.png)
+[]{#fig-11-3}*Figure 11.3 — OH initiated oxidation mechanism of toluene*
 
 ## 11.2 Oxidation of oxygenated organics
 
