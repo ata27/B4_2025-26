@@ -103,7 +103,7 @@ In recent years, hydrogen atom-shift (H-shift) reactions have attracted much att
 ### Fate of RO
 
 ![alkoxy radical decomposition](../assets/figures/pentoxy.png)
-[]{#fig-10-2}*Figure 10.2 — Decomposition of alkoxy radicals under tropospheric conditions.*
+[]{#fig-10-3}*Figure 10.3 — Decomposition of alkoxy radicals under tropospheric conditions.*
 
 
 RO reacts via three channels: reaction with O₂, isomerization, and decomposition. The **isomerization** channel is only possible for compounds with more than 4 carbon atoms (able to form a 6-membered transition state). The O₂ and isomerization channels (where available) are generally more important than decomposition. Reaction of RO with NO and NO₂ to form nitro-compounds/organic nitrates is generally too slow to be significant.
@@ -134,22 +134,22 @@ The resulting hydroxy alkyl radical then reacts like the alkyl radical from alka
 **NO₃**, the main night-time oxidant, reacts across the C=C double bond, forming an excited nitro-oxy alkyl radical, which either forms an epoxide or nitro-oxy peroxy radicals (following the RO₂ scheme above). Terpenes — the most abundant atmospheric alkenes — react very rapidly with NO₃ ($k \sim 10^{-12}$–$10^{-10}$ cm³ molecule⁻¹ s⁻¹), so NO₃ oxidation remains important even though [NO₃] rarely exceeds ppt levels.
 
 ![NO3 oxidation of alkene](../assets/figures/no3_alkene_addition_mechanism.png)
-[]{#fig-10-3}*Figure 10.3 — NO3 oxidation of alkenes proceeds via addition to the double bond. At low pressures (not common in the atmosphere) an epoxide may form. *
+[]{#fig-10-4}*Figure 10.4 — NO3 oxidation of alkenes proceeds via addition to the double bond. At low pressures (not common in the atmosphere) an epoxide may form. *
 
 In contrast to alkanes, alkenes also react significantly with **ozone**. Initial O₃ addition across the C=C bond forms a primary ozonide, which is unstable and decomposes via two pathways to form **Criegee intermediates** (Criegee biradicals). Though postulated over 50 years ago (with first atmospheric rate estimates over 30 years ago), it's only in the last few years that their structure and kinetics have been unambiguously identified.
 
 ![Criegee mechanism](../assets/figures/criegee.png)
-[]{#fig-10-4}*Figure 10.4 — Genertion of Criegee intermediate/carbonyl oxide from alkene ozone reaction.*
+[]{#fig-10-5}*Figure 10.5 — Genertion of Criegee intermediate/carbonyl oxide from alkene ozone reaction.*
 
 In the gas phase, the Criegee intermediate is either stabilised or decomposes via various channels — one, via a hydroperoxide intermediate, yields a carbonyl **and OH**. 
 
 ![OH generation from Criegee](../assets/figures/criegee-oh.png)
-[]{#fig-10-5}*Figure 10.5 — OH genertion from "hot" Criegee intermediate*
+[]{#fig-10-6}*Figure 10.6 — OH genertion from "hot" Criegee intermediate*
 
 This OH-formation route can be especially important at night, when other major OH sources are inactive.
 
 ![Calculated HOx generation rates from various sources, rural site](../assets/figures/m11-fig4-6-hox-sources-rural.png)
-[]{#fig-10-6}*Figure 10.6 — Calculated rates of HOx generation from various sources at a rural site (Paulson and Orlando, Geophysical Research Letters, 1996).*
+[]{#fig-10-7}*Figure 10.7 — Calculated rates of HOx generation from various sources at a rural site (Paulson and Orlando, Geophysical Research Letters, 1996).*
 
 The major fate of the *stabilised* Criegee intermediate is believed to be reaction with H₂O, leading to carboxylic acids and hydroxy-hydroperoxides. Other reactions include those with NO₂, SO₂ and organics — the relative importance of these is not fully characterised.
 

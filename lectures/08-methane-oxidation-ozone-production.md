@@ -72,6 +72,26 @@ NOx is emitted/generated from a number of surface and tropospheric processes. Ma
 
 NOx is removed from the atmosphere through dry and wet deposition, with wet deposition of nitrate (nitric acid) the dominant process.
 
+[]{#tab-8-1}**Table 8.1 — Sources and sinks of NOx in the troposphere.**
+| Sources | TgN yr⁻¹ |
+|---|---|
+| Fossil fuel combustion | 20 (14–28) |
+| Release from soils | 20 (4–40) |
+| Biomass burning | 12 (2–24) |
+| Lightning discharges | 8 (2–20) |
+| NH₃ oxidation | 3 (0–10) |
+| Ocean surface | <1 |
+| Aviation | 0.5 |
+| Injection from stratosphere | 0.1 (0.6 total NOy) |
+| **Total sources** | **64 (25–112)** |
+
+| Sinks | TgN yr⁻¹ |
+|---|---|
+| Wet deposition of nitrate (land) | 18 (8–30) |
+| Wet deposition of nitrate (ocean) | 8 (4–12) |
+| Dry deposition of NOx | 16 (12–22) |
+| **Total sinks** | **43 (24–64)** |
+
 ### 8.2.1 Photostationary state in the absence of peroxy radicals
 
 Consider first the reactions of NO, NO₂ and O₃ in isolation. NO₂ is photolysed to O(³P), which reacts almost exclusively with O₂ to form O₃ (O-atom reactions with other pollutants don't compete under normal tropospheric conditions). O₃ then reacts with NO, reforming NO₂:

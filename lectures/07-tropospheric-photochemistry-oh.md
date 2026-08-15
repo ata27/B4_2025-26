@@ -120,12 +120,16 @@ $$HONO + h\nu \to NO + OH \qquad (\lambda < 400\ \text{nm})$$
 
 Photolysis of organic compounds such as formaldehyde, and reaction of alkenes with O₃ and NO₃, also contribute to overall OH production (covered in Module 9).
 
+![Overview of the HOx family](../assets/figures/HOx-sources-daytime.png)
+[]{#fig-7-3}*Figure 7.3 — Overview of different sources of HOx during the day .*
+
+
 ## 7.5 The HOx family
 
 OH does not react with the major atmospheric components (N₂, O₂, CO₂) but reacts with most trace gases.
 
 ![Overview of the HOx family](../assets/figures/m7-hox-overview.png)
-[]{#fig-7-3}*Figure 7.3 — Schematic of reactions governing HOx radicals in troposphere.*
+[]{#fig-7-4}*Figure 7.4 — Schematic of reactions governing HOx radicals in troposphere.*
 
 
 Following its formation from O(¹D), OH is rapidly converted into HO₂ — primarily (~70% of the time) by reaction with CO, followed by fast reaction of H with O₂:
