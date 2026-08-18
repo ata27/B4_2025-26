@@ -222,6 +222,12 @@ Quite different regulatory responses are needed depending on where a region sits
 
 An increase in NOx at point C leads to ozone production — this regime is **'NOx-limited'**. At point A, adding VOCs leads to ozone production — this regime is **'VOC-limited'**. Much of the industrialised northern hemisphere is VOC-limited (high ambient NOx); many tropical and southern-hemisphere locations are NOx-limited. Predicting the atmospheric response to emissions policy is consequently very complex.
 
+
+The following Figure nicely summarises everything we have just discussed. Here you can see how VOCs (such as methane) act as the fuel to generate O3, whilst NOx acts as the catalyst. One NOx molecule can convert many hydrogens from a VOC into many O3 molecules. 
+
+![Overview of methane oxidation in the troposphere](../assets/figures/o3-jenkin.png)
+[]{#fig-8-7}*Figure 8.7 — Overview of atmospheric oxidation cycles of VOCs and NOx.*
+
 ---
 
 ## Try it yourself
